@@ -4,14 +4,15 @@ import { Block, DefaultGreen, large, medium, small } from '../../Shared/value';
 import { Link } from 'react-router-dom';
 import woodDummy from '../../Assets/wood-dummy.jpg';
 import H3 from '../../Shared/Generic/H3';
-import { delta } from '../../Shared/typography';
 import Button from './Button';
+import LazyLoadImage from './Image';
+
 function CardLinks() {
   return (
     <Container>
       <Column>
         <Link to="">
-          <StyledImage src={woodDummy} />
+          <StyledImage src={woodDummy} alt="dummy" />
         </Link>
         <TextContainer>
           <H3>Sågade produkter</H3>
@@ -25,7 +26,7 @@ function CardLinks() {
       </Column>
       <Column>
         <Link to="">
-          <StyledImage src={woodDummy} />
+          <StyledImage src={woodDummy} alt="dummy" />
         </Link>
         <TextContainer>
           <H3>Sågade produkter</H3>
@@ -39,7 +40,7 @@ function CardLinks() {
       </Column>
       <Column>
         <Link to="">
-          <StyledImage src={woodDummy} />
+          <StyledImage src={woodDummy} alt="dummy" />
         </Link>
         <TextContainer>
           <H3>Sågade produkter</H3>
@@ -75,7 +76,7 @@ const Column = styled.div({
   padding: { xy: medium },
 });
 
-const StyledImage = styled.img({
+const StyledImage = styled(LazyLoadImage, {
   width: '100%',
   objectFit: 'cover',
   borderRadius: '8px',

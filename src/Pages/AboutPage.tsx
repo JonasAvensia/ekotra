@@ -1,10 +1,11 @@
+import Hero from '../Feature/Components/Hero';
+
 function AboutPage() {
-	return (
-		<div>
-			<h1>About Page</h1>
-			<p>Welcome to the Home Page!</p>
-		</div>
-	);
+  return (
+    <>
+      <Hero />
+    </>
+  );
 }
 
 export default AboutPage;

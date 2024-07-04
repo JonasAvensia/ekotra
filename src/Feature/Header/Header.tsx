@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../../Assets/logo.png';
 import Menu from '../../Assets/menu.svg';
 import { styled } from '@glitz/react';
@@ -10,30 +10,48 @@ function Header() {
   return (
     <StyledHeader>
       <DesktopContainer>
-        <LogoContainer>
-          <StyledImage src={logo} alt="Logo" className="logo" />
-        </LogoContainer>
+        <NavLink to="/">
+          <LogoContainer>
+            <StyledImage src={logo} alt="Logo" className="logo" />
+          </LogoContainer>
+        </NavLink>
         <Navbar>
           <LinkContainer>
             <NavLinks>
-              <Link to="/">
+              <NavLink
+                to="/"
+                className={({ isActive }) => ['link_nav', isActive ? 'active' : null].filter(Boolean).join(' ')}
+                end
+              >
                 <StyledLink>Home</StyledLink>
-              </Link>
+              </NavLink>
             </NavLinks>
             <NavLinks>
-              <Link to="/about">
+              <NavLink
+                to="/about"
+                className={({ isActive }) => ['link_nav', isActive ? 'active' : null].filter(Boolean).join(' ')}
+                end
+              >
                 <StyledLink>About</StyledLink>
-              </Link>
+              </NavLink>
             </NavLinks>
             <NavLinks>
-              <Link to="/services">
+              <NavLink
+                to="/services"
+                className={({ isActive }) => ['link_nav', isActive ? 'active' : null].filter(Boolean).join(' ')}
+                end
+              >
                 <StyledLink>Services</StyledLink>
-              </Link>
+              </NavLink>
             </NavLinks>
             <NavLinks>
-              <Link to="/contact">
+              <NavLink
+                to="/contact"
+                className={({ isActive }) => ['link_nav', isActive ? 'active' : null].filter(Boolean).join(' ')}
+                end
+              >
                 <StyledLink>Contact</StyledLink>
-              </Link>
+              </NavLink>
             </NavLinks>
           </LinkContainer>
         </Navbar>
@@ -42,9 +60,11 @@ function Header() {
         <PlainButton>
           <styled.Img src={Menu} width={30} />
         </PlainButton>
-        <LogoContainer>
-          <StyledImage src={logo} alt="Logo" className="logo" />
-        </LogoContainer>
+        <NavLink to="/">
+          <LogoContainer>
+            <StyledImage src={logo} alt="Logo" className="logo" />
+          </LogoContainer>
+        </NavLink>
       </CompactContainer>
     </StyledHeader>
   );
@@ -129,6 +149,7 @@ const LinkContainer = styled.ul({
 
 const NavLinks = styled.li({
   margin: { left: '32px' },
+  position: 'relative',
 });
 
 const StyledLink = styled.span({

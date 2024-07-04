@@ -15,7 +15,8 @@ export const humongous = '48px';
 export const moderate = large; // This is default spacing, e.g. margin between `<p>`
 
 export const Block = styled.div({
-  margin: { top: large },
+  padding: { top: large },
+  backgroundColor:'#fff'
 });
 
 

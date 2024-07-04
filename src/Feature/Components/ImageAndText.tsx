@@ -4,6 +4,7 @@ import { media } from '@glitz/core';
 import H2 from '../../Shared/Generic/H2';
 import H3 from '../../Shared/Generic/H3';
 import { Block, medium } from '../../Shared/value';
+import LazyLoadImage from './Image';
 
 function TextAndImage() {
   return (
@@ -12,7 +13,7 @@ function TextAndImage() {
         <Image src={Forrest} alt="oak image" />
       </ImageContainer>
       <TextContainer className="text">
-        <H2>Vår Vision</H2>
+        <H2>Våra Tjänster</H2>
         <ul>
           <li>
             <H3>Vi jobbar mot privata kunder, kommuner, länsstyrelser och andra företag.</H3>
@@ -56,7 +57,7 @@ const ImageContainer = styled.div({
   borderRadius: '5px',
 });
 
-const Image = styled.img({
+const Image = styled(LazyLoadImage, {
   width: '100%',
   height: '100%',
   objectFit: 'cover',

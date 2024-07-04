@@ -1,8 +1,9 @@
 import { styled } from '@glitz/react';
 import AcornHero from '../../Assets/acorn.jpg';
 import H1 from '../../Shared/Generic/H1';
-import { Block, huge } from '../../Shared/value';
+import { huge } from '../../Shared/value';
 import H3 from '../../Shared/Generic/H3';
+import LazyLoadImage from './Image';
 
 function Hero() {
   return (
@@ -54,7 +55,7 @@ const ImageContainer = styled.div({
   overflow: 'hidden',
 });
 
-const Image = styled.img({
+const Image = styled(LazyLoadImage, {
   width: '100%',
   height: '100%',
   objectFit: 'cover',

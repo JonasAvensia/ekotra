@@ -3,22 +3,35 @@ import oak from '../../Assets/oak-boards.jpg';
 import { media } from '@glitz/core';
 import H2 from '../../Shared/Generic/H2';
 import H3 from '../../Shared/Generic/H3';
-import { Block, large, medium } from '../../Shared/value';
+import { Block, medium } from '../../Shared/value';
+import LazyLoadImage from './Image';
 
 function TextAndImage() {
   return (
     <Container className="container">
-      <TextContainer className="text">
+      <TextContainer>
         <H2>Vår Vision</H2>
         <ul>
           <li>
-            <H3>Vi jobbar mot privata kunder, kommuner, länsstyrelser och andra företag.</H3>
+            <H3>
+              Genom att varsamt och för hand hantera virket från sågning till färdig produkt kan vi säkerställa en god
+              kvalitet och ett formstabilt virke.
+            </H3>
           </li>
           <li>
-            <H3>Alltid med samma mål, att kunden ska få rätt vara vid rätt tid.</H3>
+            <H3>Vi arbetar nästan uteslutande med svenskt lövträ och sätter ursprung i fokus.</H3>
           </li>
           <li>
-            <H3>Vi ombesörjer transport inom hela Sverige.</H3>
+            <H3>Med leverans följer ett ursprungsdokument med växtplats.</H3>
+          </li>
+          <li>
+            <H3>Udda längder, dimensioner och profiler tillhör vår specialitet.</H3>
+          </li>
+          <li>
+            <H3>
+              Vi har som mål att kunna leverera inom två veckor från order, oavsett om det är lagervara eller måste
+              specialproduceras.
+            </H3>
           </li>
         </ul>
       </TextContainer>
@@ -70,7 +83,7 @@ const ImageContainer = styled.div({
   ),
 });
 
-const Image = styled.img({
+const Image = styled(LazyLoadImage, {
   width: '100%',
   height: '100%',
   objectFit: 'cover',
