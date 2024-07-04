@@ -1,0 +1,21 @@
+{
+    "name": "React Parcel TypeScript App",
+    "short_name": "ReactApp",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#317EFB",
+    "description": "A React application built with Parcel and TypeScript.",
+    "icons": [
+        {
+            "src": "/src/Assets/dummy-icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/src/Assets/dummy-icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
