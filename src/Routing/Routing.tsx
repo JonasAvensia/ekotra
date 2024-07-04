@@ -1,14 +1,14 @@
 import { Route, Routes } from 'react-router-dom';
 import HomePage from '../Pages/HomePage';
-import AboutPage from '../Pages/AboutPage';
+import PriceListPage from '../Pages/PriceListPage';
 
 function Routing() {
-	return (
-		<Routes>
-			<Route path="/" element={<HomePage />} />
-			<Route path="/about" element={<AboutPage />} />
-		</Routes>
-	);
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/prislista" element={<PriceListPage />} />
+    </Routes>
+  );
 }
 
 export default Routing;

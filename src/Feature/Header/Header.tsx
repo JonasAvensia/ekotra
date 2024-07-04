@@ -23,34 +23,34 @@ function Header() {
                 className={({ isActive }) => ['link_nav', isActive ? 'active' : null].filter(Boolean).join(' ')}
                 end
               >
-                <StyledLink>Home</StyledLink>
+                <StyledLink>Hem</StyledLink>
               </NavLink>
             </NavLinks>
             <NavLinks>
               <NavLink
-                to="/about"
+                to="/prislista"
                 className={({ isActive }) => ['link_nav', isActive ? 'active' : null].filter(Boolean).join(' ')}
                 end
               >
-                <StyledLink>About</StyledLink>
+                <StyledLink>Prislista</StyledLink>
               </NavLink>
             </NavLinks>
             <NavLinks>
               <NavLink
-                to="/services"
+                to="/produkter"
                 className={({ isActive }) => ['link_nav', isActive ? 'active' : null].filter(Boolean).join(' ')}
                 end
               >
-                <StyledLink>Services</StyledLink>
+                <StyledLink>Produkter</StyledLink>
               </NavLink>
             </NavLinks>
             <NavLinks>
               <NavLink
-                to="/contact"
+                to="/kontakt"
                 className={({ isActive }) => ['link_nav', isActive ? 'active' : null].filter(Boolean).join(' ')}
                 end
               >
-                <StyledLink>Contact</StyledLink>
+                <StyledLink>Kontakt</StyledLink>
               </NavLink>
             </NavLinks>
           </LinkContainer>
@@ -94,7 +94,7 @@ const DesktopContainer = styled.div({
   maxWidth: 'calc(100vw - 65px)',
   padding: {
     y: '10px',
-    x: '0px',
+    x: medium,
   },
   margin: {
     y: 0,

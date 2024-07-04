@@ -1,6 +1,6 @@
 import { styled } from '@glitz/react';
 import { media } from '@glitz/core';
-import { Block, DefaultGreen, large, medium, small } from '../../Shared/value';
+import { Block, large, small } from '../../Shared/value';
 import { Link } from 'react-router-dom';
 import woodDummy from '../../Assets/wood-dummy.jpg';
 import H3 from '../../Shared/Generic/H3';
@@ -73,7 +73,6 @@ const Container = styled(Block, {
 const Column = styled.div({
   width: '100%',
   backgroundColor: '#fff',
-  padding: { xy: medium },
 });
 
 const StyledImage = styled(LazyLoadImage, {

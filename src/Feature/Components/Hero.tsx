@@ -5,15 +5,22 @@ import { huge } from '../../Shared/value';
 import H3 from '../../Shared/Generic/H3';
 import LazyLoadImage from './Image';
 
-function Hero() {
+interface HeroProps {
+  src: string;
+  alt: string;
+  title: string;
+  description?: string;
+}
+
+function Hero(props: HeroProps) {
   return (
     <HeroContainer>
       <TextOverlay>
-        <H1>Välkommen till EKOTRÄ AB.</H1>
-        <StyledH3>Specialsågverk-Hyvleri mitt i Småland sedan 1997</StyledH3>
+        <H1>{props.title}</H1>
+        <StyledH3>{props.description}</StyledH3>
       </TextOverlay>
       <ImageContainer>
-        <Image src={AcornHero} alt="Acorn image" />
+        <Image src={props.src} alt={props.alt} />
       </ImageContainer>
     </HeroContainer>
   );

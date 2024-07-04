@@ -47,7 +47,6 @@ const Container = styled(Block, {
   display: 'grid',
   gridTemplateColumns: '1fr',
   gap: '20px',
-  padding: { x: medium },
   ...media(
     { minWidth: '1025px' },
     {
