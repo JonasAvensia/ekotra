@@ -27229,6 +27229,7 @@ var _react = require("@glitz/react");
 var _header = require("./Feature/Header/Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
 var _glitzOptions = require("./Shared/GlitzOptions");
+var _core = require("@glitz/core");
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.GlitzProvider), {
         glitz: (0, _glitzOptions.glitz),
@@ -27241,7 +27242,6 @@ const App = ()=>{
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Page, {
-                        className: "page",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _routingDefault.default), {}, void 0, false, {
                             fileName: "src/App.tsx",
                             lineNumber: 16,
@@ -27274,7 +27274,16 @@ exports.default = App;
 const Page = (0, _react.styled).div({
     width: "1366px",
     maxWidth: "calc(100vw - 65px)",
-    backgroundColor: "#fff"
+    backgroundColor: "#f4f5f6",
+    margin: {
+        y: 0,
+        x: "auto"
+    },
+    ...(0, _core.media)({
+        maxWidth: "1025px"
+    }, {
+        maxWidth: "100vw"
+    })
 });
 _c1 = Page;
 var _c, _c1;
@@ -27286,7 +27295,7 @@ $RefreshReg$(_c1, "Page");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./Routing/Routing":"12bzc","react-router-dom":"9xmpe","./index.css":"irmnC","@glitz/react":"bAXm1","./Feature/Header/Header":"kcmoy","./Shared/GlitzOptions":"3XZ4R","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"12bzc":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./Routing/Routing":"12bzc","react-router-dom":"9xmpe","./index.css":"irmnC","@glitz/react":"bAXm1","./Feature/Header/Header":"kcmoy","./Shared/GlitzOptions":"3XZ4R","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@glitz/core":"5ehrf"}],"12bzc":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2aec = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34406,21 +34415,35 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _hero = require("../Feature/Hero");
+var _cardLinks = require("../Feature/Components/CardLinks");
+var _cardLinksDefault = parcelHelpers.interopDefault(_cardLinks);
+var _hero = require("../Feature/Components/Hero");
 var _heroDefault = parcelHelpers.interopDefault(_hero);
-var _textAndImage = require("../Feature/TextAndImage");
+var _imageAndText = require("../Feature/Components/ImageAndText");
+var _imageAndTextDefault = parcelHelpers.interopDefault(_imageAndText);
+var _textAndImage = require("../Feature/Components/TextAndImage");
 var _textAndImageDefault = parcelHelpers.interopDefault(_textAndImage);
 function HomePage() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {}, void 0, false, {
                 fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 7,
+                lineNumber: 9,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardLinksDefault.default), {}, void 0, false, {
+                fileName: "src/Pages/HomePage.tsx",
+                lineNumber: 10,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _textAndImageDefault.default), {}, void 0, false, {
                 fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 8,
+                lineNumber: 11,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {}, void 0, false, {
+                fileName: "src/Pages/HomePage.tsx",
+                lineNumber: 12,
                 columnNumber: 7
             }, this)
         ]
@@ -34436,23 +34459,161 @@ $RefreshReg$(_c, "HomePage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../Feature/Hero":"8m1ZE","../Feature/TextAndImage":"ae2GF","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8m1ZE":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$4d27 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Feature/Components/Hero":"8WNwH","../Feature/Components/TextAndImage":"aTGYq","../Feature/Components/CardLinks":"4IVZq","../Feature/Components/ImageAndText":"8HWo8"}],"km3Ru":[function(require,module,exports) {
+"use strict";
+var Refresh = require("7422ead32dcc1e6b");
+function debounce(func, delay) {
+    {
+        let timeout = undefined;
+        let lastTime = 0;
+        return function(args) {
+            // Call immediately if last call was more than the delay ago.
+            // Otherwise, set a timeout. This means the first call is fast
+            // (for the common case of a single update), and subsequent updates
+            // are batched.
+            let now = Date.now();
+            if (now - lastTime > delay) {
+                lastTime = now;
+                func.call(null, args);
+            } else {
+                clearTimeout(timeout);
+                timeout = setTimeout(function() {
+                    timeout = undefined;
+                    lastTime = Date.now();
+                    func.call(null, args);
+                }, delay);
+            }
+        };
+    }
+}
+var enqueueUpdate = debounce(function() {
+    Refresh.performReactRefresh();
+}, 30);
+// Everthing below is either adapted or copied from
+// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
+// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
+module.exports.prelude = function(module1) {
+    window.$RefreshReg$ = function(type, id) {
+        Refresh.register(type, module1.id + " " + id);
+    };
+    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
+};
+module.exports.postlude = function(module1) {
+    if (isReactRefreshBoundary(module1.exports)) {
+        registerExportsForReactRefresh(module1);
+        if (module1.hot) {
+            module1.hot.dispose(function(data) {
+                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
+                data.prevExports = module1.exports;
+            });
+            module1.hot.accept(function(getParents) {
+                var prevExports = module1.hot.data.prevExports;
+                var nextExports = module1.exports;
+                // Since we just executed the code for it, it's possible
+                // that the new exports make it ineligible for being a boundary.
+                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
+                // It can also become ineligible if its exports are incompatible
+                // with the previous exports.
+                // For example, if you add/remove/change exports, we'll want
+                // to re-execute the importing modules, and force those components
+                // to re-render. Similarly, if you convert a class component
+                // to a function, we want to invalidate the boundary.
+                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
+                if (isNoLongerABoundary || didInvalidate) {
+                    // We'll be conservative. The only case in which we won't do a full
+                    // reload is if all parent modules are also refresh boundaries.
+                    // In that case we'll add them to the current queue.
+                    var parents = getParents();
+                    if (parents.length === 0) {
+                        // Looks like we bubbled to the root. Can't recover from that.
+                        window.location.reload();
+                        return;
+                    }
+                    return parents;
+                }
+                enqueueUpdate();
+            });
+        }
+    }
+};
+function isReactRefreshBoundary(exports) {
+    if (Refresh.isLikelyComponentType(exports)) return true;
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    return false;
+    var hasExports = false;
+    var areAllExportsComponents = true;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        hasExports = true;
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
+        return false;
+        var exportValue = exports[key];
+        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
+    }
+    return hasExports && areAllExportsComponents;
+}
+function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
+    var prevSignature = getRefreshBoundarySignature(prevExports);
+    var nextSignature = getRefreshBoundarySignature(nextExports);
+    if (prevSignature.length !== nextSignature.length) return true;
+    for(var i = 0; i < nextSignature.length; i++){
+        if (prevSignature[i] !== nextSignature[i]) return true;
+    }
+    return false;
+}
+// When this signature changes, it's unsafe to stop at this refresh boundary.
+function getRefreshBoundarySignature(exports) {
+    var signature = [];
+    signature.push(Refresh.getFamilyByType(exports));
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return signature;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        signature.push(key);
+        signature.push(Refresh.getFamilyByType(exportValue));
+    }
+    return signature;
+}
+function registerExportsForReactRefresh(module1) {
+    var exports = module1.exports, id = module1.id;
+    Refresh.register(exports, id + " %exports%");
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        var typeID = id + " %exports% " + key;
+        Refresh.register(exportValue, typeID);
+    }
+}
+
+},{"7422ead32dcc1e6b":"786KC"}],"8WNwH":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$bb69 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$4d27.prelude(module);
+$parcel$ReactRefreshHelpers$bb69.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("@glitz/react");
-var _acornsHeroJpg = require("../Assets/acorns-hero.jpg");
-var _acornsHeroJpgDefault = parcelHelpers.interopDefault(_acornsHeroJpg);
-var _h1 = require("../Shared/Generic/H1");
+var _acornJpg = require("../../Assets/acorn.jpg");
+var _acornJpgDefault = parcelHelpers.interopDefault(_acornJpg);
+var _h1 = require("../../Shared/Generic/H1");
 var _h1Default = parcelHelpers.interopDefault(_h1);
-var _value = require("../Shared/value");
-var _h3 = require("../Shared/Generic/H3");
+var _value = require("../../Shared/value");
+var _h3 = require("../../Shared/Generic/H3");
 var _h3Default = parcelHelpers.interopDefault(_h3);
 function Hero() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeroContainer, {
@@ -34462,47 +34623,47 @@ function Hero() {
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h1Default.default), {
                         children: "V\xe4lkommen till EKOTR\xc4 AB."
                     }, void 0, false, {
-                        fileName: "src/Feature/Hero.tsx",
-                        lineNumber: 12,
+                        fileName: "src/Feature/Components/Hero.tsx",
+                        lineNumber: 11,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledH3, {
                         children: "Specials\xe5gverk-Hyvleri mitt i Sm\xe5land sedan 1997"
                     }, void 0, false, {
-                        fileName: "src/Feature/Hero.tsx",
-                        lineNumber: 13,
+                        fileName: "src/Feature/Components/Hero.tsx",
+                        lineNumber: 12,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
-                fileName: "src/Feature/Hero.tsx",
-                lineNumber: 11,
+                fileName: "src/Feature/Components/Hero.tsx",
+                lineNumber: 10,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ImageContainer, {
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Image, {
-                    src: (0, _acornsHeroJpgDefault.default),
+                    src: (0, _acornJpgDefault.default),
                     alt: "Acorn image"
                 }, void 0, false, {
-                    fileName: "src/Feature/Hero.tsx",
-                    lineNumber: 16,
+                    fileName: "src/Feature/Components/Hero.tsx",
+                    lineNumber: 15,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
-                fileName: "src/Feature/Hero.tsx",
-                lineNumber: 15,
+                fileName: "src/Feature/Components/Hero.tsx",
+                lineNumber: 14,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
-        fileName: "src/Feature/Hero.tsx",
-        lineNumber: 10,
+        fileName: "src/Feature/Components/Hero.tsx",
+        lineNumber: 9,
         columnNumber: 5
     }, this);
 }
 _c = Hero;
 exports.default = Hero;
-const HeroContainer = (0, _react.styled)((0, _value.Block), {
+const HeroContainer = (0, _react.styled).div({
     position: "relative",
     overflow: "hidden"
 });
@@ -34534,7 +34695,6 @@ const ImageContainer = (0, _react.styled).div({
     position: "relative",
     width: "100%",
     height: "400px",
-    borderRadius: "6px",
     overflow: "hidden"
 });
 _c4 = ImageContainer;
@@ -34552,12 +34712,12 @@ $RefreshReg$(_c3, "StyledH3");
 $RefreshReg$(_c4, "ImageContainer");
 $RefreshReg$(_c5, "Image");
 
-  $parcel$ReactRefreshHelpers$4d27.postlude(module);
+  $parcel$ReactRefreshHelpers$bb69.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../Assets/acorns-hero.jpg":"iogj0","../Shared/Generic/H1":"fmZc4","../Shared/value":"9VKej","../Shared/Generic/H3":"iGEMB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bAXm1":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../Shared/Generic/H1":"fmZc4","../../Shared/value":"9VKej","../../Shared/Generic/H3":"iGEMB","../../Assets/acorn.jpg":"dMYuz"}],"bAXm1":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "GlitzProvider", ()=>GlitzProvider);
@@ -35203,44 +35363,6 @@ module.exports = require("2255125a8e8b1051");
     exports.typeOf = typeOf;
 })();
 
-},{}],"iogj0":[function(require,module,exports) {
-module.exports = require("af447d2074a3c729").getBundleURL("6EXJA") + "acorns-hero.bcb17e3f.jpg" + "?" + Date.now();
-
-},{"af447d2074a3c729":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-}
-// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
 },{}],"fmZc4":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -35310,6 +35432,7 @@ parcelHelpers.export(exports, "gigantic", ()=>gigantic);
 parcelHelpers.export(exports, "humongous", ()=>humongous);
 parcelHelpers.export(exports, "moderate", ()=>moderate);
 parcelHelpers.export(exports, "Block", ()=>Block);
+parcelHelpers.export(exports, "DefaultGreen", ()=>DefaultGreen);
 var _react = require("@glitz/react");
 const thin = "1px";
 const thick = "2px";
@@ -35323,9 +35446,10 @@ const humongous = "48px";
 const moderate = large; // This is default spacing, e.g. margin between `<p>`
 const Block = (0, _react.styled).div({
     margin: {
-        top: "21px"
+        top: large
     }
 });
+const DefaultGreen = "#A7CDCC";
 
 },{"@glitz/react":"bAXm1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iGEMB":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -35345,163 +35469,63 @@ const h3Styled = (0, _react.styled)({
 });
 exports.default = h3Styled((0, _react.styled).H3);
 
-},{"@glitz/react":"bAXm1","../typography":"iZltJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"km3Ru":[function(require,module,exports) {
-"use strict";
-var Refresh = require("7422ead32dcc1e6b");
-function debounce(func, delay) {
-    {
-        let timeout = undefined;
-        let lastTime = 0;
-        return function(args) {
-            // Call immediately if last call was more than the delay ago.
-            // Otherwise, set a timeout. This means the first call is fast
-            // (for the common case of a single update), and subsequent updates
-            // are batched.
-            let now = Date.now();
-            if (now - lastTime > delay) {
-                lastTime = now;
-                func.call(null, args);
-            } else {
-                clearTimeout(timeout);
-                timeout = setTimeout(function() {
-                    timeout = undefined;
-                    lastTime = Date.now();
-                    func.call(null, args);
-                }, delay);
-            }
-        };
-    }
-}
-var enqueueUpdate = debounce(function() {
-    Refresh.performReactRefresh();
-}, 30);
-// Everthing below is either adapted or copied from
-// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
-// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
-module.exports.prelude = function(module1) {
-    window.$RefreshReg$ = function(type, id) {
-        Refresh.register(type, module1.id + " " + id);
-    };
-    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
-};
-module.exports.postlude = function(module1) {
-    if (isReactRefreshBoundary(module1.exports)) {
-        registerExportsForReactRefresh(module1);
-        if (module1.hot) {
-            module1.hot.dispose(function(data) {
-                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
-                data.prevExports = module1.exports;
-            });
-            module1.hot.accept(function(getParents) {
-                var prevExports = module1.hot.data.prevExports;
-                var nextExports = module1.exports;
-                // Since we just executed the code for it, it's possible
-                // that the new exports make it ineligible for being a boundary.
-                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
-                // It can also become ineligible if its exports are incompatible
-                // with the previous exports.
-                // For example, if you add/remove/change exports, we'll want
-                // to re-execute the importing modules, and force those components
-                // to re-render. Similarly, if you convert a class component
-                // to a function, we want to invalidate the boundary.
-                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
-                if (isNoLongerABoundary || didInvalidate) {
-                    // We'll be conservative. The only case in which we won't do a full
-                    // reload is if all parent modules are also refresh boundaries.
-                    // In that case we'll add them to the current queue.
-                    var parents = getParents();
-                    if (parents.length === 0) {
-                        // Looks like we bubbled to the root. Can't recover from that.
-                        window.location.reload();
-                        return;
-                    }
-                    return parents;
-                }
-                enqueueUpdate();
-            });
-        }
-    }
-};
-function isReactRefreshBoundary(exports) {
-    if (Refresh.isLikelyComponentType(exports)) return true;
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    return false;
-    var hasExports = false;
-    var areAllExportsComponents = true;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        hasExports = true;
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
-        return false;
-        var exportValue = exports[key];
-        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
-    }
-    return hasExports && areAllExportsComponents;
-}
-function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
-    var prevSignature = getRefreshBoundarySignature(prevExports);
-    var nextSignature = getRefreshBoundarySignature(nextExports);
-    if (prevSignature.length !== nextSignature.length) return true;
-    for(var i = 0; i < nextSignature.length; i++){
-        if (prevSignature[i] !== nextSignature[i]) return true;
-    }
-    return false;
-}
-// When this signature changes, it's unsafe to stop at this refresh boundary.
-function getRefreshBoundarySignature(exports) {
-    var signature = [];
-    signature.push(Refresh.getFamilyByType(exports));
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return signature;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        signature.push(key);
-        signature.push(Refresh.getFamilyByType(exportValue));
-    }
-    return signature;
-}
-function registerExportsForReactRefresh(module1) {
-    var exports = module1.exports, id = module1.id;
-    Refresh.register(exports, id + " %exports%");
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        var typeID = id + " %exports% " + key;
-        Refresh.register(exportValue, typeID);
-    }
-}
+},{"@glitz/react":"bAXm1","../typography":"iZltJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dMYuz":[function(require,module,exports) {
+module.exports = require("884b80a8fcd90374").getBundleURL("6EXJA") + "acorn.a7677c51.jpg" + "?" + Date.now();
 
-},{"7422ead32dcc1e6b":"786KC"}],"ae2GF":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$952d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"884b80a8fcd90374":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"aTGYq":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$2a7e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$952d.prelude(module);
+$parcel$ReactRefreshHelpers$2a7e.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("@glitz/react");
-var _oakBoardsJpg = require("../Assets/oak-boards.jpg");
+var _oakBoardsJpg = require("../../Assets/oak-boards.jpg");
 var _oakBoardsJpgDefault = parcelHelpers.interopDefault(_oakBoardsJpg);
-var _value = require("../Shared/value");
 var _core = require("@glitz/core");
-var _h3 = require("../Shared/Generic/H3");
-var _h3Default = parcelHelpers.interopDefault(_h3);
-var _h2 = require("../Shared/Generic/H2");
+var _h2 = require("../../Shared/Generic/H2");
 var _h2Default = parcelHelpers.interopDefault(_h2);
+var _h3 = require("../../Shared/Generic/H3");
+var _h3Default = parcelHelpers.interopDefault(_h3);
+var _value = require("../../Shared/value");
 function TextAndImage() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {
         className: "container",
@@ -35512,8 +35536,8 @@ function TextAndImage() {
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h2Default.default), {
                         children: "V\xe5r Vision"
                     }, void 0, false, {
-                        fileName: "src/Feature/TextAndImage.tsx",
-                        lineNumber: 13,
+                        fileName: "src/Feature/Components/TextAndImage.tsx",
+                        lineNumber: 12,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -35522,51 +35546,51 @@ function TextAndImage() {
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
                                     children: "Vi jobbar mot privata kunder, kommuner, l\xe4nsstyrelser och andra f\xf6retag."
                                 }, void 0, false, {
-                                    fileName: "src/Feature/TextAndImage.tsx",
-                                    lineNumber: 16,
+                                    fileName: "src/Feature/Components/TextAndImage.tsx",
+                                    lineNumber: 15,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
-                                fileName: "src/Feature/TextAndImage.tsx",
-                                lineNumber: 15,
+                                fileName: "src/Feature/Components/TextAndImage.tsx",
+                                lineNumber: 14,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
                                     children: "Alltid med samma m\xe5l, att kunden ska f\xe5 r\xe4tt vara vid r\xe4tt tid."
                                 }, void 0, false, {
-                                    fileName: "src/Feature/TextAndImage.tsx",
-                                    lineNumber: 19,
+                                    fileName: "src/Feature/Components/TextAndImage.tsx",
+                                    lineNumber: 18,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
-                                fileName: "src/Feature/TextAndImage.tsx",
-                                lineNumber: 18,
+                                fileName: "src/Feature/Components/TextAndImage.tsx",
+                                lineNumber: 17,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
                                     children: "Vi ombes\xf6rjer transport inom hela Sverige."
                                 }, void 0, false, {
-                                    fileName: "src/Feature/TextAndImage.tsx",
-                                    lineNumber: 22,
+                                    fileName: "src/Feature/Components/TextAndImage.tsx",
+                                    lineNumber: 21,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
-                                fileName: "src/Feature/TextAndImage.tsx",
-                                lineNumber: 21,
+                                fileName: "src/Feature/Components/TextAndImage.tsx",
+                                lineNumber: 20,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
-                        fileName: "src/Feature/TextAndImage.tsx",
-                        lineNumber: 14,
+                        fileName: "src/Feature/Components/TextAndImage.tsx",
+                        lineNumber: 13,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
-                fileName: "src/Feature/TextAndImage.tsx",
-                lineNumber: 12,
+                fileName: "src/Feature/Components/TextAndImage.tsx",
+                lineNumber: 11,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ImageContainer, {
@@ -35575,19 +35599,19 @@ function TextAndImage() {
                     src: (0, _oakBoardsJpgDefault.default),
                     alt: "oak image"
                 }, void 0, false, {
-                    fileName: "src/Feature/TextAndImage.tsx",
-                    lineNumber: 27,
+                    fileName: "src/Feature/Components/TextAndImage.tsx",
+                    lineNumber: 26,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
-                fileName: "src/Feature/TextAndImage.tsx",
-                lineNumber: 26,
+                fileName: "src/Feature/Components/TextAndImage.tsx",
+                lineNumber: 25,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
-        fileName: "src/Feature/TextAndImage.tsx",
-        lineNumber: 11,
+        fileName: "src/Feature/Components/TextAndImage.tsx",
+        lineNumber: 10,
         columnNumber: 5
     }, this);
 }
@@ -35598,7 +35622,7 @@ const Container = (0, _react.styled)((0, _value.Block), {
     gridTemplateColumns: "1fr",
     gap: "20px",
     padding: {
-        x: (0, _value.large)
+        x: (0, _value.medium)
     },
     ...(0, _core.media)({
         minWidth: "1025px"
@@ -35608,8 +35632,11 @@ const Container = (0, _react.styled)((0, _value.Block), {
 });
 _c1 = Container;
 const TextContainer = (0, _react.styled).div({
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
     padding: {
-        xy: (0, _value.large)
+        xy: (0, _value.medium)
     },
     order: 1,
     ...(0, _core.media)({
@@ -35644,15 +35671,12 @@ $RefreshReg$(_c2, "TextContainer");
 $RefreshReg$(_c3, "ImageContainer");
 $RefreshReg$(_c4, "Image");
 
-  $parcel$ReactRefreshHelpers$952d.postlude(module);
+  $parcel$ReactRefreshHelpers$2a7e.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../Assets/oak-boards.jpg":"lVzFd","../Shared/value":"9VKej","@glitz/core":"5ehrf","../Shared/Generic/H3":"iGEMB","../Shared/Generic/H2":"au95a","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lVzFd":[function(require,module,exports) {
-module.exports = require("1bd6c40f5d0e0afc").getBundleURL("6EXJA") + "oak-boards.33736e6b.jpg" + "?" + Date.now();
-
-},{"1bd6c40f5d0e0afc":"lgJ39"}],"5ehrf":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../Shared/Generic/H2":"au95a","../../Shared/Generic/H3":"iGEMB","../../Shared/value":"9VKej","../../Assets/oak-boards.jpg":"lVzFd"}],"5ehrf":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "GlitzClient", ()=>GlitzClient);
@@ -36507,7 +36531,555 @@ const h2Styled = (0, _react.styled)({
 });
 exports.default = h2Styled((0, _react.styled).H2);
 
-},{"@glitz/react":"bAXm1","../typography":"iZltJ","../value":"9VKej","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cKFJF":[function(require,module,exports) {
+},{"@glitz/react":"bAXm1","../typography":"iZltJ","../value":"9VKej","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lVzFd":[function(require,module,exports) {
+module.exports = require("1bd6c40f5d0e0afc").getBundleURL("6EXJA") + "oak-boards.33736e6b.jpg" + "?" + Date.now();
+
+},{"1bd6c40f5d0e0afc":"lgJ39"}],"4IVZq":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$54ca = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$54ca.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("@glitz/react");
+var _core = require("@glitz/core");
+var _value = require("../../Shared/value");
+var _reactRouterDom = require("react-router-dom");
+var _woodDummyJpg = require("../../Assets/wood-dummy.jpg");
+var _woodDummyJpgDefault = parcelHelpers.interopDefault(_woodDummyJpg);
+var _h3 = require("../../Shared/Generic/H3");
+var _h3Default = parcelHelpers.interopDefault(_h3);
+var _button = require("./Button");
+var _buttonDefault = parcelHelpers.interopDefault(_button);
+function CardLinks() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
+                            src: (0, _woodDummyJpgDefault.default)
+                        }, void 0, false, {
+                            fileName: "src/Feature/Components/CardLinks.tsx",
+                            lineNumber: 14,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/Feature/Components/CardLinks.tsx",
+                        lineNumber: 13,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
+                                children: "S\xe5gade produkter"
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/CardLinks.tsx",
+                                lineNumber: 17,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                                children: "Vi erbjuder s\xe5gat l\xf6vtr\xe4 av de flesta svenska tr\xe4slag och i de flesta dimensioner."
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/CardLinks.tsx",
+                                lineNumber: 18,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
+                                        to: "/",
+                                        children: "L\xe4s mer"
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Components/CardLinks.tsx",
+                                        lineNumber: 21,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/Feature/Components/CardLinks.tsx",
+                                    lineNumber: 20,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/CardLinks.tsx",
+                                lineNumber: 19,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Feature/Components/CardLinks.tsx",
+                        lineNumber: 16,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Feature/Components/CardLinks.tsx",
+                lineNumber: 12,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
+                            src: (0, _woodDummyJpgDefault.default)
+                        }, void 0, false, {
+                            fileName: "src/Feature/Components/CardLinks.tsx",
+                            lineNumber: 28,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/Feature/Components/CardLinks.tsx",
+                        lineNumber: 27,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
+                                children: "S\xe5gade produkter"
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/CardLinks.tsx",
+                                lineNumber: 31,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                                children: "Vi erbjuder s\xe5gat l\xf6vtr\xe4 av de flesta svenska tr\xe4slag och i de flesta dimensioner."
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/CardLinks.tsx",
+                                lineNumber: 32,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
+                                        to: "/",
+                                        children: "L\xe4s mer"
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Components/CardLinks.tsx",
+                                        lineNumber: 35,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/Feature/Components/CardLinks.tsx",
+                                    lineNumber: 34,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/CardLinks.tsx",
+                                lineNumber: 33,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Feature/Components/CardLinks.tsx",
+                        lineNumber: 30,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Feature/Components/CardLinks.tsx",
+                lineNumber: 26,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
+                            src: (0, _woodDummyJpgDefault.default)
+                        }, void 0, false, {
+                            fileName: "src/Feature/Components/CardLinks.tsx",
+                            lineNumber: 42,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/Feature/Components/CardLinks.tsx",
+                        lineNumber: 41,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
+                                children: "S\xe5gade produkter"
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/CardLinks.tsx",
+                                lineNumber: 45,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                                children: "Vi erbjuder s\xe5gat l\xf6vtr\xe4 av de flesta svenska tr\xe4slag och i de flesta dimensioner."
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/CardLinks.tsx",
+                                lineNumber: 46,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
+                                        to: "/",
+                                        children: "L\xe4s mer"
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Components/CardLinks.tsx",
+                                        lineNumber: 49,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/Feature/Components/CardLinks.tsx",
+                                    lineNumber: 48,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/CardLinks.tsx",
+                                lineNumber: 47,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Feature/Components/CardLinks.tsx",
+                        lineNumber: 44,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Feature/Components/CardLinks.tsx",
+                lineNumber: 40,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/Feature/Components/CardLinks.tsx",
+        lineNumber: 11,
+        columnNumber: 5
+    }, this);
+}
+_c = CardLinks;
+exports.default = CardLinks;
+const Container = (0, _react.styled)((0, _value.Block), {
+    display: "grid",
+    gridTemplateColumns: "1fr",
+    gap: "20px",
+    ...(0, _core.media)({
+        minWidth: "1025px"
+    }, {
+        gridTemplateColumns: "1fr 1fr 1fr"
+    })
+});
+_c1 = Container;
+const Column = (0, _react.styled).div({
+    width: "100%",
+    backgroundColor: "#fff",
+    padding: {
+        xy: (0, _value.medium)
+    }
+});
+_c2 = Column;
+const StyledImage = (0, _react.styled).img({
+    width: "100%",
+    objectFit: "cover",
+    borderRadius: "8px"
+});
+_c3 = StyledImage;
+const TextContainer = (0, _react.styled).div({
+    display: "flex",
+    flexDirection: "column",
+    padding: {
+        y: (0, _value.small)
+    }
+});
+_c4 = TextContainer;
+const Text = (0, _react.styled).span({
+    margin: {
+        top: (0, _value.small)
+    }
+});
+_c5 = Text;
+const ButtonContainer = (0, _react.styled).div({
+    width: "100%",
+    textAlign: "left",
+    margin: {
+        top: (0, _value.large)
+    }
+});
+_c6 = ButtonContainer;
+const StyledButton = (0, _react.styled)((0, _buttonDefault.default), {
+    width: "100%"
+});
+_c7 = StyledButton;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7;
+$RefreshReg$(_c, "CardLinks");
+$RefreshReg$(_c1, "Container");
+$RefreshReg$(_c2, "Column");
+$RefreshReg$(_c3, "StyledImage");
+$RefreshReg$(_c4, "TextContainer");
+$RefreshReg$(_c5, "Text");
+$RefreshReg$(_c6, "ButtonContainer");
+$RefreshReg$(_c7, "StyledButton");
+
+  $parcel$ReactRefreshHelpers$54ca.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","@glitz/core":"5ehrf","../../Shared/value":"9VKej","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe","../../Assets/wood-dummy.jpg":"d6rHm","../../Shared/Generic/H3":"iGEMB","./Button":"at8Gv"}],"d6rHm":[function(require,module,exports) {
+module.exports = require("bd506b22664eee19").getBundleURL("6EXJA") + "wood-dummy.7930ec0e.jpg" + "?" + Date.now();
+
+},{"bd506b22664eee19":"lgJ39"}],"at8Gv":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0aef = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0aef.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "PlainButton", ()=>PlainButton);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("@glitz/react");
+var _value = require("../../Shared/value");
+var _typography = require("../../Shared/typography");
+var _reactRouterDom = require("react-router-dom");
+function Button(props) {
+    const { to, onClick, children } = props;
+    if (to) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+        to: to,
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
+            children: children
+        }, void 0, false, {
+            fileName: "src/Feature/Components/Button.tsx",
+            lineNumber: 18,
+            columnNumber: 9
+        }, this)
+    }, void 0, false, {
+        fileName: "src/Feature/Components/Button.tsx",
+        lineNumber: 17,
+        columnNumber: 7
+    }, this);
+    else return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
+        onClick: onClick,
+        children: children
+    }, void 0, false, {
+        fileName: "src/Feature/Components/Button.tsx",
+        lineNumber: 22,
+        columnNumber: 12
+    }, this);
+}
+_c = Button;
+exports.default = _c1 = (0, _react.styled)(Button);
+const StyledButton = (0, _react.styled).button({
+    cursor: "pointer",
+    backgroundColor: (0, _value.DefaultGreen),
+    fontWeight: "bold",
+    fontSize: (0, _typography.delta),
+    borderRadius: "4px",
+    padding: {
+        y: "12px",
+        x: (0, _value.medium)
+    },
+    border: {
+        xy: {
+            style: "none"
+        }
+    },
+    transition: {
+        property: "all",
+        duration: "0.3s",
+        timingFunction: "ease-in-out"
+    },
+    ":hover": {
+        backgroundColor: "#7B9E9D "
+    }
+});
+_c2 = StyledButton;
+const PlainButton = (0, _react.styled)(Button, {
+    backgroundColor: "inherit",
+    borderRadius: "none",
+    padding: {
+        xy: 0
+    },
+    transition: {
+        property: "none"
+    }
+});
+_c3 = PlainButton;
+var _c, _c1, _c2, _c3;
+$RefreshReg$(_c, "Button");
+$RefreshReg$(_c1, "%default%");
+$RefreshReg$(_c2, "StyledButton");
+$RefreshReg$(_c3, "PlainButton");
+
+  $parcel$ReactRefreshHelpers$0aef.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","../../Shared/typography":"iZltJ","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8HWo8":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$bbae = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$bbae.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("@glitz/react");
+var _forrestJpg = require("../../Assets/forrest.jpg");
+var _forrestJpgDefault = parcelHelpers.interopDefault(_forrestJpg);
+var _core = require("@glitz/core");
+var _h2 = require("../../Shared/Generic/H2");
+var _h2Default = parcelHelpers.interopDefault(_h2);
+var _h3 = require("../../Shared/Generic/H3");
+var _h3Default = parcelHelpers.interopDefault(_h3);
+var _value = require("../../Shared/value");
+function TextAndImage() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {
+        className: "container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ImageContainer, {
+                className: "image",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Image, {
+                    src: (0, _forrestJpgDefault.default),
+                    alt: "oak image"
+                }, void 0, false, {
+                    fileName: "src/Feature/Components/ImageAndText.tsx",
+                    lineNumber: 12,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "src/Feature/Components/ImageAndText.tsx",
+                lineNumber: 11,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
+                className: "text",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h2Default.default), {
+                        children: "V\xe5r Vision"
+                    }, void 0, false, {
+                        fileName: "src/Feature/Components/ImageAndText.tsx",
+                        lineNumber: 15,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
+                                    children: "Vi jobbar mot privata kunder, kommuner, l\xe4nsstyrelser och andra f\xf6retag."
+                                }, void 0, false, {
+                                    fileName: "src/Feature/Components/ImageAndText.tsx",
+                                    lineNumber: 18,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/ImageAndText.tsx",
+                                lineNumber: 17,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
+                                    children: "Alltid med samma m\xe5l, att kunden ska f\xe5 r\xe4tt vara vid r\xe4tt tid."
+                                }, void 0, false, {
+                                    fileName: "src/Feature/Components/ImageAndText.tsx",
+                                    lineNumber: 21,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/ImageAndText.tsx",
+                                lineNumber: 20,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
+                                    children: "Vi ombes\xf6rjer transport inom hela Sverige."
+                                }, void 0, false, {
+                                    fileName: "src/Feature/Components/ImageAndText.tsx",
+                                    lineNumber: 24,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/ImageAndText.tsx",
+                                lineNumber: 23,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Feature/Components/ImageAndText.tsx",
+                        lineNumber: 16,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Feature/Components/ImageAndText.tsx",
+                lineNumber: 14,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/Feature/Components/ImageAndText.tsx",
+        lineNumber: 10,
+        columnNumber: 5
+    }, this);
+}
+_c = TextAndImage;
+exports.default = TextAndImage;
+const Container = (0, _react.styled)((0, _value.Block), {
+    display: "grid",
+    gridTemplateColumns: "1fr",
+    gap: "20px",
+    padding: {
+        x: (0, _value.medium)
+    },
+    ...(0, _core.media)({
+        minWidth: "1025px"
+    }, {
+        gridTemplateColumns: "1fr 1fr"
+    })
+});
+_c1 = Container;
+const TextContainer = (0, _react.styled).div({
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    padding: {
+        xy: (0, _value.medium)
+    }
+});
+_c2 = TextContainer;
+const ImageContainer = (0, _react.styled).div({
+    width: "100%",
+    height: "100%",
+    borderRadius: "5px"
+});
+_c3 = ImageContainer;
+const Image = (0, _react.styled).img({
+    width: "100%",
+    height: "100%",
+    objectFit: "cover"
+});
+_c4 = Image;
+var _c, _c1, _c2, _c3, _c4;
+$RefreshReg$(_c, "TextAndImage");
+$RefreshReg$(_c1, "Container");
+$RefreshReg$(_c2, "TextContainer");
+$RefreshReg$(_c3, "ImageContainer");
+$RefreshReg$(_c4, "Image");
+
+  $parcel$ReactRefreshHelpers$bbae.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","@glitz/core":"5ehrf","../../Shared/Generic/H2":"au95a","../../Shared/Generic/H3":"iGEMB","../../Shared/value":"9VKej","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../Assets/forrest.jpg":"3nPrl"}],"3nPrl":[function(require,module,exports) {
+module.exports = require("de74ee2dc28855fd").getBundleURL("6EXJA") + "forrest.c5725ba2.jpg" + "?" + Date.now();
+
+},{"de74ee2dc28855fd":"lgJ39"}],"cKFJF":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$e942 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36562,166 +37134,286 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _reactRouterDom = require("react-router-dom");
-var _logoGif = require("../../Assets/logo.gif");
-var _logoGifDefault = parcelHelpers.interopDefault(_logoGif);
+var _logoPng = require("../../Assets/logo.png");
+var _logoPngDefault = parcelHelpers.interopDefault(_logoPng);
+var _menuSvg = require("../../Assets/menu.svg");
+var _menuSvgDefault = parcelHelpers.interopDefault(_menuSvg);
 var _react = require("@glitz/react");
+var _value = require("../../Shared/value");
+var _core = require("@glitz/core");
+var _button = require("../Components/Button");
 function Header() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledHeader, {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LogoContainer, {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: (0, _logoGifDefault.default),
-                    alt: "Logo",
-                    className: "logo"
-                }, void 0, false, {
-                    fileName: "src/Feature/Header/Header.tsx",
-                    lineNumber: 9,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "src/Feature/Header/Header.tsx",
-                lineNumber: 8,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Navbar, {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LinkContainer, {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(NavLinks, {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/",
-                                children: "Home"
-                            }, void 0, false, {
-                                fileName: "src/Feature/Header/Header.tsx",
-                                lineNumber: 14,
-                                columnNumber: 13
-                            }, this)
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(DesktopContainer, {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LogoContainer, {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
+                            src: (0, _logoPngDefault.default),
+                            alt: "Logo",
+                            className: "logo"
                         }, void 0, false, {
                             fileName: "src/Feature/Header/Header.tsx",
-                            lineNumber: 13,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(NavLinks, {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/about",
-                                children: "About"
-                            }, void 0, false, {
-                                fileName: "src/Feature/Header/Header.tsx",
-                                lineNumber: 17,
-                                columnNumber: 13
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "src/Feature/Header/Header.tsx",
-                            lineNumber: 16,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(NavLinks, {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/services",
-                                children: "Services"
-                            }, void 0, false, {
-                                fileName: "src/Feature/Header/Header.tsx",
-                                lineNumber: 20,
-                                columnNumber: 13
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "src/Feature/Header/Header.tsx",
-                            lineNumber: 19,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(NavLinks, {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/contact",
-                                children: "Contact"
-                            }, void 0, false, {
-                                fileName: "src/Feature/Header/Header.tsx",
-                                lineNumber: 23,
-                                columnNumber: 13
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "src/Feature/Header/Header.tsx",
-                            lineNumber: 22,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(NavLinks, {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/faq",
-                                children: "FAQ"
-                            }, void 0, false, {
-                                fileName: "src/Feature/Header/Header.tsx",
-                                lineNumber: 26,
-                                columnNumber: 13
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "src/Feature/Header/Header.tsx",
-                            lineNumber: 25,
+                            lineNumber: 14,
                             columnNumber: 11
                         }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Feature/Header/Header.tsx",
-                    lineNumber: 12,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
+                    }, void 0, false, {
+                        fileName: "src/Feature/Header/Header.tsx",
+                        lineNumber: 13,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Navbar, {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LinkContainer, {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(NavLinks, {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                        to: "/",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledLink, {
+                                            children: "Home"
+                                        }, void 0, false, {
+                                            fileName: "src/Feature/Header/Header.tsx",
+                                            lineNumber: 20,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Header/Header.tsx",
+                                        lineNumber: 19,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/Feature/Header/Header.tsx",
+                                    lineNumber: 18,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(NavLinks, {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                        to: "/about",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledLink, {
+                                            children: "About"
+                                        }, void 0, false, {
+                                            fileName: "src/Feature/Header/Header.tsx",
+                                            lineNumber: 25,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Header/Header.tsx",
+                                        lineNumber: 24,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/Feature/Header/Header.tsx",
+                                    lineNumber: 23,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(NavLinks, {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                        to: "/services",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledLink, {
+                                            children: "Services"
+                                        }, void 0, false, {
+                                            fileName: "src/Feature/Header/Header.tsx",
+                                            lineNumber: 30,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Header/Header.tsx",
+                                        lineNumber: 29,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/Feature/Header/Header.tsx",
+                                    lineNumber: 28,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(NavLinks, {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                        to: "/contact",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledLink, {
+                                            children: "Contact"
+                                        }, void 0, false, {
+                                            fileName: "src/Feature/Header/Header.tsx",
+                                            lineNumber: 35,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Header/Header.tsx",
+                                        lineNumber: 34,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/Feature/Header/Header.tsx",
+                                    lineNumber: 33,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/Feature/Header/Header.tsx",
+                            lineNumber: 17,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/Feature/Header/Header.tsx",
+                        lineNumber: 16,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "src/Feature/Header/Header.tsx",
-                lineNumber: 11,
+                lineNumber: 12,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CompactContainer, {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _button.PlainButton), {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).Img, {
+                            src: (0, _menuSvgDefault.default),
+                            width: 30
+                        }, void 0, false, {
+                            fileName: "src/Feature/Header/Header.tsx",
+                            lineNumber: 43,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/Feature/Header/Header.tsx",
+                        lineNumber: 42,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LogoContainer, {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
+                            src: (0, _logoPngDefault.default),
+                            alt: "Logo",
+                            className: "logo"
+                        }, void 0, false, {
+                            fileName: "src/Feature/Header/Header.tsx",
+                            lineNumber: 46,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/Feature/Header/Header.tsx",
+                        lineNumber: 45,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Feature/Header/Header.tsx",
+                lineNumber: 41,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Feature/Header/Header.tsx",
-        lineNumber: 7,
+        lineNumber: 11,
         columnNumber: 5
     }, this);
 }
 _c = Header;
 exports.default = Header;
 const StyledHeader = (0, _react.styled).header({
-    minHeight: "135"
+    position: "sticky",
+    top: "0px",
+    zIndex: 10,
+    backgroundColor: (0, _value.DefaultGreen),
+    border: {
+        bottom: {
+            style: "solid",
+            width: "2px",
+            color: "#004A55"
+        }
+    }
 });
 _c1 = StyledHeader;
+const DesktopContainer = (0, _react.styled).div({
+    display: "flex",
+    alignItems: "end",
+    justifyContent: "space-between",
+    width: "1366px",
+    maxWidth: "calc(100vw - 65px)",
+    padding: {
+        y: "10px",
+        x: "0px"
+    },
+    margin: {
+        y: 0,
+        x: "auto"
+    },
+    ...(0, _core.media)({
+        maxWidth: "1025px"
+    }, {
+        display: "none"
+    })
+});
+_c2 = DesktopContainer;
+const CompactContainer = (0, _react.styled).div({
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: {
+        x: (0, _value.medium)
+    },
+    ...(0, _core.media)({
+        minWidth: "1025px"
+    }, {
+        display: "none"
+    })
+});
+_c3 = CompactContainer;
 const LogoContainer = (0, _react.styled).div({
     display: "flex",
     justifyContent: "center",
-    alignItems: "center",
-    margin: {
-        bottom: "10px"
-    }
+    alignItems: "center"
 });
-_c2 = LogoContainer;
+_c4 = LogoContainer;
+const StyledImage = (0, _react.styled).img({
+    maxWidth: "200px",
+    ...(0, _core.media)({
+        maxWidth: "1025px"
+    }, {
+        maxWidth: "140px"
+    })
+});
+_c5 = StyledImage;
 const Navbar = (0, _react.styled).nav();
-_c3 = Navbar;
+_c6 = Navbar;
 const LinkContainer = (0, _react.styled).ul({
     display: "flex",
     justifyContent: "center",
-    alignItems: "center",
     listStyle: "none"
 });
-_c4 = LinkContainer;
+_c7 = LinkContainer;
 const NavLinks = (0, _react.styled).li({
     margin: {
         left: "32px"
-    },
-    color: "black"
+    }
 });
-_c5 = NavLinks;
-var _c, _c1, _c2, _c3, _c4, _c5;
+_c8 = NavLinks;
+const StyledLink = (0, _react.styled).span({
+    fontWeight: "bold"
+});
+_c9 = StyledLink;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9;
 $RefreshReg$(_c, "Header");
 $RefreshReg$(_c1, "StyledHeader");
-$RefreshReg$(_c2, "LogoContainer");
-$RefreshReg$(_c3, "Navbar");
-$RefreshReg$(_c4, "LinkContainer");
-$RefreshReg$(_c5, "NavLinks");
+$RefreshReg$(_c2, "DesktopContainer");
+$RefreshReg$(_c3, "CompactContainer");
+$RefreshReg$(_c4, "LogoContainer");
+$RefreshReg$(_c5, "StyledImage");
+$RefreshReg$(_c6, "Navbar");
+$RefreshReg$(_c7, "LinkContainer");
+$RefreshReg$(_c8, "NavLinks");
+$RefreshReg$(_c9, "StyledLink");
 
   $parcel$ReactRefreshHelpers$40ee.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../../Assets/logo.gif":"gdybk","@glitz/react":"bAXm1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gdybk":[function(require,module,exports) {
-module.exports = require("91187a7ac3058f46").getBundleURL("6EXJA") + "logo.736784ba.gif" + "?" + Date.now();
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","@glitz/react":"bAXm1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../Assets/logo.png":"dixc1","../../Shared/value":"9VKej","@glitz/core":"5ehrf","../../Assets/menu.svg":"9Wb9R","../Components/Button":"at8Gv"}],"dixc1":[function(require,module,exports) {
+module.exports = require("4f112f960e22f491").getBundleURL("6EXJA") + "logo.ad812a23.png" + "?" + Date.now();
 
-},{"91187a7ac3058f46":"lgJ39"}],"3XZ4R":[function(require,module,exports) {
+},{"4f112f960e22f491":"lgJ39"}],"9Wb9R":[function(require,module,exports) {
+module.exports = require("41f22fbaefe47da0").getBundleURL("6EXJA") + "menu.fb9172ab.svg" + "?" + Date.now();
+
+},{"41f22fbaefe47da0":"lgJ39"}],"3XZ4R":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "glitz", ()=>glitz);

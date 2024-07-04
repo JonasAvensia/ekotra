@@ -7,6 +7,7 @@
 }
 
 body {
+  color: #004a55;
   background-color: #f4f5f6;
   margin: 0;
 }
@@ -26,15 +27,16 @@ nav ul li {
   display: inline;
 }
 
-nav ul li a {
+nav ul li a, nav ul li a:hover {
   text-decoration: none;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
 }
 
 .page {
   margin: 0 auto;
+}
+
+a:-webkit-any-link {
+  color: inherit;
+  cursor: pointer;
 }
 /*# sourceMappingURL=index.2212206d.css.map */

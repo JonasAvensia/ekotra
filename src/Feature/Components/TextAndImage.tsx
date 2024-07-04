@@ -1,10 +1,9 @@
 import { styled } from '@glitz/react';
-import oak from '../Assets/oak-boards.jpg';
-import H1 from '../Shared/Generic/H1';
-import { Block, large } from '../Shared/value';
+import oak from '../../Assets/oak-boards.jpg';
 import { media } from '@glitz/core';
-import H3 from '../Shared/Generic/H3';
-import H2 from '../Shared/Generic/H2';
+import H2 from '../../Shared/Generic/H2';
+import H3 from '../../Shared/Generic/H3';
+import { Block, large, medium } from '../../Shared/value';
 
 function TextAndImage() {
   return (
@@ -35,7 +34,7 @@ const Container = styled(Block, {
   display: 'grid',
   gridTemplateColumns: '1fr',
   gap: '20px',
-  padding: { x: large },
+  padding: { x: medium },
   ...media(
     { minWidth: '1025px' },
     {
@@ -45,7 +44,10 @@ const Container = styled(Block, {
 });
 
 const TextContainer = styled.div({
-  padding: { xy: large },
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  padding: { xy: medium },
   order: 1,
   ...media(
     { maxWidth: '1025px' },

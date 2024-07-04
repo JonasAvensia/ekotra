@@ -11,6 +11,7 @@
 body {
 	margin: 0;
 	background-color: #f4f5f6;
+	color: #004A55;
 }
 
 header {
@@ -33,9 +34,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .page {
 	margin: 0 auto;
+}
+
+a:-webkit-any-link {
+    color: inherit;
+    cursor: pointer;
 }

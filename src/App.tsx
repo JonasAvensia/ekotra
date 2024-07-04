@@ -4,7 +4,7 @@ import './index.css';
 import { GlitzProvider, styled } from '@glitz/react';
 import Header from './Feature/Header/Header';
 import { glitz } from './Shared/GlitzOptions';
-import { large } from './Shared/value';
+import { media } from '@glitz/core';
 
 const App: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const App: React.FC = () => {
       <Router>
         <div>
           <Header />
-          <Page className="page">
+          <Page>
             <Routing />
           </Page>
         </div>
@@ -26,5 +26,15 @@ export default App;
 const Page = styled.div({
   width: '1366px',
   maxWidth: 'calc(100vw - 65px)',
-  backgroundColor: '#fff',
+  backgroundColor: '#f4f5f6',
+  margin: {
+    y: 0,
+    x: 'auto',
+  },
+  ...media(
+    { maxWidth: '1025px' },
+    {
+      maxWidth: '100vw',
+    },
+  ),
 });

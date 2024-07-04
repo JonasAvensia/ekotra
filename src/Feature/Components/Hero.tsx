@@ -1,9 +1,8 @@
 import { styled } from '@glitz/react';
-import AcornHero from '../Assets/acorns-hero.jpg';
-import H1 from '../Shared/Generic/H1';
-
-import { Block, huge } from '../Shared/value';
-import H3 from '../Shared/Generic/H3';
+import AcornHero from '../../Assets/acorn.jpg';
+import H1 from '../../Shared/Generic/H1';
+import { Block, huge } from '../../Shared/value';
+import H3 from '../../Shared/Generic/H3';
 
 function Hero() {
   return (
@@ -21,7 +20,7 @@ function Hero() {
 
 export default Hero;
 
-const HeroContainer = styled(Block, {
+const HeroContainer = styled.div({
   position: 'relative',
   overflow: 'hidden',
 });
@@ -52,7 +51,6 @@ const ImageContainer = styled.div({
   position: 'relative',
   width: '100%',
   height: '400px', // Adjust height as needed
-  borderRadius: '6px',
   overflow: 'hidden',
 });
 
