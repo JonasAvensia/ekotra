@@ -48,9 +48,14 @@ const StyledButton = styled.button({
 
 export const PlainButton = styled(Button, {
   backgroundColor: 'inherit',
+  color: 'inherit',
   borderRadius: 'none',
+  textAlign: 'start',
   padding: { xy: 0 },
   transition: {
     property: 'none',
+  },
+  ':hover': {
+    backgroundColor: 'inherit ',
   },
 });

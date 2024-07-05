@@ -396,13 +396,4 @@ export const list = [
     pris: '65',
     anmarkning: '',
   },
-  {
-    artikelnr: '8001',
-    typ: 'Pris på sågat virke okant och kantat',
-    dimension: 'vänligen ring.',
-    traslag: '070-3278734',
-    enhet: '',
-    pris: '',
-    anmarkning: '',
-  },
 ];

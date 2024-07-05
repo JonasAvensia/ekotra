@@ -27230,42 +27230,43 @@ var _header = require("./Feature/Header/Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
 var _glitzOptions = require("./Shared/GlitzOptions");
 var _core = require("@glitz/core");
+var _footer = require("./Feature/Footer/Footer");
+var _footerDefault = parcelHelpers.interopDefault(_footer);
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.GlitzProvider), {
         glitz: (0, _glitzOptions.glitz),
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
+                    fileName: "src/App.tsx",
+                    lineNumber: 14,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Page, {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _routingDefault.default), {}, void 0, false, {
                         fileName: "src/App.tsx",
-                        lineNumber: 14,
-                        columnNumber: 11
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Page, {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _routingDefault.default), {}, void 0, false, {
-                            fileName: "src/App.tsx",
-                            lineNumber: 16,
-                            columnNumber: 13
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/App.tsx",
-                        lineNumber: 15,
+                        lineNumber: 16,
                         columnNumber: 11
                     }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/App.tsx",
-                lineNumber: 13,
-                columnNumber: 9
-            }, undefined)
-        }, void 0, false, {
+                }, void 0, false, {
+                    fileName: "src/App.tsx",
+                    lineNumber: 15,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
+                    fileName: "src/App.tsx",
+                    lineNumber: 18,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
             fileName: "src/App.tsx",
-            lineNumber: 12,
+            lineNumber: 13,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.tsx",
-        lineNumber: 11,
+        lineNumber: 12,
         columnNumber: 5
     }, undefined);
 };
@@ -27295,7 +27296,7 @@ $RefreshReg$(_c1, "Page");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./Routing/Routing":"12bzc","react-router-dom":"9xmpe","./index.css":"irmnC","@glitz/react":"bAXm1","./Feature/Header/Header":"kcmoy","./Shared/GlitzOptions":"3XZ4R","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@glitz/core":"5ehrf"}],"12bzc":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./Routing/Routing":"12bzc","react-router-dom":"9xmpe","./index.css":"irmnC","@glitz/react":"bAXm1","./Feature/Header/Header":"kcmoy","./Shared/GlitzOptions":"3XZ4R","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@glitz/core":"5ehrf","./Feature/Footer/Footer":"3cOKN"}],"12bzc":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2aec = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36809,12 +36810,17 @@ const StyledButton = (0, _react.styled).button({
 _c2 = StyledButton;
 const PlainButton = (0, _react.styled)(Button, {
     backgroundColor: "inherit",
+    color: "inherit",
     borderRadius: "none",
+    textAlign: "start",
     padding: {
         xy: 0
     },
     transition: {
         property: "none"
+    },
+    ":hover": {
+        backgroundColor: "inherit "
     }
 });
 _c3 = PlainButton;
@@ -37231,7 +37237,8 @@ function PriceListPage() {
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {
                 src: (0, _heroLumberJpgDefault.default),
                 alt: "Hero image oak",
-                title: "Prislista"
+                title: "Prislista",
+                description: "Kontakt oss om ni vill ha Pris p\xe5 s\xe5gat virke okant och kantat"
             }, void 0, false, {
                 fileName: "src/Pages/PriceListPage.tsx",
                 lineNumber: 8,
@@ -37239,7 +37246,7 @@ function PriceListPage() {
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _priceListDefault.default), {}, void 0, false, {
                 fileName: "src/Pages/PriceListPage.tsx",
-                lineNumber: 9,
+                lineNumber: 14,
                 columnNumber: 7
             }, this)
         ]
@@ -37265,157 +37272,249 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
 var _priceFile = require("../../PriceFile");
 var _value = require("../../Shared/value");
-var _react = require("@glitz/react");
+var _react1 = require("@glitz/react");
+var _core = require("@glitz/core");
+var _button = require("./Button");
+var _s = $RefreshSig$();
 function PriceList() {
+    _s();
+    const [list, setList] = (0, _react.useState)((0, _priceFile.list));
+    const [sortConfig, setSortConfig] = (0, _react.useState)({
+        key: "typ",
+        order: "asc"
+    });
+    const sortList = (key)=>{
+        let order = "asc";
+        if (sortConfig.key === key && sortConfig.order === "asc") order = "desc";
+        const sortedList = [
+            ...list
+        ].sort((a, b)=>{
+            let aValue = a[key];
+            let bValue = b[key];
+            // Convert price to number for comparison
+            if (key === "pris") {
+                aValue = parseFloat(aValue.replace(/[^0-9.-]+/g, ""));
+                bValue = parseFloat(bValue.replace(/[^0-9.-]+/g, ""));
+            }
+            if (aValue < bValue) return order === "asc" ? -1 : 1;
+            if (aValue > bValue) return order === "asc" ? 1 : -1;
+            return 0;
+        });
+        setList(sortedList);
+        setSortConfig({
+            key,
+            order
+        });
+    };
+    const getSortIndicator = (key)=>{
+        if (sortConfig.key === key) return sortConfig.order === "asc" ? "\u2191" : "\u2193";
+        return "";
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Wrapper, {
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RowHeader, {
                     children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                            children: "Artikelnr:"
-                        }, void 0, false, {
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
+                            onClick: ()=>sortList("artikelnr"),
+                            css: {
+                                cursor: "pointer"
+                            },
+                            children: [
+                                "Artikelnr ",
+                                getSortIndicator("artikelnr")
+                            ]
+                        }, void 0, true, {
                             fileName: "src/Feature/Components/PriceList.tsx",
-                            lineNumber: 10,
+                            lineNumber: 48,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                            children: "Typ"
-                        }, void 0, false, {
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
+                            onClick: ()=>sortList("typ"),
+                            css: {
+                                cursor: "pointer"
+                            },
+                            children: [
+                                "Typ ",
+                                getSortIndicator("typ")
+                            ]
+                        }, void 0, true, {
                             fileName: "src/Feature/Components/PriceList.tsx",
-                            lineNumber: 11,
+                            lineNumber: 51,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                            children: "Dimension"
-                        }, void 0, false, {
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
+                            onClick: ()=>sortList("dimension"),
+                            css: {
+                                cursor: "pointer"
+                            },
+                            children: [
+                                "Dimension ",
+                                getSortIndicator("dimension")
+                            ]
+                        }, void 0, true, {
                             fileName: "src/Feature/Components/PriceList.tsx",
-                            lineNumber: 12,
+                            lineNumber: 54,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                            children: "Tr\xe4slag"
-                        }, void 0, false, {
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
+                            onClick: ()=>sortList("traslag"),
+                            css: {
+                                cursor: "pointer"
+                            },
+                            children: [
+                                "Tr\xe4slag ",
+                                getSortIndicator("traslag")
+                            ]
+                        }, void 0, true, {
                             fileName: "src/Feature/Components/PriceList.tsx",
-                            lineNumber: 13,
+                            lineNumber: 57,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                            children: "Enhet"
-                        }, void 0, false, {
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
+                            onClick: ()=>sortList("enhet"),
+                            css: {
+                                cursor: "pointer"
+                            },
+                            children: [
+                                "Enhet ",
+                                getSortIndicator("enhet")
+                            ]
+                        }, void 0, true, {
                             fileName: "src/Feature/Components/PriceList.tsx",
-                            lineNumber: 14,
+                            lineNumber: 60,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                            children: "Pris inkl/moms"
-                        }, void 0, false, {
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
+                            onClick: ()=>sortList("pris"),
+                            css: {
+                                cursor: "pointer"
+                            },
+                            children: [
+                                "Pris inkl/moms ",
+                                getSortIndicator("pris")
+                            ]
+                        }, void 0, true, {
                             fileName: "src/Feature/Components/PriceList.tsx",
-                            lineNumber: 15,
+                            lineNumber: 63,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                            children: "Anm\xe4rkning"
-                        }, void 0, false, {
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
+                            onClick: ()=>sortList("anmarkning"),
+                            css: {
+                                cursor: "pointer"
+                            },
+                            children: [
+                                "Anm\xe4rkning ",
+                                getSortIndicator("anmarkning")
+                            ]
+                        }, void 0, true, {
                             fileName: "src/Feature/Components/PriceList.tsx",
-                            lineNumber: 16,
+                            lineNumber: 66,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/Feature/Components/PriceList.tsx",
-                    lineNumber: 9,
+                    lineNumber: 47,
                     columnNumber: 9
                 }, this),
-                (0, _priceFile.list).map((row, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Row, {
+                list.map((row, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Row, {
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
                                 children: row.artikelnr
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/PriceList.tsx",
-                                lineNumber: 20,
+                                lineNumber: 72,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
                                 children: row.typ
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/PriceList.tsx",
-                                lineNumber: 21,
+                                lineNumber: 73,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
                                 children: row.dimension
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/PriceList.tsx",
-                                lineNumber: 22,
+                                lineNumber: 74,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
                                 children: row.traslag
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/PriceList.tsx",
-                                lineNumber: 23,
+                                lineNumber: 75,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
                                 children: row.enhet
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/PriceList.tsx",
-                                lineNumber: 24,
+                                lineNumber: 76,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
                                 children: row.pris
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/PriceList.tsx",
-                                lineNumber: 25,
+                                lineNumber: 77,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
                                 children: row.anmarkning
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/PriceList.tsx",
-                                lineNumber: 26,
+                                lineNumber: 78,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, index, true, {
                         fileName: "src/Feature/Components/PriceList.tsx",
-                        lineNumber: 19,
+                        lineNumber: 71,
                         columnNumber: 11
                     }, this))
             ]
         }, void 0, true, {
             fileName: "src/Feature/Components/PriceList.tsx",
-            lineNumber: 8,
+            lineNumber: 46,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/Feature/Components/PriceList.tsx",
-        lineNumber: 7,
+        lineNumber: 45,
         columnNumber: 5
     }, this);
 }
+_s(PriceList, "VscPItBIttnZWRH8oNmDWCnGbOs=");
 _c = PriceList;
 exports.default = PriceList;
-const Container = (0, _react.styled)((0, _value.Block), {
-    display: "flex",
-    justifyContent: "center",
-    width: "100%"
+const Container = (0, _react1.styled)((0, _value.Block), {
+    display: "block",
+    width: "100%",
+    overflowX: "auto",
+    ...(0, _core.media)({
+        minWidth: "1025px"
+    }, {
+        overflowX: "unset"
+    })
 });
 _c1 = Container;
-const Wrapper = (0, _react.styled).div({
-    display: "grid",
-    width: "100%",
+const Wrapper = (0, _react1.styled).div({
+    display: "block",
+    minWidth: "1000px",
     position: "relative"
 });
 _c2 = Wrapper;
-const Row = (0, _react.styled).div({
+const Row = (0, _react1.styled).div({
     width: "100%",
     display: "grid",
-    gridTemplateColumns: "1fr 2fr 1fr 1fr 1fr 1fr 0.5fr 0.5fr",
+    gridTemplateColumns: "1fr 2fr 1fr 1fr 1fr 1fr 1fr",
     border: {
         bottom: {
             width: "1px",
@@ -37425,33 +37524,45 @@ const Row = (0, _react.styled).div({
     }
 });
 _c3 = Row;
-const RowHeader = (0, _react.styled)(Row, {
+const RowHeader = (0, _react1.styled)(Row, {
     fontWeight: "bold",
-    position: "sticky",
+    ...(0, _core.media)({
+        minWidth: "1025px"
+    }, {
+        position: "sticky"
+    }),
     top: "100px",
     backgroundColor: "#fff"
 });
 _c4 = RowHeader;
-const Cell = (0, _react.styled).div({
+const Cell = (0, _react1.styled).div({
     padding: {
         y: "10px"
     }
 });
 _c5 = Cell;
-var _c, _c1, _c2, _c3, _c4, _c5;
+const ButtonCell = (0, _react1.styled)((0, _button.PlainButton), {
+    whiteSpace: "nowrap",
+    padding: {
+        y: "10px"
+    }
+});
+_c6 = ButtonCell;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6;
 $RefreshReg$(_c, "PriceList");
 $RefreshReg$(_c1, "Container");
 $RefreshReg$(_c2, "Wrapper");
 $RefreshReg$(_c3, "Row");
 $RefreshReg$(_c4, "RowHeader");
 $RefreshReg$(_c5, "Cell");
+$RefreshReg$(_c6, "ButtonCell");
 
   $parcel$ReactRefreshHelpers$57cd.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../../PriceFile":"azn9c","../../Shared/value":"9VKej","@glitz/react":"bAXm1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"azn9c":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../../PriceFile":"azn9c","../../Shared/value":"9VKej","@glitz/react":"bAXm1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@glitz/core":"5ehrf","react":"21dqq","./Button":"at8Gv"}],"azn9c":[function(require,module,exports) {
 // Data for the table
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -37852,15 +37963,6 @@ const list = [
         enhet: "lpm",
         pris: "65",
         anmarkning: ""
-    },
-    {
-        artikelnr: "8001",
-        typ: "Pris p\xe5 s\xe5gat virke okant och kantat",
-        dimension: "v\xe4nligen ring.",
-        traslag: "070-3278734",
-        enhet: "",
-        pris: "",
-        anmarkning: ""
     }
 ];
 
@@ -38230,6 +38332,29 @@ const glitzCoreOptions = {
 };
 const glitz = new (0, _core.GlitzClient)(glitzCoreOptions);
 
-},{"@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["94b1M","1xC6H","4aBH6"], "4aBH6", "parcelRequire94c2")
+},{"@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3cOKN":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$7d26 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$7d26.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+function Footer() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {}, void 0, false);
+}
+_c = Footer;
+exports.default = Footer;
+var _c;
+$RefreshReg$(_c, "Footer");
+
+  $parcel$ReactRefreshHelpers$7d26.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["94b1M","1xC6H","4aBH6"], "4aBH6", "parcelRequire94c2")
 
 //# sourceMappingURL=index.2d3ace14.js.map

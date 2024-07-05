@@ -5,7 +5,12 @@ import HeroLumber from '../Assets/HeroLumber.jpg';
 function PriceListPage() {
   return (
     <>
-      <Hero src={HeroLumber} alt="Hero image oak" title="Prislista" />
+      <Hero
+        src={HeroLumber}
+        alt="Hero image oak"
+        title="Prislista"
+        description="Kontakt oss om ni vill ha Pris på sågat virke okant och kantat"
+      />
       <PriceList />
     </>
   );

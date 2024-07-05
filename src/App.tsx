@@ -5,17 +5,17 @@ import { GlitzProvider, styled } from '@glitz/react';
 import Header from './Feature/Header/Header';
 import { glitz } from './Shared/GlitzOptions';
 import { media } from '@glitz/core';
+import Footer from './Feature/Footer/Footer';
 
 const App: React.FC = () => {
   return (
     <GlitzProvider glitz={glitz}>
       <Router>
-        <div>
-          <Header />
-          <Page>
-            <Routing />
-          </Page>
-        </div>
+        <Header />
+        <Page>
+          <Routing />
+        </Page>
+        <Footer />
       </Router>
     </GlitzProvider>
   );
