@@ -39,6 +39,7 @@ const Container = styled.div({
       color: '#E6E6E6',
     },
   },
+  borderRadius: '4px',
 });
 
 const StyledLink = styled.a({
