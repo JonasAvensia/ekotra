@@ -3,7 +3,7 @@ import AcornHero from '../../Assets/acorn.jpg';
 import H1 from '../../Shared/Generic/H1';
 import { huge } from '../../Shared/value';
 import H3 from '../../Shared/Generic/H3';
-import LazyLoadImage from './Image';
+import LazyLoadImage from './LazyLoadImage';
 
 interface HeroProps {
   src: string;

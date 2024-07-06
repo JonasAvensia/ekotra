@@ -42,6 +42,7 @@ nav ul li a:hover {
 a:-webkit-any-link {
     color: inherit;
     cursor: pointer;
+	text-decoration: none;
 }
 
 nav .active {

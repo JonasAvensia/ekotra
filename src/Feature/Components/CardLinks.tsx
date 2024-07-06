@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import woodDummy from '../../Assets/wood-dummy.jpg';
 import H3 from '../../Shared/Generic/H3';
 import Button from './Button';
-import LazyLoadImage from './Image';
+import LazyLoadImage from './LazyLoadImage';
 
 function CardLinks() {
   return (
@@ -19,7 +19,9 @@ function CardLinks() {
           <Text>Vi erbjuder sågat lövträ av de flesta svenska träslag och i de flesta dimensioner.</Text>
           <Link to="">
             <ButtonContainer>
-              <StyledButton to="/">Läs mer</StyledButton>
+              <StyledButton to="/" arialLabel="Läs mer">
+                Läs mer
+              </StyledButton>
             </ButtonContainer>
           </Link>
         </TextContainer>
@@ -33,7 +35,9 @@ function CardLinks() {
           <Text>Vi erbjuder sågat lövträ av de flesta svenska träslag och i de flesta dimensioner.</Text>
           <Link to="">
             <ButtonContainer>
-              <StyledButton to="/">Läs mer</StyledButton>
+              <StyledButton to="/" arialLabel="Läs mer">
+                Läs mer
+              </StyledButton>
             </ButtonContainer>
           </Link>
         </TextContainer>
@@ -47,7 +51,9 @@ function CardLinks() {
           <Text>Vi erbjuder sågat lövträ av de flesta svenska träslag och i de flesta dimensioner.</Text>
           <Link to="">
             <ButtonContainer>
-              <StyledButton to="/">Läs mer</StyledButton>
+              <StyledButton to="/" arialLabel="Läs mer">
+                Läs mer
+              </StyledButton>
             </ButtonContainer>
           </Link>
         </TextContainer>

@@ -6,6 +6,7 @@ import Header from './Feature/Header/Header';
 import { glitz } from './Shared/GlitzOptions';
 import { media } from '@glitz/core';
 import Footer from './Feature/Footer/Footer';
+import { AppearanceBlock, large } from './Shared/value';
 
 const App: React.FC = () => {
   return (
@@ -23,10 +24,11 @@ const App: React.FC = () => {
 
 export default App;
 
-const Page = styled.div({
-  width: '1366px',
-  maxWidth: 'calc(100vw - 65px)',
-  backgroundColor: '#f4f5f6',
+const Page = styled(AppearanceBlock, {
+  backgroundColor: '#fff',
+  padding: {
+    bottom: large,
+  },
   margin: {
     y: 0,
     x: 'auto',

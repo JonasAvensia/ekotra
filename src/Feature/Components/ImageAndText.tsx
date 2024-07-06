@@ -4,11 +4,11 @@ import { media } from '@glitz/core';
 import H2 from '../../Shared/Generic/H2';
 import H3 from '../../Shared/Generic/H3';
 import { Block, medium } from '../../Shared/value';
-import LazyLoadImage from './Image';
+import LazyLoadImage from './LazyLoadImage';
 
 function TextAndImage() {
   return (
-    <Container className="container">
+    <Container>
       <ImageContainer className="image">
         <Image src={Forrest} alt="oak image" />
       </ImageContainer>

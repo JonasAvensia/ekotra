@@ -2,13 +2,19 @@ import { NavLink } from 'react-router-dom';
 import logo from '../../Assets/logo.png';
 import Menu from '../../Assets/menu.svg';
 import { styled } from '@glitz/react';
-import { DefaultGreen, medium } from '../../Shared/value';
+import { AppearanceBlock, DefaulBackgroundColor, DefaultGreen, medium, small } from '../../Shared/value';
 import { media } from '@glitz/core';
 import { PlainButton } from '../Components/Button';
 
 function Header() {
   return (
     <StyledHeader>
+      <TopBar>
+        <TopBarWrapper>
+          <A href="mailto:info@eme.nu">info@eme.nu</A>
+          <A href="tel:0046703278734">070-3278734</A>
+        </TopBarWrapper>
+      </TopBar>
       <DesktopContainer>
         <NavLink to="/">
           <LogoContainer>
@@ -28,20 +34,20 @@ function Header() {
             </NavLinks>
             <NavLinks>
               <NavLink
-                to="/prislista"
-                className={({ isActive }) => ['link_nav', isActive ? 'active' : null].filter(Boolean).join(' ')}
-                end
-              >
-                <StyledLink>Prislista</StyledLink>
-              </NavLink>
-            </NavLinks>
-            <NavLinks>
-              <NavLink
                 to="/produkter"
                 className={({ isActive }) => ['link_nav', isActive ? 'active' : null].filter(Boolean).join(' ')}
                 end
               >
                 <StyledLink>Produkter</StyledLink>
+              </NavLink>
+            </NavLinks>
+            <NavLinks>
+              <NavLink
+                to="/prislista"
+                className={({ isActive }) => ['link_nav', isActive ? 'active' : null].filter(Boolean).join(' ')}
+                end
+              >
+                <StyledLink>Prislista</StyledLink>
               </NavLink>
             </NavLinks>
             <NavLinks>
@@ -57,7 +63,7 @@ function Header() {
         </Navbar>
       </DesktopContainer>
       <CompactContainer>
-        <PlainButton>
+        <PlainButton arialLabel="Home">
           <styled.Img src={Menu} width={30} />
         </PlainButton>
         <NavLink to="/">
@@ -76,7 +82,7 @@ const StyledHeader = styled.header({
   position: 'sticky',
   top: '0px',
   zIndex: 10,
-  backgroundColor: DefaultGreen,
+  backgroundColor: '#fff',
   border: {
     bottom: {
       style: 'solid',
@@ -86,19 +92,32 @@ const StyledHeader = styled.header({
   },
 });
 
-const DesktopContainer = styled.div({
+const TopBar = styled.div({
+  backgroundColor: DefaulBackgroundColor,
+  color: '#fff',
+  padding: {
+    y: small,
+  },
+});
+
+const TopBarWrapper = styled(AppearanceBlock, {
+  display: 'flex',
+  gap: small,
+  justifyContent: 'space-between',
+  padding: {
+    x: medium,
+  },
+});
+
+const A = styled.a({});
+
+const DesktopContainer = styled(AppearanceBlock, {
   display: 'flex',
   alignItems: 'end',
   justifyContent: 'space-between',
-  width: '1366px',
-  maxWidth: 'calc(100vw - 65px)',
   padding: {
     y: '10px',
     x: medium,
-  },
-  margin: {
-    y: 0,
-    x: 'auto',
   },
   ...media(
     { maxWidth: '1025px' },

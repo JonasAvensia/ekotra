@@ -1,5 +1,5 @@
 import { styled } from '@glitz/react';
-import { DefaultGreen, medium } from '../../Shared/value';
+import { DefaulBackgroundColor, DefaultGreen, medium } from '../../Shared/value';
 import { delta } from '../../Shared/typography';
 import { Link } from 'react-router-dom';
 
@@ -7,6 +7,7 @@ type Prototype = {
   to?: string;
   onClick?: () => void; // Define onClick prop
   children: React.ReactNode;
+  arialLabel: string;
 };
 
 function Button(props: Prototype) {
@@ -19,7 +20,11 @@ function Button(props: Prototype) {
       </Link>
     );
   } else {
-    return <StyledButton onClick={onClick}>{children}</StyledButton>;
+    return (
+      <StyledButton onClick={onClick} aria-label={props.arialLabel}>
+        {children}
+      </StyledButton>
+    );
   }
 }
 
@@ -27,7 +32,8 @@ export default styled(Button);
 
 const StyledButton = styled.button({
   cursor: 'pointer',
-  backgroundColor: DefaultGreen,
+  backgroundColor: DefaulBackgroundColor,
+  color: '#fff',
   fontWeight: 'bold',
   fontSize: delta,
   borderRadius: '4px',
@@ -42,7 +48,7 @@ const StyledButton = styled.button({
     timingFunction: 'ease-in-out',
   },
   ':hover': {
-    backgroundColor: '#7B9E9D ',
+    backgroundColor: '#003740 ',
   },
 });
 

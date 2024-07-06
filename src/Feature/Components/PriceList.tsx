@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { list as initialList } from '../../PriceFile';
+import { list as initialList } from '../../Lists/PriceFile';
 import { Block, DefaultGreen } from '../../Shared/value';
 import { styled } from '@glitz/react';
 import { media } from '@glitz/core';
@@ -9,7 +9,7 @@ function PriceList() {
   const [list, setList] = useState(initialList);
   const [sortConfig, setSortConfig] = useState({ key: 'typ', order: 'asc' });
 
-  const sortList = key => {
+  const sortList = (key: string) => {
     let order = 'asc';
     if (sortConfig.key === key && sortConfig.order === 'asc') {
       order = 'desc';
@@ -34,7 +34,7 @@ function PriceList() {
     setSortConfig({ key, order });
   };
 
-  const getSortIndicator = key => {
+  const getSortIndicator = (key: string) => {
     if (sortConfig.key === key) {
       return sortConfig.order === 'asc' ? '↑' : '↓';
     }
@@ -45,25 +45,25 @@ function PriceList() {
     <Container>
       <Wrapper>
         <RowHeader>
-          <ButtonCell onClick={() => sortList('artikelnr')} css={{ cursor: 'pointer' }}>
+          <ButtonCell arialLabel={'Artikelnr'} onClick={() => sortList('artikelnr')} css={{ cursor: 'pointer' }}>
             Artikelnr {getSortIndicator('artikelnr')}
           </ButtonCell>
-          <ButtonCell onClick={() => sortList('typ')} css={{ cursor: 'pointer' }}>
+          <ButtonCell arialLabel={'Typ'} onClick={() => sortList('typ')} css={{ cursor: 'pointer' }}>
             Typ {getSortIndicator('typ')}
           </ButtonCell>
-          <ButtonCell onClick={() => sortList('dimension')} css={{ cursor: 'pointer' }}>
+          <ButtonCell arialLabel={'Dimension'} onClick={() => sortList('dimension')} css={{ cursor: 'pointer' }}>
             Dimension {getSortIndicator('dimension')}
           </ButtonCell>
-          <ButtonCell onClick={() => sortList('traslag')} css={{ cursor: 'pointer' }}>
+          <ButtonCell arialLabel={'Träslag'} onClick={() => sortList('traslag')} css={{ cursor: 'pointer' }}>
             Träslag {getSortIndicator('traslag')}
           </ButtonCell>
-          <ButtonCell onClick={() => sortList('enhet')} css={{ cursor: 'pointer' }}>
+          <ButtonCell arialLabel={'Enhet'} onClick={() => sortList('enhet')} css={{ cursor: 'pointer' }}>
             Enhet {getSortIndicator('enhet')}
           </ButtonCell>
-          <ButtonCell onClick={() => sortList('pris')} css={{ cursor: 'pointer' }}>
+          <ButtonCell arialLabel={'Pris inkl/moms'} onClick={() => sortList('pris')} css={{ cursor: 'pointer' }}>
             Pris inkl/moms {getSortIndicator('pris')}
           </ButtonCell>
-          <ButtonCell onClick={() => sortList('anmarkning')} css={{ cursor: 'pointer' }}>
+          <ButtonCell arialLabel={'Anmärkning'} onClick={() => sortList('anmarkning')} css={{ cursor: 'pointer' }}>
             Anmärkning {getSortIndicator('anmarkning')}
           </ButtonCell>
         </RowHeader>
@@ -124,7 +124,7 @@ const RowHeader = styled(Row, {
       position: 'sticky',
     },
   ),
-  top: '100px',
+  top: '137px',
   backgroundColor: '#fff',
 });
 

@@ -19,6 +19,15 @@ export const Block = styled.div({
   backgroundColor:'#fff'
 });
 
+export const AppearanceBlock = styled.div({
+  width: '1366px',
+  maxWidth: 'calc(100vw - 65px)',
+  margin: {
+    y: 0,
+    x: 'auto',
+  },
+})
+
 
 export const DefaultGreen = '#A7CDCC'
  export const DefaulBackgroundColor = '#004A55'
