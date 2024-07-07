@@ -1,0 +1,67 @@
+import { styled } from '@glitz/react';
+import { DefaulBackgroundColor, DefaultGreen, medium } from '../../Shared/value';
+import { delta } from '../../Shared/typography';
+import { Link } from 'react-router-dom';
+
+type Prototype = {
+  to?: string;
+  onClick?: () => void; // Define onClick prop
+  children: React.ReactNode;
+  arialLabel: string;
+};
+
+function Button(props: Prototype) {
+  const { to, onClick, children } = props;
+
+  if (to) {
+    return (
+      <Link to={to}>
+        <StyledButton>{children}</StyledButton>
+      </Link>
+    );
+  } else {
+    return (
+      <StyledButton onClick={onClick} aria-label={props.arialLabel}>
+        {children}
+      </StyledButton>
+    );
+  }
+}
+
+export default styled(Button);
+
+const StyledButton = styled.button({
+  cursor: 'pointer',
+  backgroundColor: DefaulBackgroundColor,
+  color: '#fff',
+  fontWeight: 'bold',
+  fontSize: delta,
+  borderRadius: '4px',
+  padding: {
+    y: '12px',
+    x: medium,
+  },
+  border: { xy: { style: 'none' } },
+  transition: {
+    property: 'all',
+    duration: '0.3s',
+    timingFunction: 'ease-in-out',
+  },
+  ':hover': {
+    backgroundColor: '#003740 ',
+  },
+});
+
+export const PlainButton = styled(Button, {
+  backgroundColor: 'inherit',
+  color: 'inherit',
+  borderRadius: 'none',
+  textAlign: 'start',
+  padding: { xy: 0 },
+  transition: {
+    property: 'none',
+  },
+  ':hover': {
+    backgroundColor: 'inherit ',
+  },
+});

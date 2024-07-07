@@ -4,18 +4,19 @@ import './index.css';
 import { GlitzProvider, styled } from '@glitz/react';
 import Header from './Feature/Header/Header';
 import { glitz } from './Shared/GlitzOptions';
-import { large } from './Shared/value';
+import { media } from '@glitz/core';
+import Footer from './Feature/Footer/Footer';
+import { AppearanceBlock, large } from './Shared/value';
 
 const App: React.FC = () => {
   return (
     <GlitzProvider glitz={glitz}>
       <Router>
-        <div>
-          <Header />
-          <Page className="page">
-            <Routing />
-          </Page>
-        </div>
+        <Header />
+        <Page>
+          <Routing />
+        </Page>
+        <Footer />
       </Router>
     </GlitzProvider>
   );
@@ -23,8 +24,19 @@ const App: React.FC = () => {
 
 export default App;
 
-const Page = styled.div({
-  width: '1366px',
-  maxWidth: 'calc(100vw - 65px)',
+const Page = styled(AppearanceBlock, {
   backgroundColor: '#fff',
+  padding: {
+    bottom: large,
+  },
+  margin: {
+    y: 0,
+    x: 'auto',
+  },
+  ...media(
+    { maxWidth: '1025px' },
+    {
+      maxWidth: '100vw',
+    },
+  ),
 });

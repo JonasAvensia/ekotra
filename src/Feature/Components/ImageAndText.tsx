@@ -1,16 +1,19 @@
 import { styled } from '@glitz/react';
-import oak from '../Assets/oak-boards.jpg';
-import H1 from '../Shared/Generic/H1';
-import { Block, large } from '../Shared/value';
+import Forrest from '../../Assets/forrest.jpg';
 import { media } from '@glitz/core';
-import H3 from '../Shared/Generic/H3';
-import H2 from '../Shared/Generic/H2';
+import H2 from '../../Shared/Generic/H2';
+import H3 from '../../Shared/Generic/H3';
+import { Block, medium } from '../../Shared/value';
+import LazyLoadImage from './LazyLoadImage';
 
 function TextAndImage() {
   return (
-    <Container className="container">
+    <Container>
+      <ImageContainer className="image">
+        <Image src={Forrest} alt="oak image" />
+      </ImageContainer>
       <TextContainer className="text">
-        <H2>Vår Vision</H2>
+        <H2>Våra Tjänster</H2>
         <ul>
           <li>
             <H3>Vi jobbar mot privata kunder, kommuner, länsstyrelser och andra företag.</H3>
@@ -23,9 +26,6 @@ function TextAndImage() {
           </li>
         </ul>
       </TextContainer>
-      <ImageContainer className="image">
-        <Image src={oak} alt="oak image" />
-      </ImageContainer>
     </Container>
   );
 }
@@ -35,7 +35,6 @@ const Container = styled(Block, {
   display: 'grid',
   gridTemplateColumns: '1fr',
   gap: '20px',
-  padding: { x: large },
   ...media(
     { minWidth: '1025px' },
     {
@@ -45,30 +44,19 @@ const Container = styled(Block, {
 });
 
 const TextContainer = styled.div({
-  padding: { xy: large },
-  order: 1,
-  ...media(
-    { maxWidth: '1025px' },
-    {
-      order: 2,
-    },
-  ),
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  padding: { xy: medium },
 });
 
 const ImageContainer = styled.div({
   width: '100%',
   height: '100%',
   borderRadius: '5px',
-  order: 2,
-  ...media(
-    { maxWidth: '1025px' },
-    {
-      order: 1,
-    },
-  ),
 });
 
-const Image = styled.img({
+const Image = styled(LazyLoadImage, {
   width: '100%',
   height: '100%',
   objectFit: 'cover',

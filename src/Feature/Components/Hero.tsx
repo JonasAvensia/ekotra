@@ -1,19 +1,26 @@
 import { styled } from '@glitz/react';
-import AcornHero from '../Assets/acorns-hero.jpg';
-import H1 from '../Shared/Generic/H1';
+import AcornHero from '../../Assets/acorn.jpg';
+import H1 from '../../Shared/Generic/H1';
+import { huge } from '../../Shared/value';
+import H3 from '../../Shared/Generic/H3';
+import LazyLoadImage from './LazyLoadImage';
 
-import { Block, huge } from '../Shared/value';
-import H3 from '../Shared/Generic/H3';
+interface HeroProps {
+  src: string;
+  alt: string;
+  title: string;
+  description?: string;
+}
 
-function Hero() {
+function Hero(props: HeroProps) {
   return (
     <HeroContainer>
       <TextOverlay>
-        <H1>Välkommen till EKOTRÄ AB.</H1>
-        <StyledH3>Specialsågverk-Hyvleri mitt i Småland sedan 1997</StyledH3>
+        <H1>{props.title}</H1>
+        <StyledH3>{props.description}</StyledH3>
       </TextOverlay>
       <ImageContainer>
-        <Image src={AcornHero} alt="Acorn image" />
+        <Image src={props.src} alt={props.alt} />
       </ImageContainer>
     </HeroContainer>
   );
@@ -21,7 +28,7 @@ function Hero() {
 
 export default Hero;
 
-const HeroContainer = styled(Block, {
+const HeroContainer = styled.div({
   position: 'relative',
   overflow: 'hidden',
 });
@@ -52,11 +59,10 @@ const ImageContainer = styled.div({
   position: 'relative',
   width: '100%',
   height: '400px', // Adjust height as needed
-  borderRadius: '6px',
   overflow: 'hidden',
 });
 
-const Image = styled.img({
+const Image = styled(LazyLoadImage, {
   width: '100%',
   height: '100%',
   objectFit: 'cover',
