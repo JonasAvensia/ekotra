@@ -70,4 +70,4 @@ const TopBarWrapper = styled(AppearanceBlock, {
   },
 });
 
-const A = styled.a({});
+const A = styled.a();

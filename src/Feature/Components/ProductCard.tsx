@@ -1,6 +1,6 @@
 import { styled } from '@glitz/react';
 import { ListItem } from './Lits';
-import { DefaulBackgroundColor, large, small } from '../../Shared/value';
+import { large, small } from '../../Shared/value';
 import LazyLoadImage from './LazyLoadImage';
 import H4 from '../../Shared/Generic/H4';
 

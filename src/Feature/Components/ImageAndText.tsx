@@ -1,40 +1,82 @@
 import { styled } from '@glitz/react';
-import Forrest from '../../Assets/forrest.jpg';
 import { media } from '@glitz/core';
 import H2 from '../../Shared/Generic/H2';
-import H3 from '../../Shared/Generic/H3';
-import { Block, medium } from '../../Shared/value';
+import { Block, large } from '../../Shared/value';
 import LazyLoadImage from './LazyLoadImage';
 
-function TextAndImage() {
+type Prototype = {
+  title: string;
+  src: string;
+  children: React.ReactNode;
+  textFirst?: boolean;
+};
+
+function ImageAndText({ title, src, children, textFirst }: Prototype) {
   return (
     <Container>
-      <ImageContainer className="image">
-        <Image src={Forrest} alt="oak image" />
+      <ImageContainer
+        className="image"
+        css={{
+          height: 'auto',
+
+          ...(!textFirst
+            ? {
+                ...media(
+                  { minWidth: '1025px' },
+                  {
+                    order: 1,
+                  },
+                ),
+              }
+            : {
+                ...media(
+                  { minWidth: '1025px' },
+                  {
+                    order: 2,
+                  },
+                ),
+              }),
+        }}
+      >
+        <Image src={src} alt="oak image" />
       </ImageContainer>
-      <TextContainer className="text">
-        <H2>Våra Tjänster</H2>
-        <ul>
-          <li>
-            <H3>Vi jobbar mot privata kunder, kommuner, länsstyrelser och andra företag.</H3>
-          </li>
-          <li>
-            <H3>Alltid med samma mål, att kunden ska få rätt vara vid rätt tid.</H3>
-          </li>
-          <li>
-            <H3>Vi ombesörjer transport inom hela Sverige.</H3>
-          </li>
-        </ul>
+      <TextContainer
+        className="text"
+        css={{
+          height: 'auto',
+
+          ...(!textFirst
+            ? {
+                ...media(
+                  { minWidth: '1025px' },
+                  {
+                    order: 2,
+                  },
+                ),
+              }
+            : {
+                ...media(
+                  { minWidth: '1025px' },
+                  {
+                    order: 1,
+                  },
+                ),
+              }),
+        }}
+      >
+        <H2>{title}</H2>
+        <TextList>{children}</TextList>
       </TextContainer>
     </Container>
   );
 }
-export default TextAndImage;
+export default ImageAndText;
 
 const Container = styled(Block, {
   display: 'grid',
   gridTemplateColumns: '1fr',
   gap: '20px',
+  borderRadius: '10px',
   ...media(
     { minWidth: '1025px' },
     {
@@ -47,17 +89,27 @@ const TextContainer = styled.div({
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
-  padding: { xy: medium },
+  padding: { xy: large },
+  order: 2,
 });
 
 const ImageContainer = styled.div({
   width: '100%',
   height: '100%',
-  borderRadius: '5px',
+  borderRadius: '10px',
+  overflow: 'hidden',
+  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+  order: 1,
 });
 
 const Image = styled(LazyLoadImage, {
   width: '100%',
   height: '100%',
   objectFit: 'cover',
+});
+
+const TextList = styled.div({
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '10px',
 });

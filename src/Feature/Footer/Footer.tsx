@@ -2,7 +2,6 @@ import { styled } from '@glitz/react';
 import { AppearanceBlock, DefaulBackgroundColor, DefaultGreen, huge, large, medium, small } from '../../Shared/value';
 import LazyLoadImage from '../Components/LazyLoadImage';
 import FooterLogo from '../../Assets/footer-logo.png';
-import Button from '../Components/Button';
 import H3 from '../../Shared/Generic/H3';
 import { NavLink } from 'react-router-dom';
 import { media } from '@glitz/core';
@@ -16,11 +15,12 @@ function Footer() {
             <StyledLogo src={FooterLogo} alt="footer logo" />
           </Column>
           <Column>
-            <Title>Kontakta oss</Title>
-            <Text>Har du frågor om våra produkter eller tjänster?</Text>
-            <StyledButton to="/kontakta-oss" arialLabel="kontakta oss">
-              Kontakta Oss
-            </StyledButton>
+            <Title>Ekoträ</Title>
+            <Text>Äpplaryd 3</Text>
+            <Text>360 30 Lammhult</Text>
+            <Text>
+              <A href="tel:0046703278734">070-3278734</A>
+            </Text>
           </Column>
           <Column>
             <Title>Katalog</Title>
@@ -100,16 +100,7 @@ const Text = styled.p({
   },
 });
 
-const StyledButton = styled(Button, {
-  margin: {
-    top: small,
-  },
-  backgroundColor: '#fff',
-  color: DefaulBackgroundColor,
-  ':hover': {
-    backgroundColor: '#F0F0F0',
-  },
-});
+const A = styled.a();
 
 const CopyRightContainer = styled.div({
   textAlign: 'center',

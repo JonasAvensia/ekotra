@@ -7,6 +7,7 @@ import { glitz } from './Shared/GlitzOptions';
 import { media } from '@glitz/core';
 import Footer from './Feature/Footer/Footer';
 import { AppearanceBlock, gigantic, large } from './Shared/value';
+import ContactLinkBlock from './Feature/Components/ContactLinkBlock';
 
 const App: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const App: React.FC = () => {
         <Page>
           <Routing />
         </Page>
+        <ContactLinkBlock />
         <Footer />
       </Router>
     </GlitzProvider>
@@ -25,10 +27,10 @@ const App: React.FC = () => {
 export default App;
 
 const Page = styled(AppearanceBlock, {
-  backgroundColor: '#fff',
   padding: {
     bottom: gigantic,
   },
+  backgroundColor: '#fff',
   margin: {
     y: 0,
     x: 'auto',

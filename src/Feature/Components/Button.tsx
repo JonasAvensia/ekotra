@@ -1,5 +1,5 @@
 import { styled } from '@glitz/react';
-import { DefaulBackgroundColor, DefaultGreen, medium } from '../../Shared/value';
+import { DefaulBackgroundColor, DefaultGreen, large, medium } from '../../Shared/value';
 import { delta } from '../../Shared/typography';
 import { Link } from 'react-router-dom';
 
@@ -38,8 +38,8 @@ const StyledButton = styled.button({
   fontSize: delta,
   borderRadius: '4px',
   padding: {
-    y: '12px',
-    x: medium,
+    y: medium,
+    x: large,
   },
   border: { xy: { style: 'none' } },
   transition: {

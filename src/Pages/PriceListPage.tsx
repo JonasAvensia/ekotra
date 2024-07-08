@@ -1,6 +1,7 @@
 import Hero from '../Feature/Components/Hero';
 import PriceList from '../Feature/Components/PriceList';
 import HeroLumber from '../Assets/HeroLumber.jpg';
+import ContactLinkBlock from '../Feature/Components/ContactLinkBlock';
 
 function PriceListPage() {
   return (
