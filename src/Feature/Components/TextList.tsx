@@ -62,13 +62,6 @@ const Container = styled.div({
   padding: {
     bottom: medium,
   },
-  border: {
-    bottom: {
-      width: '1px',
-      style: 'solid',
-      color: DefaultGreen,
-    },
-  },
 });
 
 const Wrapper = styled.ul({

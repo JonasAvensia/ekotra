@@ -32,9 +32,7 @@ function HomePage() {
       </ImageAndText>
       <ImageAndText src={Forrest} title="Våra Mål">
         <H3>Vi jobbar mot privata kunder, kommuner, länsstyrelser och andra företag.</H3>
-
         <H3>Alltid med samma mål, att kunden ska få rätt vara vid rätt tid.</H3>
-
         <H3>Vi ombesörjer transport inom hela Sverige.</H3>
       </ImageAndText>
     </>

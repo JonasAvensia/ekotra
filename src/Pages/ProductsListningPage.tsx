@@ -7,7 +7,6 @@ import TextList from '../Feature/Components/TextList';
 import ImageAndText from '../Feature/Components/ImageAndText';
 import Limfog from '../Assets/products/limfog-alm.jpg';
 import { styled } from '@glitz/react';
-import ContactLinkBlock from '../Feature/Components/ContactLinkBlock';
 
 function ProductListningPage() {
   const { products } = useProductsList();
@@ -31,11 +30,6 @@ function ProductListningPage() {
         <Text>Limfogen måste beställas, leveranstid 1-2 veckor.</Text>
         <Text>Nedan exempel på bänkskiva i stavlimmad 40 m.m Alm</Text>
       </ImageAndText>
-      <List
-        title="Våra Projekt i Verkligheten"
-        description="Upptäck våra kunders imponerande projekt med våra material"
-        list={products}
-      />
     </>
   );
 }

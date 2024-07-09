@@ -27322,51 +27322,90 @@ var _priceListPage = require("../Pages/PriceListPage");
 var _priceListPageDefault = parcelHelpers.interopDefault(_priceListPage);
 var _productsListningPage = require("../Pages/ProductsListningPage");
 var _productsListningPageDefault = parcelHelpers.interopDefault(_productsListningPage);
+var _contactPage = require("../Pages/ContactPage");
+var _contactPageDefault = parcelHelpers.interopDefault(_contactPage);
+var _imageArchive = require("../Pages/ImageArchive");
+var _imageArchiveDefault = parcelHelpers.interopDefault(_imageArchive);
+var _scrollToTop = require("../Feature/Helper/ScrollToTop");
+var _scrollToTopDefault = parcelHelpers.interopDefault(_scrollToTop);
 function Routing() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homePageDefault.default), {}, void 0, false, {
-                    fileName: "src/Routing/Routing.tsx",
-                    lineNumber: 9,
-                    columnNumber: 32
-                }, void 0)
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _scrollToTopDefault.default), {}, void 0, false, {
                 fileName: "src/Routing/Routing.tsx",
-                lineNumber: 9,
+                lineNumber: 12,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/prislista",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _priceListPageDefault.default), {}, void 0, false, {
-                    fileName: "src/Routing/Routing.tsx",
-                    lineNumber: 10,
-                    columnNumber: 41
-                }, void 0)
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homePageDefault.default), {}, void 0, false, {
+                            fileName: "src/Routing/Routing.tsx",
+                            lineNumber: 14,
+                            columnNumber: 34
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/Routing/Routing.tsx",
+                        lineNumber: 14,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/prislista",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _priceListPageDefault.default), {}, void 0, false, {
+                            fileName: "src/Routing/Routing.tsx",
+                            lineNumber: 15,
+                            columnNumber: 43
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/Routing/Routing.tsx",
+                        lineNumber: 15,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/produkter",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _productsListningPageDefault.default), {}, void 0, false, {
+                            fileName: "src/Routing/Routing.tsx",
+                            lineNumber: 16,
+                            columnNumber: 43
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/Routing/Routing.tsx",
+                        lineNumber: 16,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/galleri",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageArchiveDefault.default), {}, void 0, false, {
+                            fileName: "src/Routing/Routing.tsx",
+                            lineNumber: 17,
+                            columnNumber: 41
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/Routing/Routing.tsx",
+                        lineNumber: 17,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/kontakt",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactPageDefault.default), {}, void 0, false, {
+                            fileName: "src/Routing/Routing.tsx",
+                            lineNumber: 18,
+                            columnNumber: 41
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/Routing/Routing.tsx",
+                        lineNumber: 18,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "src/Routing/Routing.tsx",
-                lineNumber: 10,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/produkter",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _productsListningPageDefault.default), {}, void 0, false, {
-                    fileName: "src/Routing/Routing.tsx",
-                    lineNumber: 11,
-                    columnNumber: 41
-                }, void 0)
-            }, void 0, false, {
-                fileName: "src/Routing/Routing.tsx",
-                lineNumber: 11,
+                lineNumber: 13,
                 columnNumber: 7
             }, this)
         ]
-    }, void 0, true, {
-        fileName: "src/Routing/Routing.tsx",
-        lineNumber: 8,
-        columnNumber: 5
-    }, this);
+    }, void 0, true);
 }
 _c = Routing;
 exports.default = Routing;
@@ -27378,7 +27417,7 @@ $RefreshReg$(_c, "Routing");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../Pages/HomePage":"gJB5o","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Pages/PriceListPage":"eIucm","../Pages/ProductsListningPage":"3Kqqo"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../Pages/HomePage":"gJB5o","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Pages/PriceListPage":"eIucm","../Pages/ProductsListningPage":"3Kqqo","../Pages/ContactPage":"bDqc9","../Pages/ImageArchive":"j1mrX","../Feature/Helper/ScrollToTop":"4Z7Gw"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.24.0
  *
@@ -34539,14 +34578,14 @@ function HomePage() {
                         children: "Alltid med samma m\xe5l, att kunden ska f\xe5 r\xe4tt vara vid r\xe4tt tid."
                     }, void 0, false, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 36,
+                        lineNumber: 35,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
                         children: "Vi ombes\xf6rjer transport inom hela Sverige."
                     }, void 0, false, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 38,
+                        lineNumber: 36,
                         columnNumber: 9
                     }, this)
                 ]
@@ -36575,6 +36614,7 @@ parcelHelpers.export(exports, "h3Styled", ()=>h3Styled);
 var _react = require("@glitz/react");
 var _typography = require("../typography");
 var _value = require("../value");
+var _core = require("@glitz/core");
 const headingReset = (0, _react.styled)({
     fontSize: "unset",
     fontWeight: "unset",
@@ -36585,11 +36625,16 @@ const h3Styled = (0, _react.styled)({
     fontSize: (0, _typography.gamma),
     margin: {
         bottom: (0, _value.small)
-    }
+    },
+    ...(0, _core.media)({
+        maxWidth: "760px"
+    }, {
+        fontSize: (0, _typography.delta)
+    })
 });
 exports.default = h3Styled((0, _react.styled).H3);
 
-},{"@glitz/react":"bAXm1","../typography":"iZltJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../value":"9VKej"}],"iZltJ":[function(require,module,exports) {
+},{"@glitz/react":"bAXm1","../typography":"iZltJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../value":"9VKej","@glitz/core":"5ehrf"}],"iZltJ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "alternativeTextColor", ()=>alternativeTextColor);
@@ -36793,23 +36838,43 @@ var _h3 = require("../../Shared/Generic/H3");
 var _h3Default = parcelHelpers.interopDefault(_h3);
 var _lazyLoadImage = require("./LazyLoadImage");
 var _lazyLoadImageDefault = parcelHelpers.interopDefault(_lazyLoadImage);
+var _button = require("./Button");
+var _buttonDefault = parcelHelpers.interopDefault(_button);
+var _core = require("@glitz/core");
 function Hero(props) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeroContainer, {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextOverlay, {
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h1Default.default), {
-                        children: props.title
-                    }, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h1Default.default), {
+                                children: props.title
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/Hero.tsx",
+                                lineNumber: 20,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledH3, {
+                                children: props.description
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/Hero.tsx",
+                                lineNumber: 21,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "src/Feature/Components/Hero.tsx",
                         lineNumber: 19,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledH3, {
-                        children: props.description
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
+                        arialLabel: "kontakta oss",
+                        to: "/kontakt",
+                        children: "Kontakta oss"
                     }, void 0, false, {
                         fileName: "src/Feature/Components/Hero.tsx",
-                        lineNumber: 20,
+                        lineNumber: 23,
                         columnNumber: 9
                     }, this)
                 ]
@@ -36824,12 +36889,12 @@ function Hero(props) {
                     alt: props.alt
                 }, void 0, false, {
                     fileName: "src/Feature/Components/Hero.tsx",
-                    lineNumber: 23,
+                    lineNumber: 28,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/Feature/Components/Hero.tsx",
-                lineNumber: 22,
+                lineNumber: 27,
                 columnNumber: 7
             }, this)
         ]
@@ -36846,12 +36911,16 @@ const HeroContainer = (0, _react.styled).div({
     overflow: "hidden"
 });
 _c1 = HeroContainer;
+const TextContainer = (0, _react.styled).div();
+_c2 = TextContainer;
 const TextOverlay = (0, _react.styled).div({
     display: "flex",
-    flexDirection: "column",
-    justifyContent: "end",
+    justifyContent: "space-between",
+    alignItems: "end",
+    flexWrap: "wrap",
     padding: {
-        xy: (0, _value.huge)
+        x: (0, _value.medium),
+        bottom: (0, _value.huge)
     },
     position: "absolute",
     top: "50%",
@@ -36862,40 +36931,71 @@ const TextOverlay = (0, _react.styled).div({
     color: "#fff",
     width: "100%",
     height: "100%",
-    backgroundImage: "linear-gradient(185.28deg,transparent,rgba(0,0,0,.05) 57.61%,rgba(0,0,0,.9) 99.95%,rgba(0,0,0,.5) 100%,rgba(0,0,0,.5) 0),linear-gradient(180.33deg,transparent,transparent 55.61%,rgba(0,0,0,.9) 99.95%,rgba(0,0,0,.5) 100%,rgba(0,0,0,.5) 0)"
+    backgroundImage: "linear-gradient(185.28deg,transparent,rgba(0,0,0,.05) 57.61%,rgba(0,0,0,.9) 99.95%,rgba(0,0,0,.5) 100%,rgba(0,0,0,.5) 0),linear-gradient(180.33deg,transparent,transparent 55.61%,rgba(0,0,0,.9) 99.95%,rgba(0,0,0,.5) 100%,rgba(0,0,0,.5) 0)",
+    ...(0, _core.media)({
+        maxWidth: "1025px"
+    }, {
+        flexDirection: "column",
+        alignItems: "start",
+        justifyContent: "end",
+        padding: {
+            x: (0, _value.medium),
+            bottom: (0, _value.medium)
+        }
+    })
 });
-_c2 = TextOverlay;
+_c3 = TextOverlay;
+const StyledButton = (0, _react.styled)((0, _buttonDefault.default), {
+    backgroundColor: "#fff",
+    color: "black",
+    ":hover": {
+        backgroundColor: "#f0f0f0 "
+    },
+    ...(0, _core.media)({
+        maxWidth: "1025px"
+    }, {
+        flexDirection: "column",
+        alignItems: "start",
+        justifyContent: "end",
+        margin: {
+            top: (0, _value.medium)
+        }
+    })
+});
+_c4 = StyledButton;
 const StyledH3 = (0, _react.styled)((0, _h3Default.default), {
     fontStyle: "italic"
 });
-_c3 = StyledH3;
+_c5 = StyledH3;
 const ImageContainer = (0, _react.styled).div({
     position: "relative",
     width: "100%",
     height: "400px",
     overflow: "hidden"
 });
-_c4 = ImageContainer;
+_c6 = ImageContainer;
 const Image = (0, _react.styled)((0, _lazyLoadImageDefault.default), {
     width: "100%",
     height: "100%",
     objectFit: "cover"
 });
-_c5 = Image;
-var _c, _c1, _c2, _c3, _c4, _c5;
+_c7 = Image;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7;
 $RefreshReg$(_c, "Hero");
 $RefreshReg$(_c1, "HeroContainer");
-$RefreshReg$(_c2, "TextOverlay");
-$RefreshReg$(_c3, "StyledH3");
-$RefreshReg$(_c4, "ImageContainer");
-$RefreshReg$(_c5, "Image");
+$RefreshReg$(_c2, "TextContainer");
+$RefreshReg$(_c3, "TextOverlay");
+$RefreshReg$(_c4, "StyledButton");
+$RefreshReg$(_c5, "StyledH3");
+$RefreshReg$(_c6, "ImageContainer");
+$RefreshReg$(_c7, "Image");
 
   $parcel$ReactRefreshHelpers$bb69.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/Generic/H1":"fmZc4","../../Shared/value":"9VKej","../../Shared/Generic/H3":"iGEMB","./LazyLoadImage":"6qRec","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fmZc4":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/Generic/H1":"fmZc4","../../Shared/value":"9VKej","../../Shared/Generic/H3":"iGEMB","./LazyLoadImage":"6qRec","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Button":"at8Gv","@glitz/core":"5ehrf"}],"fmZc4":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "headingReset", ()=>headingReset);
@@ -36903,6 +37003,7 @@ parcelHelpers.export(exports, "h1Styled", ()=>h1Styled);
 var _react = require("@glitz/react");
 var _typography = require("../typography");
 var _value = require("../value");
+var _core = require("@glitz/core");
 const headingReset = (0, _react.styled)({
     fontSize: "unset",
     fontWeight: "unset",
@@ -36913,11 +37014,16 @@ const h1Styled = (0, _react.styled)({
     fontSize: (0, _typography.alpha),
     margin: {
         bottom: (0, _value.moderate)
-    }
+    },
+    ...(0, _core.media)({
+        maxWidth: "760px"
+    }, {
+        fontSize: (0, _typography.beta)
+    })
 });
 exports.default = h1Styled((0, _react.styled).H1);
 
-},{"@glitz/react":"bAXm1","../typography":"iZltJ","../value":"9VKej","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8HWo8":[function(require,module,exports) {
+},{"@glitz/react":"bAXm1","../typography":"iZltJ","../value":"9VKej","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@glitz/core":"5ehrf"}],"8HWo8":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bbae = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -37080,6 +37186,7 @@ parcelHelpers.export(exports, "h2Styled", ()=>h2Styled);
 var _react = require("@glitz/react");
 var _typography = require("../typography");
 var _value = require("../value");
+var _core = require("@glitz/core");
 const headingReset = (0, _react.styled)({
     fontSize: "unset",
     fontWeight: "unset",
@@ -37090,11 +37197,16 @@ const h2Styled = (0, _react.styled)({
     fontSize: (0, _typography.beta),
     margin: {
         bottom: (0, _value.medium)
-    }
+    },
+    ...(0, _core.media)({
+        maxWidth: "760px"
+    }, {
+        fontSize: (0, _typography.gamma)
+    })
 });
 exports.default = h2Styled((0, _react.styled).H2);
 
-},{"@glitz/react":"bAXm1","../typography":"iZltJ","../value":"9VKej","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dMYuz":[function(require,module,exports) {
+},{"@glitz/react":"bAXm1","../typography":"iZltJ","../value":"9VKej","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@glitz/core":"5ehrf"}],"dMYuz":[function(require,module,exports) {
 module.exports = require("884b80a8fcd90374").getBundleURL("6EXJA") + "acorn.a7677c51.jpg" + "?" + Date.now();
 
 },{"884b80a8fcd90374":"lgJ39"}],"5S2tu":[function(require,module,exports) {
@@ -37206,13 +37318,6 @@ const Container = (0, _react.styled).div({
     }),
     padding: {
         bottom: (0, _value.medium)
-    },
-    border: {
-        bottom: {
-            width: "1px",
-            style: "solid",
-            color: (0, _value.DefaultGreen)
-        }
     }
 });
 _c2 = Container;
@@ -37286,12 +37391,12 @@ function PriceListPage() {
                 description: "Kontakt oss om ni vill ha Pris p\xe5 s\xe5gat virke okant och kantat"
             }, void 0, false, {
                 fileName: "src/Pages/PriceListPage.tsx",
-                lineNumber: 9,
+                lineNumber: 8,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _priceListDefault.default), {}, void 0, false, {
                 fileName: "src/Pages/PriceListPage.tsx",
-                lineNumber: 15,
+                lineNumber: 14,
                 columnNumber: 7
             }, this)
         ]
@@ -38037,8 +38142,6 @@ var _heroLumberJpg = require("../Assets/HeroLumber.jpg");
 var _heroLumberJpgDefault = parcelHelpers.interopDefault(_heroLumberJpg);
 var _hero = require("../Feature/Components/Hero");
 var _heroDefault = parcelHelpers.interopDefault(_hero);
-var _lits = require("../Feature/Components/Lits");
-var _litsDefault = parcelHelpers.interopDefault(_lits);
 var _textList = require("../Feature/Components/TextList");
 var _textListDefault = parcelHelpers.interopDefault(_textList);
 var _imageAndText = require("../Feature/Components/ImageAndText");
@@ -38059,12 +38162,12 @@ function ProductListningPage() {
                 description: "Kontakt oss om ni vill ha Pris p\xe5 s\xe5gat virke okant och kantat"
             }, void 0, false, {
                 fileName: "src/Pages/ProductsListningPage.tsx",
-                lineNumber: 17,
+                lineNumber: 16,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _textListDefault.default), {}, void 0, false, {
                 fileName: "src/Pages/ProductsListningPage.tsx",
-                lineNumber: 23,
+                lineNumber: 22,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
@@ -38075,57 +38178,48 @@ function ProductListningPage() {
                         children: "Vi erbjuder Limfog till av mycket h\xf6g kvalitet som tillverkas i Sverige av virke som vi sj\xe4lva levererar."
                     }, void 0, false, {
                         fileName: "src/Pages/ProductsListningPage.tsx",
-                        lineNumber: 25,
+                        lineNumber: 24,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                         children: "Hyllplan, bordsskivor och b\xe4nkskivor eller vad du sj\xe4lv \xf6nskar."
                     }, void 0, false, {
                         fileName: "src/Pages/ProductsListningPage.tsx",
-                        lineNumber: 28,
+                        lineNumber: 27,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                         children: "Limfogen tillverkas i exakt de m\xe5tt du \xf6nskar och \xe4r f\xe4rdigputsade."
                     }, void 0, false, {
                         fileName: "src/Pages/ProductsListningPage.tsx",
-                        lineNumber: 29,
+                        lineNumber: 28,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                         children: "Kan \xe4ven levereras med ytbehandling"
                     }, void 0, false, {
                         fileName: "src/Pages/ProductsListningPage.tsx",
-                        lineNumber: 30,
+                        lineNumber: 29,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                         children: "Limfogen m\xe5ste best\xe4llas, leveranstid 1-2 veckor."
                     }, void 0, false, {
                         fileName: "src/Pages/ProductsListningPage.tsx",
-                        lineNumber: 31,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                         children: "Nedan exempel p\xe5 b\xe4nkskiva i stavlimmad 40 m.m Alm"
                     }, void 0, false, {
                         fileName: "src/Pages/ProductsListningPage.tsx",
-                        lineNumber: 32,
+                        lineNumber: 31,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Pages/ProductsListningPage.tsx",
-                lineNumber: 24,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _litsDefault.default), {
-                title: "V\xe5ra Projekt i Verkligheten",
-                description: "Uppt\xe4ck v\xe5ra kunders imponerande projekt med v\xe5ra material",
-                list: products
-            }, void 0, false, {
-                fileName: "src/Pages/ProductsListningPage.tsx",
-                lineNumber: 34,
+                lineNumber: 23,
                 columnNumber: 7
             }, this)
         ]
@@ -38149,7 +38243,7 @@ $RefreshReg$(_c1, "Text");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../Lists/Products":"hdt1s","../Assets/HeroLumber.jpg":"eDA9j","../Feature/Components/Hero":"8WNwH","../Feature/Components/Lits":"kNxh3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Feature/Components/TextList":"5S2tu","../Feature/Components/ImageAndText":"8HWo8","../Assets/products/limfog-alm.jpg":"jUiM9","@glitz/react":"bAXm1"}],"hdt1s":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../Lists/Products":"hdt1s","../Assets/HeroLumber.jpg":"eDA9j","../Feature/Components/Hero":"8WNwH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Feature/Components/TextList":"5S2tu","../Feature/Components/ImageAndText":"8HWo8","../Assets/products/limfog-alm.jpg":"jUiM9","@glitz/react":"bAXm1"}],"hdt1s":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "products", ()=>products);
@@ -38272,7 +38366,147 @@ module.exports = require("e65c9992697e55b9").getBundleURL("6EXJA") + "Smyg.8baec
 },{"e65c9992697e55b9":"lgJ39"}],"cOKB9":[function(require,module,exports) {
 module.exports = require("1c09acbd8277e729").getBundleURL("6EXJA") + "VHus1.1303cfba.jpg" + "?" + Date.now();
 
-},{"1c09acbd8277e729":"lgJ39"}],"kNxh3":[function(require,module,exports) {
+},{"1c09acbd8277e729":"lgJ39"}],"jUiM9":[function(require,module,exports) {
+module.exports = require("e8d3c54cc0e11ce7").getBundleURL("6EXJA") + "limfog-alm.964d5e46.jpg" + "?" + Date.now();
+
+},{"e8d3c54cc0e11ce7":"lgJ39"}],"bDqc9":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$c636 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$c636.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _hero = require("../Feature/Components/Hero");
+var _heroDefault = parcelHelpers.interopDefault(_hero);
+var _heroLumberJpg = require("../Assets/HeroLumber.jpg");
+var _heroLumberJpgDefault = parcelHelpers.interopDefault(_heroLumberJpg);
+var _imageAndText = require("../Feature/Components/ImageAndText");
+var _imageAndTextDefault = parcelHelpers.interopDefault(_imageAndText);
+var _h3 = require("../Shared/Generic/H3");
+var _h3Default = parcelHelpers.interopDefault(_h3);
+function ContactPage() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {
+                src: (0, _heroLumberJpgDefault.default),
+                alt: "Hero image oak",
+                title: "Kontakta oss",
+                description: "Kontakt oss om ni vill ha Pris p\xe5 s\xe5gat virke okant och kantat"
+            }, void 0, false, {
+                fileName: "src/Pages/ContactPage.tsx",
+                lineNumber: 8,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
+                src: (0, _heroLumberJpgDefault.default),
+                title: "Ekotr\xe4",
+                textFirst: true,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
+                        children: "\xc4pplaryd 3"
+                    }, void 0, false, {
+                        fileName: "src/Pages/ContactPage.tsx",
+                        lineNumber: 15,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
+                        children: "360 30 Lammhult"
+                    }, void 0, false, {
+                        fileName: "src/Pages/ContactPage.tsx",
+                        lineNumber: 16,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
+                        children: "070-3278734"
+                    }, void 0, false, {
+                        fileName: "src/Pages/ContactPage.tsx",
+                        lineNumber: 17,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Pages/ContactPage.tsx",
+                lineNumber: 14,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true);
+}
+_c = ContactPage;
+exports.default = ContactPage;
+var _c;
+$RefreshReg$(_c, "ContactPage");
+
+  $parcel$ReactRefreshHelpers$c636.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../Feature/Components/Hero":"8WNwH","../Assets/HeroLumber.jpg":"eDA9j","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Feature/Components/ImageAndText":"8HWo8","../Shared/Generic/H3":"iGEMB"}],"j1mrX":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1591 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1591.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _hero = require("../Feature/Components/Hero");
+var _heroDefault = parcelHelpers.interopDefault(_hero);
+var _heroLumberJpg = require("../Assets/HeroLumber.jpg");
+var _heroLumberJpgDefault = parcelHelpers.interopDefault(_heroLumberJpg);
+var _products = require("../Lists/Products");
+var _productsDefault = parcelHelpers.interopDefault(_products);
+var _lits = require("../Feature/Components/Lits");
+var _litsDefault = parcelHelpers.interopDefault(_lits);
+var _s = $RefreshSig$();
+function ImageArchive() {
+    _s();
+    const { products } = (0, _productsDefault.default)();
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {
+                src: (0, _heroLumberJpgDefault.default),
+                alt: "Galleri image",
+                title: "Galleri",
+                description: ""
+            }, void 0, false, {
+                fileName: "src/Pages/ImageArchive.tsx",
+                lineNumber: 11,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _litsDefault.default), {
+                title: "V\xe5ra Projekt i Verkligheten",
+                description: "Uppt\xe4ck v\xe5ra kunders imponerande projekt med v\xe5ra material",
+                list: products
+            }, void 0, false, {
+                fileName: "src/Pages/ImageArchive.tsx",
+                lineNumber: 12,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true);
+}
+_s(ImageArchive, "HuZ0FSKU4jgfDhUXCEp7lTpjxbw=", false, function() {
+    return [
+        (0, _productsDefault.default)
+    ];
+});
+_c = ImageArchive;
+exports.default = ImageArchive;
+var _c;
+$RefreshReg$(_c, "ImageArchive");
+
+  $parcel$ReactRefreshHelpers$1591.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../Feature/Components/Hero":"8WNwH","../Assets/HeroLumber.jpg":"eDA9j","../Lists/Products":"hdt1s","../Feature/Components/Lits":"kNxh3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kNxh3":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$877f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -38524,10 +38758,44 @@ const h4Styled = (0, _react.styled)({
 });
 exports.default = h4Styled((0, _react.styled).H4);
 
-},{"@glitz/react":"bAXm1","../typography":"iZltJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jUiM9":[function(require,module,exports) {
-module.exports = require("e8d3c54cc0e11ce7").getBundleURL("6EXJA") + "limfog-alm.964d5e46.jpg" + "?" + Date.now();
+},{"@glitz/react":"bAXm1","../typography":"iZltJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4Z7Gw":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$11f3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$11f3.prelude(module);
 
-},{"e8d3c54cc0e11ce7":"lgJ39"}],"irmnC":[function() {},{}],"kcmoy":[function(require,module,exports) {
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
+const ScrollToTop = ()=>{
+    _s();
+    const { pathname } = (0, _reactRouterDom.useLocation)();
+    (0, _react.useEffect)(()=>{
+        window.scrollTo(0, 0);
+    }, [
+        pathname
+    ]);
+    return null;
+};
+_s(ScrollToTop, "+8VPq4+XDMjo/kjL3WLkbwU2Amg=", false, function() {
+    return [
+        (0, _reactRouterDom.useLocation)
+    ];
+});
+_c = ScrollToTop;
+exports.default = ScrollToTop;
+var _c;
+$RefreshReg$(_c, "ScrollToTop");
+
+  $parcel$ReactRefreshHelpers$11f3.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"irmnC":[function() {},{}],"kcmoy":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$40ee = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -38557,6 +38825,10 @@ const menuLinks = [
         name: "Prislista"
     },
     {
+        url: "/galleri",
+        name: "Galleri"
+    },
+    {
         url: "/kontakt",
         name: "Kontakt"
     }
@@ -38572,7 +38844,7 @@ function Header() {
                             children: "info@eme.nu"
                         }, void 0, false, {
                             fileName: "src/Feature/Header/Header.tsx",
-                            lineNumber: 30,
+                            lineNumber: 34,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(A, {
@@ -38580,38 +38852,38 @@ function Header() {
                             children: "070-3278734"
                         }, void 0, false, {
                             fileName: "src/Feature/Header/Header.tsx",
-                            lineNumber: 31,
+                            lineNumber: 35,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/Feature/Header/Header.tsx",
-                    lineNumber: 29,
+                    lineNumber: 33,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/Feature/Header/Header.tsx",
-                lineNumber: 28,
+                lineNumber: 32,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fullDefault.default), {
                 menuLinks: menuLinks
             }, void 0, false, {
                 fileName: "src/Feature/Header/Header.tsx",
-                lineNumber: 34,
+                lineNumber: 38,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _compactDefault.default), {
                 menuLinks: menuLinks
             }, void 0, false, {
                 fileName: "src/Feature/Header/Header.tsx",
-                lineNumber: 35,
+                lineNumber: 39,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Feature/Header/Header.tsx",
-        lineNumber: 27,
+        lineNumber: 31,
         columnNumber: 5
     }, this);
 }
@@ -39445,9 +39717,13 @@ var _h2Default = parcelHelpers.interopDefault(_h2);
 var _button = require("./Button");
 var _buttonDefault = parcelHelpers.interopDefault(_button);
 var _core = require("@glitz/core");
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
 function ContactLinkBlock() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ContactBlock, {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {
+    _s();
+    const location = (0, _reactRouterDom.useLocation)();
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: location.pathname !== "/kontakt" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextWrapper, {
                     children: [
@@ -39455,73 +39731,74 @@ function ContactLinkBlock() {
                             children: "Kontakta oss"
                         }, void 0, false, {
                             fileName: "src/Feature/Components/ContactLinkBlock.tsx",
-                            lineNumber: 11,
-                            columnNumber: 11
+                            lineNumber: 15,
+                            columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                             children: "Har du fr\xe5gor om v\xe5ra produkter eller tj\xe4nster?"
                         }, void 0, false, {
                             fileName: "src/Feature/Components/ContactLinkBlock.tsx",
-                            lineNumber: 12,
-                            columnNumber: 11
+                            lineNumber: 16,
+                            columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/Feature/Components/ContactLinkBlock.tsx",
-                    lineNumber: 10,
-                    columnNumber: 9
+                    lineNumber: 14,
+                    columnNumber: 11
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonWrapper, {
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonDefault.default), {
-                        to: "/kontakta oss",
+                        to: "/kontakt",
                         arialLabel: "kontakta oss",
                         children: "Kontakta oss"
                     }, void 0, false, {
                         fileName: "src/Feature/Components/ContactLinkBlock.tsx",
-                        lineNumber: 15,
-                        columnNumber: 11
+                        lineNumber: 19,
+                        columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "src/Feature/Components/ContactLinkBlock.tsx",
-                    lineNumber: 14,
-                    columnNumber: 9
+                    lineNumber: 18,
+                    columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/Feature/Components/ContactLinkBlock.tsx",
-            lineNumber: 9,
-            columnNumber: 7
+            lineNumber: 13,
+            columnNumber: 9
         }, this)
-    }, void 0, false, {
-        fileName: "src/Feature/Components/ContactLinkBlock.tsx",
-        lineNumber: 8,
-        columnNumber: 5
-    }, this);
+    }, void 0, false);
 }
+_s(ContactLinkBlock, "pkHmaVRPskBaU4tMJuJJpV42k1I=", false, function() {
+    return [
+        (0, _reactRouterDom.useLocation)
+    ];
+});
 _c = ContactLinkBlock;
 exports.default = ContactLinkBlock;
-const ContactBlock = (0, _react.styled).div({
-    margin: {
-        top: (0, _value.huge)
-    },
-    backgroundColor: "#fff"
-});
-_c1 = ContactBlock;
 const Container = (0, _react.styled)((0, _value.AppearanceBlock), {
+    border: {
+        top: {
+            style: "solid",
+            width: "1px",
+            color: (0, _value.DefaulBackgroundColor)
+        }
+    },
+    backgroundColor: "#fff",
     padding: {
-        top: (0, _value.large)
+        y: (0, _value.large)
     },
     display: "grid",
     gridTemplateColumns: "1fr",
     gap: "20px",
-    borderRadius: "10px",
     ...(0, _core.media)({
         minWidth: "1025px"
     }, {
         gridTemplateColumns: "1fr 1fr"
     })
 });
-_c2 = Container;
+_c1 = Container;
 const StyledWrapper = (0, _react.styled).div({
     padding: {
         xy: (0, _value.large),
@@ -39536,32 +39813,32 @@ const StyledWrapper = (0, _react.styled).div({
     })
 });
 const TextWrapper = (0, _react.styled)(StyledWrapper, {});
-_c3 = TextWrapper;
+_c2 = TextWrapper;
 const ButtonWrapper = (0, _react.styled)(StyledWrapper, {
     display: "flex",
     justifyContent: "start",
+    alignItems: "end",
     ...(0, _core.media)({
         minWidth: "1025px"
     }, {
         justifyContent: "center"
     })
 });
-_c4 = ButtonWrapper;
+_c3 = ButtonWrapper;
 const Text = (0, _react.styled).p({});
-_c5 = Text;
-var _c, _c1, _c2, _c3, _c4, _c5;
+_c4 = Text;
+var _c, _c1, _c2, _c3, _c4;
 $RefreshReg$(_c, "ContactLinkBlock");
-$RefreshReg$(_c1, "ContactBlock");
-$RefreshReg$(_c2, "Container");
-$RefreshReg$(_c3, "TextWrapper");
-$RefreshReg$(_c4, "ButtonWrapper");
-$RefreshReg$(_c5, "Text");
+$RefreshReg$(_c1, "Container");
+$RefreshReg$(_c2, "TextWrapper");
+$RefreshReg$(_c3, "ButtonWrapper");
+$RefreshReg$(_c4, "Text");
 
   $parcel$ReactRefreshHelpers$3832.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","../../Shared/Generic/H2":"au95a","./Button":"at8Gv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@glitz/core":"5ehrf"}]},["94b1M","1xC6H","4aBH6"], "4aBH6", "parcelRequire94c2")
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","../../Shared/Generic/H2":"au95a","./Button":"at8Gv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@glitz/core":"5ehrf","react-router-dom":"9xmpe"}]},["94b1M","1xC6H","4aBH6"], "4aBH6", "parcelRequire94c2")
 
 //# sourceMappingURL=index.2d3ace14.js.map

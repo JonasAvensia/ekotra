@@ -17,6 +17,10 @@ const menuLinks = [
     name: 'Prislista',
   },
   {
+    url: '/galleri',
+    name: 'Galleri',
+  },
+  {
     url: '/kontakt',
     name: 'Kontakt',
   },

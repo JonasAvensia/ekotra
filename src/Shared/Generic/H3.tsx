@@ -1,7 +1,7 @@
 import { styled } from '@glitz/react';
-import { gamma } from '../typography';
-import { moderate, small } from '../value';
-
+import { gamma, delta } from '../typography';
+import { small } from '../value';
+import { media } from '@glitz/core';
 export const headingReset = styled({
   fontSize: 'unset',
   fontWeight: 'unset',
@@ -14,6 +14,12 @@ export const h3Styled = styled({
   margin: {
     bottom: small,
   },
+  ...media(
+    { maxWidth: '760px' },
+    {
+      fontSize: delta,
+    },
+  ),
 });
 
 export default h3Styled(styled.H3);
