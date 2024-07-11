@@ -49,7 +49,7 @@ function ProductListningPage() {
         <Text>Limfogen tillverkas i exakt de mått du önskar och är färdigputsade.</Text>
         <Text>Kan även levereras med ytbehandling</Text>
         <Text>Limfogen måste beställas, leveranstid 1-2 veckor.</Text>
-        <Text>Nedan exempel på bänkskiva i stavlimmad 40 m.m Alm</Text>
+        <Text>Bildexempel på bänkskiva i stavlimmad 40 m.m Alm</Text>
       </ImageAndText>
     </>
   );

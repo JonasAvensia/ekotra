@@ -102,6 +102,7 @@ const TextContainer = styled.div({
 const ImageContainer = styled.div({
   width: '100%',
   height: '100%',
+  maxHeight: '500px',
   borderRadius: '10px',
   overflow: 'hidden',
   boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',

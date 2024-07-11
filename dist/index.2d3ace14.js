@@ -27328,12 +27328,16 @@ var _imageArchive = require("../Pages/ImageArchive");
 var _imageArchiveDefault = parcelHelpers.interopDefault(_imageArchive);
 var _scrollToTop = require("../Feature/Helper/ScrollToTop");
 var _scrollToTopDefault = parcelHelpers.interopDefault(_scrollToTop);
+var _limfog = require("../Pages/Productpage/limfog");
+var _limfogDefault = parcelHelpers.interopDefault(_limfog);
+var _sawedProducts = require("../Pages/Productpage/SawedProducts");
+var _sawedProductsDefault = parcelHelpers.interopDefault(_sawedProducts);
 function Routing() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _scrollToTopDefault.default), {}, void 0, false, {
                 fileName: "src/Routing/Routing.tsx",
-                lineNumber: 12,
+                lineNumber: 14,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
@@ -27342,32 +27346,8 @@ function Routing() {
                         path: "/",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homePageDefault.default), {}, void 0, false, {
                             fileName: "src/Routing/Routing.tsx",
-                            lineNumber: 14,
-                            columnNumber: 34
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/Routing/Routing.tsx",
-                        lineNumber: 14,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/prislista",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _priceListPageDefault.default), {}, void 0, false, {
-                            fileName: "src/Routing/Routing.tsx",
-                            lineNumber: 15,
-                            columnNumber: 43
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/Routing/Routing.tsx",
-                        lineNumber: 15,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/produkter",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _productsListningPageDefault.default), {}, void 0, false, {
-                            fileName: "src/Routing/Routing.tsx",
                             lineNumber: 16,
-                            columnNumber: 43
+                            columnNumber: 34
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/Routing/Routing.tsx",
@@ -27375,11 +27355,11 @@ function Routing() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/galleri",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageArchiveDefault.default), {}, void 0, false, {
+                        path: "/prislista",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _priceListPageDefault.default), {}, void 0, false, {
                             fileName: "src/Routing/Routing.tsx",
                             lineNumber: 17,
-                            columnNumber: 41
+                            columnNumber: 43
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/Routing/Routing.tsx",
@@ -27387,21 +27367,69 @@ function Routing() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/kontakt",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactPageDefault.default), {}, void 0, false, {
+                        path: "/produkter",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _productsListningPageDefault.default), {}, void 0, false, {
                             fileName: "src/Routing/Routing.tsx",
                             lineNumber: 18,
-                            columnNumber: 41
+                            columnNumber: 43
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/Routing/Routing.tsx",
                         lineNumber: 18,
                         columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/produkter/limfog",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _limfogDefault.default), {}, void 0, false, {
+                            fileName: "src/Routing/Routing.tsx",
+                            lineNumber: 19,
+                            columnNumber: 50
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/Routing/Routing.tsx",
+                        lineNumber: 19,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/produkter/sagade-produkter",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sawedProductsDefault.default), {}, void 0, false, {
+                            fileName: "src/Routing/Routing.tsx",
+                            lineNumber: 20,
+                            columnNumber: 60
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/Routing/Routing.tsx",
+                        lineNumber: 20,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/galleri",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageArchiveDefault.default), {}, void 0, false, {
+                            fileName: "src/Routing/Routing.tsx",
+                            lineNumber: 21,
+                            columnNumber: 41
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/Routing/Routing.tsx",
+                        lineNumber: 21,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/kontakt",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactPageDefault.default), {}, void 0, false, {
+                            fileName: "src/Routing/Routing.tsx",
+                            lineNumber: 22,
+                            columnNumber: 41
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/Routing/Routing.tsx",
+                        lineNumber: 22,
+                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Routing/Routing.tsx",
-                lineNumber: 13,
+                lineNumber: 15,
                 columnNumber: 7
             }, this)
         ]
@@ -27417,7 +27445,7 @@ $RefreshReg$(_c, "Routing");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../Pages/HomePage":"gJB5o","../Pages/PriceListPage":"eIucm","../Pages/ProductsListningPage":"3Kqqo","../Pages/ContactPage":"bDqc9","../Pages/ImageArchive":"j1mrX","../Feature/Helper/ScrollToTop":"4Z7Gw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../Pages/HomePage":"gJB5o","../Pages/PriceListPage":"eIucm","../Pages/ProductsListningPage":"3Kqqo","../Pages/ContactPage":"bDqc9","../Pages/ImageArchive":"j1mrX","../Feature/Helper/ScrollToTop":"4Z7Gw","../Pages/Productpage/limfog":"cBoK6","../Pages/Productpage/SawedProducts":"kTUTe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.24.1
  *
@@ -36497,6 +36525,7 @@ parcelHelpers.export(exports, "humongous", ()=>humongous);
 parcelHelpers.export(exports, "moderate", ()=>moderate);
 parcelHelpers.export(exports, "Block", ()=>Block);
 parcelHelpers.export(exports, "AppearanceBlock", ()=>AppearanceBlock);
+parcelHelpers.export(exports, "Text", ()=>Text);
 parcelHelpers.export(exports, "DefaultGreen", ()=>DefaultGreen);
 parcelHelpers.export(exports, "DefaulBackgroundColor", ()=>DefaulBackgroundColor);
 var _react = require("@glitz/react");
@@ -36525,6 +36554,7 @@ const AppearanceBlock = (0, _react.styled).div({
         x: "auto"
     }
 });
+const Text = (0, _react.styled).p({});
 const DefaultGreen = "#A7CDCC";
 const DefaulBackgroundColor = "#004A55";
 
@@ -37245,6 +37275,7 @@ _c2 = TextContainer;
 const ImageContainer = (0, _react.styled).div({
     width: "100%",
     height: "100%",
+    maxHeight: "500px",
     borderRadius: "10px",
     overflow: "hidden",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
@@ -37857,10 +37888,54 @@ $RefreshReg$(_c6, "ButtonCell");
   window.$RefreshSig$ = prevRefreshSig;
 }
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../Lists/PriceFile":"31CoS","../../Shared/value":"9VKej","@glitz/react":"bAXm1","@glitz/core":"5ehrf","./Button":"at8Gv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"31CoS":[function(require,module,exports) {
-// Data for the table
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ekstolp", ()=>ekstolp);
 parcelHelpers.export(exports, "list", ()=>list);
+const ekstolp = {
+    dimensionsWithCosts: [
+        {
+            dimension: "50*50 mm",
+            length: "1.7-1.9 m",
+            pricePerUnit: 38,
+            sharpeningCost: 6
+        },
+        {
+            dimension: "63*63 mm",
+            length: "1.7-1.9 m",
+            pricePerUnit: 65,
+            sharpeningCost: 8
+        },
+        {
+            dimension: "75*75 mm",
+            length: "1.7-1.9 m",
+            pricePerUnit: 95,
+            sharpeningCost: 12
+        }
+    ],
+    dimensionsWithPricePerLpm: [
+        {
+            dimension: "100*100 mm",
+            pricePerLpm: 110
+        },
+        {
+            dimension: "125*125 mm",
+            pricePerLpm: 129
+        },
+        {
+            dimension: "150*150 mm",
+            pricePerLpm: 175
+        },
+        {
+            dimension: "175*175 mm",
+            pricePerLpm: 220
+        },
+        {
+            dimension: "200*200 mm",
+            pricePerLpm: 280
+        }
+    ]
+};
 const list = [
     {
         artikelnr: "7501",
@@ -38452,7 +38527,7 @@ function ProductListningPage() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: "Nedan exempel p\xe5 b\xe4nkskiva i stavlimmad 40 m.m Alm"
+                        children: "Bildexempel p\xe5 b\xe4nkskiva i stavlimmad 40 m.m Alm"
                     }, void 0, false, {
                         fileName: "src/Pages/ProductsListningPage.tsx",
                         lineNumber: 52,
@@ -38480,7 +38555,7 @@ $RefreshReg$(_c1, "Text");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../Assets/HeroLumber.jpg":"eDA9j","../Feature/Components/Hero":"8WNwH","../Feature/Components/TextList":"5S2tu","../Feature/Components/ImageAndText":"8HWo8","../Assets/products/limfog-alm.jpg":"jUiM9","@glitz/react":"bAXm1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Feature/Components/TextContainer":"2Ed9O","../Feature/Components/ProductInfoCol":"lVryi"}],"jUiM9":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../Assets/HeroLumber.jpg":"eDA9j","../Feature/Components/Hero":"8WNwH","../Feature/Components/TextList":"5S2tu","../Feature/Components/ImageAndText":"8HWo8","../Assets/products/limfog-alm.jpg":"jUiM9","@glitz/react":"bAXm1","../Feature/Components/TextContainer":"2Ed9O","../Feature/Components/ProductInfoCol":"lVryi","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jUiM9":[function(require,module,exports) {
 module.exports = require("e8d3c54cc0e11ce7").getBundleURL("6EXJA") + "limfog-alm.964d5e46.jpg" + "?" + Date.now();
 
 },{"e8d3c54cc0e11ce7":"lgJ39"}],"2Ed9O":[function(require,module,exports) {
@@ -38504,19 +38579,19 @@ function TextContainer(props) {
                     children: props.title
                 }, void 0, false, {
                     fileName: "src/Feature/Components/TextContainer.tsx",
-                    lineNumber: 15,
+                    lineNumber: 13,
                     columnNumber: 9
                 }, this),
                 props.children
             ]
         }, void 0, true, {
             fileName: "src/Feature/Components/TextContainer.tsx",
-            lineNumber: 14,
+            lineNumber: 12,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/Feature/Components/TextContainer.tsx",
-        lineNumber: 13,
+        lineNumber: 11,
         columnNumber: 5
     }, this);
 }
@@ -38641,7 +38716,7 @@ function ContactPage() {
                 description: "Kontakt oss om ni vill ha Pris p\xe5 s\xe5gat virke okant och kantat"
             }, void 0, false, {
                 fileName: "src/Pages/ContactPage.tsx",
-                lineNumber: 12,
+                lineNumber: 11,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
@@ -38653,26 +38728,26 @@ function ContactPage() {
                         children: "\xc4pplaryd 3"
                     }, void 0, false, {
                         fileName: "src/Pages/ContactPage.tsx",
-                        lineNumber: 19,
+                        lineNumber: 18,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h4Default.default), {
                         children: "360 30 Lammhult"
                     }, void 0, false, {
                         fileName: "src/Pages/ContactPage.tsx",
-                        lineNumber: 20,
+                        lineNumber: 19,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                         fileName: "src/Pages/ContactPage.tsx",
-                        lineNumber: 21,
+                        lineNumber: 20,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h4Default.default), {
                         children: "070-3278734"
                     }, void 0, false, {
                         fileName: "src/Pages/ContactPage.tsx",
-                        lineNumber: 22,
+                        lineNumber: 21,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h4Default.default), {
@@ -38681,44 +38756,44 @@ function ContactPage() {
                             children: "info@eme.nu"
                         }, void 0, false, {
                             fileName: "src/Pages/ContactPage.tsx",
-                            lineNumber: 24,
+                            lineNumber: 23,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "src/Pages/ContactPage.tsx",
-                        lineNumber: 23,
+                        lineNumber: 22,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                         fileName: "src/Pages/ContactPage.tsx",
-                        lineNumber: 26,
+                        lineNumber: 25,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
                         children: "\xd6ppettider"
                     }, void 0, false, {
                         fileName: "src/Pages/ContactPage.tsx",
-                        lineNumber: 27,
+                        lineNumber: 26,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h4Default.default), {
                         children: "M\xe5ndag - fredag 07.00-18.00"
                     }, void 0, false, {
                         fileName: "src/Pages/ContactPage.tsx",
-                        lineNumber: 28,
+                        lineNumber: 27,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h4Default.default), {
                         children: "L\xf6rdag - s\xf6ndag 09.00-15.00"
                     }, void 0, false, {
                         fileName: "src/Pages/ContactPage.tsx",
-                        lineNumber: 29,
+                        lineNumber: 28,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Pages/ContactPage.tsx",
-                lineNumber: 18,
+                lineNumber: 17,
                 columnNumber: 7
             }, this)
         ]
@@ -39212,7 +39287,474 @@ $RefreshReg$(_c, "ScrollToTop");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"irmnC":[function() {},{}],"kcmoy":[function(require,module,exports) {
+},{"react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cBoK6":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$7702 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$7702.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _limfogAlmJpg = require("../../Assets/products/limfog-alm.jpg");
+var _limfogAlmJpgDefault = parcelHelpers.interopDefault(_limfogAlmJpg);
+var _imageAndText = require("../../Feature/Components/ImageAndText");
+var _imageAndTextDefault = parcelHelpers.interopDefault(_imageAndText);
+var _value = require("../../Shared/value");
+function Limfog() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
+            src: (0, _limfogAlmJpgDefault.default),
+            title: "Limfog",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                    children: "Vi erbjuder Limfog till av mycket h\xf6g kvalitet som tillverkas i Sverige av virke som vi sj\xe4lva levererar."
+                }, void 0, false, {
+                    fileName: "src/Pages/Productpage/limfog.tsx",
+                    lineNumber: 9,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                    children: "Hyllplan, bordsskivor och b\xe4nkskivor eller vad du sj\xe4lv \xf6nskar."
+                }, void 0, false, {
+                    fileName: "src/Pages/Productpage/limfog.tsx",
+                    lineNumber: 12,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                    children: "Limfogen tillverkas i exakt de m\xe5tt du \xf6nskar och \xe4r f\xe4rdigputsade."
+                }, void 0, false, {
+                    fileName: "src/Pages/Productpage/limfog.tsx",
+                    lineNumber: 13,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                    children: "Kan \xe4ven levereras med ytbehandling"
+                }, void 0, false, {
+                    fileName: "src/Pages/Productpage/limfog.tsx",
+                    lineNumber: 14,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                    children: "Limfogen m\xe5ste best\xe4llas, leveranstid 1-2 veckor."
+                }, void 0, false, {
+                    fileName: "src/Pages/Productpage/limfog.tsx",
+                    lineNumber: 15,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                    children: "Bildexempel p\xe5 b\xe4nkskiva i stavlimmad 40 m.m Alm"
+                }, void 0, false, {
+                    fileName: "src/Pages/Productpage/limfog.tsx",
+                    lineNumber: 16,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/Pages/Productpage/limfog.tsx",
+            lineNumber: 8,
+            columnNumber: 7
+        }, this)
+    }, void 0, false);
+}
+_c = Limfog;
+exports.default = Limfog;
+var _c;
+$RefreshReg$(_c, "Limfog");
+
+  $parcel$ReactRefreshHelpers$7702.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../../Assets/products/limfog-alm.jpg":"jUiM9","../../Feature/Components/ImageAndText":"8HWo8","../../Shared/value":"9VKej","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kTUTe":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$42b5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$42b5.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _hero = require("../../Feature/Components/Hero");
+var _heroDefault = parcelHelpers.interopDefault(_hero);
+var _sawedProducts1Jpg = require("../../Assets/sawed-products-1.jpg");
+var _sawedProducts1JpgDefault = parcelHelpers.interopDefault(_sawedProducts1Jpg);
+var _sawedProducts2Jpg = require("../../Assets/sawed-products-2.jpg");
+var _sawedProducts2JpgDefault = parcelHelpers.interopDefault(_sawedProducts2Jpg);
+var _imageAndText = require("../../Feature/Components/ImageAndText");
+var _imageAndTextDefault = parcelHelpers.interopDefault(_imageAndText);
+var _value = require("../../Shared/value");
+var _smallList = require("../../Feature/Components/SmallList");
+var _smallListDefault = parcelHelpers.interopDefault(_smallList);
+function SawedProducts() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {
+                src: (0, _sawedProducts1JpgDefault.default),
+                alt: "Hero image s\xe5gade produkter.",
+                title: "S\xe5gade produkter.",
+                description: "Vi erbjuder s\xe5gat l\xf6vtr\xe4 av de flesta svenska tr\xe4slag och i de flesta dimensioner."
+            }, void 0, false, {
+                fileName: "src/Pages/Productpage/SawedProducts.tsx",
+                lineNumber: 11,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
+                src: (0, _sawedProducts2JpgDefault.default),
+                title: "S\xe5gade produkter",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                        children: "Vi lagerf\xf6r okantat/kantat virke i ett flertal tr\xe4slag."
+                    }, void 0, false, {
+                        fileName: "src/Pages/Productpage/SawedProducts.tsx",
+                        lineNumber: 18,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                        children: "Dimensionerna skiljer sig mellan tr\xe4slagen, men standard \xe4r i m.m 19, 25, 32, 50, 75."
+                    }, void 0, false, {
+                        fileName: "src/Pages/Productpage/SawedProducts.tsx",
+                        lineNumber: 19,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                        children: "L\xe4ngd: 3 m som standard men Ek finns i l\xe4ngderna fr\xe5n 1.8-4,3 m."
+                    }, void 0, false, {
+                        fileName: "src/Pages/Productpage/SawedProducts.tsx",
+                        lineNumber: 20,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                        children: "Virket kan torkas ner till 7 % (m\xf6beltorrt)."
+                    }, void 0, false, {
+                        fileName: "src/Pages/Productpage/SawedProducts.tsx",
+                        lineNumber: 21,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Pages/Productpage/SawedProducts.tsx",
+                lineNumber: 17,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _smallListDefault.default), {}, void 0, false, {
+                fileName: "src/Pages/Productpage/SawedProducts.tsx",
+                lineNumber: 23,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true);
+}
+_c = SawedProducts;
+exports.default = SawedProducts;
+var _c;
+$RefreshReg$(_c, "SawedProducts");
+
+  $parcel$ReactRefreshHelpers$42b5.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../../Feature/Components/Hero":"8WNwH","../../Assets/sawed-products-1.jpg":"7Omft","../../Assets/sawed-products-2.jpg":"6dERR","../../Feature/Components/ImageAndText":"8HWo8","../../Shared/value":"9VKej","../../Feature/Components/SmallList":"csIkc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7Omft":[function(require,module,exports) {
+module.exports = require("34366f8c3b03848b").getBundleURL("6EXJA") + "sawed-products-1.e900d10c.jpg" + "?" + Date.now();
+
+},{"34366f8c3b03848b":"lgJ39"}],"6dERR":[function(require,module,exports) {
+module.exports = require("334becc8177d63e").getBundleURL("6EXJA") + "sawed-products-2.f8f9fbda.jpg" + "?" + Date.now();
+
+},{"334becc8177d63e":"lgJ39"}],"csIkc":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$d30b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$d30b.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _priceFile = require("../../Lists/PriceFile");
+var _value = require("../../Shared/value");
+var _react1 = require("@glitz/react");
+var _button = require("./Button");
+var _h2 = require("../../Shared/Generic/H2");
+var _h2Default = parcelHelpers.interopDefault(_h2);
+var _s = $RefreshSig$();
+function SmallList() {
+    _s();
+    const [list, setList] = (0, _react.useState)((0, _priceFile.ekstolp));
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h2Default.default), {
+                children: "Ekstol"
+            }, void 0, false, {
+                fileName: "src/Feature/Components/SmallList.tsx",
+                lineNumber: 14,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                children: "Vi har m\xe4rkt att efterfr\xe5gan p\xe5 ek och ekstolp \xf6kar f\xf6r varje \xe5r. D\xe4rf\xf6r har vi \xf6kat andelen s\xe5gad ek f\xf6r att t\xe4cka den \xf6kade efterfr\xe5gan."
+            }, void 0, false, {
+                fileName: "src/Feature/Components/SmallList.tsx",
+                lineNumber: 15,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                children: "Vi saluf\xf6r ekstolp i all dimensioner. (priserna \xe4r exkl moms)"
+            }, void 0, false, {
+                fileName: "src/Feature/Components/SmallList.tsx",
+                lineNumber: 19,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(WrapperBlock, {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RowHeader, {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
+                                arialLabel: "Artikelnr",
+                                onClick: ()=>"artikelnr",
+                                css: {
+                                    cursor: "pointer"
+                                },
+                                children: "Dimension"
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/SmallList.tsx",
+                                lineNumber: 22,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
+                                arialLabel: "Typ",
+                                onClick: ()=>"typ",
+                                css: {
+                                    cursor: "pointer"
+                                },
+                                children: "L\xe4ngd"
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/SmallList.tsx",
+                                lineNumber: 25,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
+                                arialLabel: "Dimension",
+                                onClick: ()=>"dimension",
+                                css: {
+                                    cursor: "pointer"
+                                },
+                                children: "Pris/st"
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/SmallList.tsx",
+                                lineNumber: 28,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
+                                arialLabel: "Tr\xe4slag",
+                                css: {
+                                    cursor: "pointer"
+                                },
+                                children: "V\xe4ssningskostnad"
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/SmallList.tsx",
+                                lineNumber: 31,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Feature/Components/SmallList.tsx",
+                        lineNumber: 21,
+                        columnNumber: 9
+                    }, this),
+                    list.dimensionsWithCosts.map((row, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Row, {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
+                                    children: row.dimension
+                                }, void 0, false, {
+                                    fileName: "src/Feature/Components/SmallList.tsx",
+                                    lineNumber: 37,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
+                                    children: row.length
+                                }, void 0, false, {
+                                    fileName: "src/Feature/Components/SmallList.tsx",
+                                    lineNumber: 38,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
+                                    children: row.pricePerUnit
+                                }, void 0, false, {
+                                    fileName: "src/Feature/Components/SmallList.tsx",
+                                    lineNumber: 39,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
+                                    children: row.sharpeningCost
+                                }, void 0, false, {
+                                    fileName: "src/Feature/Components/SmallList.tsx",
+                                    lineNumber: 40,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, index, true, {
+                            fileName: "src/Feature/Components/SmallList.tsx",
+                            lineNumber: 36,
+                            columnNumber: 11
+                        }, this))
+                ]
+            }, void 0, true, {
+                fileName: "src/Feature/Components/SmallList.tsx",
+                lineNumber: 20,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(WrapperBlock, {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RowHeaderTwo, {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
+                                arialLabel: "Artikelnr",
+                                onClick: ()=>"artikelnr",
+                                css: {
+                                    cursor: "pointer"
+                                },
+                                children: "Dimension"
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/SmallList.tsx",
+                                lineNumber: 47,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
+                                arialLabel: "Typ",
+                                onClick: ()=>"typ",
+                                css: {
+                                    cursor: "pointer"
+                                },
+                                children: "Pris per lpm"
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/SmallList.tsx",
+                                lineNumber: 50,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Feature/Components/SmallList.tsx",
+                        lineNumber: 46,
+                        columnNumber: 9
+                    }, this),
+                    list.dimensionsWithPricePerLpm.map((row, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RowTwo, {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
+                                    children: row.dimension
+                                }, void 0, false, {
+                                    fileName: "src/Feature/Components/SmallList.tsx",
+                                    lineNumber: 56,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
+                                    children: row.pricePerLpm
+                                }, void 0, false, {
+                                    fileName: "src/Feature/Components/SmallList.tsx",
+                                    lineNumber: 57,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, index, true, {
+                            fileName: "src/Feature/Components/SmallList.tsx",
+                            lineNumber: 55,
+                            columnNumber: 11
+                        }, this))
+                ]
+            }, void 0, true, {
+                fileName: "src/Feature/Components/SmallList.tsx",
+                lineNumber: 45,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/Feature/Components/SmallList.tsx",
+        lineNumber: 13,
+        columnNumber: 5
+    }, this);
+}
+_s(SmallList, "a3sTxCAR1DmAT12QMN9HPaWpCiE=");
+_c = SmallList;
+exports.default = SmallList;
+const Container = (0, _react1.styled)((0, _value.Block), {});
+_c1 = Container;
+const WrapperBlock = (0, _react1.styled).div({
+    display: "block",
+    position: "relative",
+    margin: {
+        top: (0, _value.large)
+    }
+});
+_c2 = WrapperBlock;
+const Row = (0, _react1.styled).div({
+    width: "100%",
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr 1fr 1fr",
+    border: {
+        bottom: {
+            width: "1px",
+            style: "solid",
+            color: (0, _value.DefaultGreen)
+        }
+    }
+});
+_c3 = Row;
+const RowTwo = (0, _react1.styled).div({
+    width: "100%",
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr",
+    border: {
+        bottom: {
+            width: "1px",
+            style: "solid",
+            color: (0, _value.DefaultGreen)
+        }
+    }
+});
+_c4 = RowTwo;
+const RowHeader = (0, _react1.styled)(Row, {
+    fontWeight: "bold",
+    backgroundColor: "#fff"
+});
+_c5 = RowHeader;
+const RowHeaderTwo = (0, _react1.styled)(RowTwo, {
+    fontWeight: "bold",
+    backgroundColor: "#fff"
+});
+_c6 = RowHeaderTwo;
+const Cell = (0, _react1.styled).div({
+    padding: {
+        y: "10px"
+    }
+});
+_c7 = Cell;
+const ButtonCell = (0, _react1.styled)((0, _button.PlainButton), {
+    whiteSpace: "nowrap",
+    padding: {
+        y: "10px"
+    }
+});
+_c8 = ButtonCell;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8;
+$RefreshReg$(_c, "SmallList");
+$RefreshReg$(_c1, "Container");
+$RefreshReg$(_c2, "WrapperBlock");
+$RefreshReg$(_c3, "Row");
+$RefreshReg$(_c4, "RowTwo");
+$RefreshReg$(_c5, "RowHeader");
+$RefreshReg$(_c6, "RowHeaderTwo");
+$RefreshReg$(_c7, "Cell");
+$RefreshReg$(_c8, "ButtonCell");
+
+  $parcel$ReactRefreshHelpers$d30b.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../Lists/PriceFile":"31CoS","../../Shared/value":"9VKej","@glitz/react":"bAXm1","./Button":"at8Gv","../../Shared/Generic/H2":"au95a","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"irmnC":[function() {},{}],"kcmoy":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$40ee = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -39238,7 +39780,7 @@ const menuLinks = [
         name: "Produkter",
         subMenu: [
             {
-                url: "/produkter/s\xe5gade-produkter",
+                url: "/produkter/sagade-produkter",
                 name: "S\xe5gade Produkter"
             },
             {
@@ -39770,7 +40312,7 @@ $RefreshReg$(_c14, "SubMenu");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","@glitz/core":"5ehrf","../../Assets/icons/menu.svg":"1MZpS","react-router-dom":"9xmpe","../../Assets/logo.png":"dixc1","react":"21dqq","../../Assets/close.svg":"lONnP","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../Assets/icons/chevron.svg":"ftSMl","../Components/Button":"at8Gv"}],"1MZpS":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","@glitz/core":"5ehrf","../../Assets/icons/menu.svg":"1MZpS","../Components/Button":"at8Gv","react-router-dom":"9xmpe","../../Assets/logo.png":"dixc1","react":"21dqq","../../Assets/close.svg":"lONnP","../../Assets/icons/chevron.svg":"ftSMl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1MZpS":[function(require,module,exports) {
 module.exports = require("f28a6342581d8bf8").getBundleURL("6EXJA") + "menu.ffa02e1f.svg" + "?" + Date.now();
 
 },{"f28a6342581d8bf8":"lgJ39"}],"dixc1":[function(require,module,exports) {
@@ -39996,7 +40538,7 @@ $RefreshReg$(_c9, "DropdownItem");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","@glitz/core":"5ehrf","react-router-dom":"9xmpe","../../Assets/logo.png":"dixc1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"3XZ4R":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","@glitz/core":"5ehrf","react-router-dom":"9xmpe","../../Assets/logo.png":"dixc1","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3XZ4R":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "glitz", ()=>glitz);

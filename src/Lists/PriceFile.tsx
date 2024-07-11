@@ -1,4 +1,48 @@
-// Data for the table
+export const ekstolp = {
+  dimensionsWithCosts: [
+    {
+      dimension: '50*50 mm',
+      length: '1.7-1.9 m',
+      pricePerUnit: 38,
+      sharpeningCost: 6,
+    },
+    {
+      dimension: '63*63 mm',
+      length: '1.7-1.9 m',
+      pricePerUnit: 65,
+      sharpeningCost: 8,
+    },
+    {
+      dimension: '75*75 mm',
+      length: '1.7-1.9 m',
+      pricePerUnit: 95,
+      sharpeningCost: 12,
+    },
+  ],
+  dimensionsWithPricePerLpm: [
+    {
+      dimension: '100*100 mm',
+      pricePerLpm: 110,
+    },
+    {
+      dimension: '125*125 mm',
+      pricePerLpm: 129,
+    },
+    {
+      dimension: '150*150 mm',
+      pricePerLpm: 175,
+    },
+    {
+      dimension: '175*175 mm',
+      pricePerLpm: 220,
+    },
+    {
+      dimension: '200*200 mm',
+      pricePerLpm: 280,
+    },
+  ],
+};
+
 export const list = [
   {
     artikelnr: '7501',

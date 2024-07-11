@@ -21,7 +21,7 @@ const menuLinks: MenuLinkstype['menuLinks'] = [
     name: 'Produkter',
     subMenu: [
       {
-        url: '/produkter/sågade-produkter',
+        url: '/produkter/sagade-produkter',
         name: 'Sågade Produkter',
       },
       {

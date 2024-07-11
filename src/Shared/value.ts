@@ -28,5 +28,7 @@ export const AppearanceBlock = styled.div({
   },
 });
 
+export const Text = styled.p({});
+
 export const DefaultGreen = '#A7CDCC';
 export const DefaulBackgroundColor = '#004A55';
