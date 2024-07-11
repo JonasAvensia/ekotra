@@ -8,16 +8,15 @@ import logo from '../../Assets/logo.png';
 import { useState } from 'react';
 import CloseIcon from '../../Assets/close.svg';
 import Chevron from '../../Assets/icons/chevron.svg';
+import { MenuLinkstype } from './Header';
 
-type Prototype = {
-  menuLinks: {
-    url: string;
-    name: string;
-  }[];
-};
-
-function Compact({ menuLinks }: Prototype) {
+function Compact({ menuLinks }: MenuLinkstype) {
   const [isOpen, setIsOpen] = useState(false);
+  const [openMenuIndex, setOpenMenuIndex] = useState<number | null>(null);
+
+  const toggleSubMenu = (index: number) => {
+    setOpenMenuIndex(openMenuIndex === index ? null : index);
+  };
 
   return (
     <CompactContainer>
@@ -37,14 +36,44 @@ function Compact({ menuLinks }: Prototype) {
         </FlyoutHeader>
         <Navbar>
           <Links>
-            {menuLinks.map(link => (
-              <NavLink to={link.url} onClick={() => setIsOpen(false)}>
-                <Link>
-                  <LinkText>{link.name}</LinkText>
-                  <styled.Img src={Chevron} alt="Link arrow" width={10} />
-                </Link>
-              </NavLink>
-            ))}
+            {menuLinks.map((link, index) =>
+              link.subMenu ? (
+                <>
+                  <DropDownButton
+                    onClick={() => toggleSubMenu(index)}
+                    arialLabel={`Open link dropdown for ${link.name}`}
+                  >
+                    <Link>
+                      <LinkText>{link.name}</LinkText>
+                      {link.subMenu && <styled.Img src={Chevron} alt="Link arrow" width={10} />}
+                    </Link>
+                  </DropDownButton>
+                  {link.subMenu && openMenuIndex === index && (
+                    <SubMenuWrapper>
+                      <SubMenu>
+                        <Link>
+                          <LinkText>{link.name}</LinkText>
+                        </Link>
+                        {link.subMenu.map(subLink => (
+                          <NavLink to={subLink.url} key={subLink.name} onClick={() => setIsOpen(false)}>
+                            <Link>
+                              <LinkText>{subLink.name}</LinkText>
+                            </Link>
+                          </NavLink>
+                        ))}
+                      </SubMenu>
+                    </SubMenuWrapper>
+                  )}
+                </>
+              ) : (
+                <NavLink to={link.url} onClick={() => setIsOpen(false)}>
+                  <Link>
+                    <LinkText>{link.name}</LinkText>
+                    {link.subMenu && <styled.Img src={Chevron} alt="Link arrow" width={10} />}
+                  </Link>
+                </NavLink>
+              ),
+            )}
           </Links>
         </Navbar>
       </Flyout>
@@ -160,3 +189,29 @@ const Link = styled.li({
 });
 
 const LinkText = styled.span();
+
+const DropDownButton = styled(PlainButton, {});
+
+const SubMenuWrapper = styled.div({
+  display: 'flex',
+  width: '100%',
+});
+
+const SubMenu = styled.div({
+  width: '100%',
+  display: 'flex',
+  flexDirection: 'column',
+  fontWeight: 'bold',
+  overflow: 'hidden',
+  transition: {
+    property: 'max-height',
+    duration: '300ms',
+    timingFunction: 'ease-in-out',
+  },
+
+  textDecoration: 'none',
+  color: '#000',
+  ':hover': {
+    backgroundColor: '#f0f0f0',
+  },
+});

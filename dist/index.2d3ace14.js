@@ -27305,7 +27305,7 @@ $RefreshReg$(_c1, "Page");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./Routing/Routing":"12bzc","react-router-dom":"9xmpe","./index.css":"irmnC","@glitz/react":"bAXm1","./Feature/Header/Header":"kcmoy","./Shared/GlitzOptions":"3XZ4R","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@glitz/core":"5ehrf","./Feature/Footer/Footer":"3cOKN","./Shared/value":"9VKej","./Feature/Components/ContactLinkBlock":"2TbV3"}],"12bzc":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./Routing/Routing":"12bzc","react-router-dom":"9xmpe","./index.css":"irmnC","@glitz/react":"bAXm1","./Feature/Header/Header":"kcmoy","./Shared/GlitzOptions":"3XZ4R","@glitz/core":"5ehrf","./Feature/Footer/Footer":"3cOKN","./Shared/value":"9VKej","./Feature/Components/ContactLinkBlock":"2TbV3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"12bzc":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2aec = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27417,9 +27417,9 @@ $RefreshReg$(_c, "Routing");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../Pages/HomePage":"gJB5o","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Pages/PriceListPage":"eIucm","../Pages/ProductsListningPage":"3Kqqo","../Pages/ContactPage":"bDqc9","../Pages/ImageArchive":"j1mrX","../Feature/Helper/ScrollToTop":"4Z7Gw"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../Pages/HomePage":"gJB5o","../Pages/PriceListPage":"eIucm","../Pages/ProductsListningPage":"3Kqqo","../Pages/ContactPage":"bDqc9","../Pages/ImageArchive":"j1mrX","../Feature/Helper/ScrollToTop":"4Z7Gw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
 /**
- * React Router DOM v6.24.0
+ * React Router DOM v6.24.1
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -28438,7 +28438,7 @@ function useDataRouterState(hookName) {
  * A convenient wrapper for reading and writing search parameters via the
  * URLSearchParams interface.
  */ function useSearchParams(defaultInit) {
-    (0, _router.UNSAFE_warning)(typeof URLSearchParams !== "undefined", "You cannot use the `useSearchParams` hook in a browser that does not support the URLSearchParams API. If you need to support Internet Explorer 11, we recommend you load a polyfill such as https://github.com/ungap/url-search-params\n\nIf you're unsure how to load polyfills, we recommend you check out https://polyfill.io/v3/ which provides some recommendations about how to load polyfills only for users that need them, instead of for every user.");
+    (0, _router.UNSAFE_warning)(typeof URLSearchParams !== "undefined", "You cannot use the `useSearchParams` hook in a browser that does not support the URLSearchParams API. If you need to support Internet Explorer 11, we recommend you load a polyfill such as https://github.com/ungap/url-search-params.");
     let defaultSearchParamsRef = _react.useRef(createSearchParams(defaultInit));
     let hasSetSearchParamsRef = _react.useRef(false);
     let location = (0, _reactRouter.useLocation)();
@@ -28848,7 +28848,7 @@ let savedScrollPositions = {};
 
 },{"react":"21dqq","react-dom":"j6uA9","react-router":"dbWyW","@remix-run/router":"5ncDG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dbWyW":[function(require,module,exports) {
 /**
- * React Router v6.24.0
+ * React Router v6.24.1
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -30116,7 +30116,7 @@ function createMemoryRouter(routes, opts) {
 
 },{"react":"21dqq","@remix-run/router":"5ncDG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5ncDG":[function(require,module,exports) {
 /**
- * @remix-run/router v1.17.0
+ * @remix-run/router v1.17.1
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -30989,7 +30989,7 @@ function getResolveToMatches(matches, v7_relativeSplatPath) {
     // When v7_relativeSplatPath is enabled, use the full pathname for the leaf
     // match so we include splat values for "." links.  See:
     // https://github.com/remix-run/react-router/issues/11052#issuecomment-1836589329
-    if (v7_relativeSplatPath) return pathMatches.map((match, idx)=>idx === matches.length - 1 ? match.pathname : match.pathnameBase);
+    if (v7_relativeSplatPath) return pathMatches.map((match, idx)=>idx === pathMatches.length - 1 ? match.pathname : match.pathnameBase);
     return pathMatches.map((match)=>match.pathnameBase);
 }
 /**
@@ -31380,6 +31380,13 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
             [route.id]: error
         };
     }
+    // If the user provided a patchRoutesOnMiss implementation and our initial
+    // match is a splat route, clear them out so we run through lazy discovery
+    // on hydration in case there's a more accurate lazy route match
+    if (initialMatches && patchRoutesOnMissImpl) {
+        let fogOfWar = checkFogOfWar(initialMatches, dataRoutes, init.history.location.pathname);
+        if (fogOfWar.active) initialMatches = null;
+    }
     let initialized;
     if (!initialMatches) {
         // We need to run patchRoutesOnMiss in initialize()
@@ -31640,6 +31647,7 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
         // Always respect the user flag.  Otherwise don't reset on mutation
         // submission navigations unless they redirect
         let preventScrollReset = pendingPreventScrollReset === true || state.navigation.formMethod != null && isMutationMethod(state.navigation.formMethod) && ((_location$state2 = location.state) == null ? void 0 : _location$state2._isRedirect) !== true;
+        // Commit any in-flight routes at the end of the HMR revalidation "navigation"
         if (inFlightDataRoutes) {
             dataRoutes = inFlightDataRoutes;
             inFlightDataRoutes = undefined;
@@ -32870,7 +32878,7 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
                 };
             } else {
                 let leafRoute = matches[matches.length - 1].route;
-                if (leafRoute.path === "*") {
+                if (leafRoute.path && (leafRoute.path === "*" || leafRoute.path.endsWith("/*"))) {
                     // If we matched a splat, it might only be because we haven't yet fetched
                     // the children that would match with a higher score, so let's fetch
                     // around and find out
@@ -32891,19 +32899,30 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
         let partialMatches = matches;
         let route = partialMatches.length > 0 ? partialMatches[partialMatches.length - 1].route : null;
         while(true){
+            let isNonHMR = inFlightDataRoutes == null;
+            let routesToUse = inFlightDataRoutes || dataRoutes;
             try {
-                await loadLazyRouteChildren(patchRoutesOnMissImpl, pathname, partialMatches, dataRoutes || inFlightDataRoutes, manifest, mapRouteProperties, pendingPatchRoutes, signal);
+                await loadLazyRouteChildren(patchRoutesOnMissImpl, pathname, partialMatches, routesToUse, manifest, mapRouteProperties, pendingPatchRoutes, signal);
             } catch (e) {
                 return {
                     type: "error",
                     error: e,
                     partialMatches
                 };
+            } finally{
+                // If we are not in the middle of an HMR revalidation and we changed the
+                // routes, provide a new identity so when we `updateState` at the end of
+                // this navigation/fetch `router.routes` will be a new identity and
+                // trigger a re-run of memoized `router.routes` dependencies.
+                // HMR will already update the identity and reflow when it lands
+                // `inFlightDataRoutes` in `completeNavigation`
+                if (isNonHMR) dataRoutes = [
+                    ...dataRoutes
+                ];
             }
             if (signal.aborted) return {
                 type: "aborted"
             };
-            let routesToUse = inFlightDataRoutes || dataRoutes;
             let newMatches = matchRoutes(routesToUse, pathname, basename);
             let matchedSplat = false;
             if (newMatches) {
@@ -32946,6 +32965,22 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
         manifest = {};
         inFlightDataRoutes = convertRoutesToDataRoutes(newRoutes, mapRouteProperties, undefined, manifest);
     }
+    function patchRoutes(routeId, children) {
+        let isNonHMR = inFlightDataRoutes == null;
+        let routesToUse = inFlightDataRoutes || dataRoutes;
+        patchRoutesImpl(routeId, children, routesToUse, manifest, mapRouteProperties);
+        // If we are not in the middle of an HMR revalidation and we changed the
+        // routes, provide a new identity and trigger a reflow via `updateState`
+        // to re-run memoized `router.routes` dependencies.
+        // HMR will already update the identity and reflow when it lands
+        // `inFlightDataRoutes` in `completeNavigation`
+        if (isNonHMR) {
+            dataRoutes = [
+                ...dataRoutes
+            ];
+            updateState({});
+        }
+    }
     router = {
         get basename () {
             return basename;
@@ -32977,9 +33012,7 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
         dispose,
         getBlocker,
         deleteBlocker,
-        patchRoutes (routeId, children) {
-            return patchRoutes(routeId, children, dataRoutes || inFlightDataRoutes, manifest, mapRouteProperties);
-        },
+        patchRoutes,
         _internalFetchControllers: fetchControllers,
         _internalActiveDeferreds: activeDeferreds,
         // TODO: Remove setRoutes, it's temporary to avoid dealing with
@@ -33659,7 +33692,7 @@ function shouldRevalidateLoader(loaderMatch, arg) {
     return arg.defaultShouldRevalidate;
 }
 /**
- * Idempotent utility to execute route.children() method to lazily load route
+ * Idempotent utility to execute patchRoutesOnMiss() to lazily load route
  * definitions and update the routes/routeManifest
  */ async function loadLazyRouteChildren(patchRoutesOnMissImpl, path, matches, routes, manifest, mapRouteProperties, pendingRouteChildren, signal) {
     let key = [
@@ -33673,7 +33706,7 @@ function shouldRevalidateLoader(loaderMatch, arg) {
                 path,
                 matches,
                 patch: (routeId, children)=>{
-                    if (!signal.aborted) patchRoutes(routeId, children, routes, manifest, mapRouteProperties);
+                    if (!signal.aborted) patchRoutesImpl(routeId, children, routes, manifest, mapRouteProperties);
                 }
             });
             pendingRouteChildren.set(key, pending);
@@ -33683,7 +33716,7 @@ function shouldRevalidateLoader(loaderMatch, arg) {
         pendingRouteChildren.delete(key);
     }
 }
-function patchRoutes(routeId, children, routes, manifest, mapRouteProperties) {
+function patchRoutesImpl(routeId, children, routesToUse, manifest, mapRouteProperties) {
     if (routeId) {
         var _route$children;
         let route = manifest[routeId];
@@ -33698,9 +33731,9 @@ function patchRoutes(routeId, children, routes, manifest, mapRouteProperties) {
     } else {
         let dataChildren = convertRoutesToDataRoutes(children, mapRouteProperties, [
             "patch",
-            String(routes.length || "0")
+            String(routesToUse.length || "0")
         ], manifest);
-        routes.push(...dataChildren);
+        routesToUse.push(...dataChildren);
     }
 }
 /**
@@ -34488,12 +34521,11 @@ var _acornJpg = require("../Assets/acorn.jpg");
 var _acornJpgDefault = parcelHelpers.interopDefault(_acornJpg);
 var _textList = require("../Feature/Components/TextList");
 var _textListDefault = parcelHelpers.interopDefault(_textList);
-var _h3 = require("../Shared/Generic/H3");
-var _h3Default = parcelHelpers.interopDefault(_h3);
 var _forrestJpg = require("../Assets/forrest.jpg");
 var _forrestJpgDefault = parcelHelpers.interopDefault(_forrestJpg);
 var _oakBoardsJpg = require("../Assets/oak-boards.jpg");
 var _oakBoardsJpgDefault = parcelHelpers.interopDefault(_oakBoardsJpg);
+var _react = require("@glitz/react");
 function HomePage() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
@@ -34504,17 +34536,17 @@ function HomePage() {
                 description: "Specials\xe5gverk-Hyvleri mitt i Sm\xe5land sedan 1997"
             }, void 0, false, {
                 fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 12,
+                lineNumber: 13,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _textListDefault.default), {}, void 0, false, {
                 fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 18,
+                lineNumber: 20,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardLinksDefault.default), {}, void 0, false, {
                 fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 19,
+                lineNumber: 21,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
@@ -34522,76 +34554,139 @@ function HomePage() {
                 title: "V\xe5r Vision",
                 textFirst: true,
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
-                        children: "Genom att varsamt och f\xf6r hand hantera virket fr\xe5n s\xe5gning till f\xe4rdig produkt kan vi s\xe4kerst\xe4lla en god kvalitet och ett formstabilt virke."
-                    }, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                        children: [
+                            "Genom att varsamt och f\xf6r hand hantera virket fr\xe5n s\xe5gning till f\xe4rdig produkt kan vi s\xe4kerst\xe4lla en",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                children: " god kvalitet"
+                            }, void 0, false, {
+                                fileName: "src/Pages/HomePage.tsx",
+                                lineNumber: 25,
+                                columnNumber: 11
+                            }, this),
+                            " och ett ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                children: " formstabilt virke"
+                            }, void 0, false, {
+                                fileName: "src/Pages/HomePage.tsx",
+                                lineNumber: 25,
+                                columnNumber: 50
+                            }, this),
+                            "."
+                        ]
+                    }, void 0, true, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 21,
+                        lineNumber: 23,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
-                        children: "Vi arbetar n\xe4stan uteslutande med svenskt l\xf6vtr\xe4 och s\xe4tter ursprung i fokus."
-                    }, void 0, false, {
-                        fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 25,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
-                        children: "Med leverans f\xf6ljer ett ursprungsdokument med v\xe4xtplats."
-                    }, void 0, false, {
-                        fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 26,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
-                        children: "Udda l\xe4ngder, dimensioner och profiler tillh\xf6r v\xe5r specialitet."
-                    }, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                        children: [
+                            "Vi arbetar n\xe4stan uteslutande med ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                children: "svenskt l\xf6vtr\xe4"
+                            }, void 0, false, {
+                                fileName: "src/Pages/HomePage.tsx",
+                                lineNumber: 28,
+                                columnNumber: 45
+                            }, this),
+                            " och s\xe4tter ursprung i fokus."
+                        ]
+                    }, void 0, true, {
                         fileName: "src/Pages/HomePage.tsx",
                         lineNumber: 27,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
-                        children: "Vi har som m\xe5l att kunna leverera inom tv\xe5 veckor fr\xe5n order, oavsett om det \xe4r lagervara eller m\xe5ste specialproduceras."
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                        children: "Med leverans f\xf6ljer ett ursprungsdokument med v\xe4xtplats."
                     }, void 0, false, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 28,
+                        lineNumber: 30,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                        children: "Udda l\xe4ngder, dimensioner och profiler tillh\xf6r v\xe5r specialitet."
+                    }, void 0, false, {
+                        fileName: "src/Pages/HomePage.tsx",
+                        lineNumber: 31,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                        children: [
+                            "Vi har som m\xe5l att kunna leverera inom ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                children: "tv\xe5 veckor"
+                            }, void 0, false, {
+                                fileName: "src/Pages/HomePage.tsx",
+                                lineNumber: 33,
+                                columnNumber: 50
+                            }, this),
+                            " fr\xe5n order, oavsett om det \xe4r lagervara eller m\xe5ste specialproduceras."
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Pages/HomePage.tsx",
+                        lineNumber: 32,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 20,
+                lineNumber: 22,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
                 src: (0, _forrestJpgDefault.default),
                 title: "V\xe5ra M\xe5l",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                         children: "Vi jobbar mot privata kunder, kommuner, l\xe4nsstyrelser och andra f\xf6retag."
                     }, void 0, false, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 34,
+                        lineNumber: 38,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                         children: "Alltid med samma m\xe5l, att kunden ska f\xe5 r\xe4tt vara vid r\xe4tt tid."
                     }, void 0, false, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 35,
+                        lineNumber: 39,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                         children: "Vi ombes\xf6rjer transport inom hela Sverige."
                     }, void 0, false, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 36,
+                        lineNumber: 40,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 33,
+                lineNumber: 37,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
+                src: (0, _oakBoardsJpgDefault.default),
+                title: "V\xe5rt uppdrag",
+                textFirst: true,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                        children: "Genom att kunna f\xf6r\xe4dla svensk l\xf6vtr\xe4r\xe5vara fr\xe5n stock till f\xe4rdiga produkter kan vi gentemot dig som kund garantera materialets ursprung."
+                    }, void 0, false, {
+                        fileName: "src/Pages/HomePage.tsx",
+                        lineNumber: 43,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                        children: "Vi blir genom v\xe5r sm\xe5skalighet flexibla och kan alltid s\xe4tta dig och dina \xf6nskem\xe5l i centrum."
+                    }, void 0, false, {
+                        fileName: "src/Pages/HomePage.tsx",
+                        lineNumber: 47,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Pages/HomePage.tsx",
+                lineNumber: 42,
                 columnNumber: 7
             }, this)
         ]
@@ -34599,153 +34694,18 @@ function HomePage() {
 }
 _c = HomePage;
 exports.default = HomePage;
-var _c;
+const Text = (0, _react.styled).p();
+_c1 = Text;
+var _c, _c1;
 $RefreshReg$(_c, "HomePage");
+$RefreshReg$(_c1, "Text");
 
   $parcel$ReactRefreshHelpers$1e64.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Feature/Components/CardLinks":"4IVZq","../Feature/Components/Hero":"8WNwH","../Feature/Components/ImageAndText":"8HWo8","../Assets/acorn.jpg":"dMYuz","../Feature/Components/TextList":"5S2tu","../Shared/Generic/H3":"iGEMB","../Assets/forrest.jpg":"3nPrl","../Assets/oak-boards.jpg":"lVzFd"}],"km3Ru":[function(require,module,exports) {
-"use strict";
-var Refresh = require("7422ead32dcc1e6b");
-function debounce(func, delay) {
-    {
-        let timeout = undefined;
-        let lastTime = 0;
-        return function(args) {
-            // Call immediately if last call was more than the delay ago.
-            // Otherwise, set a timeout. This means the first call is fast
-            // (for the common case of a single update), and subsequent updates
-            // are batched.
-            let now = Date.now();
-            if (now - lastTime > delay) {
-                lastTime = now;
-                func.call(null, args);
-            } else {
-                clearTimeout(timeout);
-                timeout = setTimeout(function() {
-                    timeout = undefined;
-                    lastTime = Date.now();
-                    func.call(null, args);
-                }, delay);
-            }
-        };
-    }
-}
-var enqueueUpdate = debounce(function() {
-    Refresh.performReactRefresh();
-}, 30);
-// Everthing below is either adapted or copied from
-// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
-// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
-module.exports.prelude = function(module1) {
-    window.$RefreshReg$ = function(type, id) {
-        Refresh.register(type, module1.id + " " + id);
-    };
-    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
-};
-module.exports.postlude = function(module1) {
-    if (isReactRefreshBoundary(module1.exports)) {
-        registerExportsForReactRefresh(module1);
-        if (module1.hot) {
-            module1.hot.dispose(function(data) {
-                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
-                data.prevExports = module1.exports;
-            });
-            module1.hot.accept(function(getParents) {
-                var prevExports = module1.hot.data.prevExports;
-                var nextExports = module1.exports;
-                // Since we just executed the code for it, it's possible
-                // that the new exports make it ineligible for being a boundary.
-                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
-                // It can also become ineligible if its exports are incompatible
-                // with the previous exports.
-                // For example, if you add/remove/change exports, we'll want
-                // to re-execute the importing modules, and force those components
-                // to re-render. Similarly, if you convert a class component
-                // to a function, we want to invalidate the boundary.
-                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
-                if (isNoLongerABoundary || didInvalidate) {
-                    // We'll be conservative. The only case in which we won't do a full
-                    // reload is if all parent modules are also refresh boundaries.
-                    // In that case we'll add them to the current queue.
-                    var parents = getParents();
-                    if (parents.length === 0) {
-                        // Looks like we bubbled to the root. Can't recover from that.
-                        window.location.reload();
-                        return;
-                    }
-                    return parents;
-                }
-                enqueueUpdate();
-            });
-        }
-    }
-};
-function isReactRefreshBoundary(exports) {
-    if (Refresh.isLikelyComponentType(exports)) return true;
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    return false;
-    var hasExports = false;
-    var areAllExportsComponents = true;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        hasExports = true;
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
-        return false;
-        var exportValue = exports[key];
-        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
-    }
-    return hasExports && areAllExportsComponents;
-}
-function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
-    var prevSignature = getRefreshBoundarySignature(prevExports);
-    var nextSignature = getRefreshBoundarySignature(nextExports);
-    if (prevSignature.length !== nextSignature.length) return true;
-    for(var i = 0; i < nextSignature.length; i++){
-        if (prevSignature[i] !== nextSignature[i]) return true;
-    }
-    return false;
-}
-// When this signature changes, it's unsafe to stop at this refresh boundary.
-function getRefreshBoundarySignature(exports) {
-    var signature = [];
-    signature.push(Refresh.getFamilyByType(exports));
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return signature;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        signature.push(key);
-        signature.push(Refresh.getFamilyByType(exportValue));
-    }
-    return signature;
-}
-function registerExportsForReactRefresh(module1) {
-    var exports = module1.exports, id = module1.id;
-    Refresh.register(exports, id + " %exports%");
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        var typeID = id + " %exports% " + key;
-        Refresh.register(exportValue, typeID);
-    }
-}
-
-},{"7422ead32dcc1e6b":"786KC"}],"4IVZq":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../Feature/Components/CardLinks":"4IVZq","../Feature/Components/Hero":"8WNwH","../Feature/Components/ImageAndText":"8HWo8","../Assets/acorn.jpg":"dMYuz","../Feature/Components/TextList":"5S2tu","../Assets/forrest.jpg":"3nPrl","../Assets/oak-boards.jpg":"lVzFd","@glitz/react":"bAXm1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4IVZq":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$54ca = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35006,7 +34966,7 @@ const TextContainer = (0, _react.styled).div({
     display: "flex",
     flexDirection: "column",
     padding: {
-        y: (0, _value.small)
+        top: (0, _value.small)
     }
 });
 _c4 = TextContainer;
@@ -36634,7 +36594,7 @@ const h3Styled = (0, _react.styled)({
 });
 exports.default = h3Styled((0, _react.styled).H3);
 
-},{"@glitz/react":"bAXm1","../typography":"iZltJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../value":"9VKej","@glitz/core":"5ehrf"}],"iZltJ":[function(require,module,exports) {
+},{"@glitz/react":"bAXm1","../typography":"iZltJ","../value":"9VKej","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iZltJ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "alternativeTextColor", ()=>alternativeTextColor);
@@ -36741,6 +36701,7 @@ const PlainButton = (0, _react.styled)(Button, {
     color: "inherit",
     borderRadius: "none",
     textAlign: "start",
+    fontWeight: "normal",
     padding: {
         xy: 0
     },
@@ -36763,7 +36724,145 @@ $RefreshReg$(_c3, "PlainButton");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","../../Shared/typography":"iZltJ","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6qRec":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","../../Shared/typography":"iZltJ","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
+"use strict";
+var Refresh = require("7422ead32dcc1e6b");
+function debounce(func, delay) {
+    {
+        let timeout = undefined;
+        let lastTime = 0;
+        return function(args) {
+            // Call immediately if last call was more than the delay ago.
+            // Otherwise, set a timeout. This means the first call is fast
+            // (for the common case of a single update), and subsequent updates
+            // are batched.
+            let now = Date.now();
+            if (now - lastTime > delay) {
+                lastTime = now;
+                func.call(null, args);
+            } else {
+                clearTimeout(timeout);
+                timeout = setTimeout(function() {
+                    timeout = undefined;
+                    lastTime = Date.now();
+                    func.call(null, args);
+                }, delay);
+            }
+        };
+    }
+}
+var enqueueUpdate = debounce(function() {
+    Refresh.performReactRefresh();
+}, 30);
+// Everthing below is either adapted or copied from
+// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
+// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
+module.exports.prelude = function(module1) {
+    window.$RefreshReg$ = function(type, id) {
+        Refresh.register(type, module1.id + " " + id);
+    };
+    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
+};
+module.exports.postlude = function(module1) {
+    if (isReactRefreshBoundary(module1.exports)) {
+        registerExportsForReactRefresh(module1);
+        if (module1.hot) {
+            module1.hot.dispose(function(data) {
+                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
+                data.prevExports = module1.exports;
+            });
+            module1.hot.accept(function(getParents) {
+                var prevExports = module1.hot.data.prevExports;
+                var nextExports = module1.exports;
+                // Since we just executed the code for it, it's possible
+                // that the new exports make it ineligible for being a boundary.
+                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
+                // It can also become ineligible if its exports are incompatible
+                // with the previous exports.
+                // For example, if you add/remove/change exports, we'll want
+                // to re-execute the importing modules, and force those components
+                // to re-render. Similarly, if you convert a class component
+                // to a function, we want to invalidate the boundary.
+                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
+                if (isNoLongerABoundary || didInvalidate) {
+                    // We'll be conservative. The only case in which we won't do a full
+                    // reload is if all parent modules are also refresh boundaries.
+                    // In that case we'll add them to the current queue.
+                    var parents = getParents();
+                    if (parents.length === 0) {
+                        // Looks like we bubbled to the root. Can't recover from that.
+                        window.location.reload();
+                        return;
+                    }
+                    return parents;
+                }
+                enqueueUpdate();
+            });
+        }
+    }
+};
+function isReactRefreshBoundary(exports) {
+    if (Refresh.isLikelyComponentType(exports)) return true;
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    return false;
+    var hasExports = false;
+    var areAllExportsComponents = true;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        hasExports = true;
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
+        return false;
+        var exportValue = exports[key];
+        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
+    }
+    return hasExports && areAllExportsComponents;
+}
+function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
+    var prevSignature = getRefreshBoundarySignature(prevExports);
+    var nextSignature = getRefreshBoundarySignature(nextExports);
+    if (prevSignature.length !== nextSignature.length) return true;
+    for(var i = 0; i < nextSignature.length; i++){
+        if (prevSignature[i] !== nextSignature[i]) return true;
+    }
+    return false;
+}
+// When this signature changes, it's unsafe to stop at this refresh boundary.
+function getRefreshBoundarySignature(exports) {
+    var signature = [];
+    signature.push(Refresh.getFamilyByType(exports));
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return signature;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        signature.push(key);
+        signature.push(Refresh.getFamilyByType(exportValue));
+    }
+    return signature;
+}
+function registerExportsForReactRefresh(module1) {
+    var exports = module1.exports, id = module1.id;
+    Refresh.register(exports, id + " %exports%");
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        var typeID = id + " %exports% " + key;
+        Refresh.register(exportValue, typeID);
+    }
+}
+
+},{"7422ead32dcc1e6b":"786KC"}],"6qRec":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$7b37 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36779,33 +36878,18 @@ var _s = $RefreshSig$();
 function LazyLoadImage({ src, alt }) {
     _s();
     const imgRef = (0, _react.useRef)(null);
-    const [isIntersecting, setIsIntersecting] = (0, _react.useState)(false);
-    (0, _react.useEffect)(()=>{
-        const observer = new IntersectionObserver(([entry])=>{
-            if (entry.isIntersecting) {
-                setIsIntersecting(true);
-                observer.disconnect();
-            }
-        }, {
-            rootMargin: "0px",
-            threshold: 0.1
-        });
-        if (imgRef.current) observer.observe(imgRef.current);
-        return ()=>{
-            if (observer && observer.unobserve && imgRef.current) observer.unobserve(imgRef.current);
-        };
-    }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ImageComponent, {
         ref: imgRef,
-        src: isIntersecting ? src : "",
-        alt: alt
+        src: src,
+        alt: alt,
+        loading: "lazy"
     }, void 0, false, {
         fileName: "src/Feature/Components/LazyLoadImage.tsx",
-        lineNumber: 38,
+        lineNumber: 12,
         columnNumber: 10
     }, this);
 }
-_s(LazyLoadImage, "sjLxTXN+LnUbwv2HluAHXtvIHf8=");
+_s(LazyLoadImage, "4ePvNHuSuoDcJUA4FzxhhVtSEHM=");
 _c = LazyLoadImage;
 exports.default = _c1 = (0, _react1.styled)(LazyLoadImage);
 const ImageComponent = (0, _react1.styled).img({});
@@ -36919,7 +37003,7 @@ const TextOverlay = (0, _react.styled).div({
     alignItems: "end",
     flexWrap: "wrap",
     padding: {
-        x: (0, _value.medium),
+        x: (0, _value.large),
         bottom: (0, _value.huge)
     },
     position: "absolute",
@@ -36958,7 +37042,9 @@ const StyledButton = (0, _react.styled)((0, _buttonDefault.default), {
         alignItems: "start",
         justifyContent: "end",
         margin: {
-            top: (0, _value.medium)
+            top: (0, _value.medium),
+            x: 0,
+            bottom: 0
         }
     })
 });
@@ -36970,8 +37056,13 @@ _c5 = StyledH3;
 const ImageContainer = (0, _react.styled).div({
     position: "relative",
     width: "100%",
-    height: "400px",
-    overflow: "hidden"
+    height: "500px",
+    overflow: "hidden",
+    ...(0, _core.media)({
+        maxWidth: "760px"
+    }, {
+        height: "400px"
+    })
 });
 _c6 = ImageContainer;
 const Image = (0, _react.styled)((0, _lazyLoadImageDefault.default), {
@@ -36995,7 +37086,7 @@ $RefreshReg$(_c7, "Image");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/Generic/H1":"fmZc4","../../Shared/value":"9VKej","../../Shared/Generic/H3":"iGEMB","./LazyLoadImage":"6qRec","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Button":"at8Gv","@glitz/core":"5ehrf"}],"fmZc4":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/Generic/H1":"fmZc4","../../Shared/value":"9VKej","../../Shared/Generic/H3":"iGEMB","./LazyLoadImage":"6qRec","./Button":"at8Gv","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fmZc4":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "headingReset", ()=>headingReset);
@@ -37023,7 +37114,7 @@ const h1Styled = (0, _react.styled)({
 });
 exports.default = h1Styled((0, _react.styled).H1);
 
-},{"@glitz/react":"bAXm1","../typography":"iZltJ","../value":"9VKej","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@glitz/core":"5ehrf"}],"8HWo8":[function(require,module,exports) {
+},{"@glitz/react":"bAXm1","../typography":"iZltJ","../value":"9VKej","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8HWo8":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bbae = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -37141,7 +37232,14 @@ const TextContainer = (0, _react.styled).div({
     padding: {
         xy: (0, _value.large)
     },
-    order: 2
+    order: 2,
+    ...(0, _core.media)({
+        maxWidth: "1025px"
+    }, {
+        padding: {
+            xy: 0
+        }
+    })
 });
 _c2 = TextContainer;
 const ImageContainer = (0, _react.styled).div({
@@ -37206,7 +37304,7 @@ const h2Styled = (0, _react.styled)({
 });
 exports.default = h2Styled((0, _react.styled).H2);
 
-},{"@glitz/react":"bAXm1","../typography":"iZltJ","../value":"9VKej","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@glitz/core":"5ehrf"}],"dMYuz":[function(require,module,exports) {
+},{"@glitz/react":"bAXm1","../typography":"iZltJ","../value":"9VKej","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dMYuz":[function(require,module,exports) {
 module.exports = require("884b80a8fcd90374").getBundleURL("6EXJA") + "acorn.a7677c51.jpg" + "?" + Date.now();
 
 },{"884b80a8fcd90374":"lgJ39"}],"5S2tu":[function(require,module,exports) {
@@ -37359,7 +37457,7 @@ $RefreshReg$(_c5, "Text");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../Shared/Generic/H2":"au95a","@glitz/core":"5ehrf","../../Shared/typography":"iZltJ"}],"3nPrl":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","../../Shared/Generic/H2":"au95a","@glitz/core":"5ehrf","../../Shared/typography":"iZltJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3nPrl":[function(require,module,exports) {
 module.exports = require("de74ee2dc28855fd").getBundleURL("6EXJA") + "forrest.c5725ba2.jpg" + "?" + Date.now();
 
 },{"de74ee2dc28855fd":"lgJ39"}],"lVzFd":[function(require,module,exports) {
@@ -37381,6 +37479,13 @@ var _priceList = require("../Feature/Components/PriceList");
 var _priceListDefault = parcelHelpers.interopDefault(_priceList);
 var _heroLumberJpg = require("../Assets/HeroLumber.jpg");
 var _heroLumberJpgDefault = parcelHelpers.interopDefault(_heroLumberJpg);
+var _imageAndText = require("../Feature/Components/ImageAndText");
+var _imageAndTextDefault = parcelHelpers.interopDefault(_imageAndText);
+var _h3 = require("../Shared/Generic/H3");
+var _h3Default = parcelHelpers.interopDefault(_h3);
+var _react = require("@glitz/react");
+var _shippingPng = require("../Assets/shipping.png");
+var _shippingPngDefault = parcelHelpers.interopDefault(_shippingPng);
 function PriceListPage() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
@@ -37391,12 +37496,44 @@ function PriceListPage() {
                 description: "Kontakt oss om ni vill ha Pris p\xe5 s\xe5gat virke okant och kantat"
             }, void 0, false, {
                 fileName: "src/Pages/PriceListPage.tsx",
-                lineNumber: 8,
+                lineNumber: 12,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _priceListDefault.default), {}, void 0, false, {
                 fileName: "src/Pages/PriceListPage.tsx",
-                lineNumber: 14,
+                lineNumber: 18,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
+                src: (0, _shippingPngDefault.default),
+                title: "Frakt",
+                textFirst: true,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
+                        children: "Vi har ett avtal med DHL som levererar virket direkt till d\xf6rren \xf6ver hela Sverige."
+                    }, void 0, false, {
+                        fileName: "src/Pages/PriceListPage.tsx",
+                        lineNumber: 20,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).P, {
+                        children: "Fraktkostnaden till Stockholm ligger p\xe5 cirka 600-1200 kronor inklusive moms."
+                    }, void 0, false, {
+                        fileName: "src/Pages/PriceListPage.tsx",
+                        lineNumber: 21,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).P, {
+                        children: "Om m\xf6jligt rekommenderar vi att du h\xe4mtar virket sj\xe4lv. D\xe5 f\xe5r du en inblick i produktionsprocessen och kan f\xf6lja hur din panel tillverkas, fr\xe5n stock till f\xe4rdig panel."
+                    }, void 0, false, {
+                        fileName: "src/Pages/PriceListPage.tsx",
+                        lineNumber: 22,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Pages/PriceListPage.tsx",
+                lineNumber: 19,
                 columnNumber: 7
             }, this)
         ]
@@ -37412,7 +37549,7 @@ $RefreshReg$(_c, "PriceListPage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../Feature/Components/Hero":"8WNwH","../Feature/Components/PriceList":"4ayDn","../Assets/HeroLumber.jpg":"eDA9j","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4ayDn":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../Feature/Components/Hero":"8WNwH","../Feature/Components/PriceList":"4ayDn","../Assets/HeroLumber.jpg":"eDA9j","../Feature/Components/ImageAndText":"8HWo8","../Shared/Generic/H3":"iGEMB","@glitz/react":"bAXm1","../Assets/shipping.png":"1jote","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4ayDn":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$57cd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -38126,7 +38263,10 @@ const list = [
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eDA9j":[function(require,module,exports) {
 module.exports = require("f0268d37c93299d3").getBundleURL("6EXJA") + "HeroLumber.96783100.jpg" + "?" + Date.now();
 
-},{"f0268d37c93299d3":"lgJ39"}],"3Kqqo":[function(require,module,exports) {
+},{"f0268d37c93299d3":"lgJ39"}],"1jote":[function(require,module,exports) {
+module.exports = require("35346fcdb97182af").getBundleURL("6EXJA") + "shipping.7cc68795.png" + "?" + Date.now();
+
+},{"35346fcdb97182af":"lgJ39"}],"3Kqqo":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$fb48 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -38136,8 +38276,6 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _products = require("../Lists/Products");
-var _productsDefault = parcelHelpers.interopDefault(_products);
 var _heroLumberJpg = require("../Assets/HeroLumber.jpg");
 var _heroLumberJpgDefault = parcelHelpers.interopDefault(_heroLumberJpg);
 var _hero = require("../Feature/Components/Hero");
@@ -38149,10 +38287,11 @@ var _imageAndTextDefault = parcelHelpers.interopDefault(_imageAndText);
 var _limfogAlmJpg = require("../Assets/products/limfog-alm.jpg");
 var _limfogAlmJpgDefault = parcelHelpers.interopDefault(_limfogAlmJpg);
 var _react = require("@glitz/react");
-var _s = $RefreshSig$();
+var _textContainer = require("../Feature/Components/TextContainer");
+var _textContainerDefault = parcelHelpers.interopDefault(_textContainer);
+var _productInfoCol = require("../Feature/Components/ProductInfoCol");
+var _productInfoColDefault = parcelHelpers.interopDefault(_productInfoCol);
 function ProductListningPage() {
-    _s();
-    const { products } = (0, _productsDefault.default)();
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {
@@ -38162,12 +38301,115 @@ function ProductListningPage() {
                 description: "Kontakt oss om ni vill ha Pris p\xe5 s\xe5gat virke okant och kantat"
             }, void 0, false, {
                 fileName: "src/Pages/ProductsListningPage.tsx",
-                lineNumber: 16,
+                lineNumber: 13,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _textListDefault.default), {}, void 0, false, {
                 fileName: "src/Pages/ProductsListningPage.tsx",
-                lineNumber: 22,
+                lineNumber: 19,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _productInfoColDefault.default), {
+                col1: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _textContainerDefault.default), {
+                    title: "Okantat M\xf6belvirke",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                            children: "Vi lagerf\xf6r okantat/kantat virke i ett flertal tr\xe4slag."
+                        }, void 0, false, {
+                            fileName: "src/Pages/ProductsListningPage.tsx",
+                            lineNumber: 23,
+                            columnNumber: 13
+                        }, void 0),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                            children: "Dimensionerna skiljer sig mellan tr\xe4slagen, men standard \xe4r i m.m 19, 25, 32, 50, 75."
+                        }, void 0, false, {
+                            fileName: "src/Pages/ProductsListningPage.tsx",
+                            lineNumber: 24,
+                            columnNumber: 13
+                        }, void 0),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                            children: "L\xe4ngd: 3 m som standard men Ek finns i l\xe4ngderna fr\xe5n 1.8-4,3 m."
+                        }, void 0, false, {
+                            fileName: "src/Pages/ProductsListningPage.tsx",
+                            lineNumber: 25,
+                            columnNumber: 13
+                        }, void 0),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                            children: "Virket kan torkas ner till 7 % (m\xf6beltorrt"
+                        }, void 0, false, {
+                            fileName: "src/Pages/ProductsListningPage.tsx",
+                            lineNumber: 26,
+                            columnNumber: 13
+                        }, void 0)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Pages/ProductsListningPage.tsx",
+                    lineNumber: 22,
+                    columnNumber: 11
+                }, void 0),
+                col2: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _textContainerDefault.default), {
+                    title: "\xc4mnestillverkning",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                            children: "Vi kan leverera torkade, hyvlade och l\xe4ngdkapade \xe4mnen i svenskt l\xf6vtr\xe4."
+                        }, void 0, false, {
+                            fileName: "src/Pages/ProductsListningPage.tsx",
+                            lineNumber: 31,
+                            columnNumber: 13
+                        }, void 0),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                            children: "S\xf6nderdelning i lamells\xe5g till exakta m\xe5tt helt efter \xf6nskem\xe5l."
+                        }, void 0, false, {
+                            fileName: "src/Pages/ProductsListningPage.tsx",
+                            lineNumber: 32,
+                            columnNumber: 13
+                        }, void 0),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                            children: "\xc4ven strips f\xf6r vidaref\xf6r\xe4dling."
+                        }, void 0, false, {
+                            fileName: "src/Pages/ProductsListningPage.tsx",
+                            lineNumber: 33,
+                            columnNumber: 13
+                        }, void 0)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Pages/ProductsListningPage.tsx",
+                    lineNumber: 30,
+                    columnNumber: 11
+                }, void 0),
+                col3: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _textContainerDefault.default), {
+                    title: "Hyvlade produkter",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                            children: "Med det nya hyvleriet kommer vi nu l\xe4ngre i f\xf6r\xe4dlingsledet."
+                        }, void 0, false, {
+                            fileName: "src/Pages/ProductsListningPage.tsx",
+                            lineNumber: 38,
+                            columnNumber: 13
+                        }, void 0),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                            children: "Vi hanterar nu r\xe5varan fr\xe5n stock till t,ex ett f\xe4rdigt golv med tillh\xf6rande lister."
+                        }, void 0, false, {
+                            fileName: "src/Pages/ProductsListningPage.tsx",
+                            lineNumber: 39,
+                            columnNumber: 13
+                        }, void 0),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                            children: "F\xf6r att f\xe5 ett smakprov anv\xe4nd knapparna till v\xe4nster f\xf6r att ta dig till de olika produkterna."
+                        }, void 0, false, {
+                            fileName: "src/Pages/ProductsListningPage.tsx",
+                            lineNumber: 40,
+                            columnNumber: 13
+                        }, void 0)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Pages/ProductsListningPage.tsx",
+                    lineNumber: 37,
+                    columnNumber: 11
+                }, void 0)
+            }, void 0, false, {
+                fileName: "src/Pages/ProductsListningPage.tsx",
+                lineNumber: 20,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
@@ -38178,58 +38420,53 @@ function ProductListningPage() {
                         children: "Vi erbjuder Limfog till av mycket h\xf6g kvalitet som tillverkas i Sverige av virke som vi sj\xe4lva levererar."
                     }, void 0, false, {
                         fileName: "src/Pages/ProductsListningPage.tsx",
-                        lineNumber: 24,
+                        lineNumber: 45,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                         children: "Hyllplan, bordsskivor och b\xe4nkskivor eller vad du sj\xe4lv \xf6nskar."
                     }, void 0, false, {
                         fileName: "src/Pages/ProductsListningPage.tsx",
-                        lineNumber: 27,
+                        lineNumber: 48,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                         children: "Limfogen tillverkas i exakt de m\xe5tt du \xf6nskar och \xe4r f\xe4rdigputsade."
                     }, void 0, false, {
                         fileName: "src/Pages/ProductsListningPage.tsx",
-                        lineNumber: 28,
+                        lineNumber: 49,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                         children: "Kan \xe4ven levereras med ytbehandling"
                     }, void 0, false, {
                         fileName: "src/Pages/ProductsListningPage.tsx",
-                        lineNumber: 29,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                         children: "Limfogen m\xe5ste best\xe4llas, leveranstid 1-2 veckor."
                     }, void 0, false, {
                         fileName: "src/Pages/ProductsListningPage.tsx",
-                        lineNumber: 30,
+                        lineNumber: 51,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                         children: "Nedan exempel p\xe5 b\xe4nkskiva i stavlimmad 40 m.m Alm"
                     }, void 0, false, {
                         fileName: "src/Pages/ProductsListningPage.tsx",
-                        lineNumber: 31,
+                        lineNumber: 52,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Pages/ProductsListningPage.tsx",
-                lineNumber: 23,
+                lineNumber: 44,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 }
-_s(ProductListningPage, "HuZ0FSKU4jgfDhUXCEp7lTpjxbw=", false, function() {
-    return [
-        (0, _productsDefault.default)
-    ];
-});
 _c = ProductListningPage;
 exports.default = ProductListningPage;
 const Text = (0, _react.styled).p({});
@@ -38243,7 +38480,346 @@ $RefreshReg$(_c1, "Text");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../Lists/Products":"hdt1s","../Assets/HeroLumber.jpg":"eDA9j","../Feature/Components/Hero":"8WNwH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Feature/Components/TextList":"5S2tu","../Feature/Components/ImageAndText":"8HWo8","../Assets/products/limfog-alm.jpg":"jUiM9","@glitz/react":"bAXm1"}],"hdt1s":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../Assets/HeroLumber.jpg":"eDA9j","../Feature/Components/Hero":"8WNwH","../Feature/Components/TextList":"5S2tu","../Feature/Components/ImageAndText":"8HWo8","../Assets/products/limfog-alm.jpg":"jUiM9","@glitz/react":"bAXm1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Feature/Components/TextContainer":"2Ed9O","../Feature/Components/ProductInfoCol":"lVryi"}],"jUiM9":[function(require,module,exports) {
+module.exports = require("e8d3c54cc0e11ce7").getBundleURL("6EXJA") + "limfog-alm.964d5e46.jpg" + "?" + Date.now();
+
+},{"e8d3c54cc0e11ce7":"lgJ39"}],"2Ed9O":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5f94 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5f94.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("@glitz/react");
+var _h2 = require("../../Shared/Generic/H2");
+var _h2Default = parcelHelpers.interopDefault(_h2);
+function TextContainer(props) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Wrapper, {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h2Default.default), {
+                    children: props.title
+                }, void 0, false, {
+                    fileName: "src/Feature/Components/TextContainer.tsx",
+                    lineNumber: 15,
+                    columnNumber: 9
+                }, this),
+                props.children
+            ]
+        }, void 0, true, {
+            fileName: "src/Feature/Components/TextContainer.tsx",
+            lineNumber: 14,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "src/Feature/Components/TextContainer.tsx",
+        lineNumber: 13,
+        columnNumber: 5
+    }, this);
+}
+_c = TextContainer;
+exports.default = TextContainer;
+const Container = (0, _react.styled).div({
+    display: "flex",
+    justifyContent: "center"
+});
+_c1 = Container;
+const Wrapper = (0, _react.styled).div({
+    textAlign: "center"
+});
+_c2 = Wrapper;
+var _c, _c1, _c2;
+$RefreshReg$(_c, "TextContainer");
+$RefreshReg$(_c1, "Container");
+$RefreshReg$(_c2, "Wrapper");
+
+  $parcel$ReactRefreshHelpers$5f94.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/Generic/H2":"au95a","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lVryi":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$dbba = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$dbba.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("@glitz/react");
+var _value = require("../../Shared/value");
+var _core = require("@glitz/core");
+function ProductInfoCol(props) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
+                children: props.col1
+            }, void 0, false, {
+                fileName: "src/Feature/Components/ProductInfoCol.tsx",
+                lineNumber: 14,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
+                children: props.col2
+            }, void 0, false, {
+                fileName: "src/Feature/Components/ProductInfoCol.tsx",
+                lineNumber: 15,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
+                children: props.col3
+            }, void 0, false, {
+                fileName: "src/Feature/Components/ProductInfoCol.tsx",
+                lineNumber: 16,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/Feature/Components/ProductInfoCol.tsx",
+        lineNumber: 13,
+        columnNumber: 5
+    }, this);
+}
+_c = ProductInfoCol;
+exports.default = ProductInfoCol;
+const Container = (0, _react.styled)((0, _value.Block), {
+    display: "grid",
+    gridTemplateColumns: "1fr",
+    gap: "20px",
+    ...(0, _core.media)({
+        minWidth: "1025px"
+    }, {
+        gridTemplateColumns: "1fr 1fr 1fr"
+    })
+});
+_c1 = Container;
+const Column = (0, _react.styled).div({});
+_c2 = Column;
+var _c, _c1, _c2;
+$RefreshReg$(_c, "ProductInfoCol");
+$RefreshReg$(_c1, "Container");
+$RefreshReg$(_c2, "Column");
+
+  $parcel$ReactRefreshHelpers$dbba.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bDqc9":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$c636 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$c636.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _hero = require("../Feature/Components/Hero");
+var _heroDefault = parcelHelpers.interopDefault(_hero);
+var _signJpg = require("../Assets/sign.jpg");
+var _signJpgDefault = parcelHelpers.interopDefault(_signJpg);
+var _imageAndText = require("../Feature/Components/ImageAndText");
+var _imageAndTextDefault = parcelHelpers.interopDefault(_imageAndText);
+var _h4 = require("../Shared/Generic/H4");
+var _h4Default = parcelHelpers.interopDefault(_h4);
+var _react = require("@glitz/react");
+var _h3 = require("../Shared/Generic/H3");
+var _h3Default = parcelHelpers.interopDefault(_h3);
+function ContactPage() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {
+                src: (0, _signJpgDefault.default),
+                alt: "Hero image oak",
+                title: "Kontakta oss",
+                description: "Kontakt oss om ni vill ha Pris p\xe5 s\xe5gat virke okant och kantat"
+            }, void 0, false, {
+                fileName: "src/Pages/ContactPage.tsx",
+                lineNumber: 12,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
+                src: (0, _signJpgDefault.default),
+                title: "Ekotr\xe4",
+                textFirst: true,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h4Default.default), {
+                        children: "\xc4pplaryd 3"
+                    }, void 0, false, {
+                        fileName: "src/Pages/ContactPage.tsx",
+                        lineNumber: 19,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h4Default.default), {
+                        children: "360 30 Lammhult"
+                    }, void 0, false, {
+                        fileName: "src/Pages/ContactPage.tsx",
+                        lineNumber: 20,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                        fileName: "src/Pages/ContactPage.tsx",
+                        lineNumber: 21,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h4Default.default), {
+                        children: "070-3278734"
+                    }, void 0, false, {
+                        fileName: "src/Pages/ContactPage.tsx",
+                        lineNumber: 22,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h4Default.default), {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(A, {
+                            href: "mailto:info@eme.nu",
+                            children: "info@eme.nu"
+                        }, void 0, false, {
+                            fileName: "src/Pages/ContactPage.tsx",
+                            lineNumber: 24,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/Pages/ContactPage.tsx",
+                        lineNumber: 23,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                        fileName: "src/Pages/ContactPage.tsx",
+                        lineNumber: 26,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
+                        children: "\xd6ppettider"
+                    }, void 0, false, {
+                        fileName: "src/Pages/ContactPage.tsx",
+                        lineNumber: 27,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h4Default.default), {
+                        children: "M\xe5ndag - fredag 07.00-18.00"
+                    }, void 0, false, {
+                        fileName: "src/Pages/ContactPage.tsx",
+                        lineNumber: 28,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h4Default.default), {
+                        children: "L\xf6rdag - s\xf6ndag 09.00-15.00"
+                    }, void 0, false, {
+                        fileName: "src/Pages/ContactPage.tsx",
+                        lineNumber: 29,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Pages/ContactPage.tsx",
+                lineNumber: 18,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true);
+}
+_c = ContactPage;
+const A = (0, _react.styled).a();
+_c1 = A;
+exports.default = ContactPage;
+var _c, _c1;
+$RefreshReg$(_c, "ContactPage");
+$RefreshReg$(_c1, "A");
+
+  $parcel$ReactRefreshHelpers$c636.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../Feature/Components/Hero":"8WNwH","../Assets/sign.jpg":"51ZA3","../Feature/Components/ImageAndText":"8HWo8","../Shared/Generic/H4":"36gb2","@glitz/react":"bAXm1","../Shared/Generic/H3":"iGEMB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"51ZA3":[function(require,module,exports) {
+module.exports = require("4d1a907200adf9f5").getBundleURL("6EXJA") + "sign.d61ba07d.jpg" + "?" + Date.now();
+
+},{"4d1a907200adf9f5":"lgJ39"}],"36gb2":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "headingReset", ()=>headingReset);
+parcelHelpers.export(exports, "h4Styled", ()=>h4Styled);
+var _react = require("@glitz/react");
+var _typography = require("../typography");
+const headingReset = (0, _react.styled)({
+    fontSize: "unset",
+    fontWeight: "unset",
+    marginBottom: 0
+});
+const h4Styled = (0, _react.styled)({
+    fontWeight: "700",
+    fontSize: (0, _typography.delta)
+});
+exports.default = h4Styled((0, _react.styled).H4);
+
+},{"@glitz/react":"bAXm1","../typography":"iZltJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"j1mrX":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1591 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1591.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _hero = require("../Feature/Components/Hero");
+var _heroDefault = parcelHelpers.interopDefault(_hero);
+var _heroLumberJpg = require("../Assets/HeroLumber.jpg");
+var _heroLumberJpgDefault = parcelHelpers.interopDefault(_heroLumberJpg);
+var _products = require("../Lists/Products");
+var _productsDefault = parcelHelpers.interopDefault(_products);
+var _lits = require("../Feature/Components/Lits");
+var _litsDefault = parcelHelpers.interopDefault(_lits);
+var _s = $RefreshSig$();
+function ImageArchive() {
+    _s();
+    const { products } = (0, _productsDefault.default)();
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {
+                src: (0, _heroLumberJpgDefault.default),
+                alt: "Galleri image",
+                title: "Galleri",
+                description: ""
+            }, void 0, false, {
+                fileName: "src/Pages/ImageArchive.tsx",
+                lineNumber: 11,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _litsDefault.default), {
+                title: "V\xe5ra Projekt i Verkligheten",
+                description: "Uppt\xe4ck v\xe5ra kunders imponerande projekt med v\xe5ra material",
+                list: products
+            }, void 0, false, {
+                fileName: "src/Pages/ImageArchive.tsx",
+                lineNumber: 12,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true);
+}
+_s(ImageArchive, "HuZ0FSKU4jgfDhUXCEp7lTpjxbw=", false, function() {
+    return [
+        (0, _productsDefault.default)
+    ];
+});
+_c = ImageArchive;
+exports.default = ImageArchive;
+var _c;
+$RefreshReg$(_c, "ImageArchive");
+
+  $parcel$ReactRefreshHelpers$1591.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../Feature/Components/Hero":"8WNwH","../Assets/HeroLumber.jpg":"eDA9j","../Lists/Products":"hdt1s","../Feature/Components/Lits":"kNxh3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hdt1s":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "products", ()=>products);
@@ -38366,147 +38942,7 @@ module.exports = require("e65c9992697e55b9").getBundleURL("6EXJA") + "Smyg.8baec
 },{"e65c9992697e55b9":"lgJ39"}],"cOKB9":[function(require,module,exports) {
 module.exports = require("1c09acbd8277e729").getBundleURL("6EXJA") + "VHus1.1303cfba.jpg" + "?" + Date.now();
 
-},{"1c09acbd8277e729":"lgJ39"}],"jUiM9":[function(require,module,exports) {
-module.exports = require("e8d3c54cc0e11ce7").getBundleURL("6EXJA") + "limfog-alm.964d5e46.jpg" + "?" + Date.now();
-
-},{"e8d3c54cc0e11ce7":"lgJ39"}],"bDqc9":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$c636 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$c636.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _hero = require("../Feature/Components/Hero");
-var _heroDefault = parcelHelpers.interopDefault(_hero);
-var _heroLumberJpg = require("../Assets/HeroLumber.jpg");
-var _heroLumberJpgDefault = parcelHelpers.interopDefault(_heroLumberJpg);
-var _imageAndText = require("../Feature/Components/ImageAndText");
-var _imageAndTextDefault = parcelHelpers.interopDefault(_imageAndText);
-var _h3 = require("../Shared/Generic/H3");
-var _h3Default = parcelHelpers.interopDefault(_h3);
-function ContactPage() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {
-                src: (0, _heroLumberJpgDefault.default),
-                alt: "Hero image oak",
-                title: "Kontakta oss",
-                description: "Kontakt oss om ni vill ha Pris p\xe5 s\xe5gat virke okant och kantat"
-            }, void 0, false, {
-                fileName: "src/Pages/ContactPage.tsx",
-                lineNumber: 8,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
-                src: (0, _heroLumberJpgDefault.default),
-                title: "Ekotr\xe4",
-                textFirst: true,
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
-                        children: "\xc4pplaryd 3"
-                    }, void 0, false, {
-                        fileName: "src/Pages/ContactPage.tsx",
-                        lineNumber: 15,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
-                        children: "360 30 Lammhult"
-                    }, void 0, false, {
-                        fileName: "src/Pages/ContactPage.tsx",
-                        lineNumber: 16,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
-                        children: "070-3278734"
-                    }, void 0, false, {
-                        fileName: "src/Pages/ContactPage.tsx",
-                        lineNumber: 17,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Pages/ContactPage.tsx",
-                lineNumber: 14,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true);
-}
-_c = ContactPage;
-exports.default = ContactPage;
-var _c;
-$RefreshReg$(_c, "ContactPage");
-
-  $parcel$ReactRefreshHelpers$c636.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","../Feature/Components/Hero":"8WNwH","../Assets/HeroLumber.jpg":"eDA9j","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Feature/Components/ImageAndText":"8HWo8","../Shared/Generic/H3":"iGEMB"}],"j1mrX":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$1591 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$1591.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _hero = require("../Feature/Components/Hero");
-var _heroDefault = parcelHelpers.interopDefault(_hero);
-var _heroLumberJpg = require("../Assets/HeroLumber.jpg");
-var _heroLumberJpgDefault = parcelHelpers.interopDefault(_heroLumberJpg);
-var _products = require("../Lists/Products");
-var _productsDefault = parcelHelpers.interopDefault(_products);
-var _lits = require("../Feature/Components/Lits");
-var _litsDefault = parcelHelpers.interopDefault(_lits);
-var _s = $RefreshSig$();
-function ImageArchive() {
-    _s();
-    const { products } = (0, _productsDefault.default)();
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {
-                src: (0, _heroLumberJpgDefault.default),
-                alt: "Galleri image",
-                title: "Galleri",
-                description: ""
-            }, void 0, false, {
-                fileName: "src/Pages/ImageArchive.tsx",
-                lineNumber: 11,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _litsDefault.default), {
-                title: "V\xe5ra Projekt i Verkligheten",
-                description: "Uppt\xe4ck v\xe5ra kunders imponerande projekt med v\xe5ra material",
-                list: products
-            }, void 0, false, {
-                fileName: "src/Pages/ImageArchive.tsx",
-                lineNumber: 12,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true);
-}
-_s(ImageArchive, "HuZ0FSKU4jgfDhUXCEp7lTpjxbw=", false, function() {
-    return [
-        (0, _productsDefault.default)
-    ];
-});
-_c = ImageArchive;
-exports.default = ImageArchive;
-var _c;
-$RefreshReg$(_c, "ImageArchive");
-
-  $parcel$ReactRefreshHelpers$1591.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","../Feature/Components/Hero":"8WNwH","../Assets/HeroLumber.jpg":"eDA9j","../Lists/Products":"hdt1s","../Feature/Components/Lits":"kNxh3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kNxh3":[function(require,module,exports) {
+},{"1c09acbd8277e729":"lgJ39"}],"kNxh3":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$877f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -38524,46 +38960,45 @@ var _core = require("@glitz/core");
 var _productCard = require("./ProductCard");
 var _productCardDefault = parcelHelpers.interopDefault(_productCard);
 function List(props) {
-    console.log(props.list);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ListContainer, {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h2Default.default), {
                 children: props.title
             }, void 0, false, {
                 fileName: "src/Feature/Components/Lits.tsx",
-                lineNumber: 26,
+                lineNumber: 24,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                 children: props.description
             }, void 0, false, {
                 fileName: "src/Feature/Components/Lits.tsx",
-                lineNumber: 27,
+                lineNumber: 25,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ListWrapper, {
                 children: props.list.map((data)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _productCardDefault.default), {
                             item: data
-                        }, void 0, false, {
+                        }, data.name, false, {
                             fileName: "src/Feature/Components/Lits.tsx",
-                            lineNumber: 31,
+                            lineNumber: 29,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "src/Feature/Components/Lits.tsx",
-                        lineNumber: 30,
+                        lineNumber: 28,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "src/Feature/Components/Lits.tsx",
-                lineNumber: 28,
+                lineNumber: 26,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Feature/Components/Lits.tsx",
-        lineNumber: 25,
+        lineNumber: 23,
         columnNumber: 5
     }, this);
 }
@@ -38740,25 +39175,7 @@ $RefreshReg$(_c6, "Price");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","./LazyLoadImage":"6qRec","../../Shared/Generic/H4":"36gb2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"36gb2":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "headingReset", ()=>headingReset);
-parcelHelpers.export(exports, "h4Styled", ()=>h4Styled);
-var _react = require("@glitz/react");
-var _typography = require("../typography");
-const headingReset = (0, _react.styled)({
-    fontSize: "unset",
-    fontWeight: "unset",
-    marginBottom: 0
-});
-const h4Styled = (0, _react.styled)({
-    fontWeight: "700",
-    fontSize: (0, _typography.delta)
-});
-exports.default = h4Styled((0, _react.styled).H4);
-
-},{"@glitz/react":"bAXm1","../typography":"iZltJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4Z7Gw":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","./LazyLoadImage":"6qRec","../../Shared/Generic/H4":"36gb2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4Z7Gw":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$11f3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -38818,7 +39235,25 @@ const menuLinks = [
     },
     {
         url: "/produkter",
-        name: "Produkter"
+        name: "Produkter",
+        subMenu: [
+            {
+                url: "/produkter/s\xe5gade-produkter",
+                name: "S\xe5gade Produkter"
+            },
+            {
+                url: "/produkter/hyvlade-produkter",
+                name: "Hyvlade Produkter"
+            },
+            {
+                url: "/produkter/specialprodukter",
+                name: "Specialprodukter"
+            },
+            {
+                url: "/produkter/limfog",
+                name: "Limfog"
+            }
+        ]
     },
     {
         url: "/prislista",
@@ -38844,7 +39279,7 @@ function Header() {
                             children: "info@eme.nu"
                         }, void 0, false, {
                             fileName: "src/Feature/Header/Header.tsx",
-                            lineNumber: 34,
+                            lineNumber: 60,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(A, {
@@ -38852,38 +39287,38 @@ function Header() {
                             children: "070-3278734"
                         }, void 0, false, {
                             fileName: "src/Feature/Header/Header.tsx",
-                            lineNumber: 35,
+                            lineNumber: 61,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/Feature/Header/Header.tsx",
-                    lineNumber: 33,
+                    lineNumber: 59,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/Feature/Header/Header.tsx",
-                lineNumber: 32,
+                lineNumber: 58,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fullDefault.default), {
                 menuLinks: menuLinks
             }, void 0, false, {
                 fileName: "src/Feature/Header/Header.tsx",
-                lineNumber: 38,
+                lineNumber: 64,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _compactDefault.default), {
                 menuLinks: menuLinks
             }, void 0, false, {
                 fileName: "src/Feature/Header/Header.tsx",
-                lineNumber: 39,
+                lineNumber: 65,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Feature/Header/Header.tsx",
-        lineNumber: 31,
+        lineNumber: 57,
         columnNumber: 5
     }, this);
 }
@@ -38934,7 +39369,7 @@ $RefreshReg$(_c4, "A");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../Shared/value":"9VKej","./Compact":"3pGbL","./Full":"8Zi0O"}],"3pGbL":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","./Compact":"3pGbL","./Full":"8Zi0O","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3pGbL":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$1985 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -38962,6 +39397,10 @@ var _s = $RefreshSig$();
 function Compact({ menuLinks }) {
     _s();
     const [isOpen, setIsOpen] = (0, _react1.useState)(false);
+    const [openMenuIndex, setOpenMenuIndex] = (0, _react1.useState)(null);
+    const toggleSubMenu = (index)=>{
+        setOpenMenuIndex(openMenuIndex === index ? null : index);
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CompactContainer, {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _button.PlainButton), {
@@ -38972,12 +39411,12 @@ function Compact({ menuLinks }) {
                     width: 24
                 }, void 0, false, {
                     fileName: "src/Feature/Header/Compact.tsx",
-                    lineNumber: 25,
+                    lineNumber: 24,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/Feature/Header/Compact.tsx",
-                lineNumber: 24,
+                lineNumber: 23,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
@@ -38989,17 +39428,17 @@ function Compact({ menuLinks }) {
                         className: "logo"
                     }, void 0, false, {
                         fileName: "src/Feature/Header/Compact.tsx",
-                        lineNumber: 29,
+                        lineNumber: 28,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "src/Feature/Header/Compact.tsx",
-                    lineNumber: 28,
+                    lineNumber: 27,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/Feature/Header/Compact.tsx",
-                lineNumber: 27,
+                lineNumber: 26,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Flyout, {
@@ -39017,22 +39456,105 @@ function Compact({ menuLinks }) {
                                 width: 15
                             }, void 0, false, {
                                 fileName: "src/Feature/Header/Compact.tsx",
-                                lineNumber: 35,
+                                lineNumber: 34,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "src/Feature/Header/Compact.tsx",
-                            lineNumber: 34,
+                            lineNumber: 33,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "src/Feature/Header/Compact.tsx",
-                        lineNumber: 33,
+                        lineNumber: 32,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Navbar, {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Links, {
-                            children: menuLinks.map((link)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
+                            children: menuLinks.map((link, index)=>link.subMenu ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(DropDownButton, {
+                                            onClick: ()=>toggleSubMenu(index),
+                                            arialLabel: `Open link dropdown for ${link.name}`,
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Link, {
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LinkText, {
+                                                        children: link.name
+                                                    }, void 0, false, {
+                                                        fileName: "src/Feature/Header/Compact.tsx",
+                                                        lineNumber: 47,
+                                                        columnNumber: 23
+                                                    }, this),
+                                                    link.subMenu && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).Img, {
+                                                        src: (0, _chevronSvgDefault.default),
+                                                        alt: "Link arrow",
+                                                        width: 10
+                                                    }, void 0, false, {
+                                                        fileName: "src/Feature/Header/Compact.tsx",
+                                                        lineNumber: 48,
+                                                        columnNumber: 40
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/Feature/Header/Compact.tsx",
+                                                lineNumber: 46,
+                                                columnNumber: 21
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "src/Feature/Header/Compact.tsx",
+                                            lineNumber: 42,
+                                            columnNumber: 19
+                                        }, this),
+                                        link.subMenu && openMenuIndex === index && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(SubMenuWrapper, {
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(SubMenu, {
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Link, {
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LinkText, {
+                                                            children: link.name
+                                                        }, void 0, false, {
+                                                            fileName: "src/Feature/Header/Compact.tsx",
+                                                            lineNumber: 55,
+                                                            columnNumber: 27
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "src/Feature/Header/Compact.tsx",
+                                                        lineNumber: 54,
+                                                        columnNumber: 25
+                                                    }, this),
+                                                    link.subMenu.map((subLink)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
+                                                            to: subLink.url,
+                                                            onClick: ()=>setIsOpen(false),
+                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Link, {
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LinkText, {
+                                                                    children: subLink.name
+                                                                }, void 0, false, {
+                                                                    fileName: "src/Feature/Header/Compact.tsx",
+                                                                    lineNumber: 60,
+                                                                    columnNumber: 31
+                                                                }, this)
+                                                            }, void 0, false, {
+                                                                fileName: "src/Feature/Header/Compact.tsx",
+                                                                lineNumber: 59,
+                                                                columnNumber: 29
+                                                            }, this)
+                                                        }, subLink.name, false, {
+                                                            fileName: "src/Feature/Header/Compact.tsx",
+                                                            lineNumber: 58,
+                                                            columnNumber: 27
+                                                        }, this))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/Feature/Header/Compact.tsx",
+                                                lineNumber: 53,
+                                                columnNumber: 23
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "src/Feature/Header/Compact.tsx",
+                                            lineNumber: 52,
+                                            columnNumber: 21
+                                        }, this)
+                                    ]
+                                }, void 0, true) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
                                     to: link.url,
                                     onClick: ()=>setIsOpen(false),
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Link, {
@@ -39041,60 +39563,60 @@ function Compact({ menuLinks }) {
                                                 children: link.name
                                             }, void 0, false, {
                                                 fileName: "src/Feature/Header/Compact.tsx",
-                                                lineNumber: 43,
-                                                columnNumber: 19
+                                                lineNumber: 71,
+                                                columnNumber: 21
                                             }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).Img, {
+                                            link.subMenu && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).Img, {
                                                 src: (0, _chevronSvgDefault.default),
                                                 alt: "Link arrow",
                                                 width: 10
                                             }, void 0, false, {
                                                 fileName: "src/Feature/Header/Compact.tsx",
-                                                lineNumber: 44,
-                                                columnNumber: 19
+                                                lineNumber: 72,
+                                                columnNumber: 38
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Feature/Header/Compact.tsx",
-                                        lineNumber: 42,
-                                        columnNumber: 17
+                                        lineNumber: 70,
+                                        columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "src/Feature/Header/Compact.tsx",
-                                    lineNumber: 41,
-                                    columnNumber: 15
+                                    lineNumber: 69,
+                                    columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "src/Feature/Header/Compact.tsx",
-                            lineNumber: 39,
+                            lineNumber: 38,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "src/Feature/Header/Compact.tsx",
-                        lineNumber: 38,
+                        lineNumber: 37,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Feature/Header/Compact.tsx",
-                lineNumber: 32,
+                lineNumber: 31,
                 columnNumber: 7
             }, this),
             isOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Overlay, {
                 onClick: ()=>setIsOpen(false)
             }, void 0, false, {
                 fileName: "src/Feature/Header/Compact.tsx",
-                lineNumber: 51,
+                lineNumber: 80,
                 columnNumber: 18
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Feature/Header/Compact.tsx",
-        lineNumber: 23,
+        lineNumber: 22,
         columnNumber: 5
     }, this);
 }
-_s(Compact, "+sus0Lb0ewKHdwiUhiTAJFoFyQ0=");
+_s(Compact, "w8DDnhauv2DqcojN1sHiExEQqHg=");
 _c = Compact;
 exports.default = Compact;
 const CompactContainer = (0, _react.styled).div({
@@ -39201,7 +39723,32 @@ const Link = (0, _react.styled).li({
 _c10 = Link;
 const LinkText = (0, _react.styled).span();
 _c11 = LinkText;
-var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10, _c11;
+const DropDownButton = (0, _react.styled)((0, _button.PlainButton), {});
+_c12 = DropDownButton;
+const SubMenuWrapper = (0, _react.styled).div({
+    display: "flex",
+    width: "100%"
+});
+_c13 = SubMenuWrapper;
+const SubMenu = (0, _react.styled).div({
+    width: "100%",
+    display: "flex",
+    flexDirection: "column",
+    fontWeight: "bold",
+    overflow: "hidden",
+    transition: {
+        property: "max-height",
+        duration: "300ms",
+        timingFunction: "ease-in-out"
+    },
+    textDecoration: "none",
+    color: "#000",
+    ":hover": {
+        backgroundColor: "#f0f0f0"
+    }
+});
+_c14 = SubMenu;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10, _c11, _c12, _c13, _c14;
 $RefreshReg$(_c, "Compact");
 $RefreshReg$(_c1, "CompactContainer");
 $RefreshReg$(_c2, "LogoContainer");
@@ -39214,22 +39761,25 @@ $RefreshReg$(_c8, "Navbar");
 $RefreshReg$(_c9, "Links");
 $RefreshReg$(_c10, "Link");
 $RefreshReg$(_c11, "LinkText");
+$RefreshReg$(_c12, "DropDownButton");
+$RefreshReg$(_c13, "SubMenuWrapper");
+$RefreshReg$(_c14, "SubMenu");
 
   $parcel$ReactRefreshHelpers$1985.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","@glitz/core":"5ehrf","../Components/Button":"at8Gv","react-router-dom":"9xmpe","../../Assets/logo.png":"dixc1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../../Assets/close.svg":"lONnP","../../Assets/icons/menu.svg":"1MZpS","../../Assets/icons/chevron.svg":"ftSMl"}],"dixc1":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","@glitz/core":"5ehrf","../../Assets/icons/menu.svg":"1MZpS","react-router-dom":"9xmpe","../../Assets/logo.png":"dixc1","react":"21dqq","../../Assets/close.svg":"lONnP","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../Assets/icons/chevron.svg":"ftSMl","../Components/Button":"at8Gv"}],"1MZpS":[function(require,module,exports) {
+module.exports = require("f28a6342581d8bf8").getBundleURL("6EXJA") + "menu.ffa02e1f.svg" + "?" + Date.now();
+
+},{"f28a6342581d8bf8":"lgJ39"}],"dixc1":[function(require,module,exports) {
 module.exports = require("4f112f960e22f491").getBundleURL("6EXJA") + "logo.ad812a23.png" + "?" + Date.now();
 
 },{"4f112f960e22f491":"lgJ39"}],"lONnP":[function(require,module,exports) {
 module.exports = require("a1f4f9141b146a00").getBundleURL("6EXJA") + "close.d037ba38.svg" + "?" + Date.now();
 
-},{"a1f4f9141b146a00":"lgJ39"}],"1MZpS":[function(require,module,exports) {
-module.exports = require("f28a6342581d8bf8").getBundleURL("6EXJA") + "menu.ffa02e1f.svg" + "?" + Date.now();
-
-},{"f28a6342581d8bf8":"lgJ39"}],"ftSMl":[function(require,module,exports) {
+},{"a1f4f9141b146a00":"lgJ39"}],"ftSMl":[function(require,module,exports) {
 module.exports = require("6c06da0cd01a2d9").getBundleURL("6EXJA") + "chevron.4bccf87e.svg" + "?" + Date.now();
 
 },{"6c06da0cd01a2d9":"lgJ39"}],"8Zi0O":[function(require,module,exports) {
@@ -39248,7 +39798,17 @@ var _core = require("@glitz/core");
 var _reactRouterDom = require("react-router-dom");
 var _logoPng = require("../../Assets/logo.png");
 var _logoPngDefault = parcelHelpers.interopDefault(_logoPng);
+var _react1 = require("react");
+var _s = $RefreshSig$();
 function Full({ menuLinks }) {
+    _s();
+    const [dropdownOpen, setDropdownOpen] = (0, _react1.useState)(null);
+    const handleMouseOver = (name)=>{
+        if (name) setDropdownOpen(name);
+    };
+    const handleMouseLeave = ()=>{
+        setDropdownOpen(null);
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(DesktopContainer, {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
@@ -39260,46 +39820,9 @@ function Full({ menuLinks }) {
                         className: "logo"
                     }, void 0, false, {
                         fileName: "src/Feature/Header/Full.tsx",
-                        lineNumber: 19,
+                        lineNumber: 24,
                         columnNumber: 11
                     }, this)
-                }, void 0, false, {
-                    fileName: "src/Feature/Header/Full.tsx",
-                    lineNumber: 18,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "src/Feature/Header/Full.tsx",
-                lineNumber: 17,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Navbar, {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LinkContainer, {
-                    children: menuLinks.map((link)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(NavLinks, {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
-                                to: link.url,
-                                className: ({ isActive })=>[
-                                        "link_nav",
-                                        isActive ? "active" : null
-                                    ].filter(Boolean).join(" "),
-                                end: true,
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledLink, {
-                                    children: link.name
-                                }, void 0, false, {
-                                    fileName: "src/Feature/Header/Full.tsx",
-                                    lineNumber: 31,
-                                    columnNumber: 17
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "src/Feature/Header/Full.tsx",
-                                lineNumber: 26,
-                                columnNumber: 15
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "src/Feature/Header/Full.tsx",
-                            lineNumber: 25,
-                            columnNumber: 13
-                        }, this))
                 }, void 0, false, {
                     fileName: "src/Feature/Header/Full.tsx",
                     lineNumber: 23,
@@ -39309,14 +39832,79 @@ function Full({ menuLinks }) {
                 fileName: "src/Feature/Header/Full.tsx",
                 lineNumber: 22,
                 columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Navbar, {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LinkContainer, {
+                    children: menuLinks.map((link)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(NavLinks, {
+                            onMouseOver: ()=>handleMouseOver(link.name),
+                            onMouseLeave: handleMouseLeave,
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
+                                    to: link.url,
+                                    className: ({ isActive })=>[
+                                            "link_nav",
+                                            isActive ? "active" : null
+                                        ].filter(Boolean).join(" "),
+                                    end: true,
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledLink, {
+                                        children: link.name
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Header/Full.tsx",
+                                        lineNumber: 36,
+                                        columnNumber: 17
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/Feature/Header/Full.tsx",
+                                    lineNumber: 31,
+                                    columnNumber: 15
+                                }, this),
+                                link.subMenu && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Dropdown, {
+                                    css: dropdownOpen === link.name && {
+                                        display: "block"
+                                    },
+                                    children: link.subMenu.map((subLink)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(DropdownItem, {
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
+                                                to: subLink.url,
+                                                children: subLink.name
+                                            }, void 0, false, {
+                                                fileName: "src/Feature/Header/Full.tsx",
+                                                lineNumber: 42,
+                                                columnNumber: 23
+                                            }, this)
+                                        }, subLink.name, false, {
+                                            fileName: "src/Feature/Header/Full.tsx",
+                                            lineNumber: 41,
+                                            columnNumber: 21
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "src/Feature/Header/Full.tsx",
+                                    lineNumber: 39,
+                                    columnNumber: 17
+                                }, this)
+                            ]
+                        }, link.name, true, {
+                            fileName: "src/Feature/Header/Full.tsx",
+                            lineNumber: 30,
+                            columnNumber: 13
+                        }, this))
+                }, void 0, false, {
+                    fileName: "src/Feature/Header/Full.tsx",
+                    lineNumber: 28,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "src/Feature/Header/Full.tsx",
+                lineNumber: 27,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Feature/Header/Full.tsx",
-        lineNumber: 16,
+        lineNumber: 21,
         columnNumber: 5
     }, this);
 }
+_s(Full, "ZUyV4ZzUADAZ71VMayYO7fIM66U=");
 _c = Full;
 exports.default = Full;
 const DesktopContainer = (0, _react.styled)((0, _value.AppearanceBlock), {
@@ -39368,7 +39956,30 @@ const StyledLink = (0, _react.styled).span({
     fontWeight: "bold"
 });
 _c7 = StyledLink;
-var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7;
+const Dropdown = (0, _react.styled).div({
+    display: "none",
+    position: "absolute",
+    backgroundColor: "#fff",
+    boxShadow: "0px 8px 16px 0px rgba(0,0,0,0.2)",
+    zIndex: 12,
+    minWidth: "200px",
+    top: "105%",
+    left: "0"
+});
+_c8 = Dropdown;
+const DropdownItem = (0, _react.styled).div({
+    padding: {
+        y: (0, _value.medium),
+        x: (0, _value.large)
+    },
+    color: "#000",
+    textDecoration: "none",
+    ":hover": {
+        backgroundColor: "#ddd"
+    }
+});
+_c9 = DropdownItem;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9;
 $RefreshReg$(_c, "Full");
 $RefreshReg$(_c1, "DesktopContainer");
 $RefreshReg$(_c2, "LogoContainer");
@@ -39377,13 +39988,15 @@ $RefreshReg$(_c4, "Navbar");
 $RefreshReg$(_c5, "LinkContainer");
 $RefreshReg$(_c6, "NavLinks");
 $RefreshReg$(_c7, "StyledLink");
+$RefreshReg$(_c8, "Dropdown");
+$RefreshReg$(_c9, "DropdownItem");
 
   $parcel$ReactRefreshHelpers$723f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","@glitz/core":"5ehrf","react-router-dom":"9xmpe","../../Assets/logo.png":"dixc1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3XZ4R":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","@glitz/core":"5ehrf","react-router-dom":"9xmpe","../../Assets/logo.png":"dixc1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"3XZ4R":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "glitz", ()=>glitz);
@@ -39453,12 +40066,12 @@ function Footer() {
                                 alt: "footer logo"
                             }, void 0, false, {
                                 fileName: "src/Feature/Footer/Footer.tsx",
-                                lineNumber: 15,
+                                lineNumber: 24,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "src/Feature/Footer/Footer.tsx",
-                            lineNumber: 14,
+                            lineNumber: 23,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
@@ -39467,70 +40080,27 @@ function Footer() {
                                     children: "Ekotr\xe4"
                                 }, void 0, false, {
                                     fileName: "src/Feature/Footer/Footer.tsx",
-                                    lineNumber: 18,
+                                    lineNumber: 27,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                                     children: "\xc4pplaryd 3"
                                 }, void 0, false, {
                                     fileName: "src/Feature/Footer/Footer.tsx",
-                                    lineNumber: 19,
+                                    lineNumber: 28,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                                     children: "360 30 Lammhult"
                                 }, void 0, false, {
                                     fileName: "src/Feature/Footer/Footer.tsx",
-                                    lineNumber: 20,
+                                    lineNumber: 29,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(A, {
                                         href: "tel:0046703278734",
                                         children: "070-3278734"
-                                    }, void 0, false, {
-                                        fileName: "src/Feature/Footer/Footer.tsx",
-                                        lineNumber: 22,
-                                        columnNumber: 15
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "src/Feature/Footer/Footer.tsx",
-                                    lineNumber: 21,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Feature/Footer/Footer.tsx",
-                            lineNumber: 17,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {
-                                    children: "Katalog"
-                                }, void 0, false, {
-                                    fileName: "src/Feature/Footer/Footer.tsx",
-                                    lineNumber: 26,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
-                                        to: "/prislista",
-                                        children: "Prislista"
-                                    }, void 0, false, {
-                                        fileName: "src/Feature/Footer/Footer.tsx",
-                                        lineNumber: 28,
-                                        columnNumber: 15
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "src/Feature/Footer/Footer.tsx",
-                                    lineNumber: 27,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
-                                        to: "/produkter",
-                                        children: "Produkter"
                                     }, void 0, false, {
                                         fileName: "src/Feature/Footer/Footer.tsx",
                                         lineNumber: 31,
@@ -39544,7 +40114,50 @@ function Footer() {
                             ]
                         }, void 0, true, {
                             fileName: "src/Feature/Footer/Footer.tsx",
-                            lineNumber: 25,
+                            lineNumber: 26,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {
+                                    children: "Katalog"
+                                }, void 0, false, {
+                                    fileName: "src/Feature/Footer/Footer.tsx",
+                                    lineNumber: 35,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
+                                        to: "/prislista",
+                                        children: "Prislista"
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Footer/Footer.tsx",
+                                        lineNumber: 37,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/Feature/Footer/Footer.tsx",
+                                    lineNumber: 36,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
+                                        to: "/produkter",
+                                        children: "Produkter"
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Footer/Footer.tsx",
+                                        lineNumber: 40,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/Feature/Footer/Footer.tsx",
+                                    lineNumber: 39,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/Feature/Footer/Footer.tsx",
+                            lineNumber: 34,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
@@ -39553,51 +40166,51 @@ function Footer() {
                                     children: "\xd6ppettider"
                                 }, void 0, false, {
                                     fileName: "src/Feature/Footer/Footer.tsx",
-                                    lineNumber: 35,
+                                    lineNumber: 44,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                                     children: "M\xe5ndag - fredag 07.00-18.00"
                                 }, void 0, false, {
                                     fileName: "src/Feature/Footer/Footer.tsx",
-                                    lineNumber: 36,
+                                    lineNumber: 45,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                                     children: "L\xf6rdag - s\xf6ndag 09.00-15.00"
                                 }, void 0, false, {
                                     fileName: "src/Feature/Footer/Footer.tsx",
-                                    lineNumber: 37,
+                                    lineNumber: 46,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/Feature/Footer/Footer.tsx",
-                            lineNumber: 34,
+                            lineNumber: 43,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/Feature/Footer/Footer.tsx",
-                    lineNumber: 13,
+                    lineNumber: 22,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/Feature/Footer/Footer.tsx",
-                lineNumber: 12,
+                lineNumber: 21,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CopyRightContainer, {
                 children: "Copyright \xa9 2024 EME Aktiv"
             }, void 0, false, {
                 fileName: "src/Feature/Footer/Footer.tsx",
-                lineNumber: 41,
+                lineNumber: 50,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Feature/Footer/Footer.tsx",
-        lineNumber: 11,
+        lineNumber: 20,
         columnNumber: 5
     }, this);
 }
@@ -39625,7 +40238,7 @@ const Wrapper = (0, _react.styled).ul({
     flexWrap: "wrap",
     gap: "16px 0px",
     padding: {
-        y: (0, _value.huge)
+        y: (0, _value.gigantic)
     }
 });
 _c3 = Wrapper;
@@ -39782,7 +40395,7 @@ const Container = (0, _react.styled)((0, _value.AppearanceBlock), {
         top: {
             style: "solid",
             width: "1px",
-            color: (0, _value.DefaulBackgroundColor)
+            color: "#E6E6E6"
         }
     },
     backgroundColor: "#fff",
@@ -39839,6 +40452,6 @@ $RefreshReg$(_c4, "Text");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","../../Shared/Generic/H2":"au95a","./Button":"at8Gv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@glitz/core":"5ehrf","react-router-dom":"9xmpe"}]},["94b1M","1xC6H","4aBH6"], "4aBH6", "parcelRequire94c2")
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","../../Shared/Generic/H2":"au95a","./Button":"at8Gv","@glitz/core":"5ehrf","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["94b1M","1xC6H","4aBH6"], "4aBH6", "parcelRequire94c2")
 
 //# sourceMappingURL=index.2d3ace14.js.map

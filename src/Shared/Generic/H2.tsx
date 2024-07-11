@@ -2,6 +2,7 @@ import { styled } from '@glitz/react';
 import { beta, gamma } from '../typography';
 import { medium } from '../value';
 import { media } from '@glitz/core';
+
 export const headingReset = styled({
   fontSize: 'unset',
   fontWeight: 'unset',

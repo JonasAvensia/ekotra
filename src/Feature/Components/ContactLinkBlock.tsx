@@ -33,7 +33,7 @@ const Container = styled(AppearanceBlock, {
     top: {
       style: 'solid',
       width: '1px',
-      color: DefaulBackgroundColor,
+      color: '#E6E6E6',
     },
   },
   backgroundColor: '#fff',

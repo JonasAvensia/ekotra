@@ -19,8 +19,6 @@ type Prototype = {
 };
 
 function List(props: Prototype) {
-  console.log(props.list);
-
   return (
     <ListContainer>
       <H2>{props.title}</H2>
@@ -28,7 +26,7 @@ function List(props: Prototype) {
       <ListWrapper>
         {props.list.map(data => (
           <Column>
-            <ProductCard item={data} />
+            <ProductCard key={data.name} item={data} />
           </Column>
         ))}
       </ListWrapper>

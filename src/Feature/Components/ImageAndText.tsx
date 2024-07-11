@@ -91,6 +91,12 @@ const TextContainer = styled.div({
   justifyContent: 'center',
   padding: { xy: large },
   order: 2,
+  ...media(
+    { maxWidth: '1025px' },
+    {
+      padding: { xy: 0 },
+    },
+  ),
 });
 
 const ImageContainer = styled.div({

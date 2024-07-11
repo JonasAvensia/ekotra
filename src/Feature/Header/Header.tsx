@@ -3,7 +3,15 @@ import { AppearanceBlock, DefaulBackgroundColor, medium, small } from '../../Sha
 import Compact from './Compact';
 import Full from './Full';
 
-const menuLinks = [
+export type MenuLinkstype = {
+  menuLinks: {
+    url: string;
+    name: string;
+    subMenu?: { url: string; name: string }[];
+  }[];
+};
+
+const menuLinks: MenuLinkstype['menuLinks'] = [
   {
     url: '/',
     name: 'Hem',
@@ -11,6 +19,24 @@ const menuLinks = [
   {
     url: '/produkter',
     name: 'Produkter',
+    subMenu: [
+      {
+        url: '/produkter/sågade-produkter',
+        name: 'Sågade Produkter',
+      },
+      {
+        url: '/produkter/hyvlade-produkter',
+        name: 'Hyvlade Produkter',
+      },
+      {
+        url: '/produkter/specialprodukter',
+        name: 'Specialprodukter',
+      },
+      {
+        url: '/produkter/limfog',
+        name: 'Limfog',
+      },
+    ],
   },
   {
     url: '/prislista',

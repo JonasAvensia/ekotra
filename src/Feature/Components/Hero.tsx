@@ -1,6 +1,6 @@
 import { styled } from '@glitz/react';
 import H1 from '../../Shared/Generic/H1';
-import { huge, medium } from '../../Shared/value';
+import { huge, large, medium } from '../../Shared/value';
 import H3 from '../../Shared/Generic/H3';
 import LazyLoadImage from './LazyLoadImage';
 import Button from './Button';
@@ -45,7 +45,7 @@ const TextOverlay = styled.div({
   justifyContent: 'space-between',
   alignItems: 'end',
   flexWrap: 'wrap',
-  padding: { x: medium, bottom: huge },
+  padding: { x: large, bottom: huge },
   position: 'absolute',
   top: '50%',
   left: '50%',
@@ -80,7 +80,7 @@ const StyledButton = styled(Button, {
       flexDirection: 'column',
       alignItems: 'start',
       justifyContent: 'end',
-      margin: { top: medium },
+      margin: { top: medium, x: 0, bottom: 0 },
     },
   ),
 });
@@ -92,8 +92,14 @@ const StyledH3 = styled(H3, {
 const ImageContainer = styled.div({
   position: 'relative',
   width: '100%',
-  height: '400px', // Adjust height as needed
+  height: '500px',
   overflow: 'hidden',
+  ...media(
+    { maxWidth: '760px' },
+    {
+      height: '400px',
+    },
+  ),
 });
 
 const Image = styled(LazyLoadImage, {

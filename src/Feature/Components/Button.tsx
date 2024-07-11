@@ -57,6 +57,7 @@ export const PlainButton = styled(Button, {
   color: 'inherit',
   borderRadius: 'none',
   textAlign: 'start',
+  fontWeight: 'normal',
   padding: { xy: 0 },
   transition: {
     property: 'none',

@@ -1,17 +1,22 @@
 import { styled } from '@glitz/react';
-import { AppearanceBlock, medium } from '../../Shared/value';
+import { AppearanceBlock, large, medium } from '../../Shared/value';
 import { media } from '@glitz/core';
 import { NavLink } from 'react-router-dom';
 import logo from '../../Assets/logo.png';
+import { useState } from 'react';
+import { MenuLinkstype } from './Header';
 
-type Prototype = {
-  menuLinks: {
-    url: string;
-    name: string;
-  }[];
-};
+function Full({ menuLinks }: MenuLinkstype) {
+  const [dropdownOpen, setDropdownOpen] = useState<string | null>(null);
 
-function Full({ menuLinks }: Prototype) {
+  const handleMouseOver = (name: string | undefined) => {
+    if (name) setDropdownOpen(name);
+  };
+
+  const handleMouseLeave = () => {
+    setDropdownOpen(null);
+  };
+
   return (
     <DesktopContainer>
       <NavLink to="/">
@@ -22,7 +27,7 @@ function Full({ menuLinks }: Prototype) {
       <Navbar>
         <LinkContainer>
           {menuLinks.map(link => (
-            <NavLinks>
+            <NavLinks key={link.name} onMouseOver={() => handleMouseOver(link.name)} onMouseLeave={handleMouseLeave}>
               <NavLink
                 to={link.url}
                 className={({ isActive }) => ['link_nav', isActive ? 'active' : null].filter(Boolean).join(' ')}
@@ -30,6 +35,15 @@ function Full({ menuLinks }: Prototype) {
               >
                 <StyledLink>{link.name}</StyledLink>
               </NavLink>
+              {link.subMenu && (
+                <Dropdown css={dropdownOpen === link.name && { display: 'block' }}>
+                  {link.subMenu.map(subLink => (
+                    <DropdownItem key={subLink.name}>
+                      <NavLink to={subLink.url}>{subLink.name}</NavLink>
+                    </DropdownItem>
+                  ))}
+                </Dropdown>
+              )}
             </NavLinks>
           ))}
         </LinkContainer>
@@ -87,4 +101,24 @@ const NavLinks = styled.li({
 
 const StyledLink = styled.span({
   fontWeight: 'bold',
+});
+
+const Dropdown = styled.div({
+  display: 'none',
+  position: 'absolute',
+  backgroundColor: '#fff',
+  boxShadow: '0px 8px 16px 0px rgba(0,0,0,0.2)',
+  zIndex: 12,
+  minWidth: '200px',
+  top: '105%',
+  left: '0',
+});
+
+const DropdownItem = styled.div({
+  padding: { y: medium, x: large },
+  color: '#000',
+  textDecoration: 'none',
+  ':hover': {
+    backgroundColor: '#ddd',
+  },
 });

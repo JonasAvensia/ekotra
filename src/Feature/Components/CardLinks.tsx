@@ -90,7 +90,7 @@ const StyledImage = styled(LazyLoadImage, {
 const TextContainer = styled.div({
   display: 'flex',
   flexDirection: 'column',
-  padding: { y: small },
+  padding: { top: small },
 });
 
 const Text = styled.span({

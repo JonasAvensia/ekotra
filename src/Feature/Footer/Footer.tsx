@@ -1,5 +1,14 @@
 import { styled } from '@glitz/react';
-import { AppearanceBlock, DefaulBackgroundColor, DefaultGreen, huge, large, medium, small } from '../../Shared/value';
+import {
+  AppearanceBlock,
+  DefaulBackgroundColor,
+  DefaultGreen,
+  gigantic,
+  huge,
+  large,
+  medium,
+  small,
+} from '../../Shared/value';
 import LazyLoadImage from '../Components/LazyLoadImage';
 import FooterLogo from '../../Assets/footer-logo.png';
 import H3 from '../../Shared/Generic/H3';
@@ -66,7 +75,7 @@ const Wrapper = styled.ul({
   justifyContent: 'center',
   flexWrap: 'wrap',
   gap: '16px 0px',
-  padding: { y: huge },
+  padding: { y: gigantic },
 });
 
 const Column = styled.li({
