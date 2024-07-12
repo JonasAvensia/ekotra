@@ -6,6 +6,7 @@ import Limfog from '../Assets/products/limfog-alm.jpg';
 import { styled } from '@glitz/react';
 import TextContainer from '../Feature/Components/TextContainer';
 import ProductInfoCol from '../Feature/Components/ProductInfoCol';
+import CardLinks from '../Feature/Components/CardLinks';
 
 function ProductListningPage() {
   return (
@@ -17,7 +18,8 @@ function ProductListningPage() {
         description="Kontakt oss om ni vill ha Pris på sågat virke okant och kantat"
       />
       <TextList />
-      <ProductInfoCol
+      <CardLinks />
+      {/* <ProductInfoCol
         col1={
           <TextContainer title="Okantat Möbelvirke">
             <Text>Vi lagerför okantat/kantat virke i ett flertal träslag.</Text>
@@ -40,17 +42,7 @@ function ProductListningPage() {
             <Text>För att få ett smakprov använd knapparna till vänster för att ta dig till de olika produkterna.</Text>
           </TextContainer>
         }
-      />
-      <ImageAndText src={Limfog} title="Limfog">
-        <Text>
-          Vi erbjuder Limfog till av mycket hög kvalitet som tillverkas i Sverige av virke som vi själva levererar.
-        </Text>
-        <Text>Hyllplan, bordsskivor och bänkskivor eller vad du själv önskar.</Text>
-        <Text>Limfogen tillverkas i exakt de mått du önskar och är färdigputsade.</Text>
-        <Text>Kan även levereras med ytbehandling</Text>
-        <Text>Limfogen måste beställas, leveranstid 1-2 veckor.</Text>
-        <Text>Bildexempel på bänkskiva i stavlimmad 40 m.m Alm</Text>
-      </ImageAndText>
+      /> */}
     </>
   );
 }

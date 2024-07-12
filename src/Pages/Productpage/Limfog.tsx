@@ -1,10 +1,17 @@
 import LimFogImage from '../../Assets/products/limfog-alm.jpg';
+import Hero from '../../Feature/Components/Hero';
 import ImageAndText from '../../Feature/Components/ImageAndText';
 import { Text } from '../../Shared/value';
 
 function Limfog() {
   return (
     <>
+      <Hero
+        src={LimFogImage}
+        alt="Hero image Limfog."
+        title="Limfog"
+        description="Vi erbjuder Limfog till av mycket hög kvalitet som tillverkas i Sverige av virke som vi själva levererar."
+      />
       <ImageAndText src={LimFogImage} title="Limfog">
         <Text>
           Vi erbjuder Limfog till av mycket hög kvalitet som tillverkas i Sverige av virke som vi själva levererar.

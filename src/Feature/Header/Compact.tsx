@@ -20,7 +20,7 @@ function Compact({ menuLinks }: MenuLinkstype) {
 
   return (
     <CompactContainer>
-      <PlainButton arialLabel="Home" onClick={() => setIsOpen(true)}>
+      <PlainButton ariaLabel="Home" onClick={() => setIsOpen(true)}>
         <styled.Img src={Menu} width={24} />
       </PlainButton>
       <NavLink to="/">
@@ -30,7 +30,7 @@ function Compact({ menuLinks }: MenuLinkstype) {
       </NavLink>
       <Flyout css={isOpen && { transform: 'translateX(0%)' }}>
         <FlyoutHeader>
-          <StyledCloseButton onClick={() => setIsOpen(false)} arialLabel="close flyout">
+          <StyledCloseButton onClick={() => setIsOpen(false)} ariaLabel="close flyout">
             <styled.Img src={CloseIcon} alt="Close Icon" width={15} />
           </StyledCloseButton>
         </FlyoutHeader>
@@ -41,7 +41,7 @@ function Compact({ menuLinks }: MenuLinkstype) {
                 <>
                   <DropDownButton
                     onClick={() => toggleSubMenu(index)}
-                    arialLabel={`Open link dropdown for ${link.name}`}
+                    ariaLabel={`Open link dropdown for ${link.name}`}
                   >
                     <Link>
                       <LinkText>{link.name}</LinkText>

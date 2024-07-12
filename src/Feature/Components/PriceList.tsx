@@ -45,25 +45,25 @@ function PriceList() {
     <Container>
       <Wrapper>
         <RowHeader>
-          <ButtonCell arialLabel={'Artikelnr'} onClick={() => sortList('artikelnr')} css={{ cursor: 'pointer' }}>
+          <ButtonCell ariaLabel={'Artikelnr'} onClick={() => sortList('artikelnr')} css={{ cursor: 'pointer' }}>
             Artikelnr {getSortIndicator('artikelnr')}
           </ButtonCell>
-          <ButtonCell arialLabel={'Typ'} onClick={() => sortList('typ')} css={{ cursor: 'pointer' }}>
+          <ButtonCell ariaLabel={'Typ'} onClick={() => sortList('typ')} css={{ cursor: 'pointer' }}>
             Typ {getSortIndicator('typ')}
           </ButtonCell>
-          <ButtonCell arialLabel={'Dimension'} onClick={() => sortList('dimension')} css={{ cursor: 'pointer' }}>
+          <ButtonCell ariaLabel={'Dimension'} onClick={() => sortList('dimension')} css={{ cursor: 'pointer' }}>
             Dimension {getSortIndicator('dimension')}
           </ButtonCell>
-          <ButtonCell arialLabel={'Träslag'} onClick={() => sortList('traslag')} css={{ cursor: 'pointer' }}>
+          <ButtonCell ariaLabel={'Träslag'} onClick={() => sortList('traslag')} css={{ cursor: 'pointer' }}>
             Träslag {getSortIndicator('traslag')}
           </ButtonCell>
-          <ButtonCell arialLabel={'Enhet'} onClick={() => sortList('enhet')} css={{ cursor: 'pointer' }}>
+          <ButtonCell ariaLabel={'Enhet'} onClick={() => sortList('enhet')} css={{ cursor: 'pointer' }}>
             Enhet {getSortIndicator('enhet')}
           </ButtonCell>
-          <ButtonCell arialLabel={'Pris inkl/moms'} onClick={() => sortList('pris')} css={{ cursor: 'pointer' }}>
+          <ButtonCell ariaLabel={'Pris inkl/moms'} onClick={() => sortList('pris')} css={{ cursor: 'pointer' }}>
             Pris inkl/moms {getSortIndicator('pris')}
           </ButtonCell>
-          <ButtonCell arialLabel={'Anmärkning'} onClick={() => sortList('anmarkning')} css={{ cursor: 'pointer' }}>
+          <ButtonCell ariaLabel={'Anmärkning'} onClick={() => sortList('anmarkning')} css={{ cursor: 'pointer' }}>
             Anmärkning {getSortIndicator('anmarkning')}
           </ButtonCell>
         </RowHeader>

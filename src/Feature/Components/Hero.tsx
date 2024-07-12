@@ -1,6 +1,6 @@
 import { styled } from '@glitz/react';
 import H1 from '../../Shared/Generic/H1';
-import { huge, large, medium } from '../../Shared/value';
+import { Block, huge, large, medium } from '../../Shared/value';
 import H3 from '../../Shared/Generic/H3';
 import LazyLoadImage from './LazyLoadImage';
 import Button from './Button';
@@ -20,13 +20,19 @@ function Hero(props: HeroProps) {
           <H1>{props.title}</H1>
           <StyledH3>{props.description}</StyledH3>
         </TextContainer>
-        <StyledButton arialLabel="kontakta oss" to="/kontakt">
+        <StyledButton ariaLabel="kontakta oss" to="/kontakt">
           Kontakta oss
         </StyledButton>
       </TextOverlay>
       <ImageContainer>
         <Image src={props.src} alt={props.alt} />
       </ImageContainer>
+      <StyledBlock>
+        <TextContainer>
+          <H1>{props.title}</H1>
+          <StyledH3>{props.description}</StyledH3>
+        </TextContainer>
+      </StyledBlock>
     </HeroContainer>
   );
 }
@@ -39,6 +45,16 @@ const HeroContainer = styled.div({
 });
 
 const TextContainer = styled.div();
+
+const StyledBlock = styled(Block, {
+  display: 'none',
+  ...media(
+    { maxWidth: '1025px' },
+    {
+      display: 'block',
+    },
+  ),
+});
 
 const TextOverlay = styled.div({
   display: 'flex',
@@ -60,10 +76,7 @@ const TextOverlay = styled.div({
   ...media(
     { maxWidth: '1025px' },
     {
-      flexDirection: 'column',
-      alignItems: 'start',
-      justifyContent: 'end',
-      padding: { x: medium, bottom: medium },
+      display: 'none',
     },
   ),
 });
@@ -97,7 +110,7 @@ const ImageContainer = styled.div({
   ...media(
     { maxWidth: '760px' },
     {
-      height: '400px',
+      height: '300px',
     },
   ),
 });

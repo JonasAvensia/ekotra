@@ -1,5 +1,5 @@
 import { styled } from '@glitz/react';
-
+import { media } from '@glitz/core';
 // Border
 export const thin = '1px';
 export const thick = '2px';
@@ -26,6 +26,12 @@ export const AppearanceBlock = styled.div({
     y: 0,
     x: 'auto',
   },
+  ...media(
+    { maxWidth: '1025px' },
+    {
+      maxWidth: '100vw',
+    },
+  ),
 });
 
 export const Text = styled.p({});

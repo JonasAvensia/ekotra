@@ -5,8 +5,10 @@ import AcornHero from '../Assets/acorn.jpg';
 import TextList from '../Feature/Components/TextList';
 import Forrest from '../Assets/forrest.jpg';
 import oak from '../Assets/oak-boards.jpg';
-
+import Shipping from '../Assets/shipping.png';
 import { styled } from '@glitz/react';
+import H3 from '../Shared/Generic/H3';
+
 function HomePage() {
   return (
     <>
@@ -45,6 +47,14 @@ function HomePage() {
           garantera materialets ursprung.
         </Text>
         <Text>Vi blir genom vår småskalighet flexibla och kan alltid sätta dig och dina önskemål i centrum.</Text>
+      </ImageAndText>
+      <ImageAndText src={Shipping} title="Frakt">
+        <H3>Vi har ett avtal med DHL som levererar virket direkt till dörren över hela Sverige.</H3>
+        <styled.P>Fraktkostnaden till Stockholm ligger på cirka 600-1200 kronor inklusive moms.</styled.P>
+        <styled.P>
+          Om möjligt rekommenderar vi att du hämtar virket själv. Då får du en inblick i produktionsprocessen och kan
+          följa hur din panel tillverkas, från stock till färdig panel.
+        </styled.P>
       </ImageAndText>
     </>
   );

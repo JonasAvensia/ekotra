@@ -29,7 +29,7 @@ const menuLinks: MenuLinkstype['menuLinks'] = [
         name: 'Hyvlade Produkter',
       },
       {
-        url: '/produkter/specialprodukter',
+        url: '/produkter/special-produkter',
         name: 'Specialprodukter',
       },
       {

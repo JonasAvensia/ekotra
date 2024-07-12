@@ -7,7 +7,7 @@ type Prototype = {
   to?: string;
   onClick?: () => void; // Define onClick prop
   children: React.ReactNode;
-  arialLabel: string;
+  ariaLabel: string;
 };
 
 function Button(props: Prototype) {
@@ -21,7 +21,7 @@ function Button(props: Prototype) {
     );
   } else {
     return (
-      <StyledButton onClick={onClick} aria-label={props.arialLabel}>
+      <StyledButton onClick={onClick} aria-label={props.ariaLabel}>
         {children}
       </StyledButton>
     );

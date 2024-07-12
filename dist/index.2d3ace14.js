@@ -27229,7 +27229,6 @@ var _react = require("@glitz/react");
 var _header = require("./Feature/Header/Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
 var _glitzOptions = require("./Shared/GlitzOptions");
-var _core = require("@glitz/core");
 var _footer = require("./Feature/Footer/Footer");
 var _footerDefault = parcelHelpers.interopDefault(_footer);
 var _value = require("./Shared/value");
@@ -27242,39 +27241,39 @@ const App = ()=>{
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                     fileName: "src/App.tsx",
-                    lineNumber: 16,
+                    lineNumber: 15,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Page, {
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _routingDefault.default), {}, void 0, false, {
                         fileName: "src/App.tsx",
-                        lineNumber: 18,
+                        lineNumber: 17,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.tsx",
-                    lineNumber: 17,
+                    lineNumber: 16,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactLinkBlockDefault.default), {}, void 0, false, {
                     fileName: "src/App.tsx",
-                    lineNumber: 20,
+                    lineNumber: 19,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                     fileName: "src/App.tsx",
-                    lineNumber: 21,
+                    lineNumber: 20,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/App.tsx",
-            lineNumber: 15,
+            lineNumber: 14,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.tsx",
-        lineNumber: 14,
+        lineNumber: 13,
         columnNumber: 5
     }, undefined);
 };
@@ -27288,12 +27287,7 @@ const Page = (0, _react.styled)((0, _value.AppearanceBlock), {
     margin: {
         y: 0,
         x: "auto"
-    },
-    ...(0, _core.media)({
-        maxWidth: "1025px"
-    }, {
-        maxWidth: "100vw"
-    })
+    }
 });
 _c1 = Page;
 var _c, _c1;
@@ -27305,7 +27299,7 @@ $RefreshReg$(_c1, "Page");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./Routing/Routing":"12bzc","react-router-dom":"9xmpe","./index.css":"irmnC","@glitz/react":"bAXm1","./Feature/Header/Header":"kcmoy","./Shared/GlitzOptions":"3XZ4R","@glitz/core":"5ehrf","./Feature/Footer/Footer":"3cOKN","./Shared/value":"9VKej","./Feature/Components/ContactLinkBlock":"2TbV3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"12bzc":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./Routing/Routing":"12bzc","react-router-dom":"9xmpe","./index.css":"irmnC","@glitz/react":"bAXm1","./Feature/Header/Header":"kcmoy","./Shared/GlitzOptions":"3XZ4R","./Feature/Footer/Footer":"3cOKN","./Shared/value":"9VKej","./Feature/Components/ContactLinkBlock":"2TbV3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"12bzc":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2aec = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27328,16 +27322,18 @@ var _imageArchive = require("../Pages/ImageArchive");
 var _imageArchiveDefault = parcelHelpers.interopDefault(_imageArchive);
 var _scrollToTop = require("../Feature/Helper/ScrollToTop");
 var _scrollToTopDefault = parcelHelpers.interopDefault(_scrollToTop);
-var _limfog = require("../Pages/Productpage/limfog");
-var _limfogDefault = parcelHelpers.interopDefault(_limfog);
 var _sawedProducts = require("../Pages/Productpage/SawedProducts");
 var _sawedProductsDefault = parcelHelpers.interopDefault(_sawedProducts);
+var _specialProducts = require("../Pages/Productpage/SpecialProducts");
+var _specialProductsDefault = parcelHelpers.interopDefault(_specialProducts);
+var _limfog = require("../Pages/Productpage/Limfog");
+var _limfogDefault = parcelHelpers.interopDefault(_limfog);
 function Routing() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _scrollToTopDefault.default), {}, void 0, false, {
                 fileName: "src/Routing/Routing.tsx",
-                lineNumber: 14,
+                lineNumber: 15,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
@@ -27346,20 +27342,8 @@ function Routing() {
                         path: "/",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homePageDefault.default), {}, void 0, false, {
                             fileName: "src/Routing/Routing.tsx",
-                            lineNumber: 16,
-                            columnNumber: 34
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/Routing/Routing.tsx",
-                        lineNumber: 16,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/prislista",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _priceListPageDefault.default), {}, void 0, false, {
-                            fileName: "src/Routing/Routing.tsx",
                             lineNumber: 17,
-                            columnNumber: 43
+                            columnNumber: 34
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/Routing/Routing.tsx",
@@ -27367,8 +27351,8 @@ function Routing() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/produkter",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _productsListningPageDefault.default), {}, void 0, false, {
+                        path: "/prislista",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _priceListPageDefault.default), {}, void 0, false, {
                             fileName: "src/Routing/Routing.tsx",
                             lineNumber: 18,
                             columnNumber: 43
@@ -27379,11 +27363,11 @@ function Routing() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/produkter/limfog",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _limfogDefault.default), {}, void 0, false, {
+                        path: "/produkter",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _productsListningPageDefault.default), {}, void 0, false, {
                             fileName: "src/Routing/Routing.tsx",
                             lineNumber: 19,
-                            columnNumber: 50
+                            columnNumber: 43
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/Routing/Routing.tsx",
@@ -27391,11 +27375,11 @@ function Routing() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/produkter/sagade-produkter",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sawedProductsDefault.default), {}, void 0, false, {
+                        path: "/produkter/limfog",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _limfogDefault.default), {}, void 0, false, {
                             fileName: "src/Routing/Routing.tsx",
                             lineNumber: 20,
-                            columnNumber: 60
+                            columnNumber: 50
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/Routing/Routing.tsx",
@@ -27403,11 +27387,11 @@ function Routing() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/galleri",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageArchiveDefault.default), {}, void 0, false, {
+                        path: "/produkter/sagade-produkter",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sawedProductsDefault.default), {}, void 0, false, {
                             fileName: "src/Routing/Routing.tsx",
                             lineNumber: 21,
-                            columnNumber: 41
+                            columnNumber: 60
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/Routing/Routing.tsx",
@@ -27415,21 +27399,45 @@ function Routing() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/kontakt",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactPageDefault.default), {}, void 0, false, {
+                        path: "/produkter/special-produkter",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _specialProductsDefault.default), {}, void 0, false, {
                             fileName: "src/Routing/Routing.tsx",
                             lineNumber: 22,
-                            columnNumber: 41
+                            columnNumber: 61
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/Routing/Routing.tsx",
                         lineNumber: 22,
                         columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/galleri",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageArchiveDefault.default), {}, void 0, false, {
+                            fileName: "src/Routing/Routing.tsx",
+                            lineNumber: 23,
+                            columnNumber: 41
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/Routing/Routing.tsx",
+                        lineNumber: 23,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/kontakt",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactPageDefault.default), {}, void 0, false, {
+                            fileName: "src/Routing/Routing.tsx",
+                            lineNumber: 24,
+                            columnNumber: 41
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/Routing/Routing.tsx",
+                        lineNumber: 24,
+                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Routing/Routing.tsx",
-                lineNumber: 15,
+                lineNumber: 16,
                 columnNumber: 7
             }, this)
         ]
@@ -27445,7 +27453,7 @@ $RefreshReg$(_c, "Routing");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../Pages/HomePage":"gJB5o","../Pages/PriceListPage":"eIucm","../Pages/ProductsListningPage":"3Kqqo","../Pages/ContactPage":"bDqc9","../Pages/ImageArchive":"j1mrX","../Feature/Helper/ScrollToTop":"4Z7Gw","../Pages/Productpage/limfog":"cBoK6","../Pages/Productpage/SawedProducts":"kTUTe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../Pages/HomePage":"gJB5o","../Pages/PriceListPage":"eIucm","../Pages/ProductsListningPage":"3Kqqo","../Pages/ContactPage":"bDqc9","../Pages/ImageArchive":"j1mrX","../Feature/Helper/ScrollToTop":"4Z7Gw","../Pages/Productpage/SawedProducts":"kTUTe","../Pages/Productpage/SpecialProducts":"8F5SM","../Pages/Productpage/Limfog":"l1iBY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.24.1
  *
@@ -34553,7 +34561,11 @@ var _forrestJpg = require("../Assets/forrest.jpg");
 var _forrestJpgDefault = parcelHelpers.interopDefault(_forrestJpg);
 var _oakBoardsJpg = require("../Assets/oak-boards.jpg");
 var _oakBoardsJpgDefault = parcelHelpers.interopDefault(_oakBoardsJpg);
+var _shippingPng = require("../Assets/shipping.png");
+var _shippingPngDefault = parcelHelpers.interopDefault(_shippingPng);
 var _react = require("@glitz/react");
+var _h3 = require("../Shared/Generic/H3");
+var _h3Default = parcelHelpers.interopDefault(_h3);
 function HomePage() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
@@ -34564,17 +34576,17 @@ function HomePage() {
                 description: "Specials\xe5gverk-Hyvleri mitt i Sm\xe5land sedan 1997"
             }, void 0, false, {
                 fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 13,
+                lineNumber: 15,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _textListDefault.default), {}, void 0, false, {
                 fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 20,
+                lineNumber: 22,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardLinksDefault.default), {}, void 0, false, {
                 fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 21,
+                lineNumber: 23,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
@@ -34589,7 +34601,7 @@ function HomePage() {
                                 children: " god kvalitet"
                             }, void 0, false, {
                                 fileName: "src/Pages/HomePage.tsx",
-                                lineNumber: 25,
+                                lineNumber: 27,
                                 columnNumber: 11
                             }, this),
                             " och ett ",
@@ -34597,14 +34609,14 @@ function HomePage() {
                                 children: " formstabilt virke"
                             }, void 0, false, {
                                 fileName: "src/Pages/HomePage.tsx",
-                                lineNumber: 25,
+                                lineNumber: 27,
                                 columnNumber: 50
                             }, this),
                             "."
                         ]
                     }, void 0, true, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 23,
+                        lineNumber: 25,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
@@ -34614,28 +34626,28 @@ function HomePage() {
                                 children: "svenskt l\xf6vtr\xe4"
                             }, void 0, false, {
                                 fileName: "src/Pages/HomePage.tsx",
-                                lineNumber: 28,
+                                lineNumber: 30,
                                 columnNumber: 45
                             }, this),
                             " och s\xe4tter ursprung i fokus."
                         ]
                     }, void 0, true, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 27,
+                        lineNumber: 29,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                         children: "Med leverans f\xf6ljer ett ursprungsdokument med v\xe4xtplats."
                     }, void 0, false, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 30,
+                        lineNumber: 32,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                         children: "Udda l\xe4ngder, dimensioner och profiler tillh\xf6r v\xe5r specialitet."
                     }, void 0, false, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 31,
+                        lineNumber: 33,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
@@ -34645,20 +34657,20 @@ function HomePage() {
                                 children: "tv\xe5 veckor"
                             }, void 0, false, {
                                 fileName: "src/Pages/HomePage.tsx",
-                                lineNumber: 33,
+                                lineNumber: 35,
                                 columnNumber: 50
                             }, this),
                             " fr\xe5n order, oavsett om det \xe4r lagervara eller m\xe5ste specialproduceras."
                         ]
                     }, void 0, true, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 32,
+                        lineNumber: 34,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 22,
+                lineNumber: 24,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
@@ -34669,27 +34681,27 @@ function HomePage() {
                         children: "Vi jobbar mot privata kunder, kommuner, l\xe4nsstyrelser och andra f\xf6retag."
                     }, void 0, false, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 38,
+                        lineNumber: 40,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                         children: "Alltid med samma m\xe5l, att kunden ska f\xe5 r\xe4tt vara vid r\xe4tt tid."
                     }, void 0, false, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 39,
+                        lineNumber: 41,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                         children: "Vi ombes\xf6rjer transport inom hela Sverige."
                     }, void 0, false, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 40,
+                        lineNumber: 42,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 37,
+                lineNumber: 39,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
@@ -34701,20 +34713,51 @@ function HomePage() {
                         children: "Genom att kunna f\xf6r\xe4dla svensk l\xf6vtr\xe4r\xe5vara fr\xe5n stock till f\xe4rdiga produkter kan vi gentemot dig som kund garantera materialets ursprung."
                     }, void 0, false, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 43,
+                        lineNumber: 45,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                         children: "Vi blir genom v\xe5r sm\xe5skalighet flexibla och kan alltid s\xe4tta dig och dina \xf6nskem\xe5l i centrum."
                     }, void 0, false, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 47,
+                        lineNumber: 49,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 42,
+                lineNumber: 44,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
+                src: (0, _shippingPngDefault.default),
+                title: "Frakt",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
+                        children: "Vi har ett avtal med DHL som levererar virket direkt till d\xf6rren \xf6ver hela Sverige."
+                    }, void 0, false, {
+                        fileName: "src/Pages/HomePage.tsx",
+                        lineNumber: 52,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).P, {
+                        children: "Fraktkostnaden till Stockholm ligger p\xe5 cirka 600-1200 kronor inklusive moms."
+                    }, void 0, false, {
+                        fileName: "src/Pages/HomePage.tsx",
+                        lineNumber: 53,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).P, {
+                        children: "Om m\xf6jligt rekommenderar vi att du h\xe4mtar virket sj\xe4lv. D\xe5 f\xe5r du en inblick i produktionsprocessen och kan f\xf6lja hur din panel tillverkas, fr\xe5n stock till f\xe4rdig panel."
+                    }, void 0, false, {
+                        fileName: "src/Pages/HomePage.tsx",
+                        lineNumber: 54,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Pages/HomePage.tsx",
+                lineNumber: 51,
                 columnNumber: 7
             }, this)
         ]
@@ -34733,7 +34776,7 @@ $RefreshReg$(_c1, "Text");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../Feature/Components/CardLinks":"4IVZq","../Feature/Components/Hero":"8WNwH","../Feature/Components/ImageAndText":"8HWo8","../Assets/acorn.jpg":"dMYuz","../Feature/Components/TextList":"5S2tu","../Assets/forrest.jpg":"3nPrl","../Assets/oak-boards.jpg":"lVzFd","@glitz/react":"bAXm1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4IVZq":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../Feature/Components/CardLinks":"4IVZq","../Feature/Components/Hero":"8WNwH","../Feature/Components/ImageAndText":"8HWo8","../Assets/acorn.jpg":"dMYuz","../Feature/Components/TextList":"5S2tu","../Assets/forrest.jpg":"3nPrl","../Assets/oak-boards.jpg":"lVzFd","../Assets/shipping.png":"1jote","@glitz/react":"bAXm1","../Shared/Generic/H3":"iGEMB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4IVZq":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$54ca = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34755,214 +34798,292 @@ var _button = require("./Button");
 var _buttonDefault = parcelHelpers.interopDefault(_button);
 var _lazyLoadImage = require("./LazyLoadImage");
 var _lazyLoadImageDefault = parcelHelpers.interopDefault(_lazyLoadImage);
+var _sawedProducts1Jpg = require("../../Assets/sawed-products-1.jpg");
+var _sawedProducts1JpgDefault = parcelHelpers.interopDefault(_sawedProducts1Jpg);
+var _horseBoxJpg = require("../../Assets/products/horse-box.jpg");
+var _horseBoxJpgDefault = parcelHelpers.interopDefault(_horseBoxJpg);
+var _limfogAlmJpg = require("../../Assets/products/limfog-alm.jpg");
+var _limfogAlmJpgDefault = parcelHelpers.interopDefault(_limfogAlmJpg);
 function CardLinks() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "",
+                        to: "/produkter/sagade-produkter",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
-                            src: (0, _woodDummyJpgDefault.default),
-                            alt: "dummy"
+                            src: (0, _sawedProducts1JpgDefault.default),
+                            alt: "S\xe5gade produkter image"
                         }, void 0, false, {
                             fileName: "src/Feature/Components/CardLinks.tsx",
-                            lineNumber: 15,
+                            lineNumber: 18,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
-                        fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 14,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
-                                children: "S\xe5gade produkter"
-                            }, void 0, false, {
-                                fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 18,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                                children: "Vi erbjuder s\xe5gat l\xf6vtr\xe4 av de flesta svenska tr\xe4slag och i de flesta dimensioner."
-                            }, void 0, false, {
-                                fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 19,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
-                                        to: "/",
-                                        arialLabel: "L\xe4s mer",
-                                        children: "L\xe4s mer"
-                                    }, void 0, false, {
-                                        fileName: "src/Feature/Components/CardLinks.tsx",
-                                        lineNumber: 22,
-                                        columnNumber: 15
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "src/Feature/Components/CardLinks.tsx",
-                                    lineNumber: 21,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 20,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
                         fileName: "src/Feature/Components/CardLinks.tsx",
                         lineNumber: 17,
                         columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Feature/Components/CardLinks.tsx",
-                lineNumber: 13,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
-                            src: (0, _woodDummyJpgDefault.default),
-                            alt: "dummy"
-                        }, void 0, false, {
-                            fileName: "src/Feature/Components/CardLinks.tsx",
-                            lineNumber: 31,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 30,
-                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
-                                children: "S\xe5gade produkter"
+                                children: "S\xe5gade Produkter"
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 34,
+                                lineNumber: 21,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                                 children: "Vi erbjuder s\xe5gat l\xf6vtr\xe4 av de flesta svenska tr\xe4slag och i de flesta dimensioner."
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 35,
+                                lineNumber: 22,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                fileName: "src/Feature/Components/CardLinks.tsx",
+                                lineNumber: 23,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "",
+                                to: "/produkter/sagade-produkter",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
-                                        to: "/",
-                                        arialLabel: "L\xe4s mer",
+                                        to: "/produkter/sagade-produkter",
+                                        ariaLabel: "L\xe4s mer",
                                         children: "L\xe4s mer"
                                     }, void 0, false, {
                                         fileName: "src/Feature/Components/CardLinks.tsx",
-                                        lineNumber: 38,
+                                        lineNumber: 26,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "src/Feature/Components/CardLinks.tsx",
-                                    lineNumber: 37,
+                                    lineNumber: 25,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 36,
+                                lineNumber: 24,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 33,
+                        lineNumber: 20,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Feature/Components/CardLinks.tsx",
-                lineNumber: 29,
+                lineNumber: 16,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "",
+                        to: "/produkter/hyvlade-produkter",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
                             src: (0, _woodDummyJpgDefault.default),
-                            alt: "dummy"
+                            alt: "image of hyvlade produkter"
                         }, void 0, false, {
                             fileName: "src/Feature/Components/CardLinks.tsx",
-                            lineNumber: 47,
+                            lineNumber: 35,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 46,
+                        lineNumber: 34,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
-                                children: "S\xe5gade produkter"
+                                children: "Hyvlade Produkter"
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 50,
+                                lineNumber: 38,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                                children: "Vi erbjuder s\xe5gat l\xf6vtr\xe4 av de flesta svenska tr\xe4slag och i de flesta dimensioner."
+                                children: "Med v\xe5rt nya hyvleri kan vi nu f\xf6r\xe4dla r\xe5varor fr\xe5n stock till f\xe4rdiga produkter som golv och lister. Vi erbjuder \xe4ven paneler i olika l\xf6vtr\xe4slag och utseenden."
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 51,
+                                lineNumber: 39,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "",
+                                to: "/produkter/hyvlade-produkter",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
-                                        to: "/",
-                                        arialLabel: "L\xe4s mer",
+                                        to: "/produkter/hyvlade-produkter",
+                                        ariaLabel: "L\xe4s mer om hyvlade produkter",
                                         children: "L\xe4s mer"
                                     }, void 0, false, {
                                         fileName: "src/Feature/Components/CardLinks.tsx",
-                                        lineNumber: 54,
+                                        lineNumber: 45,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "src/Feature/Components/CardLinks.tsx",
-                                    lineNumber: 53,
+                                    lineNumber: 44,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 52,
+                                lineNumber: 43,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 49,
+                        lineNumber: 37,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Feature/Components/CardLinks.tsx",
-                lineNumber: 45,
+                lineNumber: 33,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/produkter/special-produkter",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
+                            src: (0, _horseBoxJpgDefault.default),
+                            alt: "Image of Special produkter"
+                        }, void 0, false, {
+                            fileName: "src/Feature/Components/CardLinks.tsx",
+                            lineNumber: 54,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/Feature/Components/CardLinks.tsx",
+                        lineNumber: 53,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
+                                children: "Special Produkter"
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/CardLinks.tsx",
+                                lineNumber: 57,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                                children: "Vi s\xe5gar virke upp till 7 meter l\xe5ngt och 400x400 mm stort samt tillverkar specialbest\xe4llda paneler och lister efter kundens \xf6nskem\xe5l."
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/CardLinks.tsx",
+                                lineNumber: 58,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/produkter/special-produkter",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
+                                        to: "/produkter/special-produkter",
+                                        ariaLabel: "L\xe4s mer",
+                                        children: "L\xe4s mer"
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Components/CardLinks.tsx",
+                                        lineNumber: 64,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/Feature/Components/CardLinks.tsx",
+                                    lineNumber: 63,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/CardLinks.tsx",
+                                lineNumber: 62,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Feature/Components/CardLinks.tsx",
+                        lineNumber: 56,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Feature/Components/CardLinks.tsx",
+                lineNumber: 52,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/produkter/limfog",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
+                            src: (0, _limfogAlmJpgDefault.default),
+                            alt: "dummy"
+                        }, void 0, false, {
+                            fileName: "src/Feature/Components/CardLinks.tsx",
+                            lineNumber: 73,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/Feature/Components/CardLinks.tsx",
+                        lineNumber: 72,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
+                                children: "Limfog"
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/CardLinks.tsx",
+                                lineNumber: 76,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                                children: "Vi erbjuder skr\xe4ddarsydda l\xf6sningar som hyllplan, bordsskivor och b\xe4nkskivor i exakta m\xe5tt, f\xe4rdigputsade och med m\xf6jlighet till ytbehandling."
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/CardLinks.tsx",
+                                lineNumber: 77,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/produkter/limfog",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
+                                        to: "/produkter/limfog",
+                                        ariaLabel: "L\xe4s mer",
+                                        children: "L\xe4s mer"
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Components/CardLinks.tsx",
+                                        lineNumber: 83,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/Feature/Components/CardLinks.tsx",
+                                    lineNumber: 82,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/CardLinks.tsx",
+                                lineNumber: 81,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Feature/Components/CardLinks.tsx",
+                        lineNumber: 75,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Feature/Components/CardLinks.tsx",
+                lineNumber: 71,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Feature/Components/CardLinks.tsx",
-        lineNumber: 12,
+        lineNumber: 15,
         columnNumber: 5
     }, this);
 }
@@ -34975,7 +35096,7 @@ const Container = (0, _react.styled)((0, _value.Block), {
     ...(0, _core.media)({
         minWidth: "1025px"
     }, {
-        gridTemplateColumns: "1fr 1fr 1fr"
+        gridTemplateColumns: "1fr 1fr 1fr 1fr"
     })
 });
 _c1 = Container;
@@ -34986,6 +35107,7 @@ const Column = (0, _react.styled).div({
 _c2 = Column;
 const StyledImage = (0, _react.styled)((0, _lazyLoadImageDefault.default), {
     width: "100%",
+    height: "220px",
     objectFit: "cover",
     borderRadius: "8px"
 });
@@ -35031,7 +35153,7 @@ $RefreshReg$(_c7, "StyledButton");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","@glitz/core":"5ehrf","../../Shared/value":"9VKej","react-router-dom":"9xmpe","../../Assets/wood-dummy.jpg":"d6rHm","../../Shared/Generic/H3":"iGEMB","./Button":"at8Gv","./LazyLoadImage":"6qRec","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bAXm1":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","@glitz/core":"5ehrf","../../Shared/value":"9VKej","react-router-dom":"9xmpe","../../Assets/wood-dummy.jpg":"d6rHm","../../Shared/Generic/H3":"iGEMB","./Button":"at8Gv","./LazyLoadImage":"6qRec","../../Assets/sawed-products-1.jpg":"7Omft","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../Assets/products/horse-box.jpg":"83gtD","../../Assets/products/limfog-alm.jpg":"jUiM9"}],"bAXm1":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "GlitzProvider", ()=>GlitzProvider);
@@ -36529,6 +36651,7 @@ parcelHelpers.export(exports, "Text", ()=>Text);
 parcelHelpers.export(exports, "DefaultGreen", ()=>DefaultGreen);
 parcelHelpers.export(exports, "DefaulBackgroundColor", ()=>DefaulBackgroundColor);
 var _react = require("@glitz/react");
+var _core = require("@glitz/core");
 const thin = "1px";
 const thick = "2px";
 const tiny = "4px";
@@ -36552,13 +36675,18 @@ const AppearanceBlock = (0, _react.styled).div({
     margin: {
         y: 0,
         x: "auto"
-    }
+    },
+    ...(0, _core.media)({
+        maxWidth: "1025px"
+    }, {
+        maxWidth: "100vw"
+    })
 });
 const Text = (0, _react.styled).p({});
 const DefaultGreen = "#A7CDCC";
 const DefaulBackgroundColor = "#004A55";
 
-},{"@glitz/react":"bAXm1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"d6rHm":[function(require,module,exports) {
+},{"@glitz/react":"bAXm1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@glitz/core":"5ehrf"}],"d6rHm":[function(require,module,exports) {
 module.exports = require("bd506b22664eee19").getBundleURL("6EXJA") + "wood-dummy.7930ec0e.jpg" + "?" + Date.now();
 
 },{"bd506b22664eee19":"lgJ39"}],"lgJ39":[function(require,module,exports) {
@@ -36690,7 +36818,7 @@ function Button(props) {
     }, this);
     else return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
         onClick: onClick,
-        "aria-label": props.arialLabel,
+        "aria-label": props.ariaLabel,
         children: children
     }, void 0, false, {
         fileName: "src/Feature/Components/Button.tsx",
@@ -36934,7 +37062,16 @@ $RefreshReg$(_c2, "ImageComponent");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@glitz/react":"bAXm1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8WNwH":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@glitz/react":"bAXm1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7Omft":[function(require,module,exports) {
+module.exports = require("34366f8c3b03848b").getBundleURL("6EXJA") + "sawed-products-1.e900d10c.jpg" + "?" + Date.now();
+
+},{"34366f8c3b03848b":"lgJ39"}],"83gtD":[function(require,module,exports) {
+module.exports = require("527adde4683699d1").getBundleURL("6EXJA") + "horse-box.6b4108c3.jpg" + "?" + Date.now();
+
+},{"527adde4683699d1":"lgJ39"}],"jUiM9":[function(require,module,exports) {
+module.exports = require("e8d3c54cc0e11ce7").getBundleURL("6EXJA") + "limfog-alm.964d5e46.jpg" + "?" + Date.now();
+
+},{"e8d3c54cc0e11ce7":"lgJ39"}],"8WNwH":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bb69 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36983,7 +37120,7 @@ function Hero(props) {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
-                        arialLabel: "kontakta oss",
+                        ariaLabel: "kontakta oss",
                         to: "/kontakt",
                         children: "Kontakta oss"
                     }, void 0, false, {
@@ -37010,6 +37147,34 @@ function Hero(props) {
                 fileName: "src/Feature/Components/Hero.tsx",
                 lineNumber: 27,
                 columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledBlock, {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h1Default.default), {
+                            children: props.title
+                        }, void 0, false, {
+                            fileName: "src/Feature/Components/Hero.tsx",
+                            lineNumber: 32,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledH3, {
+                            children: props.description
+                        }, void 0, false, {
+                            fileName: "src/Feature/Components/Hero.tsx",
+                            lineNumber: 33,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Feature/Components/Hero.tsx",
+                    lineNumber: 31,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "src/Feature/Components/Hero.tsx",
+                lineNumber: 30,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
@@ -37027,6 +37192,15 @@ const HeroContainer = (0, _react.styled).div({
 _c1 = HeroContainer;
 const TextContainer = (0, _react.styled).div();
 _c2 = TextContainer;
+const StyledBlock = (0, _react.styled)((0, _value.Block), {
+    display: "none",
+    ...(0, _core.media)({
+        maxWidth: "1025px"
+    }, {
+        display: "block"
+    })
+});
+_c3 = StyledBlock;
 const TextOverlay = (0, _react.styled).div({
     display: "flex",
     justifyContent: "space-between",
@@ -37049,16 +37223,10 @@ const TextOverlay = (0, _react.styled).div({
     ...(0, _core.media)({
         maxWidth: "1025px"
     }, {
-        flexDirection: "column",
-        alignItems: "start",
-        justifyContent: "end",
-        padding: {
-            x: (0, _value.medium),
-            bottom: (0, _value.medium)
-        }
+        display: "none"
     })
 });
-_c3 = TextOverlay;
+_c4 = TextOverlay;
 const StyledButton = (0, _react.styled)((0, _buttonDefault.default), {
     backgroundColor: "#fff",
     color: "black",
@@ -37078,11 +37246,11 @@ const StyledButton = (0, _react.styled)((0, _buttonDefault.default), {
         }
     })
 });
-_c4 = StyledButton;
+_c5 = StyledButton;
 const StyledH3 = (0, _react.styled)((0, _h3Default.default), {
     fontStyle: "italic"
 });
-_c5 = StyledH3;
+_c6 = StyledH3;
 const ImageContainer = (0, _react.styled).div({
     position: "relative",
     width: "100%",
@@ -37091,25 +37259,26 @@ const ImageContainer = (0, _react.styled).div({
     ...(0, _core.media)({
         maxWidth: "760px"
     }, {
-        height: "400px"
+        height: "300px"
     })
 });
-_c6 = ImageContainer;
+_c7 = ImageContainer;
 const Image = (0, _react.styled)((0, _lazyLoadImageDefault.default), {
     width: "100%",
     height: "100%",
     objectFit: "cover"
 });
-_c7 = Image;
-var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7;
+_c8 = Image;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8;
 $RefreshReg$(_c, "Hero");
 $RefreshReg$(_c1, "HeroContainer");
 $RefreshReg$(_c2, "TextContainer");
-$RefreshReg$(_c3, "TextOverlay");
-$RefreshReg$(_c4, "StyledButton");
-$RefreshReg$(_c5, "StyledH3");
-$RefreshReg$(_c6, "ImageContainer");
-$RefreshReg$(_c7, "Image");
+$RefreshReg$(_c3, "StyledBlock");
+$RefreshReg$(_c4, "TextOverlay");
+$RefreshReg$(_c5, "StyledButton");
+$RefreshReg$(_c6, "StyledH3");
+$RefreshReg$(_c7, "ImageContainer");
+$RefreshReg$(_c8, "Image");
 
   $parcel$ReactRefreshHelpers$bb69.postlude(module);
 } finally {
@@ -37494,7 +37663,10 @@ module.exports = require("de74ee2dc28855fd").getBundleURL("6EXJA") + "forrest.c5
 },{"de74ee2dc28855fd":"lgJ39"}],"lVzFd":[function(require,module,exports) {
 module.exports = require("1bd6c40f5d0e0afc").getBundleURL("6EXJA") + "oak-boards.33736e6b.jpg" + "?" + Date.now();
 
-},{"1bd6c40f5d0e0afc":"lgJ39"}],"eIucm":[function(require,module,exports) {
+},{"1bd6c40f5d0e0afc":"lgJ39"}],"1jote":[function(require,module,exports) {
+module.exports = require("35346fcdb97182af").getBundleURL("6EXJA") + "shipping.7cc68795.png" + "?" + Date.now();
+
+},{"35346fcdb97182af":"lgJ39"}],"eIucm":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$e9db = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -37637,7 +37809,7 @@ function PriceList() {
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RowHeader, {
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                            arialLabel: "Artikelnr",
+                            ariaLabel: "Artikelnr",
                             onClick: ()=>sortList("artikelnr"),
                             css: {
                                 cursor: "pointer"
@@ -37652,7 +37824,7 @@ function PriceList() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                            arialLabel: "Typ",
+                            ariaLabel: "Typ",
                             onClick: ()=>sortList("typ"),
                             css: {
                                 cursor: "pointer"
@@ -37667,7 +37839,7 @@ function PriceList() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                            arialLabel: "Dimension",
+                            ariaLabel: "Dimension",
                             onClick: ()=>sortList("dimension"),
                             css: {
                                 cursor: "pointer"
@@ -37682,7 +37854,7 @@ function PriceList() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                            arialLabel: "Tr\xe4slag",
+                            ariaLabel: "Tr\xe4slag",
                             onClick: ()=>sortList("traslag"),
                             css: {
                                 cursor: "pointer"
@@ -37697,7 +37869,7 @@ function PriceList() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                            arialLabel: "Enhet",
+                            ariaLabel: "Enhet",
                             onClick: ()=>sortList("enhet"),
                             css: {
                                 cursor: "pointer"
@@ -37712,7 +37884,7 @@ function PriceList() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                            arialLabel: "Pris inkl/moms",
+                            ariaLabel: "Pris inkl/moms",
                             onClick: ()=>sortList("pris"),
                             css: {
                                 cursor: "pointer"
@@ -37727,7 +37899,7 @@ function PriceList() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                            arialLabel: "Anm\xe4rkning",
+                            ariaLabel: "Anm\xe4rkning",
                             onClick: ()=>sortList("anmarkning"),
                             css: {
                                 cursor: "pointer"
@@ -37897,42 +38069,68 @@ const ekstolp = {
         {
             dimension: "50*50 mm",
             length: "1.7-1.9 m",
-            pricePerUnit: 38,
-            sharpeningCost: 6
+            pricePerUnit: "38",
+            sharpeningCost: "6"
         },
         {
             dimension: "63*63 mm",
             length: "1.7-1.9 m",
-            pricePerUnit: 65,
-            sharpeningCost: 8
+            pricePerUnit: "65",
+            sharpeningCost: "8"
         },
         {
             dimension: "75*75 mm",
             length: "1.7-1.9 m",
-            pricePerUnit: 95,
-            sharpeningCost: 12
+            pricePerUnit: "95",
+            sharpeningCost: "12"
+        }
+    ],
+    woodProducts: [
+        {
+            type: "Tr\xe4slag",
+            dimension: "42*120/145 mm",
+            pricePerKvm: "560 kr",
+            unit: "kvm"
+        },
+        {
+            type: "Tr\xe4slag",
+            dimension: "34*120/145 mm",
+            pricePerKvm: "410 kr",
+            unit: "kvm"
+        },
+        {
+            type: "Stolpe",
+            dimension: "95*95 mm",
+            pricePerLpm: "90 kr",
+            unit: "lpm"
+        },
+        {
+            type: "Stolpe",
+            dimension: "120*120 mm",
+            pricePerLpm: "195 kr",
+            unit: "lpm"
         }
     ],
     dimensionsWithPricePerLpm: [
         {
             dimension: "100*100 mm",
-            pricePerLpm: 110
+            pricePerLpm: "110"
         },
         {
             dimension: "125*125 mm",
-            pricePerLpm: 129
+            pricePerLpm: "129"
         },
         {
             dimension: "150*150 mm",
-            pricePerLpm: 175
+            pricePerLpm: "175"
         },
         {
             dimension: "175*175 mm",
-            pricePerLpm: 220
+            pricePerLpm: "220"
         },
         {
             dimension: "200*200 mm",
-            pricePerLpm: 280
+            pricePerLpm: "280"
         }
     ]
 };
@@ -38338,10 +38536,7 @@ const list = [
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eDA9j":[function(require,module,exports) {
 module.exports = require("f0268d37c93299d3").getBundleURL("6EXJA") + "HeroLumber.96783100.jpg" + "?" + Date.now();
 
-},{"f0268d37c93299d3":"lgJ39"}],"1jote":[function(require,module,exports) {
-module.exports = require("35346fcdb97182af").getBundleURL("6EXJA") + "shipping.7cc68795.png" + "?" + Date.now();
-
-},{"35346fcdb97182af":"lgJ39"}],"3Kqqo":[function(require,module,exports) {
+},{"f0268d37c93299d3":"lgJ39"}],"3Kqqo":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$fb48 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -38357,15 +38552,9 @@ var _hero = require("../Feature/Components/Hero");
 var _heroDefault = parcelHelpers.interopDefault(_hero);
 var _textList = require("../Feature/Components/TextList");
 var _textListDefault = parcelHelpers.interopDefault(_textList);
-var _imageAndText = require("../Feature/Components/ImageAndText");
-var _imageAndTextDefault = parcelHelpers.interopDefault(_imageAndText);
-var _limfogAlmJpg = require("../Assets/products/limfog-alm.jpg");
-var _limfogAlmJpgDefault = parcelHelpers.interopDefault(_limfogAlmJpg);
 var _react = require("@glitz/react");
-var _textContainer = require("../Feature/Components/TextContainer");
-var _textContainerDefault = parcelHelpers.interopDefault(_textContainer);
-var _productInfoCol = require("../Feature/Components/ProductInfoCol");
-var _productInfoColDefault = parcelHelpers.interopDefault(_productInfoCol);
+var _cardLinks = require("../Feature/Components/CardLinks");
+var _cardLinksDefault = parcelHelpers.interopDefault(_cardLinks);
 function ProductListningPage() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
@@ -38376,167 +38565,17 @@ function ProductListningPage() {
                 description: "Kontakt oss om ni vill ha Pris p\xe5 s\xe5gat virke okant och kantat"
             }, void 0, false, {
                 fileName: "src/Pages/ProductsListningPage.tsx",
-                lineNumber: 13,
+                lineNumber: 14,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _textListDefault.default), {}, void 0, false, {
                 fileName: "src/Pages/ProductsListningPage.tsx",
-                lineNumber: 19,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _productInfoColDefault.default), {
-                col1: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _textContainerDefault.default), {
-                    title: "Okantat M\xf6belvirke",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                            children: "Vi lagerf\xf6r okantat/kantat virke i ett flertal tr\xe4slag."
-                        }, void 0, false, {
-                            fileName: "src/Pages/ProductsListningPage.tsx",
-                            lineNumber: 23,
-                            columnNumber: 13
-                        }, void 0),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                            children: "Dimensionerna skiljer sig mellan tr\xe4slagen, men standard \xe4r i m.m 19, 25, 32, 50, 75."
-                        }, void 0, false, {
-                            fileName: "src/Pages/ProductsListningPage.tsx",
-                            lineNumber: 24,
-                            columnNumber: 13
-                        }, void 0),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                            children: "L\xe4ngd: 3 m som standard men Ek finns i l\xe4ngderna fr\xe5n 1.8-4,3 m."
-                        }, void 0, false, {
-                            fileName: "src/Pages/ProductsListningPage.tsx",
-                            lineNumber: 25,
-                            columnNumber: 13
-                        }, void 0),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                            children: "Virket kan torkas ner till 7 % (m\xf6beltorrt"
-                        }, void 0, false, {
-                            fileName: "src/Pages/ProductsListningPage.tsx",
-                            lineNumber: 26,
-                            columnNumber: 13
-                        }, void 0)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Pages/ProductsListningPage.tsx",
-                    lineNumber: 22,
-                    columnNumber: 11
-                }, void 0),
-                col2: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _textContainerDefault.default), {
-                    title: "\xc4mnestillverkning",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                            children: "Vi kan leverera torkade, hyvlade och l\xe4ngdkapade \xe4mnen i svenskt l\xf6vtr\xe4."
-                        }, void 0, false, {
-                            fileName: "src/Pages/ProductsListningPage.tsx",
-                            lineNumber: 31,
-                            columnNumber: 13
-                        }, void 0),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                            children: "S\xf6nderdelning i lamells\xe5g till exakta m\xe5tt helt efter \xf6nskem\xe5l."
-                        }, void 0, false, {
-                            fileName: "src/Pages/ProductsListningPage.tsx",
-                            lineNumber: 32,
-                            columnNumber: 13
-                        }, void 0),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                            children: "\xc4ven strips f\xf6r vidaref\xf6r\xe4dling."
-                        }, void 0, false, {
-                            fileName: "src/Pages/ProductsListningPage.tsx",
-                            lineNumber: 33,
-                            columnNumber: 13
-                        }, void 0)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Pages/ProductsListningPage.tsx",
-                    lineNumber: 30,
-                    columnNumber: 11
-                }, void 0),
-                col3: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _textContainerDefault.default), {
-                    title: "Hyvlade produkter",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                            children: "Med det nya hyvleriet kommer vi nu l\xe4ngre i f\xf6r\xe4dlingsledet."
-                        }, void 0, false, {
-                            fileName: "src/Pages/ProductsListningPage.tsx",
-                            lineNumber: 38,
-                            columnNumber: 13
-                        }, void 0),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                            children: "Vi hanterar nu r\xe5varan fr\xe5n stock till t,ex ett f\xe4rdigt golv med tillh\xf6rande lister."
-                        }, void 0, false, {
-                            fileName: "src/Pages/ProductsListningPage.tsx",
-                            lineNumber: 39,
-                            columnNumber: 13
-                        }, void 0),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                            children: "F\xf6r att f\xe5 ett smakprov anv\xe4nd knapparna till v\xe4nster f\xf6r att ta dig till de olika produkterna."
-                        }, void 0, false, {
-                            fileName: "src/Pages/ProductsListningPage.tsx",
-                            lineNumber: 40,
-                            columnNumber: 13
-                        }, void 0)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Pages/ProductsListningPage.tsx",
-                    lineNumber: 37,
-                    columnNumber: 11
-                }, void 0)
-            }, void 0, false, {
-                fileName: "src/Pages/ProductsListningPage.tsx",
                 lineNumber: 20,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
-                src: (0, _limfogAlmJpgDefault.default),
-                title: "Limfog",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: "Vi erbjuder Limfog till av mycket h\xf6g kvalitet som tillverkas i Sverige av virke som vi sj\xe4lva levererar."
-                    }, void 0, false, {
-                        fileName: "src/Pages/ProductsListningPage.tsx",
-                        lineNumber: 45,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: "Hyllplan, bordsskivor och b\xe4nkskivor eller vad du sj\xe4lv \xf6nskar."
-                    }, void 0, false, {
-                        fileName: "src/Pages/ProductsListningPage.tsx",
-                        lineNumber: 48,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: "Limfogen tillverkas i exakt de m\xe5tt du \xf6nskar och \xe4r f\xe4rdigputsade."
-                    }, void 0, false, {
-                        fileName: "src/Pages/ProductsListningPage.tsx",
-                        lineNumber: 49,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: "Kan \xe4ven levereras med ytbehandling"
-                    }, void 0, false, {
-                        fileName: "src/Pages/ProductsListningPage.tsx",
-                        lineNumber: 50,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: "Limfogen m\xe5ste best\xe4llas, leveranstid 1-2 veckor."
-                    }, void 0, false, {
-                        fileName: "src/Pages/ProductsListningPage.tsx",
-                        lineNumber: 51,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: "Bildexempel p\xe5 b\xe4nkskiva i stavlimmad 40 m.m Alm"
-                    }, void 0, false, {
-                        fileName: "src/Pages/ProductsListningPage.tsx",
-                        lineNumber: 52,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardLinksDefault.default), {}, void 0, false, {
                 fileName: "src/Pages/ProductsListningPage.tsx",
-                lineNumber: 44,
+                lineNumber: 21,
                 columnNumber: 7
             }, this)
         ]
@@ -38545,147 +38584,15 @@ function ProductListningPage() {
 _c = ProductListningPage;
 exports.default = ProductListningPage;
 const Text = (0, _react.styled).p({});
-_c1 = Text;
-var _c, _c1;
+var _c;
 $RefreshReg$(_c, "ProductListningPage");
-$RefreshReg$(_c1, "Text");
 
   $parcel$ReactRefreshHelpers$fb48.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../Assets/HeroLumber.jpg":"eDA9j","../Feature/Components/Hero":"8WNwH","../Feature/Components/TextList":"5S2tu","../Feature/Components/ImageAndText":"8HWo8","../Assets/products/limfog-alm.jpg":"jUiM9","@glitz/react":"bAXm1","../Feature/Components/TextContainer":"2Ed9O","../Feature/Components/ProductInfoCol":"lVryi","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jUiM9":[function(require,module,exports) {
-module.exports = require("e8d3c54cc0e11ce7").getBundleURL("6EXJA") + "limfog-alm.964d5e46.jpg" + "?" + Date.now();
-
-},{"e8d3c54cc0e11ce7":"lgJ39"}],"2Ed9O":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$5f94 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$5f94.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("@glitz/react");
-var _h2 = require("../../Shared/Generic/H2");
-var _h2Default = parcelHelpers.interopDefault(_h2);
-function TextContainer(props) {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Wrapper, {
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h2Default.default), {
-                    children: props.title
-                }, void 0, false, {
-                    fileName: "src/Feature/Components/TextContainer.tsx",
-                    lineNumber: 13,
-                    columnNumber: 9
-                }, this),
-                props.children
-            ]
-        }, void 0, true, {
-            fileName: "src/Feature/Components/TextContainer.tsx",
-            lineNumber: 12,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
-        fileName: "src/Feature/Components/TextContainer.tsx",
-        lineNumber: 11,
-        columnNumber: 5
-    }, this);
-}
-_c = TextContainer;
-exports.default = TextContainer;
-const Container = (0, _react.styled).div({
-    display: "flex",
-    justifyContent: "center"
-});
-_c1 = Container;
-const Wrapper = (0, _react.styled).div({
-    textAlign: "center"
-});
-_c2 = Wrapper;
-var _c, _c1, _c2;
-$RefreshReg$(_c, "TextContainer");
-$RefreshReg$(_c1, "Container");
-$RefreshReg$(_c2, "Wrapper");
-
-  $parcel$ReactRefreshHelpers$5f94.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/Generic/H2":"au95a","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lVryi":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$dbba = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$dbba.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("@glitz/react");
-var _value = require("../../Shared/value");
-var _core = require("@glitz/core");
-function ProductInfoCol(props) {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
-                children: props.col1
-            }, void 0, false, {
-                fileName: "src/Feature/Components/ProductInfoCol.tsx",
-                lineNumber: 14,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
-                children: props.col2
-            }, void 0, false, {
-                fileName: "src/Feature/Components/ProductInfoCol.tsx",
-                lineNumber: 15,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
-                children: props.col3
-            }, void 0, false, {
-                fileName: "src/Feature/Components/ProductInfoCol.tsx",
-                lineNumber: 16,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/Feature/Components/ProductInfoCol.tsx",
-        lineNumber: 13,
-        columnNumber: 5
-    }, this);
-}
-_c = ProductInfoCol;
-exports.default = ProductInfoCol;
-const Container = (0, _react.styled)((0, _value.Block), {
-    display: "grid",
-    gridTemplateColumns: "1fr",
-    gap: "20px",
-    ...(0, _core.media)({
-        minWidth: "1025px"
-    }, {
-        gridTemplateColumns: "1fr 1fr 1fr"
-    })
-});
-_c1 = Container;
-const Column = (0, _react.styled).div({});
-_c2 = Column;
-var _c, _c1, _c2;
-$RefreshReg$(_c, "ProductInfoCol");
-$RefreshReg$(_c1, "Container");
-$RefreshReg$(_c2, "Column");
-
-  $parcel$ReactRefreshHelpers$dbba.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bDqc9":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../Assets/HeroLumber.jpg":"eDA9j","../Feature/Components/Hero":"8WNwH","../Feature/Components/TextList":"5S2tu","@glitz/react":"bAXm1","../Feature/Components/CardLinks":"4IVZq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bDqc9":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$c636 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -39287,88 +39194,7 @@ $RefreshReg$(_c, "ScrollToTop");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cBoK6":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$7702 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$7702.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _limfogAlmJpg = require("../../Assets/products/limfog-alm.jpg");
-var _limfogAlmJpgDefault = parcelHelpers.interopDefault(_limfogAlmJpg);
-var _imageAndText = require("../../Feature/Components/ImageAndText");
-var _imageAndTextDefault = parcelHelpers.interopDefault(_imageAndText);
-var _value = require("../../Shared/value");
-function Limfog() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
-            src: (0, _limfogAlmJpgDefault.default),
-            title: "Limfog",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                    children: "Vi erbjuder Limfog till av mycket h\xf6g kvalitet som tillverkas i Sverige av virke som vi sj\xe4lva levererar."
-                }, void 0, false, {
-                    fileName: "src/Pages/Productpage/limfog.tsx",
-                    lineNumber: 9,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                    children: "Hyllplan, bordsskivor och b\xe4nkskivor eller vad du sj\xe4lv \xf6nskar."
-                }, void 0, false, {
-                    fileName: "src/Pages/Productpage/limfog.tsx",
-                    lineNumber: 12,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                    children: "Limfogen tillverkas i exakt de m\xe5tt du \xf6nskar och \xe4r f\xe4rdigputsade."
-                }, void 0, false, {
-                    fileName: "src/Pages/Productpage/limfog.tsx",
-                    lineNumber: 13,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                    children: "Kan \xe4ven levereras med ytbehandling"
-                }, void 0, false, {
-                    fileName: "src/Pages/Productpage/limfog.tsx",
-                    lineNumber: 14,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                    children: "Limfogen m\xe5ste best\xe4llas, leveranstid 1-2 veckor."
-                }, void 0, false, {
-                    fileName: "src/Pages/Productpage/limfog.tsx",
-                    lineNumber: 15,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                    children: "Bildexempel p\xe5 b\xe4nkskiva i stavlimmad 40 m.m Alm"
-                }, void 0, false, {
-                    fileName: "src/Pages/Productpage/limfog.tsx",
-                    lineNumber: 16,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "src/Pages/Productpage/limfog.tsx",
-            lineNumber: 8,
-            columnNumber: 7
-        }, this)
-    }, void 0, false);
-}
-_c = Limfog;
-exports.default = Limfog;
-var _c;
-$RefreshReg$(_c, "Limfog");
-
-  $parcel$ReactRefreshHelpers$7702.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","../../Assets/products/limfog-alm.jpg":"jUiM9","../../Feature/Components/ImageAndText":"8HWo8","../../Shared/value":"9VKej","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kTUTe":[function(require,module,exports) {
+},{"react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kTUTe":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$42b5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -39404,7 +39230,7 @@ function SawedProducts() {
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
                 src: (0, _sawedProducts2JpgDefault.default),
-                title: "S\xe5gade produkter",
+                title: "Okantat M\xf6belvirke",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
                         children: "Vi lagerf\xf6r okantat/kantat virke i ett flertal tr\xe4slag."
@@ -39440,9 +39266,41 @@ function SawedProducts() {
                 lineNumber: 17,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _smallListDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
+                src: (0, _sawedProducts2JpgDefault.default),
+                title: "\xc4mnestillverkning",
+                textFirst: true,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                        children: "Vi kan leverera torkade, hyvlade och l\xe4ngdkapade \xe4mnen i svenskt l\xf6vtr\xe4."
+                    }, void 0, false, {
+                        fileName: "src/Pages/Productpage/SawedProducts.tsx",
+                        lineNumber: 24,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                        children: "S\xf6nderdelning i lamells\xe5g till exakta m\xe5tt helt efter \xf6nskem\xe5l."
+                    }, void 0, false, {
+                        fileName: "src/Pages/Productpage/SawedProducts.tsx",
+                        lineNumber: 25,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                        children: "\xc4ven strips f\xf6r vidaref\xf6r\xe4dling."
+                    }, void 0, false, {
+                        fileName: "src/Pages/Productpage/SawedProducts.tsx",
+                        lineNumber: 26,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "src/Pages/Productpage/SawedProducts.tsx",
                 lineNumber: 23,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _smallListDefault.default), {}, void 0, false, {
+                fileName: "src/Pages/Productpage/SawedProducts.tsx",
+                lineNumber: 28,
                 columnNumber: 7
             }, this)
         ]
@@ -39458,10 +39316,7 @@ $RefreshReg$(_c, "SawedProducts");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../../Feature/Components/Hero":"8WNwH","../../Assets/sawed-products-1.jpg":"7Omft","../../Assets/sawed-products-2.jpg":"6dERR","../../Feature/Components/ImageAndText":"8HWo8","../../Shared/value":"9VKej","../../Feature/Components/SmallList":"csIkc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7Omft":[function(require,module,exports) {
-module.exports = require("34366f8c3b03848b").getBundleURL("6EXJA") + "sawed-products-1.e900d10c.jpg" + "?" + Date.now();
-
-},{"34366f8c3b03848b":"lgJ39"}],"6dERR":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../../Feature/Components/Hero":"8WNwH","../../Assets/sawed-products-1.jpg":"7Omft","../../Assets/sawed-products-2.jpg":"6dERR","../../Feature/Components/ImageAndText":"8HWo8","../../Shared/value":"9VKej","../../Feature/Components/SmallList":"csIkc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6dERR":[function(require,module,exports) {
 module.exports = require("334becc8177d63e").getBundleURL("6EXJA") + "sawed-products-2.f8f9fbda.jpg" + "?" + Date.now();
 
 },{"334becc8177d63e":"lgJ39"}],"csIkc":[function(require,module,exports) {
@@ -39474,222 +39329,372 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
 var _priceFile = require("../../Lists/PriceFile");
 var _value = require("../../Shared/value");
-var _react1 = require("@glitz/react");
+var _react = require("@glitz/react");
 var _button = require("./Button");
 var _h2 = require("../../Shared/Generic/H2");
 var _h2Default = parcelHelpers.interopDefault(_h2);
-var _s = $RefreshSig$();
-function SmallList() {
-    _s();
-    const [list, setList] = (0, _react.useState)((0, _priceFile.ekstolp));
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {
+var _core = require("@glitz/core");
+function TextSection() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h2Default.default), {
                 children: "Ekstol"
             }, void 0, false, {
                 fileName: "src/Feature/Components/SmallList.tsx",
-                lineNumber: 14,
+                lineNumber: 32,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
                 children: "Vi har m\xe4rkt att efterfr\xe5gan p\xe5 ek och ekstolp \xf6kar f\xf6r varje \xe5r. D\xe4rf\xf6r har vi \xf6kat andelen s\xe5gad ek f\xf6r att t\xe4cka den \xf6kade efterfr\xe5gan."
             }, void 0, false, {
                 fileName: "src/Feature/Components/SmallList.tsx",
-                lineNumber: 15,
+                lineNumber: 33,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
                 children: "Vi saluf\xf6r ekstolp i all dimensioner. (priserna \xe4r exkl moms)"
             }, void 0, false, {
                 fileName: "src/Feature/Components/SmallList.tsx",
-                lineNumber: 19,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(WrapperBlock, {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RowHeader, {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                                arialLabel: "Artikelnr",
-                                onClick: ()=>"artikelnr",
-                                css: {
-                                    cursor: "pointer"
-                                },
-                                children: "Dimension"
-                            }, void 0, false, {
-                                fileName: "src/Feature/Components/SmallList.tsx",
-                                lineNumber: 22,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                                arialLabel: "Typ",
-                                onClick: ()=>"typ",
-                                css: {
-                                    cursor: "pointer"
-                                },
-                                children: "L\xe4ngd"
-                            }, void 0, false, {
-                                fileName: "src/Feature/Components/SmallList.tsx",
-                                lineNumber: 25,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                                arialLabel: "Dimension",
-                                onClick: ()=>"dimension",
-                                css: {
-                                    cursor: "pointer"
-                                },
-                                children: "Pris/st"
-                            }, void 0, false, {
-                                fileName: "src/Feature/Components/SmallList.tsx",
-                                lineNumber: 28,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                                arialLabel: "Tr\xe4slag",
-                                css: {
-                                    cursor: "pointer"
-                                },
-                                children: "V\xe4ssningskostnad"
-                            }, void 0, false, {
-                                fileName: "src/Feature/Components/SmallList.tsx",
-                                lineNumber: 31,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 21,
-                        columnNumber: 9
-                    }, this),
-                    list.dimensionsWithCosts.map((row, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Row, {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                                    children: row.dimension
-                                }, void 0, false, {
-                                    fileName: "src/Feature/Components/SmallList.tsx",
-                                    lineNumber: 37,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                                    children: row.length
-                                }, void 0, false, {
-                                    fileName: "src/Feature/Components/SmallList.tsx",
-                                    lineNumber: 38,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                                    children: row.pricePerUnit
-                                }, void 0, false, {
-                                    fileName: "src/Feature/Components/SmallList.tsx",
-                                    lineNumber: 39,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                                    children: row.sharpeningCost
-                                }, void 0, false, {
-                                    fileName: "src/Feature/Components/SmallList.tsx",
-                                    lineNumber: 40,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, index, true, {
-                            fileName: "src/Feature/Components/SmallList.tsx",
-                            lineNumber: 36,
-                            columnNumber: 11
-                        }, this))
-                ]
-            }, void 0, true, {
-                fileName: "src/Feature/Components/SmallList.tsx",
-                lineNumber: 20,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(WrapperBlock, {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RowHeaderTwo, {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                                arialLabel: "Artikelnr",
-                                onClick: ()=>"artikelnr",
-                                css: {
-                                    cursor: "pointer"
-                                },
-                                children: "Dimension"
-                            }, void 0, false, {
-                                fileName: "src/Feature/Components/SmallList.tsx",
-                                lineNumber: 47,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                                arialLabel: "Typ",
-                                onClick: ()=>"typ",
-                                css: {
-                                    cursor: "pointer"
-                                },
-                                children: "Pris per lpm"
-                            }, void 0, false, {
-                                fileName: "src/Feature/Components/SmallList.tsx",
-                                lineNumber: 50,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 46,
-                        columnNumber: 9
-                    }, this),
-                    list.dimensionsWithPricePerLpm.map((row, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RowTwo, {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                                    children: row.dimension
-                                }, void 0, false, {
-                                    fileName: "src/Feature/Components/SmallList.tsx",
-                                    lineNumber: 56,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                                    children: row.pricePerLpm
-                                }, void 0, false, {
-                                    fileName: "src/Feature/Components/SmallList.tsx",
-                                    lineNumber: 57,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, index, true, {
-                            fileName: "src/Feature/Components/SmallList.tsx",
-                            lineNumber: 55,
-                            columnNumber: 11
-                        }, this))
-                ]
-            }, void 0, true, {
-                fileName: "src/Feature/Components/SmallList.tsx",
-                lineNumber: 45,
+                lineNumber: 37,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Feature/Components/SmallList.tsx",
-        lineNumber: 13,
+        lineNumber: 31,
         columnNumber: 5
     }, this);
 }
-_s(SmallList, "a3sTxCAR1DmAT12QMN9HPaWpCiE=");
-_c = SmallList;
+_c = TextSection;
+function TypeTextSection() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h2Default.default), {
+                children: "Samarbete f\xf6r Kompletterade Stall och Ekvirke"
+            }, void 0, false, {
+                fileName: "src/Feature/Components/SmallList.tsx",
+                lineNumber: 45,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                children: "Vi s\xf6ker en leverant\xf6r f\xf6r samarbete av kompletta stall inkl metallsektioner, skjutd\xf6rrar m.m"
+            }, void 0, false, {
+                fileName: "src/Feature/Components/SmallList.tsx",
+                lineNumber: 46,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                children: "Priserna \xe4r per kvm inkl moms exkl frakt."
+            }, void 0, false, {
+                fileName: "src/Feature/Components/SmallList.tsx",
+                lineNumber: 47,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/Feature/Components/SmallList.tsx",
+        lineNumber: 44,
+        columnNumber: 5
+    }, this);
+}
+_c1 = TypeTextSection;
+function CostList({ list }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(WrapperBlock, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RowHeader, {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
+                        ariaLabel: "Artikelnr",
+                        children: "Dimension"
+                    }, void 0, false, {
+                        fileName: "src/Feature/Components/SmallList.tsx",
+                        lineNumber: 56,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
+                        ariaLabel: "Typ",
+                        children: "L\xe4ngd"
+                    }, void 0, false, {
+                        fileName: "src/Feature/Components/SmallList.tsx",
+                        lineNumber: 57,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
+                        ariaLabel: "Dimension",
+                        children: "Pris/st"
+                    }, void 0, false, {
+                        fileName: "src/Feature/Components/SmallList.tsx",
+                        lineNumber: 58,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
+                        ariaLabel: "Tr\xe4slag",
+                        children: "V\xe4ssningskostnad"
+                    }, void 0, false, {
+                        fileName: "src/Feature/Components/SmallList.tsx",
+                        lineNumber: 59,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Feature/Components/SmallList.tsx",
+                lineNumber: 55,
+                columnNumber: 7
+            }, this),
+            list.map((row, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Row, {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
+                            children: row.dimension
+                        }, void 0, false, {
+                            fileName: "src/Feature/Components/SmallList.tsx",
+                            lineNumber: 63,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
+                            children: row.length
+                        }, void 0, false, {
+                            fileName: "src/Feature/Components/SmallList.tsx",
+                            lineNumber: 64,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
+                            children: row.pricePerUnit
+                        }, void 0, false, {
+                            fileName: "src/Feature/Components/SmallList.tsx",
+                            lineNumber: 65,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
+                            children: row.sharpeningCost
+                        }, void 0, false, {
+                            fileName: "src/Feature/Components/SmallList.tsx",
+                            lineNumber: 66,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, index, true, {
+                    fileName: "src/Feature/Components/SmallList.tsx",
+                    lineNumber: 62,
+                    columnNumber: 9
+                }, this))
+        ]
+    }, void 0, true, {
+        fileName: "src/Feature/Components/SmallList.tsx",
+        lineNumber: 54,
+        columnNumber: 5
+    }, this);
+}
+_c2 = CostList;
+function PricePerLpmList({ list }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(WrapperBlock, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RowHeaderTwo, {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
+                        ariaLabel: "Artikelnr",
+                        children: "Dimension"
+                    }, void 0, false, {
+                        fileName: "src/Feature/Components/SmallList.tsx",
+                        lineNumber: 77,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
+                        ariaLabel: "Typ",
+                        children: "Pris per lpm"
+                    }, void 0, false, {
+                        fileName: "src/Feature/Components/SmallList.tsx",
+                        lineNumber: 78,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Feature/Components/SmallList.tsx",
+                lineNumber: 76,
+                columnNumber: 7
+            }, this),
+            list.map((row, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RowTwo, {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
+                            children: row.dimension
+                        }, void 0, false, {
+                            fileName: "src/Feature/Components/SmallList.tsx",
+                            lineNumber: 82,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
+                            children: row.pricePerLpm
+                        }, void 0, false, {
+                            fileName: "src/Feature/Components/SmallList.tsx",
+                            lineNumber: 83,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, index, true, {
+                    fileName: "src/Feature/Components/SmallList.tsx",
+                    lineNumber: 81,
+                    columnNumber: 9
+                }, this))
+        ]
+    }, void 0, true, {
+        fileName: "src/Feature/Components/SmallList.tsx",
+        lineNumber: 75,
+        columnNumber: 5
+    }, this);
+}
+_c3 = PricePerLpmList;
+function TypeList({ list }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(WrapperBlock, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RowHeaderTwo, {
+                css: {
+                    gridTemplateColumns: "1fr 1fr 1fr"
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
+                        ariaLabel: "Tr\xe4slag",
+                        children: "Tr\xe4slag"
+                    }, void 0, false, {
+                        fileName: "src/Feature/Components/SmallList.tsx",
+                        lineNumber: 94,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
+                        ariaLabel: "Dimension",
+                        children: "Dimension"
+                    }, void 0, false, {
+                        fileName: "src/Feature/Components/SmallList.tsx",
+                        lineNumber: 95,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
+                        ariaLabel: "Pris per/kvm",
+                        children: "Pris per/kvm"
+                    }, void 0, false, {
+                        fileName: "src/Feature/Components/SmallList.tsx",
+                        lineNumber: 96,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Feature/Components/SmallList.tsx",
+                lineNumber: 93,
+                columnNumber: 7
+            }, this),
+            list.map((row, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RowTwo, {
+                    css: {
+                        gridTemplateColumns: "1fr 1fr 1fr"
+                    },
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
+                            children: row.type
+                        }, void 0, false, {
+                            fileName: "src/Feature/Components/SmallList.tsx",
+                            lineNumber: 100,
+                            columnNumber: 11
+                        }, this),
+                        " ",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
+                            children: row.dimension
+                        }, void 0, false, {
+                            fileName: "src/Feature/Components/SmallList.tsx",
+                            lineNumber: 101,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
+                            children: row.pricePerKvm || row.pricePerLpm
+                        }, void 0, false, {
+                            fileName: "src/Feature/Components/SmallList.tsx",
+                            lineNumber: 102,
+                            columnNumber: 11
+                        }, this),
+                        " "
+                    ]
+                }, index, true, {
+                    fileName: "src/Feature/Components/SmallList.tsx",
+                    lineNumber: 99,
+                    columnNumber: 9
+                }, this))
+        ]
+    }, void 0, true, {
+        fileName: "src/Feature/Components/SmallList.tsx",
+        lineNumber: 92,
+        columnNumber: 5
+    }, this);
+}
+_c4 = TypeList;
+function SmallList({ showType }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {
+        children: showType ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TypeTextSection, {}, void 0, false, {
+                    fileName: "src/Feature/Components/SmallList.tsx",
+                    lineNumber: 118,
+                    columnNumber: 11
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TypeList, {
+                    list: (0, _priceFile.ekstolp).woodProducts
+                }, void 0, false, {
+                    fileName: "src/Feature/Components/SmallList.tsx",
+                    lineNumber: 119,
+                    columnNumber: 11
+                }, this)
+            ]
+        }, void 0, true) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextSection, {}, void 0, false, {
+                    fileName: "src/Feature/Components/SmallList.tsx",
+                    lineNumber: 123,
+                    columnNumber: 11
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CostList, {
+                    list: (0, _priceFile.ekstolp).dimensionsWithCosts
+                }, void 0, false, {
+                    fileName: "src/Feature/Components/SmallList.tsx",
+                    lineNumber: 124,
+                    columnNumber: 11
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(PricePerLpmList, {
+                    list: (0, _priceFile.ekstolp).dimensionsWithPricePerLpm
+                }, void 0, false, {
+                    fileName: "src/Feature/Components/SmallList.tsx",
+                    lineNumber: 125,
+                    columnNumber: 11
+                }, this)
+            ]
+        }, void 0, true)
+    }, void 0, false, {
+        fileName: "src/Feature/Components/SmallList.tsx",
+        lineNumber: 115,
+        columnNumber: 5
+    }, this);
+}
+_c5 = SmallList;
 exports.default = SmallList;
-const Container = (0, _react1.styled)((0, _value.Block), {});
-_c1 = Container;
-const WrapperBlock = (0, _react1.styled).div({
+const Container = (0, _react.styled)((0, _value.Block), {});
+_c6 = Container;
+const WrapperBlock = (0, _react.styled).div({
     display: "block",
     position: "relative",
     margin: {
         top: (0, _value.large)
     }
 });
-_c2 = WrapperBlock;
-const Row = (0, _react1.styled).div({
+_c7 = WrapperBlock;
+const TextContainer = (0, _react.styled).div({
+    display: "flex",
+    flexDirection: "column",
+    gap: (0, _value.small),
+    width: "100%",
+    ...(0, _core.media)({
+        minWidth: "1025px"
+    }, {
+        width: "calc(50% - 20px)"
+    })
+});
+_c8 = TextContainer;
+const Row = (0, _react.styled).div({
     width: "100%",
     display: "grid",
     gridTemplateColumns: "1fr 1fr 1fr 1fr",
@@ -39701,8 +39706,8 @@ const Row = (0, _react1.styled).div({
         }
     }
 });
-_c3 = Row;
-const RowTwo = (0, _react1.styled).div({
+_c9 = Row;
+const RowTwo = (0, _react.styled).div({
     width: "100%",
     display: "grid",
     gridTemplateColumns: "1fr 1fr",
@@ -39714,47 +39719,239 @@ const RowTwo = (0, _react1.styled).div({
         }
     }
 });
-_c4 = RowTwo;
-const RowHeader = (0, _react1.styled)(Row, {
+_c10 = RowTwo;
+const RowHeader = (0, _react.styled)(Row, {
     fontWeight: "bold",
     backgroundColor: "#fff"
 });
-_c5 = RowHeader;
-const RowHeaderTwo = (0, _react1.styled)(RowTwo, {
+_c11 = RowHeader;
+const RowHeaderTwo = (0, _react.styled)(RowTwo, {
     fontWeight: "bold",
     backgroundColor: "#fff"
 });
-_c6 = RowHeaderTwo;
-const Cell = (0, _react1.styled).div({
+_c12 = RowHeaderTwo;
+const Cell = (0, _react.styled).div({
     padding: {
         y: "10px"
     }
 });
-_c7 = Cell;
-const ButtonCell = (0, _react1.styled)((0, _button.PlainButton), {
+_c13 = Cell;
+const ButtonCell = (0, _react.styled)((0, _button.PlainButton), {
     whiteSpace: "nowrap",
     padding: {
         y: "10px"
-    }
+    },
+    fontWeight: "bold"
 });
-_c8 = ButtonCell;
-var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8;
-$RefreshReg$(_c, "SmallList");
-$RefreshReg$(_c1, "Container");
-$RefreshReg$(_c2, "WrapperBlock");
-$RefreshReg$(_c3, "Row");
-$RefreshReg$(_c4, "RowTwo");
-$RefreshReg$(_c5, "RowHeader");
-$RefreshReg$(_c6, "RowHeaderTwo");
-$RefreshReg$(_c7, "Cell");
-$RefreshReg$(_c8, "ButtonCell");
+_c14 = ButtonCell;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10, _c11, _c12, _c13, _c14;
+$RefreshReg$(_c, "TextSection");
+$RefreshReg$(_c1, "TypeTextSection");
+$RefreshReg$(_c2, "CostList");
+$RefreshReg$(_c3, "PricePerLpmList");
+$RefreshReg$(_c4, "TypeList");
+$RefreshReg$(_c5, "SmallList");
+$RefreshReg$(_c6, "Container");
+$RefreshReg$(_c7, "WrapperBlock");
+$RefreshReg$(_c8, "TextContainer");
+$RefreshReg$(_c9, "Row");
+$RefreshReg$(_c10, "RowTwo");
+$RefreshReg$(_c11, "RowHeader");
+$RefreshReg$(_c12, "RowHeaderTwo");
+$RefreshReg$(_c13, "Cell");
+$RefreshReg$(_c14, "ButtonCell");
 
   $parcel$ReactRefreshHelpers$d30b.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../Lists/PriceFile":"31CoS","../../Shared/value":"9VKej","@glitz/react":"bAXm1","./Button":"at8Gv","../../Shared/Generic/H2":"au95a","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"irmnC":[function() {},{}],"kcmoy":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../../Lists/PriceFile":"31CoS","../../Shared/value":"9VKej","@glitz/react":"bAXm1","./Button":"at8Gv","../../Shared/Generic/H2":"au95a","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8F5SM":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0a98 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0a98.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _hero = require("../../Feature/Components/Hero");
+var _heroDefault = parcelHelpers.interopDefault(_hero);
+var _horseBoxJpg = require("../../Assets/products/horse-box.jpg");
+var _horseBoxJpgDefault = parcelHelpers.interopDefault(_horseBoxJpg);
+var _imageAndText = require("../../Feature/Components/ImageAndText");
+var _imageAndTextDefault = parcelHelpers.interopDefault(_imageAndText);
+var _value = require("../../Shared/value");
+var _smallList = require("../../Feature/Components/SmallList");
+var _smallListDefault = parcelHelpers.interopDefault(_smallList);
+function SpecialProducts() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {
+                src: (0, _horseBoxJpgDefault.default),
+                alt: "Hero image Limfog.",
+                title: "Specialprodukter",
+                description: "Vi kan erbjuda s\xe5gade varor i alla t\xe4nkbara och ot\xe4nkbara dimensioner och l\xe4ngder"
+            }, void 0, false, {
+                fileName: "src/Pages/Productpage/SpecialProducts.tsx",
+                lineNumber: 10,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
+                src: (0, _horseBoxJpgDefault.default),
+                title: "H\xe4stbox",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                        children: "Bilden visar ett stall som vi levererat till i Nybro."
+                    }, void 0, false, {
+                        fileName: "src/Pages/Productpage/SpecialProducts.tsx",
+                        lineNumber: 17,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                        children: "Vi hyvlar fram ek till boxar och pelare i stall"
+                    }, void 0, false, {
+                        fileName: "src/Pages/Productpage/SpecialProducts.tsx",
+                        lineNumber: 18,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                        children: "Eken \xe4r genom sitt h\xe5rda och r\xf6t t\xe5liga virke ett tr\xe4slag som l\xe4mpar sig mycket v\xe4l som stallinredning."
+                    }, void 0, false, {
+                        fileName: "src/Pages/Productpage/SpecialProducts.tsx",
+                        lineNumber: 19,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                        children: "Att det sedan ger stallet ett exklusivt intryck \xe4r bonus."
+                    }, void 0, false, {
+                        fileName: "src/Pages/Productpage/SpecialProducts.tsx",
+                        lineNumber: 22,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Pages/Productpage/SpecialProducts.tsx",
+                lineNumber: 16,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _smallListDefault.default), {
+                showType: true
+            }, void 0, false, {
+                fileName: "src/Pages/Productpage/SpecialProducts.tsx",
+                lineNumber: 24,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true);
+}
+_c = SpecialProducts;
+exports.default = SpecialProducts;
+var _c;
+$RefreshReg$(_c, "SpecialProducts");
+
+  $parcel$ReactRefreshHelpers$0a98.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../../Feature/Components/Hero":"8WNwH","../../Assets/products/horse-box.jpg":"83gtD","../../Feature/Components/ImageAndText":"8HWo8","../../Shared/value":"9VKej","../../Feature/Components/SmallList":"csIkc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"l1iBY":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$7278 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$7278.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _limfogAlmJpg = require("../../Assets/products/limfog-alm.jpg");
+var _limfogAlmJpgDefault = parcelHelpers.interopDefault(_limfogAlmJpg);
+var _hero = require("../../Feature/Components/Hero");
+var _heroDefault = parcelHelpers.interopDefault(_hero);
+var _imageAndText = require("../../Feature/Components/ImageAndText");
+var _imageAndTextDefault = parcelHelpers.interopDefault(_imageAndText);
+var _value = require("../../Shared/value");
+function Limfog() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {
+                src: (0, _limfogAlmJpgDefault.default),
+                alt: "Hero image Limfog.",
+                title: "Limfog",
+                description: "Vi erbjuder Limfog till av mycket h\xf6g kvalitet som tillverkas i Sverige av virke som vi sj\xe4lva levererar."
+            }, void 0, false, {
+                fileName: "src/Pages/Productpage/Limfog.tsx",
+                lineNumber: 9,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
+                src: (0, _limfogAlmJpgDefault.default),
+                title: "Limfog",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                        children: "Vi erbjuder Limfog till av mycket h\xf6g kvalitet som tillverkas i Sverige av virke som vi sj\xe4lva levererar."
+                    }, void 0, false, {
+                        fileName: "src/Pages/Productpage/Limfog.tsx",
+                        lineNumber: 16,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                        children: "Hyllplan, bordsskivor och b\xe4nkskivor eller vad du sj\xe4lv \xf6nskar."
+                    }, void 0, false, {
+                        fileName: "src/Pages/Productpage/Limfog.tsx",
+                        lineNumber: 19,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                        children: "Limfogen tillverkas i exakt de m\xe5tt du \xf6nskar och \xe4r f\xe4rdigputsade."
+                    }, void 0, false, {
+                        fileName: "src/Pages/Productpage/Limfog.tsx",
+                        lineNumber: 20,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                        children: "Kan \xe4ven levereras med ytbehandling"
+                    }, void 0, false, {
+                        fileName: "src/Pages/Productpage/Limfog.tsx",
+                        lineNumber: 21,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                        children: "Limfogen m\xe5ste best\xe4llas, leveranstid 1-2 veckor."
+                    }, void 0, false, {
+                        fileName: "src/Pages/Productpage/Limfog.tsx",
+                        lineNumber: 22,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
+                        children: "Bildexempel p\xe5 b\xe4nkskiva i stavlimmad 40 m.m Alm"
+                    }, void 0, false, {
+                        fileName: "src/Pages/Productpage/Limfog.tsx",
+                        lineNumber: 23,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Pages/Productpage/Limfog.tsx",
+                lineNumber: 15,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true);
+}
+_c = Limfog;
+exports.default = Limfog;
+var _c;
+$RefreshReg$(_c, "Limfog");
+
+  $parcel$ReactRefreshHelpers$7278.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../../Assets/products/limfog-alm.jpg":"jUiM9","../../Feature/Components/Hero":"8WNwH","../../Feature/Components/ImageAndText":"8HWo8","../../Shared/value":"9VKej","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"irmnC":[function() {},{}],"kcmoy":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$40ee = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -39788,7 +39985,7 @@ const menuLinks = [
                 name: "Hyvlade Produkter"
             },
             {
-                url: "/produkter/specialprodukter",
+                url: "/produkter/special-produkter",
                 name: "Specialprodukter"
             },
             {
@@ -39946,7 +40143,7 @@ function Compact({ menuLinks }) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CompactContainer, {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _button.PlainButton), {
-                arialLabel: "Home",
+                ariaLabel: "Home",
                 onClick: ()=>setIsOpen(true),
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).Img, {
                     src: (0, _menuSvgDefault.default),
@@ -39991,7 +40188,7 @@ function Compact({ menuLinks }) {
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FlyoutHeader, {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledCloseButton, {
                             onClick: ()=>setIsOpen(false),
-                            arialLabel: "close flyout",
+                            ariaLabel: "close flyout",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).Img, {
                                 src: (0, _closeSvgDefault.default),
                                 alt: "Close Icon",
@@ -40017,7 +40214,7 @@ function Compact({ menuLinks }) {
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(DropDownButton, {
                                             onClick: ()=>toggleSubMenu(index),
-                                            arialLabel: `Open link dropdown for ${link.name}`,
+                                            ariaLabel: `Open link dropdown for ${link.name}`,
                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Link, {
                                                 children: [
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LinkText, {
@@ -40879,46 +41076,52 @@ function ContactLinkBlock() {
     const location = (0, _reactRouterDom.useLocation)();
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: location.pathname !== "/kontakt" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextWrapper, {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h2Default.default), {
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Wrapper, {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextWrapper, {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h2Default.default), {
+                                children: "Kontakta oss"
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/ContactLinkBlock.tsx",
+                                lineNumber: 16,
+                                columnNumber: 15
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                                children: "Har du fr\xe5gor om v\xe5ra produkter eller tj\xe4nster?"
+                            }, void 0, false, {
+                                fileName: "src/Feature/Components/ContactLinkBlock.tsx",
+                                lineNumber: 17,
+                                columnNumber: 15
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Feature/Components/ContactLinkBlock.tsx",
+                        lineNumber: 15,
+                        columnNumber: 13
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonWrapper, {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonDefault.default), {
+                            to: "/kontakt",
+                            ariaLabel: "kontakta oss",
                             children: "Kontakta oss"
                         }, void 0, false, {
                             fileName: "src/Feature/Components/ContactLinkBlock.tsx",
-                            lineNumber: 15,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                            children: "Har du fr\xe5gor om v\xe5ra produkter eller tj\xe4nster?"
-                        }, void 0, false, {
-                            fileName: "src/Feature/Components/ContactLinkBlock.tsx",
-                            lineNumber: 16,
-                            columnNumber: 13
+                            lineNumber: 20,
+                            columnNumber: 15
                         }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Feature/Components/ContactLinkBlock.tsx",
-                    lineNumber: 14,
-                    columnNumber: 11
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonWrapper, {
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonDefault.default), {
-                        to: "/kontakt",
-                        arialLabel: "kontakta oss",
-                        children: "Kontakta oss"
                     }, void 0, false, {
                         fileName: "src/Feature/Components/ContactLinkBlock.tsx",
                         lineNumber: 19,
                         columnNumber: 13
                     }, this)
-                }, void 0, false, {
-                    fileName: "src/Feature/Components/ContactLinkBlock.tsx",
-                    lineNumber: 18,
-                    columnNumber: 11
-                }, this)
-            ]
-        }, void 0, true, {
+                ]
+            }, void 0, true, {
+                fileName: "src/Feature/Components/ContactLinkBlock.tsx",
+                lineNumber: 14,
+                columnNumber: 11
+            }, this)
+        }, void 0, false, {
             fileName: "src/Feature/Components/ContactLinkBlock.tsx",
             lineNumber: 13,
             columnNumber: 9
@@ -40933,6 +41136,10 @@ _s(ContactLinkBlock, "pkHmaVRPskBaU4tMJuJJpV42k1I=", false, function() {
 _c = ContactLinkBlock;
 exports.default = ContactLinkBlock;
 const Container = (0, _react.styled)((0, _value.AppearanceBlock), {
+    backgroundColor: "#fff"
+});
+_c1 = Container;
+const Wrapper = (0, _react.styled)((0, _value.Block), {
     border: {
         top: {
             style: "solid",
@@ -40953,7 +41160,7 @@ const Container = (0, _react.styled)((0, _value.AppearanceBlock), {
         gridTemplateColumns: "1fr 1fr"
     })
 });
-_c1 = Container;
+_c2 = Wrapper;
 const StyledWrapper = (0, _react.styled).div({
     padding: {
         xy: (0, _value.large),
@@ -40968,7 +41175,7 @@ const StyledWrapper = (0, _react.styled).div({
     })
 });
 const TextWrapper = (0, _react.styled)(StyledWrapper, {});
-_c2 = TextWrapper;
+_c3 = TextWrapper;
 const ButtonWrapper = (0, _react.styled)(StyledWrapper, {
     display: "flex",
     justifyContent: "start",
@@ -40979,15 +41186,16 @@ const ButtonWrapper = (0, _react.styled)(StyledWrapper, {
         justifyContent: "center"
     })
 });
-_c3 = ButtonWrapper;
+_c4 = ButtonWrapper;
 const Text = (0, _react.styled).p({});
-_c4 = Text;
-var _c, _c1, _c2, _c3, _c4;
+_c5 = Text;
+var _c, _c1, _c2, _c3, _c4, _c5;
 $RefreshReg$(_c, "ContactLinkBlock");
 $RefreshReg$(_c1, "Container");
-$RefreshReg$(_c2, "TextWrapper");
-$RefreshReg$(_c3, "ButtonWrapper");
-$RefreshReg$(_c4, "Text");
+$RefreshReg$(_c2, "Wrapper");
+$RefreshReg$(_c3, "TextWrapper");
+$RefreshReg$(_c4, "ButtonWrapper");
+$RefreshReg$(_c5, "Text");
 
   $parcel$ReactRefreshHelpers$3832.postlude(module);
 } finally {

@@ -14,11 +14,16 @@ function SawedProducts() {
         title="Sågade produkter."
         description="Vi erbjuder sågat lövträ av de flesta svenska träslag och i de flesta dimensioner."
       />
-      <ImageAndText src={SawedProductimage} title="Sågade produkter">
+      <ImageAndText src={SawedProductimage} title="Okantat Möbelvirke">
         <Text>Vi lagerför okantat/kantat virke i ett flertal träslag.</Text>
         <Text>Dimensionerna skiljer sig mellan träslagen, men standard är i m.m 19, 25, 32, 50, 75.</Text>
         <Text>Längd: 3 m som standard men Ek finns i längderna från 1.8-4,3 m.</Text>
         <Text>Virket kan torkas ner till 7 % (möbeltorrt).</Text>
+      </ImageAndText>
+      <ImageAndText src={SawedProductimage} title="Ämnestillverkning" textFirst>
+        <Text>Vi kan leverera torkade, hyvlade och längdkapade ämnen i svenskt lövträ.</Text>
+        <Text>Sönderdelning i lamellsåg till exakta mått helt efter önskemål.</Text>
+        <Text>Även strips för vidareförädling.</Text>
       </ImageAndText>
       <SmallList />
     </>

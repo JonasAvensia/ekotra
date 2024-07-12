@@ -4,7 +4,6 @@ import './index.css';
 import { GlitzProvider, styled } from '@glitz/react';
 import Header from './Feature/Header/Header';
 import { glitz } from './Shared/GlitzOptions';
-import { media } from '@glitz/core';
 import Footer from './Feature/Footer/Footer';
 import { AppearanceBlock, gigantic } from './Shared/value';
 import ContactLinkBlock from './Feature/Components/ContactLinkBlock';
@@ -35,10 +34,4 @@ const Page = styled(AppearanceBlock, {
     y: 0,
     x: 'auto',
   },
-  ...media(
-    { maxWidth: '1025px' },
-    {
-      maxWidth: '100vw',
-    },
-  ),
 });

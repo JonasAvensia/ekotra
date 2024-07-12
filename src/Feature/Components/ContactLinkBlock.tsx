@@ -1,5 +1,5 @@
 import { styled } from '@glitz/react';
-import { AppearanceBlock, Block, DefaulBackgroundColor, gigantic, huge, large, small } from '../../Shared/value';
+import { AppearanceBlock, Block, gigantic, large, small } from '../../Shared/value';
 import H2 from '../../Shared/Generic/H2';
 import Button from './Button';
 import { media } from '@glitz/core';
@@ -11,15 +11,17 @@ function ContactLinkBlock() {
     <>
       {location.pathname !== '/kontakt' && (
         <Container>
-          <TextWrapper>
-            <H2>Kontakta oss</H2>
-            <Text>Har du frågor om våra produkter eller tjänster?</Text>
-          </TextWrapper>
-          <ButtonWrapper>
-            <Button to="/kontakt" arialLabel="kontakta oss">
-              Kontakta oss
-            </Button>
-          </ButtonWrapper>
+          <Wrapper>
+            <TextWrapper>
+              <H2>Kontakta oss</H2>
+              <Text>Har du frågor om våra produkter eller tjänster?</Text>
+            </TextWrapper>
+            <ButtonWrapper>
+              <Button to="/kontakt" ariaLabel="kontakta oss">
+                Kontakta oss
+              </Button>
+            </ButtonWrapper>
+          </Wrapper>
         </Container>
       )}
     </>
@@ -29,6 +31,10 @@ function ContactLinkBlock() {
 export default ContactLinkBlock;
 
 const Container = styled(AppearanceBlock, {
+  backgroundColor: '#fff',
+});
+
+const Wrapper = styled(Block, {
   border: {
     top: {
       style: 'solid',

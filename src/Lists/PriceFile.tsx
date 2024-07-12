@@ -3,42 +3,68 @@ export const ekstolp = {
     {
       dimension: '50*50 mm',
       length: '1.7-1.9 m',
-      pricePerUnit: 38,
-      sharpeningCost: 6,
+      pricePerUnit: '38',
+      sharpeningCost: '6',
     },
     {
       dimension: '63*63 mm',
       length: '1.7-1.9 m',
-      pricePerUnit: 65,
-      sharpeningCost: 8,
+      pricePerUnit: '65',
+      sharpeningCost: '8',
     },
     {
       dimension: '75*75 mm',
       length: '1.7-1.9 m',
-      pricePerUnit: 95,
-      sharpeningCost: 12,
+      pricePerUnit: '95',
+      sharpeningCost: '12',
+    },
+  ],
+  woodProducts: [
+    {
+      type: 'Träslag',
+      dimension: '42*120/145 mm',
+      pricePerKvm: '560 kr',
+      unit: 'kvm',
+    },
+    {
+      type: 'Träslag',
+      dimension: '34*120/145 mm',
+      pricePerKvm: '410 kr',
+      unit: 'kvm',
+    },
+    {
+      type: 'Stolpe',
+      dimension: '95*95 mm',
+      pricePerLpm: '90 kr',
+      unit: 'lpm',
+    },
+    {
+      type: 'Stolpe',
+      dimension: '120*120 mm',
+      pricePerLpm: '195 kr',
+      unit: 'lpm',
     },
   ],
   dimensionsWithPricePerLpm: [
     {
       dimension: '100*100 mm',
-      pricePerLpm: 110,
+      pricePerLpm: '110',
     },
     {
       dimension: '125*125 mm',
-      pricePerLpm: 129,
+      pricePerLpm: '129',
     },
     {
       dimension: '150*150 mm',
-      pricePerLpm: 175,
+      pricePerLpm: '175',
     },
     {
       dimension: '175*175 mm',
-      pricePerLpm: 220,
+      pricePerLpm: '220',
     },
     {
       dimension: '200*200 mm',
-      pricePerLpm: 280,
+      pricePerLpm: '280',
     },
   ],
 };
