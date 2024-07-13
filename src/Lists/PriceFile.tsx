@@ -67,6 +67,23 @@ export const ekstolp = {
       pricePerLpm: '280',
     },
   ],
+  additionalProducts: [
+    {
+      description: 'Ek 19*120',
+      lengths: 'Fallande',
+      pricePerM2: '850 kr',
+    },
+    {
+      description: 'Ask 19*110',
+      lengths: 'Fallande',
+      pricePerM2: '750 kr',
+    },
+    {
+      description: 'AL 22*135',
+      lengths: 'Fallande',
+      pricePerM2: '750 kr',
+    },
+  ],
 };
 
 export const list = [

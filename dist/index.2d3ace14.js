@@ -27328,12 +27328,14 @@ var _specialProducts = require("../Pages/Productpage/SpecialProducts");
 var _specialProductsDefault = parcelHelpers.interopDefault(_specialProducts);
 var _limfog = require("../Pages/Productpage/Limfog");
 var _limfogDefault = parcelHelpers.interopDefault(_limfog);
+var _planedProducts = require("../Pages/Productpage/PlanedProducts");
+var _planedProductsDefault = parcelHelpers.interopDefault(_planedProducts);
 function Routing() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _scrollToTopDefault.default), {}, void 0, false, {
                 fileName: "src/Routing/Routing.tsx",
-                lineNumber: 15,
+                lineNumber: 16,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
@@ -27342,20 +27344,8 @@ function Routing() {
                         path: "/",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homePageDefault.default), {}, void 0, false, {
                             fileName: "src/Routing/Routing.tsx",
-                            lineNumber: 17,
-                            columnNumber: 34
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/Routing/Routing.tsx",
-                        lineNumber: 17,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/prislista",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _priceListPageDefault.default), {}, void 0, false, {
-                            fileName: "src/Routing/Routing.tsx",
                             lineNumber: 18,
-                            columnNumber: 43
+                            columnNumber: 34
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/Routing/Routing.tsx",
@@ -27363,8 +27353,8 @@ function Routing() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/produkter",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _productsListningPageDefault.default), {}, void 0, false, {
+                        path: "/prislista",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _priceListPageDefault.default), {}, void 0, false, {
                             fileName: "src/Routing/Routing.tsx",
                             lineNumber: 19,
                             columnNumber: 43
@@ -27375,11 +27365,11 @@ function Routing() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/produkter/limfog",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _limfogDefault.default), {}, void 0, false, {
+                        path: "/produkter",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _productsListningPageDefault.default), {}, void 0, false, {
                             fileName: "src/Routing/Routing.tsx",
                             lineNumber: 20,
-                            columnNumber: 50
+                            columnNumber: 43
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/Routing/Routing.tsx",
@@ -27387,11 +27377,11 @@ function Routing() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/produkter/sagade-produkter",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sawedProductsDefault.default), {}, void 0, false, {
+                        path: "/produkter/limfog",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _limfogDefault.default), {}, void 0, false, {
                             fileName: "src/Routing/Routing.tsx",
                             lineNumber: 21,
-                            columnNumber: 60
+                            columnNumber: 50
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/Routing/Routing.tsx",
@@ -27399,11 +27389,11 @@ function Routing() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/produkter/special-produkter",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _specialProductsDefault.default), {}, void 0, false, {
+                        path: "/produkter/sagade-produkter",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sawedProductsDefault.default), {}, void 0, false, {
                             fileName: "src/Routing/Routing.tsx",
                             lineNumber: 22,
-                            columnNumber: 61
+                            columnNumber: 60
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/Routing/Routing.tsx",
@@ -27411,11 +27401,11 @@ function Routing() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/galleri",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageArchiveDefault.default), {}, void 0, false, {
+                        path: "/produkter/special-produkter",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _specialProductsDefault.default), {}, void 0, false, {
                             fileName: "src/Routing/Routing.tsx",
                             lineNumber: 23,
-                            columnNumber: 41
+                            columnNumber: 61
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/Routing/Routing.tsx",
@@ -27423,21 +27413,45 @@ function Routing() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/kontakt",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactPageDefault.default), {}, void 0, false, {
+                        path: "/produkter/hyvlade-produkter",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _planedProductsDefault.default), {}, void 0, false, {
                             fileName: "src/Routing/Routing.tsx",
                             lineNumber: 24,
-                            columnNumber: 41
+                            columnNumber: 61
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/Routing/Routing.tsx",
                         lineNumber: 24,
                         columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/galleri",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageArchiveDefault.default), {}, void 0, false, {
+                            fileName: "src/Routing/Routing.tsx",
+                            lineNumber: 25,
+                            columnNumber: 41
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/Routing/Routing.tsx",
+                        lineNumber: 25,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/kontakt",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactPageDefault.default), {}, void 0, false, {
+                            fileName: "src/Routing/Routing.tsx",
+                            lineNumber: 26,
+                            columnNumber: 41
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/Routing/Routing.tsx",
+                        lineNumber: 26,
+                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Routing/Routing.tsx",
-                lineNumber: 16,
+                lineNumber: 17,
                 columnNumber: 7
             }, this)
         ]
@@ -27453,7 +27467,7 @@ $RefreshReg$(_c, "Routing");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../Pages/HomePage":"gJB5o","../Pages/PriceListPage":"eIucm","../Pages/ProductsListningPage":"3Kqqo","../Pages/ContactPage":"bDqc9","../Pages/ImageArchive":"j1mrX","../Feature/Helper/ScrollToTop":"4Z7Gw","../Pages/Productpage/SawedProducts":"kTUTe","../Pages/Productpage/SpecialProducts":"8F5SM","../Pages/Productpage/Limfog":"l1iBY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../Pages/HomePage":"gJB5o","../Pages/PriceListPage":"eIucm","../Pages/ProductsListningPage":"3Kqqo","../Pages/ContactPage":"bDqc9","../Pages/ImageArchive":"j1mrX","../Feature/Helper/ScrollToTop":"4Z7Gw","../Pages/Productpage/SawedProducts":"kTUTe","../Pages/Productpage/SpecialProducts":"8F5SM","../Pages/Productpage/Limfog":"l1iBY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Pages/Productpage/PlanedProducts":"bDJ6V"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.24.1
  *
@@ -38132,6 +38146,23 @@ const ekstolp = {
             dimension: "200*200 mm",
             pricePerLpm: "280"
         }
+    ],
+    additionalProducts: [
+        {
+            description: "Ek 19*120",
+            lengths: "Fallande",
+            pricePerM2: "850 kr"
+        },
+        {
+            description: "Ask 19*110",
+            lengths: "Fallande",
+            pricePerM2: "750 kr"
+        },
+        {
+            description: "AL 22*135",
+            lengths: "Fallande",
+            pricePerM2: "750 kr"
+        }
     ]
 };
 const list = [
@@ -38804,7 +38835,6 @@ $RefreshReg$(_c, "ImageArchive");
 },{"react/jsx-dev-runtime":"iTorj","../Feature/Components/Hero":"8WNwH","../Assets/HeroLumber.jpg":"eDA9j","../Lists/Products":"hdt1s","../Feature/Components/Lits":"kNxh3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hdt1s":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "products", ()=>products);
 var _alpanelJpg = require("../Assets/products/Alpanel.jpg"); // Importing the image
 var _alpanelJpgDefault = parcelHelpers.interopDefault(_alpanelJpg);
 var _bastuJpg = require("../Assets/products/Bastu.jpg");
@@ -38817,6 +38847,8 @@ var _algolv2Jpg = require("../Assets/products/algolv2.jpg");
 var _algolv2JpgDefault = parcelHelpers.interopDefault(_algolv2Jpg);
 var _ekgolvJpg = require("../Assets/products/Ekgolv.jpg");
 var _ekgolvJpgDefault = parcelHelpers.interopDefault(_ekgolvJpg);
+var _algolvJpg = require("../Assets/products/Algolv.jpg");
+var _algolvJpgDefault = parcelHelpers.interopDefault(_algolvJpg);
 var _ekpanelparllangJpg = require("../Assets/products/Ekpanelparllang.jpg");
 var _ekpanelparllangJpgDefault = parcelHelpers.interopDefault(_ekpanelparllangJpg);
 var _extrembreddTrallJpg = require("../Assets/products/ExtrembreddTrall.jpg");
@@ -38825,35 +38857,111 @@ var _smygJpg = require("../Assets/products/Smyg.jpg");
 var _smygJpgDefault = parcelHelpers.interopDefault(_smygJpg);
 var _vhus1Jpg = require("../Assets/products/VHus1.jpg");
 var _vhus1JpgDefault = parcelHelpers.interopDefault(_vhus1Jpg);
+var _fasPanelJpg = require("../Assets/products/fas-panel.jpg");
+var _fasPanelJpgDefault = parcelHelpers.interopDefault(_fasPanelJpg);
+var _taklistAlJpg = require("../Assets/products/TaklistAl.jpg");
+var _taklistAlJpgDefault = parcelHelpers.interopDefault(_taklistAlJpg);
+var _askfoderJpg = require("../Assets/products/Askfoder.jpg");
+var _askfoderJpgDefault = parcelHelpers.interopDefault(_askfoderJpg);
+var _taklistEkJpg = require("../Assets/products/TaklistEk.jpg");
+var _taklistEkJpgDefault = parcelHelpers.interopDefault(_taklistEkJpg);
+var _golvEkListJpg = require("../Assets/products/GolvEkList.jpg");
+var _golvEkListJpgDefault = parcelHelpers.interopDefault(_golvEkListJpg);
+const Floors = [
+    {
+        name: "Massivt Ek golv",
+        description: "Ek 19*205 (t\xe4ckande 195 m.m).",
+        price: "Se tabell f\xf6r pris per kvm inkl moms",
+        image: (0, _ekgolvJpgDefault.default)
+    },
+    {
+        name: "Algolv",
+        description: "Al 32*145. Alen passer inte i rum med h\xe5rt slitage men i tex sovrum ,detta pga att al \xe4r ett mjukt tr\xe4slag kan j\xe4mnf\xf6ras med fur",
+        price: "Se tabell f\xf6r pris per kvm inkl moms",
+        image: (0, _algolvJpgDefault.default)
+    }
+];
+const Strips = [
+    {
+        name: "Taklist Al 19*67",
+        description: "Vacker taklist som passar till Bastupanel i Al.",
+        price: "45 kr lpm inkl moms",
+        image: (0, _taklistAlJpgDefault.default)
+    },
+    {
+        name: "Askfoder 22*120",
+        description: "Ett 1800 tals foder med sitt ursprung i sk\xe5ne.",
+        price: "87 kr lpm inkl moms",
+        image: (0, _askfoderJpgDefault.default)
+    },
+    {
+        name: "Smyg och Foder i Ek",
+        description: "Smyg 16*195. Foder 12*62 ",
+        price: "Smyg: 186 kr lpm. Foder: 36kr lmp ink moms",
+        image: (0, _smygJpgDefault.default)
+    },
+    {
+        name: "Taklist Ek",
+        description: "Taklist 22*67",
+        price: "56 kr lpm ink moms",
+        image: (0, _taklistEkJpgDefault.default)
+    },
+    {
+        name: "Golvlist 22*145 Ek",
+        description: "Ett vackert 1800tals foder h\xe4r i massiv Ek",
+        price: "148 kr lpm ink moms",
+        image: (0, _golvEkListJpgDefault.default)
+    }
+];
+const Panels = [
+    {
+        name: "Bastupanel 15*70(63) Obehandlad",
+        description: "(svensk al i naturkvalitet) Varm och gemytlig med egenskaper som l\xe4mpar sig i bastumil\xf6.",
+        price: "enl \xf6k",
+        image: (0, _fasPanelJpgDefault.default)
+    },
+    {
+        name: "Fas Panel 15*70(63) Obehandlad",
+        description: "(svensk al i naturkvalitet) Vacker panel som l\xe4mpar sig f\xf6r b\xe5de Bastu och vanliga utrymme",
+        price: "enl \xf6k",
+        image: (0, _fasPanelJpgDefault.default)
+    },
+    {
+        name: "Alpanel 15*95",
+        description: "Kvistfri alpanel, kapad efter \xf6nskem\xe5l",
+        price: "39 kr/lpm ink moms",
+        image: (0, _fasPanelJpgDefault.default)
+    }
+];
 const products = [
     {
         name: "Alpanel 15*90 (Bangsund)",
         description: "Panel f\xf6r liggande montering i naturkvalitet.",
-        price: "29 kr/lpm",
+        price: "29 kr/lpm ink moms",
         image: (0, _alpanelJpgDefault.default)
     },
     {
         name: "Bastupanel softline 15*95",
         description: "Den klassiska profilen. Naturkvalitet",
-        price: "29 kr/lpm",
+        price: "29 kr/lpm ink moms",
         image: (0, _bastuJpgDefault.default)
     },
     {
         name: "Ekpanel 15*90 (Bandsund liggande montering)",
         description: "Panel som ger ett exklusivt intryck.",
-        price: "56 kr/lpm",
+        price: "56 kr/lpm ink moms",
         image: (0, _ekpanel1JpgDefault.default)
     },
     {
         name: "Ektrall 28*120 Rustik",
         description: "Svensk ek med rustikt utseende.",
-        price: "42 kr/lpm",
+        price: "42 kr/lpm ink moms",
         image: (0, _altanekJpgDefault.default)
     },
     {
         name: "Massivt algolv 26*150",
         description: "Trevlig f\xe4rg som ger en varm och ombonad k\xe4nsla.",
-        price: "795 kr/m2",
+        price: "795 kr/m2 ink moms",
         image: (0, _algolv2JpgDefault.default)
     },
     {
@@ -38865,7 +38973,7 @@ const products = [
     {
         name: "P\xe4rlspont i ek 15*68",
         description: "Fin panel med mycket djup.",
-        price: "46 kr/lpm",
+        price: "46 kr/lpm ink moms",
         image: (0, _ekpanelparllangJpgDefault.default)
     },
     {
@@ -38877,24 +38985,27 @@ const products = [
     {
         name: "Smyg 16*205 och Foder 14*63",
         description: "Fin inramning/salning av f\xf6nster.",
-        price: "smyg: 155 kr/lpm foder: 37 kr/lpm",
+        price: "smyg: 155 kr/lpm foder: 37 kr/lpm ink moms",
         image: (0, _smygJpgDefault.default)
     },
     {
         name: "Utv\xe4ndig ekpanel 21*145",
         description: "Panelen som ger utsidan det exklusiva intrycket.",
-        price: "64 kr/lpm",
+        price: "64 kr/lpm ink moms",
         image: (0, _vhus1JpgDefault.default)
     }
 ];
 const useProductsList = ()=>{
     return {
-        products
+        products,
+        Panels,
+        Strips,
+        Floors
     };
 };
 exports.default = useProductsList;
 
-},{"../Assets/products/Alpanel.jpg":"2nDYT","../Assets/products/Bastu.jpg":"7dMUN","../Assets/products/Ekpanel1.jpg":"1FGrM","../Assets/products/Altanek.jpg":"ll5F9","../Assets/products/algolv2.jpg":"cv0Ax","../Assets/products/Ekgolv.jpg":"5KlDX","../Assets/products/Ekpanelparllang.jpg":"jG2LN","../Assets/products/ExtrembreddTrall.jpg":"bcCCf","../Assets/products/Smyg.jpg":"b5qPC","../Assets/products/VHus1.jpg":"cOKB9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2nDYT":[function(require,module,exports) {
+},{"../Assets/products/Alpanel.jpg":"2nDYT","../Assets/products/Bastu.jpg":"7dMUN","../Assets/products/Ekpanel1.jpg":"1FGrM","../Assets/products/Altanek.jpg":"ll5F9","../Assets/products/algolv2.jpg":"cv0Ax","../Assets/products/Ekgolv.jpg":"5KlDX","../Assets/products/Ekpanelparllang.jpg":"jG2LN","../Assets/products/ExtrembreddTrall.jpg":"bcCCf","../Assets/products/Smyg.jpg":"b5qPC","../Assets/products/VHus1.jpg":"cOKB9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../Assets/products/fas-panel.jpg":"gf6U7","../Assets/products/TaklistAl.jpg":"9F8e3","../Assets/products/Askfoder.jpg":"hIyLw","../Assets/products/TaklistEk.jpg":"TBEkN","../Assets/products/GolvEkList.jpg":"7efz5","../Assets/products/Algolv.jpg":"8GK2L"}],"2nDYT":[function(require,module,exports) {
 module.exports = require("c33af2713ce01b16").getBundleURL("6EXJA") + "Alpanel.7e119411.jpg" + "?" + Date.now();
 
 },{"c33af2713ce01b16":"lgJ39"}],"7dMUN":[function(require,module,exports) {
@@ -38924,7 +39035,25 @@ module.exports = require("e65c9992697e55b9").getBundleURL("6EXJA") + "Smyg.8baec
 },{"e65c9992697e55b9":"lgJ39"}],"cOKB9":[function(require,module,exports) {
 module.exports = require("1c09acbd8277e729").getBundleURL("6EXJA") + "VHus1.1303cfba.jpg" + "?" + Date.now();
 
-},{"1c09acbd8277e729":"lgJ39"}],"kNxh3":[function(require,module,exports) {
+},{"1c09acbd8277e729":"lgJ39"}],"gf6U7":[function(require,module,exports) {
+module.exports = require("13876020a959b28c").getBundleURL("6EXJA") + "fas-panel.b0ed544d.jpg" + "?" + Date.now();
+
+},{"13876020a959b28c":"lgJ39"}],"9F8e3":[function(require,module,exports) {
+module.exports = require("4610a9dfb864925").getBundleURL("6EXJA") + "TaklistAl.a3cc509c.jpg" + "?" + Date.now();
+
+},{"4610a9dfb864925":"lgJ39"}],"hIyLw":[function(require,module,exports) {
+module.exports = require("ea93e53f2a1b8daf").getBundleURL("6EXJA") + "Askfoder.abb044af.jpg" + "?" + Date.now();
+
+},{"ea93e53f2a1b8daf":"lgJ39"}],"TBEkN":[function(require,module,exports) {
+module.exports = require("ebb8ddb478c213ee").getBundleURL("6EXJA") + "TaklistEk.b1b23a36.jpg" + "?" + Date.now();
+
+},{"ebb8ddb478c213ee":"lgJ39"}],"7efz5":[function(require,module,exports) {
+module.exports = require("ce5a1adde58629af").getBundleURL("6EXJA") + "GolvEkList.4ae5ea24.jpg" + "?" + Date.now();
+
+},{"ce5a1adde58629af":"lgJ39"}],"8GK2L":[function(require,module,exports) {
+module.exports = require("7872ae4f8c2f403b").getBundleURL("6EXJA") + "Algolv.9bbb0776.jpg" + "?" + Date.now();
+
+},{"7872ae4f8c2f403b":"lgJ39"}],"kNxh3":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$877f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -38942,79 +39071,105 @@ var _core = require("@glitz/core");
 var _productCard = require("./ProductCard");
 var _productCardDefault = parcelHelpers.interopDefault(_productCard);
 function List(props) {
+    const { title, description, list } = props;
+    const numColumns = list.length > 3 ? 4 : list.length;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ListContainer, {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h2Default.default), {
-                children: props.title
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h2Default.default), {
+                        children: title
+                    }, void 0, false, {
+                        fileName: "src/Feature/Components/Lits.tsx",
+                        lineNumber: 28,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                        children: description
+                    }, void 0, false, {
+                        fileName: "src/Feature/Components/Lits.tsx",
+                        lineNumber: 29,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "src/Feature/Components/Lits.tsx",
-                lineNumber: 24,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                children: props.description
-            }, void 0, false, {
-                fileName: "src/Feature/Components/Lits.tsx",
-                lineNumber: 25,
+                lineNumber: 27,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ListWrapper, {
-                children: props.list.map((data)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
+                css: {
+                    ...(0, _core.media)({
+                        minWidth: "1025px"
+                    }, {
+                        gridTemplateColumns: `repeat(${numColumns}, 1fr)`
+                    })
+                },
+                children: list.map((data)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _productCardDefault.default), {
-                            item: data
+                            item: data,
+                            numColumns: numColumns
                         }, data.name, false, {
                             fileName: "src/Feature/Components/Lits.tsx",
-                            lineNumber: 29,
+                            lineNumber: 43,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "src/Feature/Components/Lits.tsx",
-                        lineNumber: 28,
+                        lineNumber: 42,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "src/Feature/Components/Lits.tsx",
-                lineNumber: 26,
+                lineNumber: 31,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Feature/Components/Lits.tsx",
-        lineNumber: 23,
+        lineNumber: 26,
         columnNumber: 5
     }, this);
 }
 _c = List;
 exports.default = List;
-const ListContainer = (0, _react.styled)((0, _value.Block), {});
+const ListContainer = (0, _react.styled)((0, _value.Block));
 _c1 = ListContainer;
+const TextContainer = (0, _react.styled).div({
+    display: "flex",
+    flexDirection: "column",
+    gap: (0, _value.small),
+    width: "100%",
+    ...(0, _core.media)({
+        minWidth: "1025px"
+    }, {
+        width: "calc(50% - 20px)"
+    })
+});
+_c2 = TextContainer;
 const Text = (0, _react.styled).p({});
-_c2 = Text;
+_c3 = Text;
 const ListWrapper = (0, _react.styled).div({
     display: "grid",
     gridTemplateColumns: "1fr",
     gap: (0, _value.large),
     margin: {
         top: (0, _value.large)
-    },
-    ...(0, _core.media)({
-        minWidth: "1025px"
-    }, {
-        gridTemplateColumns: "1fr 1fr 1fr 1fr"
-    })
+    }
 });
-_c3 = ListWrapper;
+_c4 = ListWrapper;
 const Column = (0, _react.styled).div({
     width: "100%",
     backgroundColor: "#fff"
 });
-_c4 = Column;
-var _c, _c1, _c2, _c3, _c4;
+_c5 = Column;
+var _c, _c1, _c2, _c3, _c4, _c5;
 $RefreshReg$(_c, "List");
 $RefreshReg$(_c1, "ListContainer");
-$RefreshReg$(_c2, "Text");
-$RefreshReg$(_c3, "ListWrapper");
-$RefreshReg$(_c4, "Column");
+$RefreshReg$(_c2, "TextContainer");
+$RefreshReg$(_c3, "Text");
+$RefreshReg$(_c4, "ListWrapper");
+$RefreshReg$(_c5, "Column");
 
   $parcel$ReactRefreshHelpers$877f.postlude(module);
 } finally {
@@ -39037,7 +39192,9 @@ var _lazyLoadImage = require("./LazyLoadImage");
 var _lazyLoadImageDefault = parcelHelpers.interopDefault(_lazyLoadImage);
 var _h4 = require("../../Shared/Generic/H4");
 var _h4Default = parcelHelpers.interopDefault(_h4);
-function ProductCard({ item }) {
+var _core = require("@glitz/core");
+function ProductCard({ item, numColumns }) {
+    const height = numColumns === 1 ? "400px" : numColumns === 2 ? "400px" : numColumns === 3 ? "260px" : "224px";
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledLink, {
@@ -39046,15 +39203,23 @@ function ProductCard({ item }) {
                 rel: "noopener noreferrer",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
                     src: item.image,
-                    alt: item.name
+                    alt: item.name,
+                    css: {
+                        height: "220px",
+                        ...(0, _core.media)({
+                            minWidth: "1025px"
+                        }, {
+                            height: height
+                        })
+                    }
                 }, void 0, false, {
                     fileName: "src/Feature/Components/ProductCard.tsx",
-                    lineNumber: 15,
+                    lineNumber: 19,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/Feature/Components/ProductCard.tsx",
-                lineNumber: 14,
+                lineNumber: 18,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(DescriptionContainer, {
@@ -39063,33 +39228,33 @@ function ProductCard({ item }) {
                         children: item.name
                     }, void 0, false, {
                         fileName: "src/Feature/Components/ProductCard.tsx",
-                        lineNumber: 18,
+                        lineNumber: 34,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                         children: item.description
                     }, void 0, false, {
                         fileName: "src/Feature/Components/ProductCard.tsx",
-                        lineNumber: 19,
+                        lineNumber: 35,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Price, {
                         children: item.price
                     }, void 0, false, {
                         fileName: "src/Feature/Components/ProductCard.tsx",
-                        lineNumber: 20,
+                        lineNumber: 36,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Feature/Components/ProductCard.tsx",
-                lineNumber: 17,
+                lineNumber: 33,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Feature/Components/ProductCard.tsx",
-        lineNumber: 13,
+        lineNumber: 17,
         columnNumber: 5
     }, this);
 }
@@ -39119,8 +39284,7 @@ _c2 = StyledLink;
 const StyledImage = (0, _react.styled)((0, _lazyLoadImageDefault.default), {
     width: "100%",
     objectFit: "cover",
-    borderRadius: "8px",
-    height: "224px"
+    borderRadius: "8px"
 });
 _c3 = StyledImage;
 const DescriptionContainer = (0, _react.styled).div({
@@ -39157,7 +39321,7 @@ $RefreshReg$(_c6, "Price");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","./LazyLoadImage":"6qRec","../../Shared/Generic/H4":"36gb2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4Z7Gw":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","./LazyLoadImage":"6qRec","../../Shared/Generic/H4":"36gb2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@glitz/core":"5ehrf"}],"4Z7Gw":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$11f3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -39343,27 +39507,27 @@ function TextSection() {
                 children: "Ekstol"
             }, void 0, false, {
                 fileName: "src/Feature/Components/SmallList.tsx",
-                lineNumber: 32,
+                lineNumber: 37,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
                 children: "Vi har m\xe4rkt att efterfr\xe5gan p\xe5 ek och ekstolp \xf6kar f\xf6r varje \xe5r. D\xe4rf\xf6r har vi \xf6kat andelen s\xe5gad ek f\xf6r att t\xe4cka den \xf6kade efterfr\xe5gan."
             }, void 0, false, {
                 fileName: "src/Feature/Components/SmallList.tsx",
-                lineNumber: 33,
+                lineNumber: 38,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
                 children: "Vi saluf\xf6r ekstolp i all dimensioner. (priserna \xe4r exkl moms)"
             }, void 0, false, {
                 fileName: "src/Feature/Components/SmallList.tsx",
-                lineNumber: 37,
+                lineNumber: 42,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Feature/Components/SmallList.tsx",
-        lineNumber: 31,
+        lineNumber: 36,
         columnNumber: 5
     }, this);
 }
@@ -39375,27 +39539,27 @@ function TypeTextSection() {
                 children: "Samarbete f\xf6r Kompletterade Stall och Ekvirke"
             }, void 0, false, {
                 fileName: "src/Feature/Components/SmallList.tsx",
-                lineNumber: 45,
+                lineNumber: 50,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
                 children: "Vi s\xf6ker en leverant\xf6r f\xf6r samarbete av kompletta stall inkl metallsektioner, skjutd\xf6rrar m.m"
             }, void 0, false, {
                 fileName: "src/Feature/Components/SmallList.tsx",
-                lineNumber: 46,
+                lineNumber: 51,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
                 children: "Priserna \xe4r per kvm inkl moms exkl frakt."
             }, void 0, false, {
                 fileName: "src/Feature/Components/SmallList.tsx",
-                lineNumber: 47,
+                lineNumber: 52,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Feature/Components/SmallList.tsx",
-        lineNumber: 44,
+        lineNumber: 49,
         columnNumber: 5
     }, this);
 }
@@ -39410,7 +39574,7 @@ function CostList({ list }) {
                         children: "Dimension"
                     }, void 0, false, {
                         fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 56,
+                        lineNumber: 61,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
@@ -39418,7 +39582,7 @@ function CostList({ list }) {
                         children: "L\xe4ngd"
                     }, void 0, false, {
                         fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 57,
+                        lineNumber: 62,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
@@ -39426,7 +39590,7 @@ function CostList({ list }) {
                         children: "Pris/st"
                     }, void 0, false, {
                         fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 58,
+                        lineNumber: 63,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
@@ -39434,13 +39598,13 @@ function CostList({ list }) {
                         children: "V\xe4ssningskostnad"
                     }, void 0, false, {
                         fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 59,
+                        lineNumber: 64,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Feature/Components/SmallList.tsx",
-                lineNumber: 55,
+                lineNumber: 60,
                 columnNumber: 7
             }, this),
             list.map((row, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Row, {
@@ -39449,40 +39613,40 @@ function CostList({ list }) {
                             children: row.dimension
                         }, void 0, false, {
                             fileName: "src/Feature/Components/SmallList.tsx",
-                            lineNumber: 63,
+                            lineNumber: 68,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
                             children: row.length
                         }, void 0, false, {
                             fileName: "src/Feature/Components/SmallList.tsx",
-                            lineNumber: 64,
+                            lineNumber: 69,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
                             children: row.pricePerUnit
                         }, void 0, false, {
                             fileName: "src/Feature/Components/SmallList.tsx",
-                            lineNumber: 65,
+                            lineNumber: 70,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
                             children: row.sharpeningCost
                         }, void 0, false, {
                             fileName: "src/Feature/Components/SmallList.tsx",
-                            lineNumber: 66,
+                            lineNumber: 71,
                             columnNumber: 11
                         }, this)
                     ]
                 }, index, true, {
                     fileName: "src/Feature/Components/SmallList.tsx",
-                    lineNumber: 62,
+                    lineNumber: 67,
                     columnNumber: 9
                 }, this))
         ]
     }, void 0, true, {
         fileName: "src/Feature/Components/SmallList.tsx",
-        lineNumber: 54,
+        lineNumber: 59,
         columnNumber: 5
     }, this);
 }
@@ -39497,7 +39661,7 @@ function PricePerLpmList({ list }) {
                         children: "Dimension"
                     }, void 0, false, {
                         fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 77,
+                        lineNumber: 82,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
@@ -39505,13 +39669,13 @@ function PricePerLpmList({ list }) {
                         children: "Pris per lpm"
                     }, void 0, false, {
                         fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 78,
+                        lineNumber: 83,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Feature/Components/SmallList.tsx",
-                lineNumber: 76,
+                lineNumber: 81,
                 columnNumber: 7
             }, this),
             list.map((row, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RowTwo, {
@@ -39520,26 +39684,26 @@ function PricePerLpmList({ list }) {
                             children: row.dimension
                         }, void 0, false, {
                             fileName: "src/Feature/Components/SmallList.tsx",
-                            lineNumber: 82,
+                            lineNumber: 87,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
                             children: row.pricePerLpm
                         }, void 0, false, {
                             fileName: "src/Feature/Components/SmallList.tsx",
-                            lineNumber: 83,
+                            lineNumber: 88,
                             columnNumber: 11
                         }, this)
                     ]
                 }, index, true, {
                     fileName: "src/Feature/Components/SmallList.tsx",
-                    lineNumber: 81,
+                    lineNumber: 86,
                     columnNumber: 9
                 }, this))
         ]
     }, void 0, true, {
         fileName: "src/Feature/Components/SmallList.tsx",
-        lineNumber: 75,
+        lineNumber: 80,
         columnNumber: 5
     }, this);
 }
@@ -39557,7 +39721,7 @@ function TypeList({ list }) {
                         children: "Tr\xe4slag"
                     }, void 0, false, {
                         fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 94,
+                        lineNumber: 99,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
@@ -39565,7 +39729,7 @@ function TypeList({ list }) {
                         children: "Dimension"
                     }, void 0, false, {
                         fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 95,
+                        lineNumber: 100,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
@@ -39573,13 +39737,13 @@ function TypeList({ list }) {
                         children: "Pris per/kvm"
                     }, void 0, false, {
                         fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 96,
+                        lineNumber: 101,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Feature/Components/SmallList.tsx",
-                lineNumber: 93,
+                lineNumber: 98,
                 columnNumber: 7
             }, this),
             list.map((row, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RowTwo, {
@@ -39591,7 +39755,7 @@ function TypeList({ list }) {
                             children: row.type
                         }, void 0, false, {
                             fileName: "src/Feature/Components/SmallList.tsx",
-                            lineNumber: 100,
+                            lineNumber: 105,
                             columnNumber: 11
                         }, this),
                         " ",
@@ -39599,81 +39763,171 @@ function TypeList({ list }) {
                             children: row.dimension
                         }, void 0, false, {
                             fileName: "src/Feature/Components/SmallList.tsx",
-                            lineNumber: 101,
+                            lineNumber: 106,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
                             children: row.pricePerKvm || row.pricePerLpm
                         }, void 0, false, {
                             fileName: "src/Feature/Components/SmallList.tsx",
-                            lineNumber: 102,
+                            lineNumber: 107,
                             columnNumber: 11
                         }, this),
                         " "
                     ]
                 }, index, true, {
                     fileName: "src/Feature/Components/SmallList.tsx",
-                    lineNumber: 99,
+                    lineNumber: 104,
                     columnNumber: 9
                 }, this))
         ]
     }, void 0, true, {
         fileName: "src/Feature/Components/SmallList.tsx",
-        lineNumber: 92,
+        lineNumber: 97,
         columnNumber: 5
     }, this);
 }
 _c4 = TypeList;
-function SmallList({ showType }) {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {
-        children: showType ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TypeTextSection, {}, void 0, false, {
-                    fileName: "src/Feature/Components/SmallList.tsx",
-                    lineNumber: 118,
-                    columnNumber: 11
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TypeList, {
-                    list: (0, _priceFile.ekstolp).woodProducts
-                }, void 0, false, {
-                    fileName: "src/Feature/Components/SmallList.tsx",
-                    lineNumber: 119,
-                    columnNumber: 11
-                }, this)
-            ]
-        }, void 0, true) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextSection, {}, void 0, false, {
+function AdditionalProductsList({ list }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(WrapperBlock, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RowHeaderTwo, {
+                css: {
+                    gridTemplateColumns: "1fr 1fr 1fr"
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
+                        ariaLabel: "Beskrivning",
+                        children: "Beskrivning"
+                    }, void 0, false, {
+                        fileName: "src/Feature/Components/SmallList.tsx",
+                        lineNumber: 118,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
+                        ariaLabel: "L\xe4ngder",
+                        children: "L\xe4ngder"
+                    }, void 0, false, {
+                        fileName: "src/Feature/Components/SmallList.tsx",
+                        lineNumber: 119,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
+                        ariaLabel: "Pris per/kvm",
+                        children: "Pris per/kvm"
+                    }, void 0, false, {
+                        fileName: "src/Feature/Components/SmallList.tsx",
+                        lineNumber: 120,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Feature/Components/SmallList.tsx",
+                lineNumber: 117,
+                columnNumber: 7
+            }, this),
+            list.map((row, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RowTwo, {
+                    css: {
+                        gridTemplateColumns: "1fr 1fr 1fr"
+                    },
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
+                            children: row.description
+                        }, void 0, false, {
+                            fileName: "src/Feature/Components/SmallList.tsx",
+                            lineNumber: 124,
+                            columnNumber: 11
+                        }, this),
+                        " ",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
+                            children: row.lengths
+                        }, void 0, false, {
+                            fileName: "src/Feature/Components/SmallList.tsx",
+                            lineNumber: 125,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
+                            children: row.pricePerM2
+                        }, void 0, false, {
+                            fileName: "src/Feature/Components/SmallList.tsx",
+                            lineNumber: 126,
+                            columnNumber: 11
+                        }, this),
+                        " "
+                    ]
+                }, index, true, {
                     fileName: "src/Feature/Components/SmallList.tsx",
                     lineNumber: 123,
-                    columnNumber: 11
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CostList, {
-                    list: (0, _priceFile.ekstolp).dimensionsWithCosts
-                }, void 0, false, {
-                    fileName: "src/Feature/Components/SmallList.tsx",
-                    lineNumber: 124,
-                    columnNumber: 11
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(PricePerLpmList, {
-                    list: (0, _priceFile.ekstolp).dimensionsWithPricePerLpm
-                }, void 0, false, {
-                    fileName: "src/Feature/Components/SmallList.tsx",
-                    lineNumber: 125,
-                    columnNumber: 11
-                }, this)
-            ]
-        }, void 0, true)
-    }, void 0, false, {
+                    columnNumber: 9
+                }, this))
+        ]
+    }, void 0, true, {
         fileName: "src/Feature/Components/SmallList.tsx",
-        lineNumber: 115,
+        lineNumber: 116,
         columnNumber: 5
     }, this);
 }
-_c5 = SmallList;
+_c5 = AdditionalProductsList;
+function SmallList({ showType, showAdditionalProducts }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {
+        children: [
+            showType && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TypeTextSection, {}, void 0, false, {
+                        fileName: "src/Feature/Components/SmallList.tsx",
+                        lineNumber: 143,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TypeList, {
+                        list: (0, _priceFile.ekstolp).woodProducts
+                    }, void 0, false, {
+                        fileName: "src/Feature/Components/SmallList.tsx",
+                        lineNumber: 144,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true),
+            showAdditionalProducts && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AdditionalProductsList, {
+                list: (0, _priceFile.ekstolp).additionalProducts
+            }, void 0, false, {
+                fileName: "src/Feature/Components/SmallList.tsx",
+                lineNumber: 147,
+                columnNumber: 34
+            }, this),
+            !showType && !showAdditionalProducts && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextSection, {}, void 0, false, {
+                        fileName: "src/Feature/Components/SmallList.tsx",
+                        lineNumber: 150,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CostList, {
+                        list: (0, _priceFile.ekstolp).dimensionsWithCosts
+                    }, void 0, false, {
+                        fileName: "src/Feature/Components/SmallList.tsx",
+                        lineNumber: 151,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(PricePerLpmList, {
+                        list: (0, _priceFile.ekstolp).dimensionsWithPricePerLpm
+                    }, void 0, false, {
+                        fileName: "src/Feature/Components/SmallList.tsx",
+                        lineNumber: 152,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true)
+        ]
+    }, void 0, true, {
+        fileName: "src/Feature/Components/SmallList.tsx",
+        lineNumber: 140,
+        columnNumber: 5
+    }, this);
+}
+_c6 = SmallList;
 exports.default = SmallList;
 const Container = (0, _react.styled)((0, _value.Block), {});
-_c6 = Container;
+_c7 = Container;
 const WrapperBlock = (0, _react.styled).div({
     display: "block",
     position: "relative",
@@ -39681,7 +39935,7 @@ const WrapperBlock = (0, _react.styled).div({
         top: (0, _value.large)
     }
 });
-_c7 = WrapperBlock;
+_c8 = WrapperBlock;
 const TextContainer = (0, _react.styled).div({
     display: "flex",
     flexDirection: "column",
@@ -39693,7 +39947,7 @@ const TextContainer = (0, _react.styled).div({
         width: "calc(50% - 20px)"
     })
 });
-_c8 = TextContainer;
+_c9 = TextContainer;
 const Row = (0, _react.styled).div({
     width: "100%",
     display: "grid",
@@ -39706,7 +39960,7 @@ const Row = (0, _react.styled).div({
         }
     }
 });
-_c9 = Row;
+_c10 = Row;
 const RowTwo = (0, _react.styled).div({
     width: "100%",
     display: "grid",
@@ -39719,23 +39973,23 @@ const RowTwo = (0, _react.styled).div({
         }
     }
 });
-_c10 = RowTwo;
+_c11 = RowTwo;
 const RowHeader = (0, _react.styled)(Row, {
     fontWeight: "bold",
     backgroundColor: "#fff"
 });
-_c11 = RowHeader;
+_c12 = RowHeader;
 const RowHeaderTwo = (0, _react.styled)(RowTwo, {
     fontWeight: "bold",
     backgroundColor: "#fff"
 });
-_c12 = RowHeaderTwo;
+_c13 = RowHeaderTwo;
 const Cell = (0, _react.styled).div({
     padding: {
         y: "10px"
     }
 });
-_c13 = Cell;
+_c14 = Cell;
 const ButtonCell = (0, _react.styled)((0, _button.PlainButton), {
     whiteSpace: "nowrap",
     padding: {
@@ -39743,23 +39997,24 @@ const ButtonCell = (0, _react.styled)((0, _button.PlainButton), {
     },
     fontWeight: "bold"
 });
-_c14 = ButtonCell;
-var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10, _c11, _c12, _c13, _c14;
+_c15 = ButtonCell;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10, _c11, _c12, _c13, _c14, _c15;
 $RefreshReg$(_c, "TextSection");
 $RefreshReg$(_c1, "TypeTextSection");
 $RefreshReg$(_c2, "CostList");
 $RefreshReg$(_c3, "PricePerLpmList");
 $RefreshReg$(_c4, "TypeList");
-$RefreshReg$(_c5, "SmallList");
-$RefreshReg$(_c6, "Container");
-$RefreshReg$(_c7, "WrapperBlock");
-$RefreshReg$(_c8, "TextContainer");
-$RefreshReg$(_c9, "Row");
-$RefreshReg$(_c10, "RowTwo");
-$RefreshReg$(_c11, "RowHeader");
-$RefreshReg$(_c12, "RowHeaderTwo");
-$RefreshReg$(_c13, "Cell");
-$RefreshReg$(_c14, "ButtonCell");
+$RefreshReg$(_c5, "AdditionalProductsList");
+$RefreshReg$(_c6, "SmallList");
+$RefreshReg$(_c7, "Container");
+$RefreshReg$(_c8, "WrapperBlock");
+$RefreshReg$(_c9, "TextContainer");
+$RefreshReg$(_c10, "Row");
+$RefreshReg$(_c11, "RowTwo");
+$RefreshReg$(_c12, "RowHeader");
+$RefreshReg$(_c13, "RowHeaderTwo");
+$RefreshReg$(_c14, "Cell");
+$RefreshReg$(_c15, "ButtonCell");
 
   $parcel$ReactRefreshHelpers$d30b.postlude(module);
 } finally {
@@ -39951,7 +40206,98 @@ $RefreshReg$(_c, "Limfog");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../../Assets/products/limfog-alm.jpg":"jUiM9","../../Feature/Components/Hero":"8WNwH","../../Feature/Components/ImageAndText":"8HWo8","../../Shared/value":"9VKej","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"irmnC":[function() {},{}],"kcmoy":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../../Assets/products/limfog-alm.jpg":"jUiM9","../../Feature/Components/Hero":"8WNwH","../../Feature/Components/ImageAndText":"8HWo8","../../Shared/value":"9VKej","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bDJ6V":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$abb1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$abb1.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _hero = require("../../Feature/Components/Hero");
+var _heroDefault = parcelHelpers.interopDefault(_hero);
+var _lits = require("../../Feature/Components/Lits");
+var _litsDefault = parcelHelpers.interopDefault(_lits);
+var _products = require("../../Lists/Products");
+var _productsDefault = parcelHelpers.interopDefault(_products);
+var _treesJpg = require("../../Assets/trees.jpg");
+var _treesJpgDefault = parcelHelpers.interopDefault(_treesJpg);
+var _smallList = require("../../Feature/Components/SmallList");
+var _smallListDefault = parcelHelpers.interopDefault(_smallList);
+var _s = $RefreshSig$();
+function PlanedProducts() {
+    _s();
+    const { Panels, Strips, Floors } = (0, _productsDefault.default)();
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {
+                src: (0, _treesJpgDefault.default),
+                alt: "Hero image Hyvlade produkter.",
+                title: "Hyvlade Produkter",
+                description: "Golv och lister, samt paneler i olika l\xf6vtr\xe4slag."
+            }, void 0, false, {
+                fileName: "src/Pages/Productpage/PlanedProducts.tsx",
+                lineNumber: 11,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _litsDefault.default), {
+                title: "Golv",
+                description: "Golv \xe4r inte bara ett golv, det \xe4r en m\xf6bel. Riktiga massiva tr\xe4golv \xe4r unika, varje tilja \xe4r unik och finns inte att uppbringa n\xe5gon annanstans. \xc4ven k\xe4nslan av att s\xe4tta foten p\xe5 ett massivt golv \xe4r unik. Genom att ha n\xf6jet att delta i hela f\xf6r\xe4dlingsprocessen kan vi ursprungsgarantera ert golv. Golven \xe4r best\xe4llningsvara och leveranstid meddelas vid offerering",
+                list: Floors
+            }, void 0, false, {
+                fileName: "src/Pages/Productpage/PlanedProducts.tsx",
+                lineNumber: 17,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _smallListDefault.default), {
+                showAdditionalProducts: true
+            }, void 0, false, {
+                fileName: "src/Pages/Productpage/PlanedProducts.tsx",
+                lineNumber: 22,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _litsDefault.default), {
+                title: "Paneler",
+                description: "Vi specialtillverkar paneler enligt kundens \xf6nskem\xe5l. Vi rekommenderar bastupanel i al, vilket ger en varm och gemytlig k\xe4nsla och har liknande egenskaper som asp. Vi erbjuder \xe4ven hj\xe4lp med att f\xf6rverkliga kundens egna id\xe9er",
+                list: Panels
+            }, void 0, false, {
+                fileName: "src/Pages/Productpage/PlanedProducts.tsx",
+                lineNumber: 23,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _litsDefault.default), {
+                title: "Lister",
+                description: "Vi erbjuder lister och foder i alla m\xf6jliga former och dimensioner. Vi har standardlister men kan \xe4ven tillverka specialbest\xe4llda lister och foder. F\xf6r renovering av \xe4ldre hus kan vi reproducera gamla profiler om du skickar en bit av den gamla listen eller fodret till dem f\xf6r ett kostnadsf\xf6rslag",
+                list: Strips
+            }, void 0, false, {
+                fileName: "src/Pages/Productpage/PlanedProducts.tsx",
+                lineNumber: 28,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true);
+}
+_s(PlanedProducts, "1IF2aFp+VdY4MbD6At/pshWHFs8=", false, function() {
+    return [
+        (0, _productsDefault.default)
+    ];
+});
+_c = PlanedProducts;
+exports.default = PlanedProducts;
+var _c;
+$RefreshReg$(_c, "PlanedProducts");
+
+  $parcel$ReactRefreshHelpers$abb1.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../Feature/Components/Hero":"8WNwH","../../Feature/Components/Lits":"kNxh3","../../Lists/Products":"hdt1s","../../Assets/trees.jpg":"9CIyB","../../Feature/Components/SmallList":"csIkc"}],"9CIyB":[function(require,module,exports) {
+module.exports = require("67ff0c6f163ab3d").getBundleURL("6EXJA") + "trees.338dee64.jpg" + "?" + Date.now();
+
+},{"67ff0c6f163ab3d":"lgJ39"}],"irmnC":[function() {},{}],"kcmoy":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$40ee = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

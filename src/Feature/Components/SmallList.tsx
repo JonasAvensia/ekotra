@@ -24,6 +24,11 @@ type ListType = {
     dimension: string;
     pricePerLpm: string;
   }[];
+  additionalProducts: {
+    description: string;
+    lengths: string;
+    pricePerM2: string;
+  }[];
 };
 
 function TextSection() {
@@ -106,19 +111,41 @@ function TypeList({ list }: { list: ListType['woodProducts'] }) {
   );
 }
 
+function AdditionalProductsList({ list }: { list: ListType['additionalProducts'] }) {
+  return (
+    <WrapperBlock>
+      <RowHeaderTwo css={{ gridTemplateColumns: '1fr 1fr 1fr' }}>
+        <ButtonCell ariaLabel="Beskrivning">Beskrivning</ButtonCell>
+        <ButtonCell ariaLabel="Längder">Längder</ButtonCell>
+        <ButtonCell ariaLabel="Pris per/kvm">Pris per/kvm</ButtonCell>
+      </RowHeaderTwo>
+      {list.map((row, index) => (
+        <RowTwo key={index} css={{ gridTemplateColumns: '1fr 1fr 1fr' }}>
+          <Cell>{row.description}</Cell> {/* Display the type */}
+          <Cell>{row.lengths}</Cell>
+          <Cell>{row.pricePerM2}</Cell> {/* Display pricePerKvm or pricePerLpm */}
+        </RowTwo>
+      ))}
+    </WrapperBlock>
+  );
+}
+
 type Prototype = {
   showType?: boolean;
+  showAdditionalProducts?: boolean;
 };
 
-function SmallList({ showType }: Prototype) {
+function SmallList({ showType, showAdditionalProducts }: Prototype) {
   return (
     <Container>
-      {showType ? (
+      {showType && (
         <>
           <TypeTextSection />
           <TypeList list={initialList.woodProducts} />
         </>
-      ) : (
+      )}
+      {showAdditionalProducts && <AdditionalProductsList list={initialList.additionalProducts} />}
+      {!showType && !showAdditionalProducts && (
         <>
           <TextSection />
           <CostList list={initialList.dimensionsWithCosts} />

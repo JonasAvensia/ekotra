@@ -8,6 +8,7 @@ import ScrollToTop from '../Feature/Helper/ScrollToTop';
 import SawedProducts from '../Pages/Productpage/SawedProducts';
 import SpecialProducts from '../Pages/Productpage/SpecialProducts';
 import Limfog from '../Pages/Productpage/Limfog';
+import PlanedProducts from '../Pages/Productpage/PlanedProducts';
 
 function Routing() {
   return (
@@ -20,6 +21,7 @@ function Routing() {
         <Route path="/produkter/limfog" element={<Limfog />} />
         <Route path="/produkter/sagade-produkter" element={<SawedProducts />} />
         <Route path="/produkter/special-produkter" element={<SpecialProducts />} />
+        <Route path="/produkter/hyvlade-produkter" element={<PlanedProducts />} />
         <Route path="/galleri" element={<ImageArchive />} />
         <Route path="/kontakt" element={<ContactPage />} />
       </Routes>
