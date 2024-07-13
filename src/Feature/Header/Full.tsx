@@ -30,6 +30,7 @@ function Full({ menuLinks }: MenuLinkstype) {
             <NavLinks key={link.name} onMouseOver={() => handleMouseOver(link.name)} onMouseLeave={handleMouseLeave}>
               <NavLink
                 to={link.url}
+                aria-label={`Go to ${link.url}`}
                 className={({ isActive }) => ['link_nav', isActive ? 'active' : null].filter(Boolean).join(' ')}
                 end
               >
@@ -39,7 +40,9 @@ function Full({ menuLinks }: MenuLinkstype) {
                 <Dropdown css={dropdownOpen === link.name && { display: 'block' }}>
                   {link.subMenu.map(subLink => (
                     <DropdownItem key={subLink.name}>
-                      <NavLink to={subLink.url}>{subLink.name}</NavLink>
+                      <NavLink to={subLink.url} aria-label={`Go to ${subLink.url}`}>
+                        {subLink.name}
+                      </NavLink>
                     </DropdownItem>
                   ))}
                 </Dropdown>

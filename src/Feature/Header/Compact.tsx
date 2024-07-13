@@ -55,7 +55,12 @@ function Compact({ menuLinks }: MenuLinkstype) {
                           <LinkText>{link.name}</LinkText>
                         </Link>
                         {link.subMenu.map(subLink => (
-                          <NavLink to={subLink.url} key={subLink.name} onClick={() => setIsOpen(false)}>
+                          <NavLink
+                            to={subLink.url}
+                            aria-label={`Go to ${subLink.url}`}
+                            key={subLink.name}
+                            onClick={() => setIsOpen(false)}
+                          >
                             <Link>
                               <LinkText>{subLink.name}</LinkText>
                             </Link>
@@ -66,7 +71,7 @@ function Compact({ menuLinks }: MenuLinkstype) {
                   )}
                 </>
               ) : (
-                <NavLink to={link.url} onClick={() => setIsOpen(false)}>
+                <NavLink to={link.url} aria-label={`Go to ${link.url}`} onClick={() => setIsOpen(false)}>
                   <Link>
                     <LinkText>{link.name}</LinkText>
                     {link.subMenu && <styled.Img src={Chevron} alt="Link arrow" width={10} />}

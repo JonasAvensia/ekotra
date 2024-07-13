@@ -21,25 +21,25 @@ export const ekstolp = {
   ],
   woodProducts: [
     {
-      type: 'Träslag',
+      type: 'Svensk Ek',
       dimension: '42*120/145 mm',
       pricePerKvm: '560 kr',
       unit: 'kvm',
     },
     {
-      type: 'Träslag',
+      type: 'Svensk EK',
       dimension: '34*120/145 mm',
       pricePerKvm: '410 kr',
       unit: 'kvm',
     },
     {
-      type: 'Stolpe',
+      type: 'Stolpe Svensk Ek',
       dimension: '95*95 mm',
       pricePerLpm: '90 kr',
       unit: 'lpm',
     },
     {
-      type: 'Stolpe',
+      type: 'Stolpe Svensk Ek',
       dimension: '120*120 mm',
       pricePerLpm: '195 kr',
       unit: 'lpm',

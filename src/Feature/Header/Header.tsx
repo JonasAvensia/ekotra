@@ -57,8 +57,12 @@ function Header() {
     <StyledHeader>
       <TopBar>
         <TopBarWrapper>
-          <A href="mailto:info@eme.nu">info@eme.nu</A>
-          <A href="tel:0046703278734">070-3278734</A>
+          <A href="mailto:info@eme.nu" aria-label="Send an email to info@eme.nu">
+            info@eme.nu
+          </A>
+          <A aria-label="Call 070-3278734" href="tel:0046703278734">
+            070-3278734
+          </A>
         </TopBarWrapper>
       </TopBar>
       <Full menuLinks={menuLinks} />

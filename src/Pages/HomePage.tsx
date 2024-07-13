@@ -8,6 +8,8 @@ import oak from '../Assets/oak-boards.jpg';
 import Shipping from '../Assets/shipping.png';
 import { styled } from '@glitz/react';
 import H3 from '../Shared/Generic/H3';
+import H2 from '../Shared/Generic/H2';
+import { Block } from '../Shared/value';
 
 function HomePage() {
   return (
@@ -18,8 +20,9 @@ function HomePage() {
         title="Välkommen till EKOTRÄ AB."
         description="Specialsågverk-Hyvleri mitt i Småland sedan 1997"
       />
-
-      <TextList />
+      <Block>
+        <H2>Svenskt lövträ, snabba leveranser, specialdimensioner.</H2>
+      </Block>
       <CardLinks />
       <ImageAndText src={oak} title="Vår Vision" textFirst>
         <Text>
@@ -56,6 +59,7 @@ function HomePage() {
           följa hur din panel tillverkas, från stock till färdig panel.
         </styled.P>
       </ImageAndText>
+      <TextList />
     </>
   );
 }

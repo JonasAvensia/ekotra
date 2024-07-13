@@ -27467,7 +27467,7 @@ $RefreshReg$(_c, "Routing");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../Pages/HomePage":"gJB5o","../Pages/PriceListPage":"eIucm","../Pages/ProductsListningPage":"3Kqqo","../Pages/ContactPage":"bDqc9","../Pages/ImageArchive":"j1mrX","../Feature/Helper/ScrollToTop":"4Z7Gw","../Pages/Productpage/SawedProducts":"kTUTe","../Pages/Productpage/SpecialProducts":"8F5SM","../Pages/Productpage/Limfog":"l1iBY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Pages/Productpage/PlanedProducts":"bDJ6V"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../Pages/HomePage":"gJB5o","../Pages/PriceListPage":"eIucm","../Pages/ProductsListningPage":"3Kqqo","../Pages/ContactPage":"bDqc9","../Pages/ImageArchive":"j1mrX","../Feature/Helper/ScrollToTop":"4Z7Gw","../Pages/Productpage/SawedProducts":"kTUTe","../Pages/Productpage/SpecialProducts":"8F5SM","../Pages/Productpage/Limfog":"l1iBY","../Pages/Productpage/PlanedProducts":"bDJ6V","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.24.1
  *
@@ -34580,6 +34580,9 @@ var _shippingPngDefault = parcelHelpers.interopDefault(_shippingPng);
 var _react = require("@glitz/react");
 var _h3 = require("../Shared/Generic/H3");
 var _h3Default = parcelHelpers.interopDefault(_h3);
+var _h2 = require("../Shared/Generic/H2");
+var _h2Default = parcelHelpers.interopDefault(_h2);
+var _value = require("../Shared/value");
 function HomePage() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
@@ -34590,17 +34593,25 @@ function HomePage() {
                 description: "Specials\xe5gverk-Hyvleri mitt i Sm\xe5land sedan 1997"
             }, void 0, false, {
                 fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 15,
+                lineNumber: 17,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _textListDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Block), {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h2Default.default), {
+                    children: "Svenskt l\xf6vtr\xe4, snabba leveranser, specialdimensioner."
+                }, void 0, false, {
+                    fileName: "src/Pages/HomePage.tsx",
+                    lineNumber: 24,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
                 fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 22,
+                lineNumber: 23,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardLinksDefault.default), {}, void 0, false, {
                 fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 23,
+                lineNumber: 26,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
@@ -34615,7 +34626,7 @@ function HomePage() {
                                 children: " god kvalitet"
                             }, void 0, false, {
                                 fileName: "src/Pages/HomePage.tsx",
-                                lineNumber: 27,
+                                lineNumber: 30,
                                 columnNumber: 11
                             }, this),
                             " och ett ",
@@ -34623,14 +34634,14 @@ function HomePage() {
                                 children: " formstabilt virke"
                             }, void 0, false, {
                                 fileName: "src/Pages/HomePage.tsx",
-                                lineNumber: 27,
+                                lineNumber: 30,
                                 columnNumber: 50
                             }, this),
                             "."
                         ]
                     }, void 0, true, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 25,
+                        lineNumber: 28,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
@@ -34640,28 +34651,28 @@ function HomePage() {
                                 children: "svenskt l\xf6vtr\xe4"
                             }, void 0, false, {
                                 fileName: "src/Pages/HomePage.tsx",
-                                lineNumber: 30,
+                                lineNumber: 33,
                                 columnNumber: 45
                             }, this),
                             " och s\xe4tter ursprung i fokus."
                         ]
                     }, void 0, true, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 29,
+                        lineNumber: 32,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                         children: "Med leverans f\xf6ljer ett ursprungsdokument med v\xe4xtplats."
                     }, void 0, false, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 32,
+                        lineNumber: 35,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                         children: "Udda l\xe4ngder, dimensioner och profiler tillh\xf6r v\xe5r specialitet."
                     }, void 0, false, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 33,
+                        lineNumber: 36,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
@@ -34671,20 +34682,20 @@ function HomePage() {
                                 children: "tv\xe5 veckor"
                             }, void 0, false, {
                                 fileName: "src/Pages/HomePage.tsx",
-                                lineNumber: 35,
+                                lineNumber: 38,
                                 columnNumber: 50
                             }, this),
                             " fr\xe5n order, oavsett om det \xe4r lagervara eller m\xe5ste specialproduceras."
                         ]
                     }, void 0, true, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 34,
+                        lineNumber: 37,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 24,
+                lineNumber: 27,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
@@ -34695,27 +34706,27 @@ function HomePage() {
                         children: "Vi jobbar mot privata kunder, kommuner, l\xe4nsstyrelser och andra f\xf6retag."
                     }, void 0, false, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 40,
+                        lineNumber: 43,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                         children: "Alltid med samma m\xe5l, att kunden ska f\xe5 r\xe4tt vara vid r\xe4tt tid."
                     }, void 0, false, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 41,
+                        lineNumber: 44,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                         children: "Vi ombes\xf6rjer transport inom hela Sverige."
                     }, void 0, false, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 42,
+                        lineNumber: 45,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 39,
+                lineNumber: 42,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
@@ -34727,20 +34738,20 @@ function HomePage() {
                         children: "Genom att kunna f\xf6r\xe4dla svensk l\xf6vtr\xe4r\xe5vara fr\xe5n stock till f\xe4rdiga produkter kan vi gentemot dig som kund garantera materialets ursprung."
                     }, void 0, false, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 45,
+                        lineNumber: 48,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                         children: "Vi blir genom v\xe5r sm\xe5skalighet flexibla och kan alltid s\xe4tta dig och dina \xf6nskem\xe5l i centrum."
                     }, void 0, false, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 49,
+                        lineNumber: 52,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 44,
+                lineNumber: 47,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
@@ -34751,27 +34762,32 @@ function HomePage() {
                         children: "Vi har ett avtal med DHL som levererar virket direkt till d\xf6rren \xf6ver hela Sverige."
                     }, void 0, false, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 52,
+                        lineNumber: 55,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).P, {
                         children: "Fraktkostnaden till Stockholm ligger p\xe5 cirka 600-1200 kronor inklusive moms."
                     }, void 0, false, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 53,
+                        lineNumber: 56,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).P, {
                         children: "Om m\xf6jligt rekommenderar vi att du h\xe4mtar virket sj\xe4lv. D\xe5 f\xe5r du en inblick i produktionsprocessen och kan f\xf6lja hur din panel tillverkas, fr\xe5n stock till f\xe4rdig panel."
                     }, void 0, false, {
                         fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 54,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 51,
+                lineNumber: 54,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _textListDefault.default), {}, void 0, false, {
+                fileName: "src/Pages/HomePage.tsx",
+                lineNumber: 62,
                 columnNumber: 7
             }, this)
         ]
@@ -34790,7 +34806,7 @@ $RefreshReg$(_c1, "Text");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../Feature/Components/CardLinks":"4IVZq","../Feature/Components/Hero":"8WNwH","../Feature/Components/ImageAndText":"8HWo8","../Assets/acorn.jpg":"dMYuz","../Feature/Components/TextList":"5S2tu","../Assets/forrest.jpg":"3nPrl","../Assets/oak-boards.jpg":"lVzFd","../Assets/shipping.png":"1jote","@glitz/react":"bAXm1","../Shared/Generic/H3":"iGEMB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4IVZq":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../Feature/Components/CardLinks":"4IVZq","../Feature/Components/Hero":"8WNwH","../Feature/Components/ImageAndText":"8HWo8","../Assets/acorn.jpg":"dMYuz","../Feature/Components/TextList":"5S2tu","../Assets/forrest.jpg":"3nPrl","../Assets/oak-boards.jpg":"lVzFd","../Assets/shipping.png":"1jote","@glitz/react":"bAXm1","../Shared/Generic/H3":"iGEMB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Shared/Generic/H2":"au95a","../Shared/value":"9VKej"}],"4IVZq":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$54ca = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34825,6 +34841,7 @@ function CardLinks() {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/produkter/sagade-produkter",
+                        "aria-label": "Go to sagade produkter",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
                             src: (0, _sawedProducts1JpgDefault.default),
                             alt: "S\xe5gade produkter image"
@@ -34861,6 +34878,7 @@ function CardLinks() {
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/produkter/sagade-produkter",
+                                "aria-label": "Go to sagade produkter",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
                                         to: "/produkter/sagade-produkter",
@@ -34897,6 +34915,7 @@ function CardLinks() {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/produkter/hyvlade-produkter",
+                        "aria-label": "Go to hyvlade produkter",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
                             src: (0, _woodDummyJpgDefault.default),
                             alt: "image of hyvlade produkter"
@@ -34927,7 +34946,7 @@ function CardLinks() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/produkter/hyvlade-produkter",
+                                to: "/produkter/hyvlade-produkter aria-label={'Go to hyvlade produkter'}",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
                                         to: "/produkter/hyvlade-produkter",
@@ -34964,6 +34983,7 @@ function CardLinks() {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/produkter/special-produkter",
+                        "aria-label": "Go to special produkter",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
                             src: (0, _horseBoxJpgDefault.default),
                             alt: "Image of Special produkter"
@@ -34995,10 +35015,12 @@ function CardLinks() {
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/produkter/special-produkter",
+                                "aria-label": "Go to special produkter",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
                                         to: "/produkter/special-produkter",
                                         ariaLabel: "L\xe4s mer",
+                                        "aria-label": "Go to special produkter",
                                         children: "L\xe4s mer"
                                     }, void 0, false, {
                                         fileName: "src/Feature/Components/CardLinks.tsx",
@@ -35031,17 +35053,18 @@ function CardLinks() {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/produkter/limfog",
+                        "aria-label": "Go to limfog",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
                             src: (0, _limfogAlmJpgDefault.default),
                             alt: "dummy"
                         }, void 0, false, {
                             fileName: "src/Feature/Components/CardLinks.tsx",
-                            lineNumber: 73,
+                            lineNumber: 77,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 72,
+                        lineNumber: 76,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
@@ -35050,18 +35073,19 @@ function CardLinks() {
                                 children: "Limfog"
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 76,
+                                lineNumber: 80,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                                 children: "Vi erbjuder skr\xe4ddarsydda l\xf6sningar som hyllplan, bordsskivor och b\xe4nkskivor i exakta m\xe5tt, f\xe4rdigputsade och med m\xf6jlighet till ytbehandling."
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 77,
+                                lineNumber: 81,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/produkter/limfog",
+                                "aria-label": "Go to limfog",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
                                         to: "/produkter/limfog",
@@ -35069,29 +35093,29 @@ function CardLinks() {
                                         children: "L\xe4s mer"
                                     }, void 0, false, {
                                         fileName: "src/Feature/Components/CardLinks.tsx",
-                                        lineNumber: 83,
+                                        lineNumber: 87,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "src/Feature/Components/CardLinks.tsx",
-                                    lineNumber: 82,
+                                    lineNumber: 86,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 81,
+                                lineNumber: 85,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 75,
+                        lineNumber: 79,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Feature/Components/CardLinks.tsx",
-                lineNumber: 71,
+                lineNumber: 75,
                 columnNumber: 7
             }, this)
         ]
@@ -35167,7 +35191,7 @@ $RefreshReg$(_c7, "StyledButton");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","@glitz/core":"5ehrf","../../Shared/value":"9VKej","react-router-dom":"9xmpe","../../Assets/wood-dummy.jpg":"d6rHm","../../Shared/Generic/H3":"iGEMB","./Button":"at8Gv","./LazyLoadImage":"6qRec","../../Assets/sawed-products-1.jpg":"7Omft","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../Assets/products/horse-box.jpg":"83gtD","../../Assets/products/limfog-alm.jpg":"jUiM9"}],"bAXm1":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","@glitz/core":"5ehrf","../../Shared/value":"9VKej","react-router-dom":"9xmpe","../../Assets/wood-dummy.jpg":"d6rHm","../../Shared/Generic/H3":"iGEMB","./Button":"at8Gv","./LazyLoadImage":"6qRec","../../Assets/sawed-products-1.jpg":"7Omft","../../Assets/products/horse-box.jpg":"83gtD","../../Assets/products/limfog-alm.jpg":"jUiM9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bAXm1":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "GlitzProvider", ()=>GlitzProvider);
@@ -36700,7 +36724,7 @@ const Text = (0, _react.styled).p({});
 const DefaultGreen = "#A7CDCC";
 const DefaulBackgroundColor = "#004A55";
 
-},{"@glitz/react":"bAXm1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@glitz/core":"5ehrf"}],"d6rHm":[function(require,module,exports) {
+},{"@glitz/react":"bAXm1","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"d6rHm":[function(require,module,exports) {
 module.exports = require("bd506b22664eee19").getBundleURL("6EXJA") + "wood-dummy.7930ec0e.jpg" + "?" + Date.now();
 
 },{"bd506b22664eee19":"lgJ39"}],"lgJ39":[function(require,module,exports) {
@@ -38101,25 +38125,25 @@ const ekstolp = {
     ],
     woodProducts: [
         {
-            type: "Tr\xe4slag",
+            type: "Svensk Ek",
             dimension: "42*120/145 mm",
             pricePerKvm: "560 kr",
             unit: "kvm"
         },
         {
-            type: "Tr\xe4slag",
+            type: "Svensk EK",
             dimension: "34*120/145 mm",
             pricePerKvm: "410 kr",
             unit: "kvm"
         },
         {
-            type: "Stolpe",
+            type: "Stolpe Svensk Ek",
             dimension: "95*95 mm",
             pricePerLpm: "90 kr",
             unit: "lpm"
         },
         {
-            type: "Stolpe",
+            type: "Stolpe Svensk Ek",
             dimension: "120*120 mm",
             pricePerLpm: "195 kr",
             unit: "lpm"
@@ -39005,7 +39029,7 @@ const useProductsList = ()=>{
 };
 exports.default = useProductsList;
 
-},{"../Assets/products/Alpanel.jpg":"2nDYT","../Assets/products/Bastu.jpg":"7dMUN","../Assets/products/Ekpanel1.jpg":"1FGrM","../Assets/products/Altanek.jpg":"ll5F9","../Assets/products/algolv2.jpg":"cv0Ax","../Assets/products/Ekgolv.jpg":"5KlDX","../Assets/products/Ekpanelparllang.jpg":"jG2LN","../Assets/products/ExtrembreddTrall.jpg":"bcCCf","../Assets/products/Smyg.jpg":"b5qPC","../Assets/products/VHus1.jpg":"cOKB9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../Assets/products/fas-panel.jpg":"gf6U7","../Assets/products/TaklistAl.jpg":"9F8e3","../Assets/products/Askfoder.jpg":"hIyLw","../Assets/products/TaklistEk.jpg":"TBEkN","../Assets/products/GolvEkList.jpg":"7efz5","../Assets/products/Algolv.jpg":"8GK2L"}],"2nDYT":[function(require,module,exports) {
+},{"../Assets/products/Alpanel.jpg":"2nDYT","../Assets/products/Bastu.jpg":"7dMUN","../Assets/products/Ekpanel1.jpg":"1FGrM","../Assets/products/Altanek.jpg":"ll5F9","../Assets/products/algolv2.jpg":"cv0Ax","../Assets/products/Ekgolv.jpg":"5KlDX","../Assets/products/Algolv.jpg":"8GK2L","../Assets/products/Ekpanelparllang.jpg":"jG2LN","../Assets/products/ExtrembreddTrall.jpg":"bcCCf","../Assets/products/Smyg.jpg":"b5qPC","../Assets/products/VHus1.jpg":"cOKB9","../Assets/products/fas-panel.jpg":"gf6U7","../Assets/products/TaklistAl.jpg":"9F8e3","../Assets/products/Askfoder.jpg":"hIyLw","../Assets/products/TaklistEk.jpg":"TBEkN","../Assets/products/GolvEkList.jpg":"7efz5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2nDYT":[function(require,module,exports) {
 module.exports = require("c33af2713ce01b16").getBundleURL("6EXJA") + "Alpanel.7e119411.jpg" + "?" + Date.now();
 
 },{"c33af2713ce01b16":"lgJ39"}],"7dMUN":[function(require,module,exports) {
@@ -39023,7 +39047,10 @@ module.exports = require("26a7f4456f592cce").getBundleURL("6EXJA") + "algolv2.ce
 },{"26a7f4456f592cce":"lgJ39"}],"5KlDX":[function(require,module,exports) {
 module.exports = require("a1676040a3556bd4").getBundleURL("6EXJA") + "Ekgolv.7df42050.jpg" + "?" + Date.now();
 
-},{"a1676040a3556bd4":"lgJ39"}],"jG2LN":[function(require,module,exports) {
+},{"a1676040a3556bd4":"lgJ39"}],"8GK2L":[function(require,module,exports) {
+module.exports = require("7872ae4f8c2f403b").getBundleURL("6EXJA") + "Algolv.9bbb0776.jpg" + "?" + Date.now();
+
+},{"7872ae4f8c2f403b":"lgJ39"}],"jG2LN":[function(require,module,exports) {
 module.exports = require("7052c0d01faa83b3").getBundleURL("6EXJA") + "Ekpanelparllang.2386a05e.jpg" + "?" + Date.now();
 
 },{"7052c0d01faa83b3":"lgJ39"}],"bcCCf":[function(require,module,exports) {
@@ -39050,10 +39077,7 @@ module.exports = require("ebb8ddb478c213ee").getBundleURL("6EXJA") + "TaklistEk.
 },{"ebb8ddb478c213ee":"lgJ39"}],"7efz5":[function(require,module,exports) {
 module.exports = require("ce5a1adde58629af").getBundleURL("6EXJA") + "GolvEkList.4ae5ea24.jpg" + "?" + Date.now();
 
-},{"ce5a1adde58629af":"lgJ39"}],"8GK2L":[function(require,module,exports) {
-module.exports = require("7872ae4f8c2f403b").getBundleURL("6EXJA") + "Algolv.9bbb0776.jpg" + "?" + Date.now();
-
-},{"7872ae4f8c2f403b":"lgJ39"}],"kNxh3":[function(require,module,exports) {
+},{"ce5a1adde58629af":"lgJ39"}],"kNxh3":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$877f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -39321,7 +39345,7 @@ $RefreshReg$(_c6, "Price");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","./LazyLoadImage":"6qRec","../../Shared/Generic/H4":"36gb2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@glitz/core":"5ehrf"}],"4Z7Gw":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","./LazyLoadImage":"6qRec","../../Shared/Generic/H4":"36gb2","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4Z7Gw":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$11f3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -40079,7 +40103,7 @@ function SpecialProducts() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                        children: "Att det sedan ger stallet ett exklusivt intryck \xe4r bonus."
+                        children: "Att det sedan ger stallet ett exklusivt intryck \xe4r en bonus."
                     }, void 0, false, {
                         fileName: "src/Pages/Productpage/SpecialProducts.tsx",
                         lineNumber: 22,
@@ -40294,7 +40318,7 @@ $RefreshReg$(_c, "PlanedProducts");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../Feature/Components/Hero":"8WNwH","../../Feature/Components/Lits":"kNxh3","../../Lists/Products":"hdt1s","../../Assets/trees.jpg":"9CIyB","../../Feature/Components/SmallList":"csIkc"}],"9CIyB":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../../Feature/Components/Hero":"8WNwH","../../Feature/Components/Lits":"kNxh3","../../Lists/Products":"hdt1s","../../Assets/trees.jpg":"9CIyB","../../Feature/Components/SmallList":"csIkc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9CIyB":[function(require,module,exports) {
 module.exports = require("67ff0c6f163ab3d").getBundleURL("6EXJA") + "trees.338dee64.jpg" + "?" + Date.now();
 
 },{"67ff0c6f163ab3d":"lgJ39"}],"irmnC":[function() {},{}],"kcmoy":[function(require,module,exports) {
@@ -40361,6 +40385,7 @@ function Header() {
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(A, {
                             href: "mailto:info@eme.nu",
+                            "aria-label": "Send an email to info@eme.nu",
                             children: "info@eme.nu"
                         }, void 0, false, {
                             fileName: "src/Feature/Header/Header.tsx",
@@ -40368,11 +40393,12 @@ function Header() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(A, {
+                            "aria-label": "Call 070-3278734",
                             href: "tel:0046703278734",
                             children: "070-3278734"
                         }, void 0, false, {
                             fileName: "src/Feature/Header/Header.tsx",
-                            lineNumber: 61,
+                            lineNumber: 63,
                             columnNumber: 11
                         }, this)
                     ]
@@ -40390,14 +40416,14 @@ function Header() {
                 menuLinks: menuLinks
             }, void 0, false, {
                 fileName: "src/Feature/Header/Header.tsx",
-                lineNumber: 64,
+                lineNumber: 68,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _compactDefault.default), {
                 menuLinks: menuLinks
             }, void 0, false, {
                 fileName: "src/Feature/Header/Header.tsx",
-                lineNumber: 65,
+                lineNumber: 69,
                 columnNumber: 7
             }, this)
         ]
@@ -40608,18 +40634,19 @@ function Compact({ menuLinks }) {
                                                     }, this),
                                                     link.subMenu.map((subLink)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
                                                             to: subLink.url,
+                                                            "aria-label": `Go to ${subLink.url}`,
                                                             onClick: ()=>setIsOpen(false),
                                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Link, {
                                                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LinkText, {
                                                                     children: subLink.name
                                                                 }, void 0, false, {
                                                                     fileName: "src/Feature/Header/Compact.tsx",
-                                                                    lineNumber: 60,
+                                                                    lineNumber: 65,
                                                                     columnNumber: 31
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "src/Feature/Header/Compact.tsx",
-                                                                lineNumber: 59,
+                                                                lineNumber: 64,
                                                                 columnNumber: 29
                                                             }, this)
                                                         }, subLink.name, false, {
@@ -40641,6 +40668,7 @@ function Compact({ menuLinks }) {
                                     ]
                                 }, void 0, true) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
                                     to: link.url,
+                                    "aria-label": `Go to ${link.url}`,
                                     onClick: ()=>setIsOpen(false),
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Link, {
                                         children: [
@@ -40648,7 +40676,7 @@ function Compact({ menuLinks }) {
                                                 children: link.name
                                             }, void 0, false, {
                                                 fileName: "src/Feature/Header/Compact.tsx",
-                                                lineNumber: 71,
+                                                lineNumber: 76,
                                                 columnNumber: 21
                                             }, this),
                                             link.subMenu && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).Img, {
@@ -40657,18 +40685,18 @@ function Compact({ menuLinks }) {
                                                 width: 10
                                             }, void 0, false, {
                                                 fileName: "src/Feature/Header/Compact.tsx",
-                                                lineNumber: 72,
+                                                lineNumber: 77,
                                                 columnNumber: 38
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Feature/Header/Compact.tsx",
-                                        lineNumber: 70,
+                                        lineNumber: 75,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "src/Feature/Header/Compact.tsx",
-                                    lineNumber: 69,
+                                    lineNumber: 74,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
@@ -40691,7 +40719,7 @@ function Compact({ menuLinks }) {
                 onClick: ()=>setIsOpen(false)
             }, void 0, false, {
                 fileName: "src/Feature/Header/Compact.tsx",
-                lineNumber: 80,
+                lineNumber: 85,
                 columnNumber: 18
             }, this)
         ]
@@ -40926,6 +40954,7 @@ function Full({ menuLinks }) {
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
                                     to: link.url,
+                                    "aria-label": `Go to ${link.url}`,
                                     className: ({ isActive })=>[
                                             "link_nav",
                                             isActive ? "active" : null
@@ -40935,7 +40964,7 @@ function Full({ menuLinks }) {
                                         children: link.name
                                     }, void 0, false, {
                                         fileName: "src/Feature/Header/Full.tsx",
-                                        lineNumber: 36,
+                                        lineNumber: 37,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
@@ -40950,20 +40979,21 @@ function Full({ menuLinks }) {
                                     children: link.subMenu.map((subLink)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(DropdownItem, {
                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
                                                 to: subLink.url,
+                                                "aria-label": `Go to ${subLink.url}`,
                                                 children: subLink.name
                                             }, void 0, false, {
                                                 fileName: "src/Feature/Header/Full.tsx",
-                                                lineNumber: 42,
+                                                lineNumber: 43,
                                                 columnNumber: 23
                                             }, this)
                                         }, subLink.name, false, {
                                             fileName: "src/Feature/Header/Full.tsx",
-                                            lineNumber: 41,
+                                            lineNumber: 42,
                                             columnNumber: 21
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "src/Feature/Header/Full.tsx",
-                                    lineNumber: 39,
+                                    lineNumber: 40,
                                     columnNumber: 17
                                 }, this)
                             ]

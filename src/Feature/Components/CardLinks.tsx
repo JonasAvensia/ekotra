@@ -14,14 +14,14 @@ function CardLinks() {
   return (
     <Container>
       <Column>
-        <Link to="/produkter/sagade-produkter">
+        <Link to="/produkter/sagade-produkter" aria-label={'Go to sagade produkter'}>
           <StyledImage src={SawedImage} alt="Sågade produkter image" />
         </Link>
         <TextContainer>
           <H3>Sågade Produkter</H3>
           <Text>Vi erbjuder sågat lövträ av de flesta svenska träslag och i de flesta dimensioner.</Text>
           <br />
-          <Link to="/produkter/sagade-produkter">
+          <Link to="/produkter/sagade-produkter" aria-label={'Go to sagade produkter'}>
             <ButtonContainer>
               <StyledButton to="/produkter/sagade-produkter" ariaLabel="Läs mer">
                 Läs mer
@@ -31,7 +31,7 @@ function CardLinks() {
         </TextContainer>
       </Column>
       <Column>
-        <Link to="/produkter/hyvlade-produkter">
+        <Link to="/produkter/hyvlade-produkter" aria-label={'Go to hyvlade produkter'}>
           <StyledImage src={woodDummy} alt="image of hyvlade produkter" />
         </Link>
         <TextContainer>
@@ -40,7 +40,7 @@ function CardLinks() {
             Med vårt nya hyvleri kan vi nu förädla råvaror från stock till färdiga produkter som golv och lister. Vi
             erbjuder även paneler i olika lövträslag och utseenden.
           </Text>
-          <Link to="/produkter/hyvlade-produkter">
+          <Link to="/produkter/hyvlade-produkter aria-label={'Go to hyvlade produkter'}">
             <ButtonContainer>
               <StyledButton to="/produkter/hyvlade-produkter" ariaLabel="Läs mer om hyvlade produkter">
                 Läs mer
@@ -50,7 +50,7 @@ function CardLinks() {
         </TextContainer>
       </Column>
       <Column>
-        <Link to="/produkter/special-produkter">
+        <Link to="/produkter/special-produkter" aria-label={'Go to special produkter'}>
           <StyledImage src={HorseBox} alt="Image of Special produkter" />
         </Link>
         <TextContainer>
@@ -59,9 +59,13 @@ function CardLinks() {
             Vi sågar virke upp till 7 meter långt och 400x400 mm stort samt tillverkar specialbeställda paneler och
             lister efter kundens önskemål.
           </Text>
-          <Link to="/produkter/special-produkter">
+          <Link to="/produkter/special-produkter" aria-label={'Go to special produkter'}>
             <ButtonContainer>
-              <StyledButton to="/produkter/special-produkter" ariaLabel="Läs mer">
+              <StyledButton
+                to="/produkter/special-produkter"
+                ariaLabel="Läs mer"
+                aria-label={'Go to special produkter'}
+              >
                 Läs mer
               </StyledButton>
             </ButtonContainer>
@@ -69,7 +73,7 @@ function CardLinks() {
         </TextContainer>
       </Column>
       <Column>
-        <Link to="/produkter/limfog">
+        <Link to="/produkter/limfog" aria-label={'Go to limfog'}>
           <StyledImage src={Limfog} alt="dummy" />
         </Link>
         <TextContainer>
@@ -78,7 +82,7 @@ function CardLinks() {
             Vi erbjuder skräddarsydda lösningar som hyllplan, bordsskivor och bänkskivor i exakta mått, färdigputsade
             och med möjlighet till ytbehandling.
           </Text>
-          <Link to="/produkter/limfog">
+          <Link to="/produkter/limfog" aria-label={'Go to limfog'}>
             <ButtonContainer>
               <StyledButton to="/produkter/limfog" ariaLabel="Läs mer">
                 Läs mer

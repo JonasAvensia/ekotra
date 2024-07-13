@@ -19,7 +19,7 @@ function SpecialProducts() {
         <Text>
           Eken är genom sitt hårda och röt tåliga virke ett träslag som lämpar sig mycket väl som stallinredning.
         </Text>
-        <Text>Att det sedan ger stallet ett exklusivt intryck är bonus.</Text>
+        <Text>Att det sedan ger stallet ett exklusivt intryck är en bonus.</Text>
       </ImageAndText>
       <SmallList showType />
     </>
