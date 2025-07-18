@@ -5,6 +5,7 @@ import H3 from '../../Shared/Generic/H3';
 import LazyLoadImage from './LazyLoadImage';
 import Button from './Button';
 import { media } from '@glitz/core';
+import { memo } from 'react';
 interface HeroProps {
   src: string;
   alt: string;
@@ -37,7 +38,7 @@ function Hero(props: HeroProps) {
   );
 }
 
-export default Hero;
+export default memo(Hero);
 
 const HeroContainer = styled.div({
   position: 'relative',

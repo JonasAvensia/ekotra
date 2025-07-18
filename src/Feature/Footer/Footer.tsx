@@ -19,11 +19,20 @@ function Footer() {
   return (
     <FooterContainer>
       <Container>
+        <LogoContainer>
+          <StyledLogo src={FooterLogo} alt="footer logo" />
+        </LogoContainer>
         <Wrapper>
-          <Column>
-            <StyledLogo src={FooterLogo} alt="footer logo" />
-          </Column>
-          <Column>
+          <Column
+            css={{
+              ...media(
+                { maxWidth: '500px' },
+                {
+                  width: '100%',
+                },
+              ),
+            }}
+          >
             <Title>Ekoträ</Title>
             <Text>Äpplaryd 3</Text>
             <Text>360 30 Lammhult</Text>
@@ -47,7 +56,7 @@ function Footer() {
           </Column>
         </Wrapper>
       </Container>
-      <CopyRightContainer>Copyright © 2024 EME Aktiv</CopyRightContainer>
+      <CopyRightContainer>Copyright © 2025 EME Aktiv</CopyRightContainer>
     </FooterContainer>
   );
 }
@@ -56,6 +65,9 @@ export default Footer;
 
 const FooterContainer = styled.footer({
   backgroundColor: DefaulBackgroundColor,
+  padding: {
+    x: medium,
+  },
 });
 
 const Container = styled(AppearanceBlock, {
@@ -87,12 +99,6 @@ const Column = styled.li({
   margin: {
     right: large,
   },
-  ...media(
-    { maxWidth: '1025px' },
-    {
-      width: '100%',
-    },
-  ),
 });
 
 const Title = styled(H3, {
@@ -124,6 +130,20 @@ const CopyRightContainer = styled.div({
   padding: {
     y: medium,
   },
+});
+
+const LogoContainer = styled.div({
+  display: 'flex',
+  padding: {
+    top: medium,
+  },
+  marginBottom: medium,
+  ...media(
+    { maxWidth: '1025px' },
+    {
+      justifyContent: 'center',
+    },
+  ),
 });
 
 const StyledLogo = styled(LazyLoadImage, {

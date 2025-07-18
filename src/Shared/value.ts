@@ -30,6 +30,7 @@ export const AppearanceBlock = styled.div({
     { maxWidth: '1025px' },
     {
       maxWidth: '100vw',
+      width: '100%',
     },
   ),
 });

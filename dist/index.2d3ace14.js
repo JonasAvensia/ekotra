@@ -34806,7 +34806,7 @@ $RefreshReg$(_c1, "Text");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../Feature/Components/CardLinks":"4IVZq","../Feature/Components/Hero":"8WNwH","../Feature/Components/ImageAndText":"8HWo8","../Assets/acorn.jpg":"dMYuz","../Feature/Components/TextList":"5S2tu","../Assets/forrest.jpg":"3nPrl","../Assets/oak-boards.jpg":"lVzFd","../Assets/shipping.png":"1jote","@glitz/react":"bAXm1","../Shared/Generic/H3":"iGEMB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Shared/Generic/H2":"au95a","../Shared/value":"9VKej"}],"4IVZq":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../Feature/Components/CardLinks":"4IVZq","../Feature/Components/Hero":"8WNwH","../Feature/Components/ImageAndText":"8HWo8","../Assets/acorn.jpg":"dMYuz","../Feature/Components/TextList":"5S2tu","../Assets/forrest.jpg":"3nPrl","../Assets/oak-boards.jpg":"lVzFd","../Assets/shipping.png":"1jote","@glitz/react":"bAXm1","../Shared/Generic/H3":"iGEMB","../Shared/Generic/H2":"au95a","../Shared/value":"9VKej","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4IVZq":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$54ca = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36717,7 +36717,8 @@ const AppearanceBlock = (0, _react.styled).div({
     ...(0, _core.media)({
         maxWidth: "1025px"
     }, {
-        maxWidth: "100vw"
+        maxWidth: "100vw",
+        width: "100%"
     })
 });
 const Text = (0, _react.styled).p({});
@@ -37130,6 +37131,7 @@ var _lazyLoadImageDefault = parcelHelpers.interopDefault(_lazyLoadImage);
 var _button = require("./Button");
 var _buttonDefault = parcelHelpers.interopDefault(_button);
 var _core = require("@glitz/core");
+var _react1 = require("react");
 function Hero(props) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeroContainer, {
         children: [
@@ -37141,20 +37143,20 @@ function Hero(props) {
                                 children: props.title
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/Hero.tsx",
-                                lineNumber: 20,
+                                lineNumber: 21,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledH3, {
                                 children: props.description
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/Hero.tsx",
-                                lineNumber: 21,
+                                lineNumber: 22,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/Feature/Components/Hero.tsx",
-                        lineNumber: 19,
+                        lineNumber: 20,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
@@ -37163,13 +37165,13 @@ function Hero(props) {
                         children: "Kontakta oss"
                     }, void 0, false, {
                         fileName: "src/Feature/Components/Hero.tsx",
-                        lineNumber: 23,
+                        lineNumber: 24,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Feature/Components/Hero.tsx",
-                lineNumber: 18,
+                lineNumber: 19,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ImageContainer, {
@@ -37178,12 +37180,12 @@ function Hero(props) {
                     alt: props.alt
                 }, void 0, false, {
                     fileName: "src/Feature/Components/Hero.tsx",
-                    lineNumber: 28,
+                    lineNumber: 29,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/Feature/Components/Hero.tsx",
-                lineNumber: 27,
+                lineNumber: 28,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledBlock, {
@@ -37193,43 +37195,43 @@ function Hero(props) {
                             children: props.title
                         }, void 0, false, {
                             fileName: "src/Feature/Components/Hero.tsx",
-                            lineNumber: 32,
+                            lineNumber: 33,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledH3, {
                             children: props.description
                         }, void 0, false, {
                             fileName: "src/Feature/Components/Hero.tsx",
-                            lineNumber: 33,
+                            lineNumber: 34,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/Feature/Components/Hero.tsx",
-                    lineNumber: 31,
+                    lineNumber: 32,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/Feature/Components/Hero.tsx",
-                lineNumber: 30,
+                lineNumber: 31,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Feature/Components/Hero.tsx",
-        lineNumber: 17,
+        lineNumber: 18,
         columnNumber: 5
     }, this);
 }
 _c = Hero;
-exports.default = Hero;
+exports.default = /*#__PURE__*/ _c1 = (0, _react1.memo)(Hero);
 const HeroContainer = (0, _react.styled).div({
     position: "relative",
     overflow: "hidden"
 });
-_c1 = HeroContainer;
+_c2 = HeroContainer;
 const TextContainer = (0, _react.styled).div();
-_c2 = TextContainer;
+_c3 = TextContainer;
 const StyledBlock = (0, _react.styled)((0, _value.Block), {
     display: "none",
     ...(0, _core.media)({
@@ -37238,7 +37240,7 @@ const StyledBlock = (0, _react.styled)((0, _value.Block), {
         display: "block"
     })
 });
-_c3 = StyledBlock;
+_c4 = StyledBlock;
 const TextOverlay = (0, _react.styled).div({
     display: "flex",
     justifyContent: "space-between",
@@ -37264,7 +37266,7 @@ const TextOverlay = (0, _react.styled).div({
         display: "none"
     })
 });
-_c4 = TextOverlay;
+_c5 = TextOverlay;
 const StyledButton = (0, _react.styled)((0, _buttonDefault.default), {
     backgroundColor: "#fff",
     color: "black",
@@ -37284,11 +37286,11 @@ const StyledButton = (0, _react.styled)((0, _buttonDefault.default), {
         }
     })
 });
-_c5 = StyledButton;
+_c6 = StyledButton;
 const StyledH3 = (0, _react.styled)((0, _h3Default.default), {
     fontStyle: "italic"
 });
-_c6 = StyledH3;
+_c7 = StyledH3;
 const ImageContainer = (0, _react.styled).div({
     position: "relative",
     width: "100%",
@@ -37300,30 +37302,31 @@ const ImageContainer = (0, _react.styled).div({
         height: "300px"
     })
 });
-_c7 = ImageContainer;
+_c8 = ImageContainer;
 const Image = (0, _react.styled)((0, _lazyLoadImageDefault.default), {
     width: "100%",
     height: "100%",
     objectFit: "cover"
 });
-_c8 = Image;
-var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8;
+_c9 = Image;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9;
 $RefreshReg$(_c, "Hero");
-$RefreshReg$(_c1, "HeroContainer");
-$RefreshReg$(_c2, "TextContainer");
-$RefreshReg$(_c3, "StyledBlock");
-$RefreshReg$(_c4, "TextOverlay");
-$RefreshReg$(_c5, "StyledButton");
-$RefreshReg$(_c6, "StyledH3");
-$RefreshReg$(_c7, "ImageContainer");
-$RefreshReg$(_c8, "Image");
+$RefreshReg$(_c1, "%default%");
+$RefreshReg$(_c2, "HeroContainer");
+$RefreshReg$(_c3, "TextContainer");
+$RefreshReg$(_c4, "StyledBlock");
+$RefreshReg$(_c5, "TextOverlay");
+$RefreshReg$(_c6, "StyledButton");
+$RefreshReg$(_c7, "StyledH3");
+$RefreshReg$(_c8, "ImageContainer");
+$RefreshReg$(_c9, "Image");
 
   $parcel$ReactRefreshHelpers$bb69.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/Generic/H1":"fmZc4","../../Shared/value":"9VKej","../../Shared/Generic/H3":"iGEMB","./LazyLoadImage":"6qRec","./Button":"at8Gv","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fmZc4":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/Generic/H1":"fmZc4","../../Shared/value":"9VKej","../../Shared/Generic/H3":"iGEMB","./LazyLoadImage":"6qRec","./Button":"at8Gv","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"fmZc4":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "headingReset", ()=>headingReset);
@@ -40446,6 +40449,9 @@ const StyledHeader = (0, _react.styled).header({
             width: "2px",
             color: "#004A55"
         }
+    },
+    margin: {
+        bottom: (0, _value.medium)
     }
 });
 _c1 = StyledHeader;
@@ -40514,12 +40520,18 @@ function Compact({ menuLinks }) {
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CompactContainer, {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _button.PlainButton), {
-                ariaLabel: "Home",
-                onClick: ()=>setIsOpen(true),
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).Img, {
-                    src: (0, _menuSvgDefault.default),
-                    width: 24
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
+                to: "/",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LogoContainer, {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
+                        src: (0, _logoPngDefault.default),
+                        alt: "Logo",
+                        className: "logo"
+                    }, void 0, false, {
+                        fileName: "src/Feature/Header/Compact.tsx",
+                        lineNumber: 25,
+                        columnNumber: 11
+                    }, this)
                 }, void 0, false, {
                     fileName: "src/Feature/Header/Compact.tsx",
                     lineNumber: 24,
@@ -40530,26 +40542,20 @@ function Compact({ menuLinks }) {
                 lineNumber: 23,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
-                to: "/",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LogoContainer, {
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
-                        src: (0, _logoPngDefault.default),
-                        alt: "Logo",
-                        className: "logo"
-                    }, void 0, false, {
-                        fileName: "src/Feature/Header/Compact.tsx",
-                        lineNumber: 28,
-                        columnNumber: 11
-                    }, this)
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _button.PlainButton), {
+                ariaLabel: "Home",
+                onClick: ()=>setIsOpen(true),
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).Img, {
+                    src: (0, _menuSvgDefault.default),
+                    width: 24
                 }, void 0, false, {
                     fileName: "src/Feature/Header/Compact.tsx",
-                    lineNumber: 27,
+                    lineNumber: 29,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/Feature/Header/Compact.tsx",
-                lineNumber: 26,
+                lineNumber: 28,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Flyout, {
@@ -41173,153 +41179,162 @@ function Footer() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FooterContainer, {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Wrapper, {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledLogo, {
-                                src: (0, _footerLogoPngDefault.default),
-                                alt: "footer logo"
-                            }, void 0, false, {
-                                fileName: "src/Feature/Footer/Footer.tsx",
-                                lineNumber: 24,
-                                columnNumber: 13
-                            }, this)
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LogoContainer, {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledLogo, {
+                            src: (0, _footerLogoPngDefault.default),
+                            alt: "footer logo"
                         }, void 0, false, {
                             fileName: "src/Feature/Footer/Footer.tsx",
                             lineNumber: 23,
                             columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {
-                                    children: "Ekotr\xe4"
-                                }, void 0, false, {
-                                    fileName: "src/Feature/Footer/Footer.tsx",
-                                    lineNumber: 27,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                                    children: "\xc4pplaryd 3"
-                                }, void 0, false, {
-                                    fileName: "src/Feature/Footer/Footer.tsx",
-                                    lineNumber: 28,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                                    children: "360 30 Lammhult"
-                                }, void 0, false, {
-                                    fileName: "src/Feature/Footer/Footer.tsx",
-                                    lineNumber: 29,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(A, {
-                                        href: "tel:0046703278734",
-                                        children: "070-3278734"
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/Feature/Footer/Footer.tsx",
+                        lineNumber: 22,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Wrapper, {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
+                                css: {
+                                    ...(0, _core.media)({
+                                        maxWidth: "500px"
+                                    }, {
+                                        width: "100%"
+                                    })
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {
+                                        children: "Ekotr\xe4"
                                     }, void 0, false, {
                                         fileName: "src/Feature/Footer/Footer.tsx",
-                                        lineNumber: 31,
-                                        columnNumber: 15
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "src/Feature/Footer/Footer.tsx",
-                                    lineNumber: 30,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Feature/Footer/Footer.tsx",
-                            lineNumber: 26,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {
-                                    children: "Katalog"
-                                }, void 0, false, {
-                                    fileName: "src/Feature/Footer/Footer.tsx",
-                                    lineNumber: 35,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
-                                        to: "/prislista",
-                                        children: "Prislista"
+                                        lineNumber: 36,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                                        children: "\xc4pplaryd 3"
                                     }, void 0, false, {
                                         fileName: "src/Feature/Footer/Footer.tsx",
                                         lineNumber: 37,
-                                        columnNumber: 15
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "src/Feature/Footer/Footer.tsx",
-                                    lineNumber: 36,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
-                                        to: "/produkter",
-                                        children: "Produkter"
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                                        children: "360 30 Lammhult"
                                     }, void 0, false, {
                                         fileName: "src/Feature/Footer/Footer.tsx",
-                                        lineNumber: 40,
-                                        columnNumber: 15
+                                        lineNumber: 38,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(A, {
+                                            href: "tel:0046703278734",
+                                            children: "070-3278734"
+                                        }, void 0, false, {
+                                            fileName: "src/Feature/Footer/Footer.tsx",
+                                            lineNumber: 40,
+                                            columnNumber: 15
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Footer/Footer.tsx",
+                                        lineNumber: 39,
+                                        columnNumber: 13
                                     }, this)
-                                }, void 0, false, {
-                                    fileName: "src/Feature/Footer/Footer.tsx",
-                                    lineNumber: 39,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Feature/Footer/Footer.tsx",
-                            lineNumber: 34,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {
-                                    children: "\xd6ppettider"
-                                }, void 0, false, {
-                                    fileName: "src/Feature/Footer/Footer.tsx",
-                                    lineNumber: 44,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                                    children: "M\xe5ndag - fredag 07.00-18.00"
-                                }, void 0, false, {
-                                    fileName: "src/Feature/Footer/Footer.tsx",
-                                    lineNumber: 45,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                                    children: "L\xf6rdag - s\xf6ndag 09.00-15.00"
-                                }, void 0, false, {
-                                    fileName: "src/Feature/Footer/Footer.tsx",
-                                    lineNumber: 46,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Feature/Footer/Footer.tsx",
-                            lineNumber: 43,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Feature/Footer/Footer.tsx",
-                    lineNumber: 22,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Feature/Footer/Footer.tsx",
+                                lineNumber: 26,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {
+                                        children: "Katalog"
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Footer/Footer.tsx",
+                                        lineNumber: 44,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
+                                            to: "/prislista",
+                                            children: "Prislista"
+                                        }, void 0, false, {
+                                            fileName: "src/Feature/Footer/Footer.tsx",
+                                            lineNumber: 46,
+                                            columnNumber: 15
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Footer/Footer.tsx",
+                                        lineNumber: 45,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
+                                            to: "/produkter",
+                                            children: "Produkter"
+                                        }, void 0, false, {
+                                            fileName: "src/Feature/Footer/Footer.tsx",
+                                            lineNumber: 49,
+                                            columnNumber: 15
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Footer/Footer.tsx",
+                                        lineNumber: 48,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Feature/Footer/Footer.tsx",
+                                lineNumber: 43,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {
+                                        children: "\xd6ppettider"
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Footer/Footer.tsx",
+                                        lineNumber: 53,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                                        children: "M\xe5ndag - fredag 07.00-18.00"
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Footer/Footer.tsx",
+                                        lineNumber: 54,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                                        children: "L\xf6rdag - s\xf6ndag 09.00-15.00"
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Footer/Footer.tsx",
+                                        lineNumber: 55,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Feature/Footer/Footer.tsx",
+                                lineNumber: 52,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Feature/Footer/Footer.tsx",
+                        lineNumber: 25,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "src/Feature/Footer/Footer.tsx",
                 lineNumber: 21,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CopyRightContainer, {
-                children: "Copyright \xa9 2024 EME Aktiv"
+                children: "Copyright \xa9 2025 EME Aktiv"
             }, void 0, false, {
                 fileName: "src/Feature/Footer/Footer.tsx",
-                lineNumber: 50,
+                lineNumber: 59,
                 columnNumber: 7
             }, this)
         ]
@@ -41332,7 +41347,10 @@ function Footer() {
 _c = Footer;
 exports.default = Footer;
 const FooterContainer = (0, _react.styled).footer({
-    backgroundColor: (0, _value.DefaulBackgroundColor)
+    backgroundColor: (0, _value.DefaulBackgroundColor),
+    padding: {
+        x: (0, _value.medium)
+    }
 });
 _c1 = FooterContainer;
 const Container = (0, _react.styled)((0, _value.AppearanceBlock), {
@@ -41365,12 +41383,7 @@ const Column = (0, _react.styled).li({
     },
     margin: {
         right: (0, _value.large)
-    },
-    ...(0, _core.media)({
-        maxWidth: "1025px"
-    }, {
-        width: "100%"
-    })
+    }
 });
 _c4 = Column;
 const Title = (0, _react.styled)((0, _h3Default.default), {
@@ -41404,11 +41417,24 @@ const CopyRightContainer = (0, _react.styled).div({
     }
 });
 _c8 = CopyRightContainer;
+const LogoContainer = (0, _react.styled).div({
+    display: "flex",
+    padding: {
+        top: (0, _value.medium)
+    },
+    marginBottom: (0, _value.medium),
+    ...(0, _core.media)({
+        maxWidth: "1025px"
+    }, {
+        justifyContent: "center"
+    })
+});
+_c9 = LogoContainer;
 const StyledLogo = (0, _react.styled)((0, _lazyLoadImageDefault.default), {
     maxWidth: "200px"
 });
-_c9 = StyledLogo;
-var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9;
+_c10 = StyledLogo;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10;
 $RefreshReg$(_c, "Footer");
 $RefreshReg$(_c1, "FooterContainer");
 $RefreshReg$(_c2, "Container");
@@ -41418,7 +41444,8 @@ $RefreshReg$(_c5, "Title");
 $RefreshReg$(_c6, "Text");
 $RefreshReg$(_c7, "A");
 $RefreshReg$(_c8, "CopyRightContainer");
-$RefreshReg$(_c9, "StyledLogo");
+$RefreshReg$(_c9, "LogoContainer");
+$RefreshReg$(_c10, "StyledLogo");
 
   $parcel$ReactRefreshHelpers$7d26.postlude(module);
 } finally {

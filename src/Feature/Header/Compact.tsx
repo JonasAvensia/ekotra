@@ -20,14 +20,14 @@ function Compact({ menuLinks }: MenuLinkstype) {
 
   return (
     <CompactContainer>
-      <PlainButton ariaLabel="Home" onClick={() => setIsOpen(true)}>
-        <styled.Img src={Menu} width={24} />
-      </PlainButton>
       <NavLink to="/">
         <LogoContainer>
           <StyledImage src={logo} alt="Logo" className="logo" />
         </LogoContainer>
       </NavLink>
+      <PlainButton ariaLabel="Home" onClick={() => setIsOpen(true)}>
+        <styled.Img src={Menu} width={24} />
+      </PlainButton>
       <Flyout css={isOpen && { transform: 'translateX(0%)' }}>
         <FlyoutHeader>
           <StyledCloseButton onClick={() => setIsOpen(false)} ariaLabel="close flyout">
