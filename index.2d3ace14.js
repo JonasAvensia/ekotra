@@ -40631,7 +40631,7 @@ function Compact({ menuLinks }) {
                                                         onClick: ()=>setIsOpen(false),
                                                         "aria-label": `Go to ${link.url}`,
                                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Link, {
-                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LinkText, {
+                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).Span, {
                                                                 children: [
                                                                     "Urval ",
                                                                     link.name
@@ -40656,7 +40656,7 @@ function Compact({ menuLinks }) {
                                                             "aria-label": `Go to ${subLink.url}`,
                                                             onClick: ()=>setIsOpen(false),
                                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Link, {
-                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LinkText, {
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).Span, {
                                                                     children: subLink.name
                                                                 }, void 0, false, {
                                                                     fileName: "src/Feature/Header/Compact.tsx",
@@ -40857,7 +40857,9 @@ const Link = (0, _react.styled).li({
     }
 });
 _c10 = Link;
-const LinkText = (0, _react.styled).span();
+const LinkText = (0, _react.styled).span({
+    fontWeight: "bold"
+});
 _c11 = LinkText;
 const DropDownButton = (0, _react.styled)((0, _button.PlainButton), {
     width: "100%"
@@ -40872,7 +40874,7 @@ const SubMenu = (0, _react.styled).div({
     width: "100%",
     display: "flex",
     flexDirection: "column",
-    fontWeight: "bold",
+    fontWeight: "normal",
     overflow: "hidden",
     transition: {
         property: "max-height",
