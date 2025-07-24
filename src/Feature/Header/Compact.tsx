@@ -52,7 +52,7 @@ function Compact({ menuLinks }: MenuLinkstype) {
                     <SubMenuWrapper>
                       <SubMenu>
                         <Link>
-                          <LinkText>{link.name} test</LinkText>
+                          <LinkText>{link.name}</LinkText>
                         </Link>
                         {link.subMenu.map(subLink => (
                           <NavLink
