@@ -8,13 +8,13 @@
     "description": "A React application built with Parcel and TypeScript.",
     "icons": [
         {
-            "src": "/src/Assets/fav-icon.png",
-            "sizes": "192x192",
+            "src": "/fav-icon.png",
+            "sizes": "147x126",
             "type": "image/png"
         },
         {
-            "src": "/src/Assets/fav-icon.png",
-            "sizes": "512x512",
+            "src": "/fav-icon.png",
+            "sizes": "147x126",
             "type": "image/png"
         }
     ]

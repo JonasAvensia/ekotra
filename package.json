@@ -1,12 +1,11 @@
 {
-  "devDependencies": {
-    "@parcel/packager-raw-url": "^2.12.0",
-    "@parcel/transformer-webmanifest": "^2.12.0",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "parcel": "^2.12.0",
-    "process": "^0.11.10",
-    "typescript": "^5.4.5"
+  "name": "ekotra",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url /ekotra/",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@glitz/react": "^4.0.3",
@@ -16,9 +15,15 @@
     "react-router": "^6.24.0",
     "react-router-dom": "^6.24.0"
   },
-  "source": "src/index.html",
-  "scripts": {
-    "start": "parcel",
-    "build": "parcel build src/index.html --public-url ./"
-  }
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.12.0",
+    "@parcel/transformer-webmanifest": "^2.12.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "parcel": "^2.12.0",
+    "process": "^0.11.10",
+    "typescript": "^5.4.5",
+    "gh-pages": "^6.0.0"
+  },
+  "homepage": "https://JonasAvensia.github.io/ekotra"
 }

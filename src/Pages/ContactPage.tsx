@@ -12,7 +12,7 @@ function ContactPage() {
         src={Sign}
         alt="Hero image oak"
         title="Kontakta oss"
-        description="Kontakt oss om ni vill ha Pris på sågat virke okant och kantat"
+        description="Kontakta oss om ni vill ha Pris på sågat virke okant och kantat"
       />
       <ImageAndText src={Sign} title="Ekoträ" textFirst>
         <H4>Äpplaryd 3</H4>

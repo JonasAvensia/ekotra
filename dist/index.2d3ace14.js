@@ -27238,6 +27238,7 @@ const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.GlitzProvider), {
         glitz: (0, _glitzOptions.glitz),
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
+            basename: "/ekotra",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                     fileName: "src/App.tsx",
@@ -34881,7 +34882,6 @@ function CardLinks() {
                                 "aria-label": "Go to sagade produkter",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
-                                        to: "/produkter/sagade-produkter",
                                         ariaLabel: "L\xe4s mer",
                                         children: "L\xe4s mer"
                                     }, void 0, false, {
@@ -34921,12 +34921,12 @@ function CardLinks() {
                             alt: "image of hyvlade produkter"
                         }, void 0, false, {
                             fileName: "src/Feature/Components/CardLinks.tsx",
-                            lineNumber: 35,
+                            lineNumber: 33,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 34,
+                        lineNumber: 32,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
@@ -34935,48 +34935,48 @@ function CardLinks() {
                                 children: "Hyvlade Produkter"
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 38,
+                                lineNumber: 36,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                                 children: "Med v\xe5rt nya hyvleri kan vi nu f\xf6r\xe4dla r\xe5varor fr\xe5n stock till f\xe4rdiga produkter som golv och lister. Vi erbjuder \xe4ven paneler i olika l\xf6vtr\xe4slag och utseenden."
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 39,
+                                lineNumber: 37,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/produkter/hyvlade-produkter aria-label={'Go to hyvlade produkter'}",
+                                to: "/produkter/hyvlade-produkter",
+                                "aria-label": "Go to hyvlade produkter",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
-                                        to: "/produkter/hyvlade-produkter",
                                         ariaLabel: "L\xe4s mer om hyvlade produkter",
                                         children: "L\xe4s mer"
                                     }, void 0, false, {
                                         fileName: "src/Feature/Components/CardLinks.tsx",
-                                        lineNumber: 45,
+                                        lineNumber: 43,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "src/Feature/Components/CardLinks.tsx",
-                                    lineNumber: 44,
+                                    lineNumber: 42,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 43,
+                                lineNumber: 41,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 37,
+                        lineNumber: 35,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Feature/Components/CardLinks.tsx",
-                lineNumber: 33,
+                lineNumber: 31,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
@@ -34989,12 +34989,12 @@ function CardLinks() {
                             alt: "Image of Special produkter"
                         }, void 0, false, {
                             fileName: "src/Feature/Components/CardLinks.tsx",
-                            lineNumber: 54,
+                            lineNumber: 50,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 53,
+                        lineNumber: 49,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
@@ -35003,14 +35003,14 @@ function CardLinks() {
                                 children: "Special Produkter"
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 57,
+                                lineNumber: 53,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                                 children: "Vi s\xe5gar virke upp till 7 meter l\xe5ngt och 400x400 mm stort samt tillverkar specialbest\xe4llda paneler och lister efter kundens \xf6nskem\xe5l."
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 58,
+                                lineNumber: 54,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -35018,35 +35018,34 @@ function CardLinks() {
                                 "aria-label": "Go to special produkter",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
-                                        to: "/produkter/special-produkter",
                                         ariaLabel: "L\xe4s mer",
                                         "aria-label": "Go to special produkter",
                                         children: "L\xe4s mer"
                                     }, void 0, false, {
                                         fileName: "src/Feature/Components/CardLinks.tsx",
-                                        lineNumber: 64,
+                                        lineNumber: 60,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "src/Feature/Components/CardLinks.tsx",
-                                    lineNumber: 63,
+                                    lineNumber: 59,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 62,
+                                lineNumber: 58,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 56,
+                        lineNumber: 52,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Feature/Components/CardLinks.tsx",
-                lineNumber: 52,
+                lineNumber: 48,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
@@ -35059,12 +35058,12 @@ function CardLinks() {
                             alt: "dummy"
                         }, void 0, false, {
                             fileName: "src/Feature/Components/CardLinks.tsx",
-                            lineNumber: 77,
+                            lineNumber: 69,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 76,
+                        lineNumber: 68,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
@@ -35073,49 +35072,41 @@ function CardLinks() {
                                 children: "Limfog"
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 80,
+                                lineNumber: 72,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                                 children: "Vi erbjuder skr\xe4ddarsydda l\xf6sningar som hyllplan, bordsskivor och b\xe4nkskivor i exakta m\xe5tt, f\xe4rdigputsade och med m\xf6jlighet till ytbehandling."
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 81,
+                                lineNumber: 73,
                                 columnNumber: 11
                             }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/produkter/limfog",
-                                "aria-label": "Go to limfog",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
-                                        to: "/produkter/limfog",
-                                        ariaLabel: "L\xe4s mer",
-                                        children: "L\xe4s mer"
-                                    }, void 0, false, {
-                                        fileName: "src/Feature/Components/CardLinks.tsx",
-                                        lineNumber: 87,
-                                        columnNumber: 15
-                                    }, this)
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
+                                    to: "/produkter/limfog",
+                                    ariaLabel: "L\xe4s mer",
+                                    children: "L\xe4s mer"
                                 }, void 0, false, {
                                     fileName: "src/Feature/Components/CardLinks.tsx",
-                                    lineNumber: 86,
+                                    lineNumber: 79,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 85,
+                                lineNumber: 78,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 79,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Feature/Components/CardLinks.tsx",
-                lineNumber: 75,
+                lineNumber: 67,
                 columnNumber: 7
             }, this)
         ]
@@ -35139,6 +35130,9 @@ const Container = (0, _react.styled)((0, _value.Block), {
 });
 _c1 = Container;
 const Column = (0, _react.styled).div({
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
     width: "100%",
     backgroundColor: "#fff"
 });
@@ -37326,7 +37320,7 @@ $RefreshReg$(_c9, "Image");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/Generic/H1":"fmZc4","../../Shared/value":"9VKej","../../Shared/Generic/H3":"iGEMB","./LazyLoadImage":"6qRec","./Button":"at8Gv","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"fmZc4":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/Generic/H1":"fmZc4","../../Shared/value":"9VKej","../../Shared/Generic/H3":"iGEMB","./LazyLoadImage":"6qRec","./Button":"at8Gv","@glitz/core":"5ehrf","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fmZc4":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "headingReset", ()=>headingReset);
@@ -38709,7 +38703,14 @@ function ContactPage() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h4Default.default), {
-                        children: "070-3278734"
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(A, {
+                            href: "tel:070-3278734",
+                            children: "070-3278734"
+                        }, void 0, false, {
+                            fileName: "src/Pages/ContactPage.tsx",
+                            lineNumber: 22,
+                            columnNumber: 11
+                        }, this)
                     }, void 0, false, {
                         fileName: "src/Pages/ContactPage.tsx",
                         lineNumber: 21,
@@ -38721,38 +38722,38 @@ function ContactPage() {
                             children: "info@eme.nu"
                         }, void 0, false, {
                             fileName: "src/Pages/ContactPage.tsx",
-                            lineNumber: 23,
+                            lineNumber: 25,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "src/Pages/ContactPage.tsx",
-                        lineNumber: 22,
+                        lineNumber: 24,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                         fileName: "src/Pages/ContactPage.tsx",
-                        lineNumber: 25,
+                        lineNumber: 27,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
                         children: "\xd6ppettider"
                     }, void 0, false, {
                         fileName: "src/Pages/ContactPage.tsx",
-                        lineNumber: 26,
+                        lineNumber: 28,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h4Default.default), {
                         children: "M\xe5ndag - fredag 07.00-18.00"
                     }, void 0, false, {
                         fileName: "src/Pages/ContactPage.tsx",
-                        lineNumber: 27,
+                        lineNumber: 29,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h4Default.default), {
                         children: "L\xf6rdag - s\xf6ndag 09.00-15.00"
                     }, void 0, false, {
                         fileName: "src/Pages/ContactPage.tsx",
-                        lineNumber: 28,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, this)
                 ]
@@ -39136,12 +39137,12 @@ function List(props) {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _productCardDefault.default), {
                             item: data,
                             numColumns: numColumns
-                        }, data.name, false, {
+                        }, void 0, false, {
                             fileName: "src/Feature/Components/Lits.tsx",
                             lineNumber: 43,
                             columnNumber: 13
                         }, this)
-                    }, void 0, false, {
+                    }, data.name, false, {
                         fileName: "src/Feature/Components/Lits.tsx",
                         lineNumber: 42,
                         columnNumber: 11
@@ -40588,7 +40589,7 @@ function Compact({ menuLinks }) {
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Navbar, {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Links, {
-                            children: menuLinks.map((link, index)=>link.subMenu ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                            children: menuLinks.map((link, index)=>link.subMenu ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).Div, {
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(DropDownButton, {
                                             onClick: ()=>toggleSubMenu(index),
@@ -40625,9 +40626,21 @@ function Compact({ menuLinks }) {
                                         link.subMenu && openMenuIndex === index && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(SubMenuWrapper, {
                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(SubMenu, {
                                                 children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Link, {
-                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LinkText, {
-                                                            children: link.name
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
+                                                        to: link.url,
+                                                        onClick: ()=>setIsOpen(false),
+                                                        "aria-label": `Go to ${link.url}`,
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Link, {
+                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).Span, {
+                                                                children: [
+                                                                    "Urval ",
+                                                                    link.name
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "src/Feature/Header/Compact.tsx",
+                                                                lineNumber: 56,
+                                                                columnNumber: 29
+                                                            }, this)
                                                         }, void 0, false, {
                                                             fileName: "src/Feature/Header/Compact.tsx",
                                                             lineNumber: 55,
@@ -40643,21 +40656,21 @@ function Compact({ menuLinks }) {
                                                             "aria-label": `Go to ${subLink.url}`,
                                                             onClick: ()=>setIsOpen(false),
                                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Link, {
-                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LinkText, {
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).Span, {
                                                                     children: subLink.name
                                                                 }, void 0, false, {
                                                                     fileName: "src/Feature/Header/Compact.tsx",
-                                                                    lineNumber: 65,
+                                                                    lineNumber: 67,
                                                                     columnNumber: 31
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "src/Feature/Header/Compact.tsx",
-                                                                lineNumber: 64,
+                                                                lineNumber: 66,
                                                                 columnNumber: 29
                                                             }, this)
                                                         }, subLink.name, false, {
                                                             fileName: "src/Feature/Header/Compact.tsx",
-                                                            lineNumber: 58,
+                                                            lineNumber: 60,
                                                             columnNumber: 27
                                                         }, this))
                                                 ]
@@ -40672,7 +40685,11 @@ function Compact({ menuLinks }) {
                                             columnNumber: 21
                                         }, this)
                                     ]
-                                }, void 0, true) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
+                                }, link.name, true, {
+                                    fileName: "src/Feature/Header/Compact.tsx",
+                                    lineNumber: 41,
+                                    columnNumber: 17
+                                }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
                                     to: link.url,
                                     "aria-label": `Go to ${link.url}`,
                                     onClick: ()=>setIsOpen(false),
@@ -40682,7 +40699,7 @@ function Compact({ menuLinks }) {
                                                 children: link.name
                                             }, void 0, false, {
                                                 fileName: "src/Feature/Header/Compact.tsx",
-                                                lineNumber: 76,
+                                                lineNumber: 83,
                                                 columnNumber: 21
                                             }, this),
                                             link.subMenu && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).Img, {
@@ -40691,18 +40708,18 @@ function Compact({ menuLinks }) {
                                                 width: 10
                                             }, void 0, false, {
                                                 fileName: "src/Feature/Header/Compact.tsx",
-                                                lineNumber: 77,
+                                                lineNumber: 84,
                                                 columnNumber: 38
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Feature/Header/Compact.tsx",
-                                        lineNumber: 75,
+                                        lineNumber: 82,
                                         columnNumber: 19
                                     }, this)
-                                }, void 0, false, {
+                                }, link.name, false, {
                                     fileName: "src/Feature/Header/Compact.tsx",
-                                    lineNumber: 74,
+                                    lineNumber: 76,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
@@ -40725,7 +40742,7 @@ function Compact({ menuLinks }) {
                 onClick: ()=>setIsOpen(false)
             }, void 0, false, {
                 fileName: "src/Feature/Header/Compact.tsx",
-                lineNumber: 85,
+                lineNumber: 92,
                 columnNumber: 18
             }, this)
         ]
@@ -40840,9 +40857,13 @@ const Link = (0, _react.styled).li({
     }
 });
 _c10 = Link;
-const LinkText = (0, _react.styled).span();
+const LinkText = (0, _react.styled).span({
+    fontWeight: "bold"
+});
 _c11 = LinkText;
-const DropDownButton = (0, _react.styled)((0, _button.PlainButton), {});
+const DropDownButton = (0, _react.styled)((0, _button.PlainButton), {
+    width: "100%"
+});
 _c12 = DropDownButton;
 const SubMenuWrapper = (0, _react.styled).div({
     display: "flex",
@@ -40853,7 +40874,7 @@ const SubMenu = (0, _react.styled).div({
     width: "100%",
     display: "flex",
     flexDirection: "column",
-    fontWeight: "bold",
+    fontWeight: "normal",
     overflow: "hidden",
     transition: {
         property: "max-height",
@@ -41605,6 +41626,6 @@ $RefreshReg$(_c5, "Text");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","../../Shared/Generic/H2":"au95a","./Button":"at8Gv","@glitz/core":"5ehrf","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["94b1M","1xC6H","4aBH6"], "4aBH6", "parcelRequire94c2")
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","../../Shared/Generic/H2":"au95a","./Button":"at8Gv","@glitz/core":"5ehrf","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["94b1M","1xC6H","4aBH6"], "4aBH6", "parcelRequire34be")
 
 //# sourceMappingURL=index.2d3ace14.js.map

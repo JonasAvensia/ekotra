@@ -13,7 +13,7 @@ function PriceListPage() {
         src={HeroLumber}
         alt="Hero image oak"
         title="Prislista"
-        description="Kontakt oss om ni vill ha Pris på sågat virke okant och kantat"
+        description="Kontakta oss om ni vill ha Pris på sågat virke okant och kantat"
       />
       <PriceList />
       <ImageAndText src={Shipping} title="Frakt" textFirst>

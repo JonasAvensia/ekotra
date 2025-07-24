@@ -15,7 +15,7 @@ function ProductListningPage() {
         src={HeroLumber}
         alt="Hero image oak"
         title="Produkter"
-        description="Kontakt oss om ni vill ha Pris på sågat virke okant och kantat"
+        description="Kontakta oss om ni vill ha Pris på sågat virke okant och kantat"
       />
       <TextList />
       <CardLinks />
