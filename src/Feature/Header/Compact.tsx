@@ -53,7 +53,7 @@ function Compact({ menuLinks }: MenuLinkstype) {
                       <SubMenu>
                         <NavLink to={link.url} onClick={() => setIsOpen(false)} aria-label={`Go to ${link.url}`}>
                           <Link>
-                            <LinkText>Urval {link.name}</LinkText>
+                            <styled.Span>Urval {link.name}</styled.Span>
                           </Link>
                         </NavLink>
                         {link.subMenu.map(subLink => (
@@ -64,7 +64,7 @@ function Compact({ menuLinks }: MenuLinkstype) {
                             onClick={() => setIsOpen(false)}
                           >
                             <Link>
-                              <LinkText>{subLink.name}</LinkText>
+                              <styled.Span>{subLink.name}</styled.Span>
                             </Link>
                           </NavLink>
                         ))}
@@ -200,7 +200,9 @@ const Link = styled.li({
   },
 });
 
-const LinkText = styled.span();
+const LinkText = styled.span({
+  fontWeight: 'bold',
+});
 
 const DropDownButton = styled(PlainButton, {
   width: '100%',
@@ -215,7 +217,7 @@ const SubMenu = styled.div({
   width: '100%',
   display: 'flex',
   flexDirection: 'column',
-  fontWeight: 'bold',
+  fontWeight: 'normal',
   overflow: 'hidden',
   transition: {
     property: 'max-height',
