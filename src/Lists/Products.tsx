@@ -53,13 +53,13 @@ const Strips = [
   {
     name: 'Taklist Ek',
     description: 'Taklist 22*67',
-    price: '56 kr lpm ink moms',
+    price: '56 kr lpm inkl moms',
     image: TaklistEk,
   },
   {
     name: 'Golvlist 22*145 Ek',
     description: 'Ett vackert 1800tals foder här i massiv Ek',
-    price: '148 kr lpm ink moms',
+    price: '148 kr lpm inkl moms',
     image: GolvEkList,
   },
 ];
@@ -80,7 +80,7 @@ const Panels = [
   {
     name: 'Alpanel 15*95',
     description: 'Kvistfri alpanel, kapad efter önskemål',
-    price: '39 kr/lpm ink moms',
+    price: '39 kr/lpm inkl moms',
     image: FasPanel,
   },
 ];
@@ -89,31 +89,31 @@ const products = [
   {
     name: 'Alpanel 15*90 (Bangsund)',
     description: 'Panel för liggande montering i naturkvalitet.',
-    price: '29 kr/lpm ink moms',
+    price: '29 kr/lpm inkl moms',
     image: alpanelImage,
   },
   {
     name: 'Bastupanel softline 15*95',
     description: 'Den klassiska profilen. Naturkvalitet',
-    price: '29 kr/lpm ink moms',
+    price: '29 kr/lpm inkl moms',
     image: Bastu,
   },
   {
     name: 'Ekpanel 15*90 (Bandsund liggande montering)',
     description: 'Panel som ger ett exklusivt intryck.',
-    price: '56 kr/lpm ink moms',
+    price: '56 kr/lpm inkl moms',
     image: Ekpanel1,
   },
   {
     name: 'Ektrall 28*120 Rustik',
     description: 'Svensk ek med rustikt utseende.',
-    price: '42 kr/lpm ink moms',
+    price: '42 kr/lpm inkl moms',
     image: Altanek,
   },
   {
     name: 'Massivt algolv 26*150',
     description: 'Trevlig färg som ger en varm och ombonad känsla.',
-    price: '795 kr/m2 ink moms',
+    price: '795 kr/m2 inkl moms',
     image: algolv2,
   },
   {
@@ -125,7 +125,7 @@ const products = [
   {
     name: 'Pärlspont i ek 15*68',
     description: 'Fin panel med mycket djup.',
-    price: '46 kr/lpm ink moms',
+    price: '46 kr/lpm inkl moms',
     image: Ekpanelparllang,
   },
   {
@@ -137,13 +137,13 @@ const products = [
   {
     name: 'Smyg 16*205 och Foder 14*63',
     description: 'Fin inramning/salning av fönster.',
-    price: 'smyg: 155 kr/lpm foder: 37 kr/lpm ink moms',
+    price: 'smyg: 155 kr/lpm foder: 37 kr/lpm inkl moms',
     image: Smyg,
   },
   {
     name: 'Utvändig ekpanel 21*145',
     description: 'Panelen som ger utsidan det exklusiva intrycket.',
-    price: '64 kr/lpm ink moms',
+    price: '64 kr/lpm inkl moms',
     image: VHus1,
   },
 ];
