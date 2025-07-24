@@ -11,7 +11,7 @@ import ContactLinkBlock from './Feature/Components/ContactLinkBlock';
 const App: React.FC = () => {
   return (
     <GlitzProvider glitz={glitz}>
-      <Router>
+      <Router basename="/ekotra">
         <Header />
         <Page>
           <Routing />
