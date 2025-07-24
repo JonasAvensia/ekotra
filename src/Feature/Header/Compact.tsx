@@ -51,9 +51,11 @@ function Compact({ menuLinks }: MenuLinkstype) {
                   {link.subMenu && openMenuIndex === index && (
                     <SubMenuWrapper>
                       <SubMenu>
-                        <Link>
-                          <LinkText>{link.name}</LinkText>
-                        </Link>
+                        <NavLink to={link.url} onClick={() => setIsOpen(false)} aria-label={`Go to ${link.url}`}>
+                          <Link>
+                            <LinkText>Urval {link.name}</LinkText>
+                          </Link>
+                        </NavLink>
                         {link.subMenu.map(subLink => (
                           <NavLink
                             to={subLink.url}
