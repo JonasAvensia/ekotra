@@ -23,9 +23,7 @@ function CardLinks() {
           <br />
           <Link to="/produkter/sagade-produkter" aria-label={'Go to sagade produkter'}>
             <ButtonContainer>
-              <StyledButton to="/produkter/sagade-produkter" ariaLabel="Läs mer">
-                Läs mer
-              </StyledButton>
+              <StyledButton ariaLabel="Läs mer">Läs mer</StyledButton>
             </ButtonContainer>
           </Link>
         </TextContainer>
@@ -40,11 +38,9 @@ function CardLinks() {
             Med vårt nya hyvleri kan vi nu förädla råvaror från stock till färdiga produkter som golv och lister. Vi
             erbjuder även paneler i olika lövträslag och utseenden.
           </Text>
-          <Link to="/produkter/hyvlade-produkter aria-label={'Go to hyvlade produkter'}">
+          <Link to="/produkter/hyvlade-produkter" aria-label={'Go to hyvlade produkter'}>
             <ButtonContainer>
-              <StyledButton to="/produkter/hyvlade-produkter" ariaLabel="Läs mer om hyvlade produkter">
-                Läs mer
-              </StyledButton>
+              <StyledButton ariaLabel="Läs mer om hyvlade produkter">Läs mer</StyledButton>
             </ButtonContainer>
           </Link>
         </TextContainer>
@@ -61,11 +57,7 @@ function CardLinks() {
           </Text>
           <Link to="/produkter/special-produkter" aria-label={'Go to special produkter'}>
             <ButtonContainer>
-              <StyledButton
-                to="/produkter/special-produkter"
-                ariaLabel="Läs mer"
-                aria-label={'Go to special produkter'}
-              >
+              <StyledButton ariaLabel="Läs mer" aria-label={'Go to special produkter'}>
                 Läs mer
               </StyledButton>
             </ButtonContainer>
@@ -82,13 +74,12 @@ function CardLinks() {
             Vi erbjuder skräddarsydda lösningar som hyllplan, bordsskivor och bänkskivor i exakta mått, färdigputsade
             och med möjlighet till ytbehandling.
           </Text>
-          <Link to="/produkter/limfog" aria-label={'Go to limfog'}>
-            <ButtonContainer>
-              <StyledButton to="/produkter/limfog" ariaLabel="Läs mer">
-                Läs mer
-              </StyledButton>
-            </ButtonContainer>
-          </Link>
+
+          <ButtonContainer>
+            <StyledButton to="/produkter/limfog" ariaLabel="Läs mer">
+              Läs mer
+            </StyledButton>
+          </ButtonContainer>
         </TextContainer>
       </Column>
     </Container>
@@ -110,6 +101,9 @@ const Container = styled(Block, {
 });
 
 const Column = styled.div({
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'space-between',
   width: '100%',
   backgroundColor: '#fff',
 });

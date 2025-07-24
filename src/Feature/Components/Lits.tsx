@@ -39,8 +39,8 @@ function List(props: Prototype) {
         }}
       >
         {list.map(data => (
-          <Column>
-            <ProductCard key={data.name} item={data} numColumns={numColumns} />
+          <Column key={data.name}>
+            <ProductCard item={data} numColumns={numColumns} />
           </Column>
         ))}
       </ListWrapper>

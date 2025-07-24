@@ -38,7 +38,7 @@ function Compact({ menuLinks }: MenuLinkstype) {
           <Links>
             {menuLinks.map((link, index) =>
               link.subMenu ? (
-                <>
+                <styled.Div key={link.name}>
                   <DropDownButton
                     onClick={() => toggleSubMenu(index)}
                     ariaLabel={`Open link dropdown for ${link.name}`}
@@ -52,7 +52,7 @@ function Compact({ menuLinks }: MenuLinkstype) {
                     <SubMenuWrapper>
                       <SubMenu>
                         <Link>
-                          <LinkText>{link.name}</LinkText>
+                          <LinkText>{link.name} test</LinkText>
                         </Link>
                         {link.subMenu.map(subLink => (
                           <NavLink
@@ -69,9 +69,14 @@ function Compact({ menuLinks }: MenuLinkstype) {
                       </SubMenu>
                     </SubMenuWrapper>
                   )}
-                </>
+                </styled.Div>
               ) : (
-                <NavLink to={link.url} aria-label={`Go to ${link.url}`} onClick={() => setIsOpen(false)}>
+                <NavLink
+                  key={link.name}
+                  to={link.url}
+                  aria-label={`Go to ${link.url}`}
+                  onClick={() => setIsOpen(false)}
+                >
                   <Link>
                     <LinkText>{link.name}</LinkText>
                     {link.subMenu && <styled.Img src={Chevron} alt="Link arrow" width={10} />}
@@ -195,7 +200,9 @@ const Link = styled.li({
 
 const LinkText = styled.span();
 
-const DropDownButton = styled(PlainButton, {});
+const DropDownButton = styled(PlainButton, {
+  width: '100%',
+});
 
 const SubMenuWrapper = styled.div({
   display: 'flex',

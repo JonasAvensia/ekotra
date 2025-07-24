@@ -18,7 +18,9 @@ function ContactPage() {
         <H4>Äpplaryd 3</H4>
         <H4>360 30 Lammhult</H4>
         <br />
-        <H4>070-3278734</H4>
+        <H4>
+          <A href="tel:070-3278734">070-3278734</A>
+        </H4>
         <H4>
           <A href="mailto:info@eme.nu">info@eme.nu</A>
         </H4>
