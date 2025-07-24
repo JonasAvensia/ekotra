@@ -27331,6 +27331,8 @@ var _limfog = require("../Pages/Productpage/Limfog");
 var _limfogDefault = parcelHelpers.interopDefault(_limfog);
 var _planedProducts = require("../Pages/Productpage/PlanedProducts");
 var _planedProductsDefault = parcelHelpers.interopDefault(_planedProducts);
+var _aboutUsPage = require("../Pages/AboutUsPage");
+var _aboutUsPageDefault = parcelHelpers.interopDefault(_aboutUsPage);
 function Routing() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
@@ -27438,15 +27440,27 @@ function Routing() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/kontakt",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactPageDefault.default), {}, void 0, false, {
+                        path: "/om-oss",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutUsPageDefault.default), {}, void 0, false, {
                             fileName: "src/Routing/Routing.tsx",
                             lineNumber: 26,
-                            columnNumber: 41
+                            columnNumber: 40
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/Routing/Routing.tsx",
                         lineNumber: 26,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/kontakt",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactPageDefault.default), {}, void 0, false, {
+                            fileName: "src/Routing/Routing.tsx",
+                            lineNumber: 27,
+                            columnNumber: 41
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/Routing/Routing.tsx",
+                        lineNumber: 27,
                         columnNumber: 9
                     }, this)
                 ]
@@ -27468,7 +27482,7 @@ $RefreshReg$(_c, "Routing");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../Pages/HomePage":"gJB5o","../Pages/PriceListPage":"eIucm","../Pages/ProductsListningPage":"3Kqqo","../Pages/ContactPage":"bDqc9","../Pages/ImageArchive":"j1mrX","../Feature/Helper/ScrollToTop":"4Z7Gw","../Pages/Productpage/SawedProducts":"kTUTe","../Pages/Productpage/SpecialProducts":"8F5SM","../Pages/Productpage/Limfog":"l1iBY","../Pages/Productpage/PlanedProducts":"bDJ6V","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../Pages/HomePage":"gJB5o","../Pages/PriceListPage":"eIucm","../Pages/ProductsListningPage":"3Kqqo","../Pages/ContactPage":"bDqc9","../Pages/ImageArchive":"j1mrX","../Feature/Helper/ScrollToTop":"4Z7Gw","../Pages/Productpage/SawedProducts":"kTUTe","../Pages/Productpage/SpecialProducts":"8F5SM","../Pages/Productpage/Limfog":"l1iBY","../Pages/Productpage/PlanedProducts":"bDJ6V","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Pages/AboutUsPage":"3vtcQ"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.24.1
  *
@@ -40325,7 +40339,236 @@ $RefreshReg$(_c, "PlanedProducts");
 },{"react/jsx-dev-runtime":"iTorj","../../Feature/Components/Hero":"8WNwH","../../Feature/Components/Lits":"kNxh3","../../Lists/Products":"hdt1s","../../Assets/trees.jpg":"9CIyB","../../Feature/Components/SmallList":"csIkc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9CIyB":[function(require,module,exports) {
 module.exports = require("67ff0c6f163ab3d").getBundleURL("6EXJA") + "trees.338dee64.jpg" + "?" + Date.now();
 
-},{"67ff0c6f163ab3d":"lgJ39"}],"irmnC":[function() {},{}],"kcmoy":[function(require,module,exports) {
+},{"67ff0c6f163ab3d":"lgJ39"}],"3vtcQ":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$94b7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$94b7.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _hero = require("../Feature/Components/Hero");
+var _heroDefault = parcelHelpers.interopDefault(_hero);
+var _imageAndText = require("../Feature/Components/ImageAndText");
+var _imageAndTextDefault = parcelHelpers.interopDefault(_imageAndText);
+var _forrestJpg = require("../Assets/forrest.jpg");
+var _forrestJpgDefault = parcelHelpers.interopDefault(_forrestJpg);
+var _oakBoardsJpg = require("../Assets/oak-boards.jpg");
+var _oakBoardsJpgDefault = parcelHelpers.interopDefault(_oakBoardsJpg);
+var _emilJpg = require("../Assets/emil.jpg");
+var _emilJpgDefault = parcelHelpers.interopDefault(_emilJpg);
+var _partyJpg = require("../Assets/party.jpg");
+var _partyJpgDefault = parcelHelpers.interopDefault(_partyJpg);
+var _react = require("@glitz/react");
+var _h3 = require("../Shared/Generic/H3");
+var _h3Default = parcelHelpers.interopDefault(_h3);
+function HomePage() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {
+                src: (0, _partyJpgDefault.default),
+                alt: "Hero image oak",
+                title: "Om oss",
+                description: "Specials\xe5gverk-Hyvleri mitt i Sm\xe5land sedan 1997"
+            }, void 0, false, {
+                fileName: "src/Pages/AboutUsPage.tsx",
+                lineNumber: 14,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
+                src: (0, _emilJpgDefault.default),
+                title: "Store Emil",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
+                        children: "Jag fick en g\xe4dda i sikan\xe4tet"
+                    }, void 0, false, {
+                        fileName: "src/Pages/AboutUsPage.tsx",
+                        lineNumber: 22,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).P, {
+                        children: "Jag heter Emil...."
+                    }, void 0, false, {
+                        fileName: "src/Pages/AboutUsPage.tsx",
+                        lineNumber: 23,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).P, {}, void 0, false, {
+                        fileName: "src/Pages/AboutUsPage.tsx",
+                        lineNumber: 24,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Pages/AboutUsPage.tsx",
+                lineNumber: 21,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
+                src: (0, _oakBoardsJpgDefault.default),
+                title: "V\xe5r Vision",
+                textFirst: true,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                        children: [
+                            "Genom att varsamt och f\xf6r hand hantera virket fr\xe5n s\xe5gning till f\xe4rdig produkt kan vi s\xe4kerst\xe4lla en",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                children: " god kvalitet"
+                            }, void 0, false, {
+                                fileName: "src/Pages/AboutUsPage.tsx",
+                                lineNumber: 29,
+                                columnNumber: 11
+                            }, this),
+                            " och ett ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                children: " formstabilt virke"
+                            }, void 0, false, {
+                                fileName: "src/Pages/AboutUsPage.tsx",
+                                lineNumber: 29,
+                                columnNumber: 50
+                            }, this),
+                            "."
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Pages/AboutUsPage.tsx",
+                        lineNumber: 27,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                        children: [
+                            "Vi arbetar n\xe4stan uteslutande med ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                children: "svenskt l\xf6vtr\xe4"
+                            }, void 0, false, {
+                                fileName: "src/Pages/AboutUsPage.tsx",
+                                lineNumber: 32,
+                                columnNumber: 45
+                            }, this),
+                            " och s\xe4tter ursprung i fokus."
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Pages/AboutUsPage.tsx",
+                        lineNumber: 31,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                        children: "Med leverans f\xf6ljer ett ursprungsdokument med v\xe4xtplats."
+                    }, void 0, false, {
+                        fileName: "src/Pages/AboutUsPage.tsx",
+                        lineNumber: 34,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                        children: "Udda l\xe4ngder, dimensioner och profiler tillh\xf6r v\xe5r specialitet."
+                    }, void 0, false, {
+                        fileName: "src/Pages/AboutUsPage.tsx",
+                        lineNumber: 35,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                        children: [
+                            "Vi har som m\xe5l att kunna leverera inom ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                children: "tv\xe5 veckor"
+                            }, void 0, false, {
+                                fileName: "src/Pages/AboutUsPage.tsx",
+                                lineNumber: 37,
+                                columnNumber: 50
+                            }, this),
+                            " fr\xe5n order, oavsett om det \xe4r lagervara eller m\xe5ste specialproduceras."
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Pages/AboutUsPage.tsx",
+                        lineNumber: 36,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Pages/AboutUsPage.tsx",
+                lineNumber: 26,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
+                src: (0, _forrestJpgDefault.default),
+                title: "V\xe5ra M\xe5l",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                        children: "Vi jobbar mot privata kunder, kommuner, l\xe4nsstyrelser och andra f\xf6retag."
+                    }, void 0, false, {
+                        fileName: "src/Pages/AboutUsPage.tsx",
+                        lineNumber: 42,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                        children: "Alltid med samma m\xe5l, att kunden ska f\xe5 r\xe4tt vara vid r\xe4tt tid."
+                    }, void 0, false, {
+                        fileName: "src/Pages/AboutUsPage.tsx",
+                        lineNumber: 43,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                        children: "Vi ombes\xf6rjer transport inom hela Sverige."
+                    }, void 0, false, {
+                        fileName: "src/Pages/AboutUsPage.tsx",
+                        lineNumber: 44,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Pages/AboutUsPage.tsx",
+                lineNumber: 41,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
+                src: (0, _oakBoardsJpgDefault.default),
+                title: "V\xe5rt uppdrag",
+                textFirst: true,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                        children: "Genom att kunna f\xf6r\xe4dla svensk l\xf6vtr\xe4r\xe5vara fr\xe5n stock till f\xe4rdiga produkter kan vi gentemot dig som kund garantera materialets ursprung."
+                    }, void 0, false, {
+                        fileName: "src/Pages/AboutUsPage.tsx",
+                        lineNumber: 47,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                        children: "Vi blir genom v\xe5r sm\xe5skalighet flexibla och kan alltid s\xe4tta dig och dina \xf6nskem\xe5l i centrum."
+                    }, void 0, false, {
+                        fileName: "src/Pages/AboutUsPage.tsx",
+                        lineNumber: 51,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Pages/AboutUsPage.tsx",
+                lineNumber: 46,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true);
+}
+_c = HomePage;
+exports.default = HomePage;
+const Text = (0, _react.styled).p();
+_c1 = Text;
+var _c, _c1;
+$RefreshReg$(_c, "HomePage");
+$RefreshReg$(_c1, "Text");
+
+  $parcel$ReactRefreshHelpers$94b7.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../Feature/Components/Hero":"8WNwH","../Feature/Components/ImageAndText":"8HWo8","../Assets/forrest.jpg":"3nPrl","../Assets/oak-boards.jpg":"lVzFd","@glitz/react":"bAXm1","../Shared/Generic/H3":"iGEMB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Assets/emil.jpg":"9tiao","../Assets/party.jpg":"fGGev"}],"9tiao":[function(require,module,exports) {
+module.exports = require("9f5d123af3ff011e").getBundleURL("6EXJA") + "emil.02b06526.jpg" + "?" + Date.now();
+
+},{"9f5d123af3ff011e":"lgJ39"}],"fGGev":[function(require,module,exports) {
+module.exports = require("e4c48e2de0f2a1e9").getBundleURL("6EXJA") + "party.6f7683c7.jpg" + "?" + Date.now();
+
+},{"e4c48e2de0f2a1e9":"lgJ39"}],"irmnC":[function() {},{}],"kcmoy":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$40ee = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -40377,6 +40620,10 @@ const menuLinks = [
         name: "Galleri"
     },
     {
+        url: "/om-oss",
+        name: "Om oss"
+    },
+    {
         url: "/kontakt",
         name: "Kontakt"
     }
@@ -40393,7 +40640,7 @@ function Header() {
                             children: "info@eme.nu"
                         }, void 0, false, {
                             fileName: "src/Feature/Header/Header.tsx",
-                            lineNumber: 60,
+                            lineNumber: 64,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(A, {
@@ -40402,38 +40649,38 @@ function Header() {
                             children: "070-3278734"
                         }, void 0, false, {
                             fileName: "src/Feature/Header/Header.tsx",
-                            lineNumber: 63,
+                            lineNumber: 67,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/Feature/Header/Header.tsx",
-                    lineNumber: 59,
+                    lineNumber: 63,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/Feature/Header/Header.tsx",
-                lineNumber: 58,
+                lineNumber: 62,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fullDefault.default), {
                 menuLinks: menuLinks
             }, void 0, false, {
                 fileName: "src/Feature/Header/Header.tsx",
-                lineNumber: 68,
+                lineNumber: 72,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _compactDefault.default), {
                 menuLinks: menuLinks
             }, void 0, false, {
                 fileName: "src/Feature/Header/Header.tsx",
-                lineNumber: 69,
+                lineNumber: 73,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Feature/Header/Header.tsx",
-        lineNumber: 57,
+        lineNumber: 61,
         columnNumber: 5
     }, this);
 }
@@ -41355,8 +41602,12 @@ function Footer() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CopyRightContainer, {
-                children: "Copyright \xa9 2025 EME Aktiv"
-            }, void 0, false, {
+                children: [
+                    "Copyright \xa9 ",
+                    new Date().getFullYear(),
+                    " EME Aktiv"
+                ]
+            }, void 0, true, {
                 fileName: "src/Feature/Footer/Footer.tsx",
                 lineNumber: 59,
                 columnNumber: 7
