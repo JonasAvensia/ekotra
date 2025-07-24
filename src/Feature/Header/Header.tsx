@@ -47,6 +47,10 @@ const menuLinks: MenuLinkstype['menuLinks'] = [
     name: 'Galleri',
   },
   {
+    url: '/om-oss',
+    name: 'Om oss',
+  },
+  {
     url: '/kontakt',
     name: 'Kontakt',
   },

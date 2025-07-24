@@ -56,7 +56,7 @@ function Footer() {
           </Column>
         </Wrapper>
       </Container>
-      <CopyRightContainer>Copyright © 2025 EME Aktiv</CopyRightContainer>
+      <CopyRightContainer>Copyright © {new Date().getFullYear()} EME Aktiv</CopyRightContainer>
     </FooterContainer>
   );
 }
