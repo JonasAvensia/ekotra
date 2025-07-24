@@ -36914,7 +36914,7 @@ $RefreshReg$(_c3, "PlainButton");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../Shared/value":"9VKej","../../Shared/typography":"iZltJ"}],"km3Ru":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","../../Shared/typography":"iZltJ","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
 "use strict";
 var Refresh = require("7422ead32dcc1e6b");
 function debounce(func, delay) {
@@ -37319,7 +37319,7 @@ $RefreshReg$(_c9, "Image");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/Generic/H1":"fmZc4","../../Shared/value":"9VKej","../../Shared/Generic/H3":"iGEMB","./LazyLoadImage":"6qRec","./Button":"at8Gv","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"fmZc4":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/Generic/H1":"fmZc4","../../Shared/value":"9VKej","../../Shared/Generic/H3":"iGEMB","./LazyLoadImage":"6qRec","./Button":"at8Gv","@glitz/core":"5ehrf","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fmZc4":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "headingReset", ()=>headingReset);
@@ -40627,8 +40627,11 @@ function Compact({ menuLinks }) {
                                                 children: [
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Link, {
                                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LinkText, {
-                                                            children: link.name
-                                                        }, void 0, false, {
+                                                            children: [
+                                                                link.name,
+                                                                " test"
+                                                            ]
+                                                        }, void 0, true, {
                                                             fileName: "src/Feature/Header/Compact.tsx",
                                                             lineNumber: 55,
                                                             columnNumber: 27
@@ -40846,7 +40849,9 @@ const Link = (0, _react.styled).li({
 _c10 = Link;
 const LinkText = (0, _react.styled).span();
 _c11 = LinkText;
-const DropDownButton = (0, _react.styled)((0, _button.PlainButton), {});
+const DropDownButton = (0, _react.styled)((0, _button.PlainButton), {
+    width: "100%"
+});
 _c12 = DropDownButton;
 const SubMenuWrapper = (0, _react.styled).div({
     display: "flex",
@@ -41609,6 +41614,6 @@ $RefreshReg$(_c5, "Text");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","../../Shared/Generic/H2":"au95a","./Button":"at8Gv","@glitz/core":"5ehrf","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["94b1M","1xC6H","4aBH6"], "4aBH6", "parcelRequire94c2")
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","../../Shared/Generic/H2":"au95a","./Button":"at8Gv","@glitz/core":"5ehrf","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["94b1M","1xC6H","4aBH6"], "4aBH6", "parcelRequire34be")
 
 //# sourceMappingURL=index.2d3ace14.js.map
