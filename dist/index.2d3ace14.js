@@ -37731,7 +37731,7 @@ function PriceListPage() {
                 src: (0, _heroLumberJpgDefault.default),
                 alt: "Hero image oak",
                 title: "Prislista",
-                description: "Kontakt oss om ni vill ha Pris p\xe5 s\xe5gat virke okant och kantat"
+                description: "Kontakta oss om ni vill ha Pris p\xe5 s\xe5gat virke okant och kantat"
             }, void 0, false, {
                 fileName: "src/Pages/PriceListPage.tsx",
                 lineNumber: 12,
@@ -38614,7 +38614,7 @@ function ProductListningPage() {
                 src: (0, _heroLumberJpgDefault.default),
                 alt: "Hero image oak",
                 title: "Produkter",
-                description: "Kontakt oss om ni vill ha Pris p\xe5 s\xe5gat virke okant och kantat"
+                description: "Kontakta oss om ni vill ha Pris p\xe5 s\xe5gat virke okant och kantat"
             }, void 0, false, {
                 fileName: "src/Pages/ProductsListningPage.tsx",
                 lineNumber: 14,
@@ -38672,7 +38672,7 @@ function ContactPage() {
                 src: (0, _signJpgDefault.default),
                 alt: "Hero image oak",
                 title: "Kontakta oss",
-                description: "Kontakt oss om ni vill ha Pris p\xe5 s\xe5gat virke okant och kantat"
+                description: "Kontakta oss om ni vill ha Pris p\xe5 s\xe5gat virke okant och kantat"
             }, void 0, false, {
                 fileName: "src/Pages/ContactPage.tsx",
                 lineNumber: 11,
@@ -40772,7 +40772,10 @@ _c1 = CompactContainer;
 const LogoContainer = (0, _react.styled).div({
     display: "flex",
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    padding: {
+        y: (0, _value.small)
+    }
 });
 _c2 = LogoContainer;
 const StyledImage = (0, _react.styled).img({
@@ -40910,19 +40913,19 @@ $RefreshReg$(_c14, "SubMenu");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","@glitz/core":"5ehrf","../../Assets/icons/menu.svg":"1MZpS","../Components/Button":"at8Gv","react-router-dom":"9xmpe","../../Assets/logo.png":"dixc1","react":"21dqq","../../Assets/close.svg":"lONnP","../../Assets/icons/chevron.svg":"ftSMl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1MZpS":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","@glitz/core":"5ehrf","../../Assets/icons/menu.svg":"1MZpS","../Components/Button":"at8Gv","react-router-dom":"9xmpe","react":"21dqq","../../Assets/close.svg":"lONnP","../../Assets/icons/chevron.svg":"ftSMl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../Assets/logo.png":"dixc1"}],"1MZpS":[function(require,module,exports) {
 module.exports = require("f28a6342581d8bf8").getBundleURL("6EXJA") + "menu.ffa02e1f.svg" + "?" + Date.now();
 
-},{"f28a6342581d8bf8":"lgJ39"}],"dixc1":[function(require,module,exports) {
-module.exports = require("4f112f960e22f491").getBundleURL("6EXJA") + "logo.ad812a23.png" + "?" + Date.now();
-
-},{"4f112f960e22f491":"lgJ39"}],"lONnP":[function(require,module,exports) {
+},{"f28a6342581d8bf8":"lgJ39"}],"lONnP":[function(require,module,exports) {
 module.exports = require("a1f4f9141b146a00").getBundleURL("6EXJA") + "close.d037ba38.svg" + "?" + Date.now();
 
 },{"a1f4f9141b146a00":"lgJ39"}],"ftSMl":[function(require,module,exports) {
 module.exports = require("6c06da0cd01a2d9").getBundleURL("6EXJA") + "chevron.4bccf87e.svg" + "?" + Date.now();
 
-},{"6c06da0cd01a2d9":"lgJ39"}],"8Zi0O":[function(require,module,exports) {
+},{"6c06da0cd01a2d9":"lgJ39"}],"dixc1":[function(require,module,exports) {
+module.exports = require("4f112f960e22f491").getBundleURL("6EXJA") + "logo.ad812a23.png" + "?" + Date.now();
+
+},{"4f112f960e22f491":"lgJ39"}],"8Zi0O":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$723f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -41138,7 +41141,7 @@ $RefreshReg$(_c9, "DropdownItem");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","@glitz/core":"5ehrf","react-router-dom":"9xmpe","../../Assets/logo.png":"dixc1","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3XZ4R":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","@glitz/core":"5ehrf","react-router-dom":"9xmpe","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../Assets/logo.png":"dixc1"}],"3XZ4R":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "glitz", ()=>glitz);
@@ -41473,7 +41476,7 @@ $RefreshReg$(_c10, "StyledLogo");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","../Components/LazyLoadImage":"6qRec","../../Assets/footer-logo.png":"etHEi","../../Shared/Generic/H3":"iGEMB","react-router-dom":"9xmpe","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"etHEi":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","../Components/LazyLoadImage":"6qRec","../../Shared/Generic/H3":"iGEMB","react-router-dom":"9xmpe","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../Assets/footer-logo.png":"etHEi"}],"etHEi":[function(require,module,exports) {
 module.exports = require("fc417f45b6f9c36e").getBundleURL("6EXJA") + "footer-logo.e79aef7c.png" + "?" + Date.now();
 
 },{"fc417f45b6f9c36e":"lgJ39"}],"2TbV3":[function(require,module,exports) {

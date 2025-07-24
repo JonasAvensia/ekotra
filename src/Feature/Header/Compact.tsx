@@ -1,5 +1,5 @@
 import { styled } from '@glitz/react';
-import { large, medium } from '../../Shared/value';
+import { large, medium, small } from '../../Shared/value';
 import { media } from '@glitz/core';
 import Menu from '../../Assets/icons/menu.svg';
 import { PlainButton } from '../Components/Button';
@@ -115,6 +115,9 @@ const LogoContainer = styled.div({
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
+  padding: {
+    y: small,
+  },
 });
 
 const StyledImage = styled.img({
