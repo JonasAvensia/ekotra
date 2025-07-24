@@ -40626,9 +40626,21 @@ function Compact({ menuLinks }) {
                                         link.subMenu && openMenuIndex === index && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(SubMenuWrapper, {
                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(SubMenu, {
                                                 children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Link, {
-                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LinkText, {
-                                                            children: link.name
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
+                                                        to: link.url,
+                                                        onClick: ()=>setIsOpen(false),
+                                                        "aria-label": `Go to ${link.url}`,
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Link, {
+                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LinkText, {
+                                                                children: [
+                                                                    "Urval ",
+                                                                    link.name
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "src/Feature/Header/Compact.tsx",
+                                                                lineNumber: 56,
+                                                                columnNumber: 29
+                                                            }, this)
                                                         }, void 0, false, {
                                                             fileName: "src/Feature/Header/Compact.tsx",
                                                             lineNumber: 55,
@@ -40648,17 +40660,17 @@ function Compact({ menuLinks }) {
                                                                     children: subLink.name
                                                                 }, void 0, false, {
                                                                     fileName: "src/Feature/Header/Compact.tsx",
-                                                                    lineNumber: 65,
+                                                                    lineNumber: 67,
                                                                     columnNumber: 31
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "src/Feature/Header/Compact.tsx",
-                                                                lineNumber: 64,
+                                                                lineNumber: 66,
                                                                 columnNumber: 29
                                                             }, this)
                                                         }, subLink.name, false, {
                                                             fileName: "src/Feature/Header/Compact.tsx",
-                                                            lineNumber: 58,
+                                                            lineNumber: 60,
                                                             columnNumber: 27
                                                         }, this))
                                                 ]
@@ -40687,7 +40699,7 @@ function Compact({ menuLinks }) {
                                                 children: link.name
                                             }, void 0, false, {
                                                 fileName: "src/Feature/Header/Compact.tsx",
-                                                lineNumber: 81,
+                                                lineNumber: 83,
                                                 columnNumber: 21
                                             }, this),
                                             link.subMenu && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).Img, {
@@ -40696,18 +40708,18 @@ function Compact({ menuLinks }) {
                                                 width: 10
                                             }, void 0, false, {
                                                 fileName: "src/Feature/Header/Compact.tsx",
-                                                lineNumber: 82,
+                                                lineNumber: 84,
                                                 columnNumber: 38
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Feature/Header/Compact.tsx",
-                                        lineNumber: 80,
+                                        lineNumber: 82,
                                         columnNumber: 19
                                     }, this)
                                 }, link.name, false, {
                                     fileName: "src/Feature/Header/Compact.tsx",
-                                    lineNumber: 74,
+                                    lineNumber: 76,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
@@ -40730,7 +40742,7 @@ function Compact({ menuLinks }) {
                 onClick: ()=>setIsOpen(false)
             }, void 0, false, {
                 fileName: "src/Feature/Header/Compact.tsx",
-                lineNumber: 90,
+                lineNumber: 92,
                 columnNumber: 18
             }, this)
         ]
