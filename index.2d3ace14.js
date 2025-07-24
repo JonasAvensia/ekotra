@@ -27238,6 +27238,7 @@ const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.GlitzProvider), {
         glitz: (0, _glitzOptions.glitz),
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
+            basename: "/ekotra",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                     fileName: "src/App.tsx",
@@ -40627,11 +40628,8 @@ function Compact({ menuLinks }) {
                                                 children: [
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Link, {
                                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LinkText, {
-                                                            children: [
-                                                                link.name,
-                                                                " test"
-                                                            ]
-                                                        }, void 0, true, {
+                                                            children: link.name
+                                                        }, void 0, false, {
                                                             fileName: "src/Feature/Header/Compact.tsx",
                                                             lineNumber: 55,
                                                             columnNumber: 27
