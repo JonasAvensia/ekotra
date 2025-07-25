@@ -34856,7 +34856,7 @@ function CardLinks() {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/produkter/sagade-produkter",
-                        "aria-label": "Go to sagade produkter",
+                        "aria-label": "l\xe4s mer om s\xe5gade produkter",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
                             src: (0, _sawedProducts1JpgDefault.default),
                             alt: "S\xe5gade produkter image"
@@ -34891,18 +34891,10 @@ function CardLinks() {
                                 lineNumber: 23,
                                 columnNumber: 11
                             }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/produkter/sagade-produkter",
-                                "aria-label": "Go to sagade produkter",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
-                                        ariaLabel: "L\xe4s mer",
-                                        children: "L\xe4s mer"
-                                    }, void 0, false, {
-                                        fileName: "src/Feature/Components/CardLinks.tsx",
-                                        lineNumber: 26,
-                                        columnNumber: 15
-                                    }, this)
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
+                                    ariaLabel: "L\xe4s mer om s\xe5gade produkter",
+                                    children: "L\xe4s mer"
                                 }, void 0, false, {
                                     fileName: "src/Feature/Components/CardLinks.tsx",
                                     lineNumber: 25,
@@ -34929,18 +34921,18 @@ function CardLinks() {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/produkter/hyvlade-produkter",
-                        "aria-label": "Go to hyvlade produkter",
+                        "aria-label": "L\xe4s mer om hyvlade produkter",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
                             src: (0, _woodDummyJpgDefault.default),
                             alt: "image of hyvlade produkter"
                         }, void 0, false, {
                             fileName: "src/Feature/Components/CardLinks.tsx",
-                            lineNumber: 33,
+                            lineNumber: 31,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 32,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
@@ -34949,66 +34941,58 @@ function CardLinks() {
                                 children: "Hyvlade Produkter"
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 36,
+                                lineNumber: 34,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                                 children: "Med v\xe5rt nya hyvleri kan vi nu f\xf6r\xe4dla r\xe5varor fr\xe5n stock till f\xe4rdiga produkter som golv och lister. Vi erbjuder \xe4ven paneler i olika l\xf6vtr\xe4slag och utseenden."
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 37,
+                                lineNumber: 35,
                                 columnNumber: 11
                             }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/produkter/hyvlade-produkter",
-                                "aria-label": "Go to hyvlade produkter",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
-                                        ariaLabel: "L\xe4s mer om hyvlade produkter",
-                                        children: "L\xe4s mer"
-                                    }, void 0, false, {
-                                        fileName: "src/Feature/Components/CardLinks.tsx",
-                                        lineNumber: 43,
-                                        columnNumber: 15
-                                    }, this)
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
+                                    ariaLabel: "L\xe4s mer om hyvlade produkter",
+                                    children: "L\xe4s mer"
                                 }, void 0, false, {
                                     fileName: "src/Feature/Components/CardLinks.tsx",
-                                    lineNumber: 42,
+                                    lineNumber: 41,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 41,
+                                lineNumber: 40,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 35,
+                        lineNumber: 33,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Feature/Components/CardLinks.tsx",
-                lineNumber: 31,
+                lineNumber: 29,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/produkter/special-produkter",
-                        "aria-label": "Go to special produkter",
+                        "aria-label": "L\xe4s mer om special produkter",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
                             src: (0, _horseBoxJpgDefault.default),
                             alt: "Image of Special produkter"
                         }, void 0, false, {
                             fileName: "src/Feature/Components/CardLinks.tsx",
-                            lineNumber: 50,
+                            lineNumber: 47,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 49,
+                        lineNumber: 46,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
@@ -35017,67 +35001,59 @@ function CardLinks() {
                                 children: "Special Produkter"
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 53,
+                                lineNumber: 50,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                                 children: "Vi s\xe5gar virke upp till 7 meter l\xe5ngt och 400x400 mm stort samt tillverkar specialbest\xe4llda paneler och lister efter kundens \xf6nskem\xe5l."
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 54,
+                                lineNumber: 51,
                                 columnNumber: 11
                             }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/produkter/special-produkter",
-                                "aria-label": "Go to special produkter",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
-                                        ariaLabel: "L\xe4s mer",
-                                        "aria-label": "Go to special produkter",
-                                        children: "L\xe4s mer"
-                                    }, void 0, false, {
-                                        fileName: "src/Feature/Components/CardLinks.tsx",
-                                        lineNumber: 60,
-                                        columnNumber: 15
-                                    }, this)
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
+                                    ariaLabel: "L\xe4s mer",
+                                    "aria-label": "L\xe4s mer om special produkter",
+                                    children: "L\xe4s mer"
                                 }, void 0, false, {
                                     fileName: "src/Feature/Components/CardLinks.tsx",
-                                    lineNumber: 59,
+                                    lineNumber: 56,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 58,
+                                lineNumber: 55,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 52,
+                        lineNumber: 49,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Feature/Components/CardLinks.tsx",
-                lineNumber: 48,
+                lineNumber: 45,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/produkter/limfog",
-                        "aria-label": "Go to limfog",
+                        "aria-label": "L\xe4s mer om limfog",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
                             src: (0, _limfogAlmJpgDefault.default),
                             alt: "dummy"
                         }, void 0, false, {
                             fileName: "src/Feature/Components/CardLinks.tsx",
-                            lineNumber: 69,
+                            lineNumber: 64,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 68,
+                        lineNumber: 63,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
@@ -35086,41 +35062,41 @@ function CardLinks() {
                                 children: "Limfog"
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 72,
+                                lineNumber: 67,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
                                 children: "Vi erbjuder skr\xe4ddarsydda l\xf6sningar som hyllplan, bordsskivor och b\xe4nkskivor i exakta m\xe5tt, f\xe4rdigputsade och med m\xf6jlighet till ytbehandling."
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 73,
+                                lineNumber: 68,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
                                     to: "/produkter/limfog",
-                                    ariaLabel: "L\xe4s mer",
+                                    ariaLabel: "L\xe4s mer om limfog",
                                     children: "L\xe4s mer"
                                 }, void 0, false, {
                                     fileName: "src/Feature/Components/CardLinks.tsx",
-                                    lineNumber: 79,
+                                    lineNumber: 73,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 78,
+                                lineNumber: 72,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 71,
+                        lineNumber: 66,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Feature/Components/CardLinks.tsx",
-                lineNumber: 67,
+                lineNumber: 62,
                 columnNumber: 7
             }, this)
         ]
@@ -35199,7 +35175,7 @@ $RefreshReg$(_c7, "StyledButton");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","@glitz/core":"5ehrf","../../Shared/value":"9VKej","react-router-dom":"9xmpe","../../Assets/wood-dummy.jpg":"d6rHm","../../Shared/Generic/H3":"iGEMB","./Button":"at8Gv","./LazyLoadImage":"6qRec","../../Assets/sawed-products-1.jpg":"7Omft","../../Assets/products/horse-box.jpg":"83gtD","../../Assets/products/limfog-alm.jpg":"jUiM9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bAXm1":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","@glitz/core":"5ehrf","../../Shared/value":"9VKej","react-router-dom":"9xmpe","../../Assets/wood-dummy.jpg":"d6rHm","../../Shared/Generic/H3":"iGEMB","./LazyLoadImage":"6qRec","../../Assets/sawed-products-1.jpg":"7Omft","../../Assets/products/horse-box.jpg":"83gtD","../../Assets/products/limfog-alm.jpg":"jUiM9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Button":"at8Gv"}],"bAXm1":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "GlitzProvider", ()=>GlitzProvider);
@@ -36832,104 +36808,49 @@ function createTruncateDecorator(overflow = "ellipsis") {
     });
 }
 
-},{"@glitz/react":"bAXm1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"at8Gv":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$0aef = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"@glitz/react":"bAXm1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6qRec":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$7b37 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$0aef.prelude(module);
+$parcel$ReactRefreshHelpers$7b37.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "PlainButton", ()=>PlainButton);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("@glitz/react");
-var _value = require("../../Shared/value");
-var _typography = require("../../Shared/typography");
-var _reactRouterDom = require("react-router-dom");
-function Button(props) {
-    const { to, onClick, children } = props;
-    if (to) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-        to: to,
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
-            children: children
-        }, void 0, false, {
-            fileName: "src/Feature/Components/Button.tsx",
-            lineNumber: 19,
-            columnNumber: 9
-        }, this)
+var _react = require("react");
+var _react1 = require("@glitz/react");
+var _s = $RefreshSig$();
+function LazyLoadImage({ src, alt }) {
+    _s();
+    const imgRef = (0, _react.useRef)(null);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ImageComponent, {
+        ref: imgRef,
+        src: src,
+        alt: alt,
+        loading: "lazy"
     }, void 0, false, {
-        fileName: "src/Feature/Components/Button.tsx",
-        lineNumber: 18,
-        columnNumber: 7
-    }, this);
-    else return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
-        onClick: onClick,
-        "aria-label": props.ariaLabel,
-        children: children
-    }, void 0, false, {
-        fileName: "src/Feature/Components/Button.tsx",
-        lineNumber: 24,
-        columnNumber: 7
+        fileName: "src/Feature/Components/LazyLoadImage.tsx",
+        lineNumber: 12,
+        columnNumber: 10
     }, this);
 }
-_c = Button;
-exports.default = _c1 = (0, _react.styled)(Button);
-const StyledButton = (0, _react.styled).button({
-    cursor: "pointer",
-    backgroundColor: (0, _value.DefaulBackgroundColor),
-    color: "#fff",
-    fontWeight: "bold",
-    fontSize: (0, _typography.delta),
-    borderRadius: "4px",
-    padding: {
-        y: (0, _value.medium),
-        x: (0, _value.large)
-    },
-    border: {
-        xy: {
-            style: "none"
-        }
-    },
-    transition: {
-        property: "all",
-        duration: "0.3s",
-        timingFunction: "ease-in-out"
-    },
-    ":hover": {
-        backgroundColor: "#003740 "
-    }
-});
-_c2 = StyledButton;
-const PlainButton = (0, _react.styled)(Button, {
-    backgroundColor: "inherit",
-    color: "inherit",
-    borderRadius: "none",
-    textAlign: "start",
-    fontWeight: "normal",
-    padding: {
-        xy: 0
-    },
-    transition: {
-        property: "none"
-    },
-    ":hover": {
-        backgroundColor: "inherit "
-    }
-});
-_c3 = PlainButton;
-var _c, _c1, _c2, _c3;
-$RefreshReg$(_c, "Button");
+_s(LazyLoadImage, "4ePvNHuSuoDcJUA4FzxhhVtSEHM=");
+_c = LazyLoadImage;
+exports.default = _c1 = (0, _react1.styled)(LazyLoadImage);
+const ImageComponent = (0, _react1.styled).img({});
+_c2 = ImageComponent;
+var _c, _c1, _c2;
+$RefreshReg$(_c, "LazyLoadImage");
 $RefreshReg$(_c1, "%default%");
-$RefreshReg$(_c2, "StyledButton");
-$RefreshReg$(_c3, "PlainButton");
+$RefreshReg$(_c2, "ImageComponent");
 
-  $parcel$ReactRefreshHelpers$0aef.postlude(module);
+  $parcel$ReactRefreshHelpers$7b37.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","../../Shared/typography":"iZltJ","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@glitz/react":"bAXm1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
 "use strict";
 var Refresh = require("7422ead32dcc1e6b");
 function debounce(func, delay) {
@@ -37067,49 +36988,7 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"6qRec":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$7b37 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$7b37.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _react1 = require("@glitz/react");
-var _s = $RefreshSig$();
-function LazyLoadImage({ src, alt }) {
-    _s();
-    const imgRef = (0, _react.useRef)(null);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ImageComponent, {
-        ref: imgRef,
-        src: src,
-        alt: alt,
-        loading: "lazy"
-    }, void 0, false, {
-        fileName: "src/Feature/Components/LazyLoadImage.tsx",
-        lineNumber: 12,
-        columnNumber: 10
-    }, this);
-}
-_s(LazyLoadImage, "4ePvNHuSuoDcJUA4FzxhhVtSEHM=");
-_c = LazyLoadImage;
-exports.default = _c1 = (0, _react1.styled)(LazyLoadImage);
-const ImageComponent = (0, _react1.styled).img({});
-_c2 = ImageComponent;
-var _c, _c1, _c2;
-$RefreshReg$(_c, "LazyLoadImage");
-$RefreshReg$(_c1, "%default%");
-$RefreshReg$(_c2, "ImageComponent");
-
-  $parcel$ReactRefreshHelpers$7b37.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@glitz/react":"bAXm1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7Omft":[function(require,module,exports) {
+},{"7422ead32dcc1e6b":"786KC"}],"7Omft":[function(require,module,exports) {
 module.exports = require("34366f8c3b03848b").getBundleURL("6EXJA") + "sawed-products-1.e900d10c.jpg" + "?" + Date.now();
 
 },{"34366f8c3b03848b":"lgJ39"}],"83gtD":[function(require,module,exports) {
@@ -37118,7 +36997,105 @@ module.exports = require("527adde4683699d1").getBundleURL("6EXJA") + "horse-box.
 },{"527adde4683699d1":"lgJ39"}],"jUiM9":[function(require,module,exports) {
 module.exports = require("e8d3c54cc0e11ce7").getBundleURL("6EXJA") + "limfog-alm.964d5e46.jpg" + "?" + Date.now();
 
-},{"e8d3c54cc0e11ce7":"lgJ39"}],"8WNwH":[function(require,module,exports) {
+},{"e8d3c54cc0e11ce7":"lgJ39"}],"at8Gv":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0aef = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0aef.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "PlainButton", ()=>PlainButton);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("@glitz/react");
+var _value = require("../../Shared/value");
+var _typography = require("../../Shared/typography");
+var _reactRouterDom = require("react-router-dom");
+function Button(props) {
+    const { to, onClick, children } = props;
+    if (to) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+        to: to,
+        "aria-label": props.ariaLabel,
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
+            children: children
+        }, void 0, false, {
+            fileName: "src/Feature/Components/Button.tsx",
+            lineNumber: 19,
+            columnNumber: 9
+        }, this)
+    }, void 0, false, {
+        fileName: "src/Feature/Components/Button.tsx",
+        lineNumber: 18,
+        columnNumber: 7
+    }, this);
+    else return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
+        onClick: onClick,
+        "aria-label": props.ariaLabel,
+        children: children
+    }, void 0, false, {
+        fileName: "src/Feature/Components/Button.tsx",
+        lineNumber: 24,
+        columnNumber: 7
+    }, this);
+}
+_c = Button;
+exports.default = _c1 = (0, _react.styled)(Button);
+const StyledButton = (0, _react.styled).button({
+    cursor: "pointer",
+    backgroundColor: (0, _value.DefaulBackgroundColor),
+    color: "#fff",
+    fontWeight: "bold",
+    fontSize: (0, _typography.delta),
+    borderRadius: "4px",
+    padding: {
+        y: (0, _value.medium),
+        x: (0, _value.large)
+    },
+    border: {
+        xy: {
+            style: "none"
+        }
+    },
+    transition: {
+        property: "all",
+        duration: "0.3s",
+        timingFunction: "ease-in-out"
+    },
+    ":hover": {
+        backgroundColor: "#003740 "
+    }
+});
+_c2 = StyledButton;
+const PlainButton = (0, _react.styled)(Button, {
+    backgroundColor: "inherit",
+    color: "inherit",
+    borderRadius: "none",
+    textAlign: "start",
+    fontWeight: "normal",
+    padding: {
+        xy: 0
+    },
+    transition: {
+        property: "none"
+    },
+    ":hover": {
+        backgroundColor: "inherit "
+    }
+});
+_c3 = PlainButton;
+var _c, _c1, _c2, _c3;
+$RefreshReg$(_c, "Button");
+$RefreshReg$(_c1, "%default%");
+$RefreshReg$(_c2, "StyledButton");
+$RefreshReg$(_c3, "PlainButton");
+
+  $parcel$ReactRefreshHelpers$0aef.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","../../Shared/typography":"iZltJ","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8WNwH":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bb69 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -38108,7 +38085,7 @@ $RefreshReg$(_c6, "ButtonCell");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../Lists/PriceFile":"31CoS","../../Shared/value":"9VKej","@glitz/react":"bAXm1","@glitz/core":"5ehrf","./Button":"at8Gv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"31CoS":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../Lists/PriceFile":"4fJTC","../../Shared/value":"9VKej","@glitz/react":"bAXm1","@glitz/core":"5ehrf","./Button":"at8Gv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4fJTC":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "ekstolp", ()=>ekstolp);
@@ -38874,7 +38851,7 @@ $RefreshReg$(_c, "ImageArchive");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../Feature/Components/Hero":"8WNwH","../Assets/HeroLumber.jpg":"eDA9j","../Lists/Products":"hdt1s","../Feature/Components/Lits":"kNxh3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hdt1s":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../Feature/Components/Hero":"8WNwH","../Assets/HeroLumber.jpg":"eDA9j","../Lists/Products":"3XYD0","../Feature/Components/Lits":"kNxh3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3XYD0":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _alpanelJpg = require("../Assets/products/Alpanel.jpg"); // Importing the image
@@ -40063,7 +40040,7 @@ $RefreshReg$(_c15, "ButtonCell");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../../Lists/PriceFile":"31CoS","../../Shared/value":"9VKej","@glitz/react":"bAXm1","./Button":"at8Gv","../../Shared/Generic/H2":"au95a","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8F5SM":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../../Lists/PriceFile":"4fJTC","../../Shared/value":"9VKej","@glitz/react":"bAXm1","./Button":"at8Gv","../../Shared/Generic/H2":"au95a","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8F5SM":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0a98 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -40336,7 +40313,7 @@ $RefreshReg$(_c, "PlanedProducts");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../../Feature/Components/Hero":"8WNwH","../../Feature/Components/Lits":"kNxh3","../../Lists/Products":"hdt1s","../../Assets/trees.jpg":"9CIyB","../../Feature/Components/SmallList":"csIkc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9CIyB":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../../Feature/Components/Hero":"8WNwH","../../Feature/Components/Lits":"kNxh3","../../Lists/Products":"3XYD0","../../Assets/trees.jpg":"9CIyB","../../Feature/Components/SmallList":"csIkc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9CIyB":[function(require,module,exports) {
 module.exports = require("67ff0c6f163ab3d").getBundleURL("6EXJA") + "trees.338dee64.jpg" + "?" + Date.now();
 
 },{"67ff0c6f163ab3d":"lgJ39"}],"3vtcQ":[function(require,module,exports) {
