@@ -40697,9 +40697,6 @@ const StyledHeader = (0, _react.styled).header({
             width: "2px",
             color: "#004A55"
         }
-    },
-    margin: {
-        bottom: (0, _value.medium)
     }
 });
 _c1 = StyledHeader;
@@ -41303,6 +41300,9 @@ const DesktopContainer = (0, _react.styled)((0, _value.AppearanceBlock), {
     display: "flex",
     alignItems: "end",
     justifyContent: "space-between",
+    margin: {
+        bottom: (0, _value.medium)
+    },
     padding: {
         y: "10px",
         x: (0, _value.medium)
