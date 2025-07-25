@@ -25,9 +25,9 @@ function Compact({ menuLinks }: MenuLinkstype) {
           <StyledImage width={105} height={63} src={logo} alt="Logo" className="logo" />
         </LogoContainer>
       </NavLink>
-      <PlainButton ariaLabel="Home" onClick={() => setIsOpen(true)}>
+      <CompactButton ariaLabel="Home" onClick={() => setIsOpen(true)}>
         <styled.Img src={Menu} width={24} />
-      </PlainButton>
+      </CompactButton>
       <Flyout css={isOpen && { transform: 'translateX(0%)' }}>
         <FlyoutHeader>
           <StyledCloseButton onClick={() => setIsOpen(false)} ariaLabel="close flyout">
@@ -101,7 +101,7 @@ const CompactContainer = styled.div({
   justifyContent: 'space-between',
   alignItems: 'center',
   padding: {
-    x: medium,
+    left: medium,
   },
   ...media(
     { minWidth: '1025px' },
@@ -122,6 +122,10 @@ const LogoContainer = styled.div({
 
 const StyledImage = styled.img({
   maxWidth: '105px',
+});
+
+const CompactButton = styled(PlainButton, {
+  padding: { xy: medium },
 });
 
 const Overlay = styled.div({
