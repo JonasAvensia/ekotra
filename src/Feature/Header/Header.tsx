@@ -1,4 +1,5 @@
 import { styled } from '@glitz/react';
+import { media } from '@glitz/core';
 import { AppearanceBlock, DefaulBackgroundColor, medium, small } from '../../Shared/value';
 import Compact from './Compact';
 import Full from './Full';
@@ -89,6 +90,14 @@ const StyledHeader = styled.header({
       color: '#004A55',
     },
   },
+  ...media(
+    { minWidth: '1025px' },
+    {
+      margin: {
+        bottom: medium,
+      },
+    },
+  ),
 });
 
 const TopBar = styled.div({

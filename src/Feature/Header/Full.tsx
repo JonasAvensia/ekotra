@@ -61,9 +61,6 @@ const DesktopContainer = styled(AppearanceBlock, {
   display: 'flex',
   alignItems: 'end',
   justifyContent: 'space-between',
-  margin: {
-    bottom: medium,
-  },
   padding: {
     y: '10px',
     x: medium,
@@ -83,13 +80,7 @@ const LogoContainer = styled.div({
 });
 
 const StyledImage = styled.img({
-  maxWidth: '200px',
-  ...media(
-    { maxWidth: '1025px' },
-    {
-      maxWidth: '140px',
-    },
-  ),
+  maxWidth: '175px',
 });
 
 const Navbar = styled.nav();

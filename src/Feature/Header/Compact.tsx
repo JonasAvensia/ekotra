@@ -121,13 +121,7 @@ const LogoContainer = styled.div({
 });
 
 const StyledImage = styled.img({
-  maxWidth: '200px',
-  ...media(
-    { maxWidth: '1025px' },
-    {
-      maxWidth: '140px',
-    },
-  ),
+  maxWidth: '105px',
 });
 
 const Overlay = styled.div({
