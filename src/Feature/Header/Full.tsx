@@ -21,7 +21,7 @@ function Full({ menuLinks }: MenuLinkstype) {
     <DesktopContainer>
       <NavLink to="/">
         <LogoContainer>
-          <StyledImage src={logo} alt="Logo" className="logo" />
+          <StyledImage width={175} height={106} src={logo} alt="Logo" className="logo" />
         </LogoContainer>
       </NavLink>
       <Navbar>

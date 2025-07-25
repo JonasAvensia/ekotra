@@ -9,7 +9,7 @@ function SpecialProducts() {
     <>
       <Hero
         src={HorseBox}
-        alt="Hero image Limfog."
+        alt="Hero image Hästbox."
         title="Specialprodukter"
         description="Vi kan erbjuda sågade varor i alla tänkbara och otänkbara dimensioner och längder"
       />

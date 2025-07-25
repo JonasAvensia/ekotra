@@ -22,7 +22,7 @@ function Compact({ menuLinks }: MenuLinkstype) {
     <CompactContainer>
       <NavLink to="/">
         <LogoContainer>
-          <StyledImage src={logo} alt="Logo" className="logo" />
+          <StyledImage width={105} height={63} src={logo} alt="Logo" className="logo" />
         </LogoContainer>
       </NavLink>
       <PlainButton ariaLabel="Home" onClick={() => setIsOpen(true)}>

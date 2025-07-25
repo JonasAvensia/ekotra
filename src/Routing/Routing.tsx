@@ -1,31 +1,36 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from '../Pages/HomePage';
-import PriceListPage from '../Pages/PriceListPage';
-import ProductsListningPage from '../Pages/ProductsListningPage';
-import ContactPage from '../Pages/ContactPage';
-import ImageArchive from '../Pages/ImageArchive';
+import { Route, Routes } from 'react-router-dom';
+import { Suspense, lazy } from 'react';
 import ScrollToTop from '../Feature/Helper/ScrollToTop';
-import SawedProducts from '../Pages/Productpage/SawedProducts';
-import SpecialProducts from '../Pages/Productpage/SpecialProducts';
-import Limfog from '../Pages/Productpage/Limfog';
-import PlanedProducts from '../Pages/Productpage/PlanedProducts';
-import AboutusPage from '../Pages/AboutUsPage';
+
+const HomePage = lazy(() => import('../Pages/HomePage'));
+const PriceListPage = lazy(() => import('../Pages/PriceListPage'));
+const ProductsListningPage = lazy(() => import('../Pages/ProductsListningPage'));
+const ContactPage = lazy(() => import('../Pages/ContactPage'));
+const ImageArchive = lazy(() => import('../Pages/ImageArchive'));
+const SawedProducts = lazy(() => import('../Pages/Productpage/SawedProducts'));
+const SpecialProducts = lazy(() => import('../Pages/Productpage/SpecialProducts'));
+const Limfog = lazy(() => import('../Pages/Productpage/Limfog'));
+const PlanedProducts = lazy(() => import('../Pages/Productpage/PlanedProducts'));
+const AboutusPage = lazy(() => import('../Pages/AboutUsPage'));
+
 function Routing() {
   return (
     <>
       <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/prislista" element={<PriceListPage />} />
-        <Route path="/produkter" element={<ProductsListningPage />} />
-        <Route path="/produkter/limfog" element={<Limfog />} />
-        <Route path="/produkter/sagade-produkter" element={<SawedProducts />} />
-        <Route path="/produkter/special-produkter" element={<SpecialProducts />} />
-        <Route path="/produkter/hyvlade-produkter" element={<PlanedProducts />} />
-        <Route path="/galleri" element={<ImageArchive />} />
-        <Route path="/om-oss" element={<AboutusPage />} />
-        <Route path="/kontakt" element={<ContactPage />} />
-      </Routes>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/prislista" element={<PriceListPage />} />
+          <Route path="/produkter" element={<ProductsListningPage />} />
+          <Route path="/produkter/limfog" element={<Limfog />} />
+          <Route path="/produkter/sagade-produkter" element={<SawedProducts />} />
+          <Route path="/produkter/special-produkter" element={<SpecialProducts />} />
+          <Route path="/produkter/hyvlade-produkter" element={<PlanedProducts />} />
+          <Route path="/galleri" element={<ImageArchive />} />
+          <Route path="/om-oss" element={<AboutusPage />} />
+          <Route path="/kontakt" element={<ContactPage />} />
+        </Routes>
+      </Suspense>
     </>
   );
 }

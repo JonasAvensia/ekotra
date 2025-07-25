@@ -18,7 +18,7 @@ function HomePage() {
         src={AcornHero}
         alt="Hero image oak"
         title="Välkommen till EKOTRÄ AB."
-        description="Specialsågverk-Hyvleri mitt i Småland sedan 1997"
+        description="Specialsågverk och hyvleri mitt i Småland sedan 1997"
       />
       <Block>
         <H2>Svenskt lövträ, snabba leveranser, specialdimensioner.</H2>
@@ -46,17 +46,17 @@ function HomePage() {
       </ImageAndText>
       <ImageAndText src={oak} title="Vårt uppdrag" textFirst>
         <Text>
-          Genom att kunna förädla svensk lövträråvara från stock till färdiga produkter kan vi gentemot dig som kund
-          garantera materialets ursprung.
+          Genom att kunna förädla svensk lövträråvara från stock till färdiga produkter kan vi garantera materialets
+          ursprung.
         </Text>
-        <Text>Vi blir genom vår småskalighet flexibla och kan alltid sätta dig och dina önskemål i centrum.</Text>
+        <Text>Vår småskalighet gör oss flexibla, och vi kan alltid sätta dig och dina önskemål i centrum.</Text>
       </ImageAndText>
       <ImageAndText src={Shipping} title="Frakt">
         <H3>Vi har ett avtal med DHL som levererar virket direkt till dörren över hela Sverige.</H3>
         <styled.P>Fraktkostnaden till Stockholm ligger på cirka 600-1200 kronor inklusive moms.</styled.P>
         <styled.P>
           Om möjligt rekommenderar vi att du hämtar virket själv. Då får du en inblick i produktionsprocessen och kan
-          följa hur din panel tillverkas, från stock till färdig panel.
+          följa hur ditt virke tillverkas, från stock till färdig produkt.
         </styled.P>
       </ImageAndText>
       <TextList />

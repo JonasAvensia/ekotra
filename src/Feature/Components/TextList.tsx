@@ -8,10 +8,10 @@ const TextList = () => {
   const products = [
     'Bastupanel i AL/ASP',
     'Bastulave i olika dimensioner',
-    'Dekorpaneler i AL, Alm, Ask, Asp och Ek m.m',
+    'Dekorpaneler i al, alm, ask, asp och ek m.m',
     'Utvändiga arkitektpaneler',
     'Alla typer av listverk',
-    'Ekstolp',
+    'Ekstolpe',
     'Ektrall',
   ];
 
@@ -29,8 +29,8 @@ const TextList = () => {
   return (
     <Block>
       <Container>
-        <Section title="Urval av produkter" items={products} />
-        <Section title="Vi arbetar med följande träslag" items={woods} />
+        <Section title="Vad vi erbjuder" items={products} />
+        <Section title="Träslag vi älskar att jobba med" items={woods} />
       </Container>
     </Block>
   );

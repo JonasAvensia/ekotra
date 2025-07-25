@@ -25,7 +25,7 @@ const Floors = [
   {
     name: 'Algolv',
     description:
-      'Al 32*145. Alen passer inte i rum med hårt slitage men i tex sovrum ,detta pga att al är ett mjukt träslag kan jämnföras med fur',
+      'Al passar inte i utrymmen med hårt slitage, men fungerar utmärkt i t.ex. sovrum. Det är ett mjukt träslag – likt furu.',
     price: 'Se tabell för pris per kvm inkl moms',
     image: AlGolv,
   },
@@ -40,7 +40,7 @@ const Strips = [
   },
   {
     name: 'Askfoder 22*120',
-    description: 'Ett 1800 tals foder med sitt ursprung i skåne.',
+    description: 'Ett 1800-tals foder med sitt ursprung i skåne.',
     price: '87 kr lpm inkl moms',
     image: Askfoder,
   },

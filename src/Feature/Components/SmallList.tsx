@@ -36,10 +36,10 @@ function TextSection() {
     <TextContainer>
       <H2>Ekstol</H2>
       <Text>
-        Vi har märkt att efterfrågan på ek och ekstolp ökar för varje år. Därför har vi ökat andelen sågad ek för att
-        täcka den ökade efterfrågan.
+        Efterfrågan på ek och ekstolpar ökar stadigt. Därför har vi ökat andelen sågad ek i produktionen. Vi erbjuder
+        ekstolpar i alla vanliga dimensioner.
       </Text>
-      <Text>Vi saluför ekstolp i all dimensioner. (priserna är exkl moms)</Text>
+      <Text>Alla priser nedan är exkl. moms.</Text>
     </TextContainer>
   );
 }
@@ -48,7 +48,10 @@ function TypeTextSection() {
   return (
     <TextContainer>
       <H2>Samarbete för Kompletterade Stall och Ekvirke</H2>
-      <Text>Vi söker en leverantör för samarbete av kompletta stall inkl metallsektioner, skjutdörrar m.m</Text>
+      <Text>
+        Vi söker en samarbetspartner för leverans av kompletta stall, inklusive metallsektioner, skjutdörrar med mera.
+        Hör gärna av dig om du vill samarbeta med oss!
+      </Text>
       <Text>Priserna är per kvm inkl moms exkl frakt.</Text>
     </TextContainer>
   );

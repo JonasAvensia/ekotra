@@ -20,7 +20,7 @@ function Footer() {
     <FooterContainer>
       <Container>
         <LogoContainer>
-          <StyledLogo src={FooterLogo} alt="footer logo" />
+          <StyledLogo width={200} height={121} src={FooterLogo} alt="footer logo" />
         </LogoContainer>
         <Wrapper>
           <Column

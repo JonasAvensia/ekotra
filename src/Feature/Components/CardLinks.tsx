@@ -20,7 +20,7 @@ function CardLinks() {
         <TextContainer>
           <styled.Div>
             <H3>Sågade Produkter</H3>
-            <Text>Vi erbjuder sågat lövträ av de flesta svenska träslag och i de flesta dimensioner.</Text>
+            <Text>Vi erbjuder sågat lövträ från de flesta svenska träslag och i de flesta dimensioner.</Text>
           </styled.Div>
           <ButtonContainer>
             <StyledButton ariaLabel="Läs mer om sågade produkter">Läs mer</StyledButton>
@@ -36,7 +36,7 @@ function CardLinks() {
             <H3>Hyvlade Produkter</H3>
             <Text>
               Med vårt nya hyvleri kan vi nu förädla råvaror från stock till färdiga produkter som golv och lister. Vi
-              erbjuder även paneler i olika lövträslag och utseenden.
+              erbjuder även paneler i olika lövträslag och utföranden.
             </Text>
           </styled.Div>
           <ButtonContainer>
@@ -52,8 +52,8 @@ function CardLinks() {
           <styled.Div>
             <H3>Special Produkter</H3>
             <Text>
-              Vi sågar virke upp till 7 meter långt och 400x400 mm stort samt tillverkar specialbeställda paneler och
-              lister efter kundens önskemål.
+              Vi sågar virke upp till 7 meter långt och med dimensioner upp till 400×400 mm samt tillverkar
+              specialbeställda paneler och lister efter kundens önskemål.
             </Text>
           </styled.Div>
           <ButtonContainer>
@@ -71,8 +71,8 @@ function CardLinks() {
           <styled.Div>
             <H3>Limfog</H3>
             <Text>
-              Vi erbjuder skräddarsydda lösningar som hyllplan, bordsskivor och bänkskivor i exakta mått, färdigputsade
-              och med möjlighet till ytbehandling.
+              Vi erbjuder skräddarsydda lösningar som hyllplan, bordsskivor och bänkskivor i kundanpassade mått,
+              färdigputsade och med möjlighet till ytbehandling.
             </Text>
           </styled.Div>
           <ButtonContainer>
