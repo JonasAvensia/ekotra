@@ -37117,6 +37117,7 @@ var _typography = require("../../Shared/typography");
 var _reactRouterDom = require("react-router-dom");
 function Button(props) {
     const { to, onClick, children } = props;
+    console.log(to, "jonas");
     if (to) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
         to: to,
         "aria-label": props.ariaLabel,
@@ -37124,12 +37125,12 @@ function Button(props) {
             children: children
         }, void 0, false, {
             fileName: "src/Feature/Components/Button.tsx",
-            lineNumber: 19,
+            lineNumber: 20,
             columnNumber: 9
         }, this)
     }, void 0, false, {
         fileName: "src/Feature/Components/Button.tsx",
-        lineNumber: 18,
+        lineNumber: 19,
         columnNumber: 7
     }, this);
     else return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
@@ -37138,7 +37139,7 @@ function Button(props) {
         children: children
     }, void 0, false, {
         fileName: "src/Feature/Components/Button.tsx",
-        lineNumber: 24,
+        lineNumber: 25,
         columnNumber: 7
     }, this);
 }
