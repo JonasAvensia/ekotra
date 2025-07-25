@@ -40587,6 +40587,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("@glitz/react");
+var _core = require("@glitz/core");
 var _value = require("../../Shared/value");
 var _compact = require("./Compact");
 var _compactDefault = parcelHelpers.interopDefault(_compact);
@@ -40648,7 +40649,7 @@ function Header() {
                             children: "info@eme.nu"
                         }, void 0, false, {
                             fileName: "src/Feature/Header/Header.tsx",
-                            lineNumber: 64,
+                            lineNumber: 65,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(A, {
@@ -40657,38 +40658,38 @@ function Header() {
                             children: "070-3278734"
                         }, void 0, false, {
                             fileName: "src/Feature/Header/Header.tsx",
-                            lineNumber: 67,
+                            lineNumber: 68,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/Feature/Header/Header.tsx",
-                    lineNumber: 63,
+                    lineNumber: 64,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/Feature/Header/Header.tsx",
-                lineNumber: 62,
+                lineNumber: 63,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fullDefault.default), {
                 menuLinks: menuLinks
             }, void 0, false, {
                 fileName: "src/Feature/Header/Header.tsx",
-                lineNumber: 72,
+                lineNumber: 73,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _compactDefault.default), {
                 menuLinks: menuLinks
             }, void 0, false, {
                 fileName: "src/Feature/Header/Header.tsx",
-                lineNumber: 73,
+                lineNumber: 74,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Feature/Header/Header.tsx",
-        lineNumber: 61,
+        lineNumber: 62,
         columnNumber: 5
     }, this);
 }
@@ -40705,7 +40706,14 @@ const StyledHeader = (0, _react.styled).header({
             width: "2px",
             color: "#004A55"
         }
-    }
+    },
+    ...(0, _core.media)({
+        minWidth: "1025px"
+    }, {
+        margin: {
+            bottom: (0, _value.medium)
+        }
+    })
 });
 _c1 = StyledHeader;
 const TopBar = (0, _react.styled).div({
@@ -40739,7 +40747,7 @@ $RefreshReg$(_c4, "A");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","./Compact":"3pGbL","./Full":"8Zi0O","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3pGbL":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","./Compact":"3pGbL","./Full":"8Zi0O","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@glitz/core":"5ehrf"}],"3pGbL":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$1985 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -41031,12 +41039,7 @@ const LogoContainer = (0, _react.styled).div({
 });
 _c2 = LogoContainer;
 const StyledImage = (0, _react.styled).img({
-    maxWidth: "200px",
-    ...(0, _core.media)({
-        maxWidth: "1025px"
-    }, {
-        maxWidth: "140px"
-    })
+    maxWidth: "105px"
 });
 _c3 = StyledImage;
 const Overlay = (0, _react.styled).div({
@@ -41308,9 +41311,6 @@ const DesktopContainer = (0, _react.styled)((0, _value.AppearanceBlock), {
     display: "flex",
     alignItems: "end",
     justifyContent: "space-between",
-    margin: {
-        bottom: (0, _value.medium)
-    },
     padding: {
         y: "10px",
         x: (0, _value.medium)
@@ -41329,12 +41329,7 @@ const LogoContainer = (0, _react.styled).div({
 });
 _c2 = LogoContainer;
 const StyledImage = (0, _react.styled).img({
-    maxWidth: "200px",
-    ...(0, _core.media)({
-        maxWidth: "1025px"
-    }, {
-        maxWidth: "140px"
-    })
+    maxWidth: "175px"
 });
 _c3 = StyledImage;
 const Navbar = (0, _react.styled).nav();
