@@ -15,7 +15,7 @@ function Button(props: Prototype) {
 
   if (to) {
     return (
-      <Link to={to}>
+      <Link to={to} aria-label={props.ariaLabel}>
         <StyledButton>{children}</StyledButton>
       </Link>
     );
