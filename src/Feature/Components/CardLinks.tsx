@@ -23,7 +23,9 @@ function CardLinks() {
             <Text>Vi erbjuder sågat lövträ från de flesta svenska träslag och i de flesta dimensioner.</Text>
           </styled.Div>
           <ButtonContainer>
-            <StyledButton ariaLabel="Läs mer om sågade produkter">Läs mer</StyledButton>
+            <StyledButton to="/produkter/sagade-produkter" ariaLabel="Läs mer om sågade produkter">
+              Läs mer
+            </StyledButton>
           </ButtonContainer>
         </TextContainer>
       </Column>
@@ -40,7 +42,9 @@ function CardLinks() {
             </Text>
           </styled.Div>
           <ButtonContainer>
-            <StyledButton ariaLabel="Läs mer om hyvlade produkter">Läs mer</StyledButton>
+            <StyledButton to="/produkter/hyvlade-produkter" ariaLabel="Läs mer om hyvlade produkter">
+              Läs mer
+            </StyledButton>
           </ButtonContainer>
         </TextContainer>
       </Column>
@@ -57,7 +61,7 @@ function CardLinks() {
             </Text>
           </styled.Div>
           <ButtonContainer>
-            <StyledButton ariaLabel="Läs mer" aria-label={'Läs mer om special produkter'}>
+            <StyledButton ariaLabel="Läs mer om special produkter" to="/produkter/special-produkter">
               Läs mer
             </StyledButton>
           </ButtonContainer>
