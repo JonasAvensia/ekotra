@@ -34872,23 +34872,26 @@ function CardLinks() {
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
                         children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
-                                children: "S\xe5gade Produkter"
-                            }, void 0, false, {
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).Div, {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
+                                        children: "S\xe5gade Produkter"
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Components/CardLinks.tsx",
+                                        lineNumber: 22,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                                        children: "Vi erbjuder s\xe5gat l\xf6vtr\xe4 av de flesta svenska tr\xe4slag och i de flesta dimensioner."
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Components/CardLinks.tsx",
+                                        lineNumber: 23,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
                                 lineNumber: 21,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                                children: "Vi erbjuder s\xe5gat l\xf6vtr\xe4 av de flesta svenska tr\xe4slag och i de flesta dimensioner."
-                            }, void 0, false, {
-                                fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 22,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 23,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
@@ -34897,12 +34900,12 @@ function CardLinks() {
                                     children: "L\xe4s mer"
                                 }, void 0, false, {
                                     fileName: "src/Feature/Components/CardLinks.tsx",
-                                    lineNumber: 25,
+                                    lineNumber: 26,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 24,
+                                lineNumber: 25,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -34927,26 +34930,34 @@ function CardLinks() {
                             alt: "image of hyvlade produkter"
                         }, void 0, false, {
                             fileName: "src/Feature/Components/CardLinks.tsx",
-                            lineNumber: 31,
+                            lineNumber: 32,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 30,
+                        lineNumber: 31,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
                         children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
-                                children: "Hyvlade Produkter"
-                            }, void 0, false, {
-                                fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 34,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                                children: "Med v\xe5rt nya hyvleri kan vi nu f\xf6r\xe4dla r\xe5varor fr\xe5n stock till f\xe4rdiga produkter som golv och lister. Vi erbjuder \xe4ven paneler i olika l\xf6vtr\xe4slag och utseenden."
-                            }, void 0, false, {
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).Div, {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
+                                        children: "Hyvlade Produkter"
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Components/CardLinks.tsx",
+                                        lineNumber: 36,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                                        children: "Med v\xe5rt nya hyvleri kan vi nu f\xf6r\xe4dla r\xe5varor fr\xe5n stock till f\xe4rdiga produkter som golv och lister. Vi erbjuder \xe4ven paneler i olika l\xf6vtr\xe4slag och utseenden."
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Components/CardLinks.tsx",
+                                        lineNumber: 37,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
                                 lineNumber: 35,
                                 columnNumber: 11
@@ -34957,24 +34968,24 @@ function CardLinks() {
                                     children: "L\xe4s mer"
                                 }, void 0, false, {
                                     fileName: "src/Feature/Components/CardLinks.tsx",
-                                    lineNumber: 41,
+                                    lineNumber: 43,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 40,
+                                lineNumber: 42,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 33,
+                        lineNumber: 34,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Feature/Components/CardLinks.tsx",
-                lineNumber: 29,
+                lineNumber: 30,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
@@ -34987,28 +34998,36 @@ function CardLinks() {
                             alt: "Image of Special produkter"
                         }, void 0, false, {
                             fileName: "src/Feature/Components/CardLinks.tsx",
-                            lineNumber: 47,
+                            lineNumber: 49,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 46,
+                        lineNumber: 48,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
                         children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
-                                children: "Special Produkter"
-                            }, void 0, false, {
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).Div, {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
+                                        children: "Special Produkter"
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Components/CardLinks.tsx",
+                                        lineNumber: 53,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                                        children: "Vi s\xe5gar virke upp till 7 meter l\xe5ngt och 400x400 mm stort samt tillverkar specialbest\xe4llda paneler och lister efter kundens \xf6nskem\xe5l."
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Components/CardLinks.tsx",
+                                        lineNumber: 54,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 50,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                                children: "Vi s\xe5gar virke upp till 7 meter l\xe5ngt och 400x400 mm stort samt tillverkar specialbest\xe4llda paneler och lister efter kundens \xf6nskem\xe5l."
-                            }, void 0, false, {
-                                fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 51,
+                                lineNumber: 52,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
@@ -35018,24 +35037,24 @@ function CardLinks() {
                                     children: "L\xe4s mer"
                                 }, void 0, false, {
                                     fileName: "src/Feature/Components/CardLinks.tsx",
-                                    lineNumber: 56,
+                                    lineNumber: 60,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 55,
+                                lineNumber: 59,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 49,
+                        lineNumber: 51,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Feature/Components/CardLinks.tsx",
-                lineNumber: 45,
+                lineNumber: 47,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
@@ -35048,28 +35067,36 @@ function CardLinks() {
                             alt: "dummy"
                         }, void 0, false, {
                             fileName: "src/Feature/Components/CardLinks.tsx",
-                            lineNumber: 64,
+                            lineNumber: 68,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 63,
+                        lineNumber: 67,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
                         children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
-                                children: "Limfog"
-                            }, void 0, false, {
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).Div, {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
+                                        children: "Limfog"
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Components/CardLinks.tsx",
+                                        lineNumber: 72,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
+                                        children: "Vi erbjuder skr\xe4ddarsydda l\xf6sningar som hyllplan, bordsskivor och b\xe4nkskivor i exakta m\xe5tt, f\xe4rdigputsade och med m\xf6jlighet till ytbehandling."
+                                    }, void 0, false, {
+                                        fileName: "src/Feature/Components/CardLinks.tsx",
+                                        lineNumber: 73,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 67,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                                children: "Vi erbjuder skr\xe4ddarsydda l\xf6sningar som hyllplan, bordsskivor och b\xe4nkskivor i exakta m\xe5tt, f\xe4rdigputsade och med m\xf6jlighet till ytbehandling."
-                            }, void 0, false, {
-                                fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 68,
+                                lineNumber: 71,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
@@ -35079,24 +35106,24 @@ function CardLinks() {
                                     children: "L\xe4s mer"
                                 }, void 0, false, {
                                     fileName: "src/Feature/Components/CardLinks.tsx",
-                                    lineNumber: 73,
+                                    lineNumber: 79,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 72,
+                                lineNumber: 78,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 66,
+                        lineNumber: 70,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Feature/Components/CardLinks.tsx",
-                lineNumber: 62,
+                lineNumber: 66,
                 columnNumber: 7
             }, this)
         ]
@@ -35137,6 +35164,10 @@ _c3 = StyledImage;
 const TextContainer = (0, _react.styled).div({
     display: "flex",
     flexDirection: "column",
+    flex: {
+        grow: 1
+    },
+    justifyContent: "space-between",
     padding: {
         top: (0, _value.small)
     }
