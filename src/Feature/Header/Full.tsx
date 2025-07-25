@@ -61,6 +61,9 @@ const DesktopContainer = styled(AppearanceBlock, {
   display: 'flex',
   alignItems: 'end',
   justifyContent: 'space-between',
+  margin: {
+    bottom: medium,
+  },
   padding: {
     y: '10px',
     x: medium,

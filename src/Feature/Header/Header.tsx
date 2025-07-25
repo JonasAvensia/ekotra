@@ -89,9 +89,6 @@ const StyledHeader = styled.header({
       color: '#004A55',
     },
   },
-  margin: {
-    bottom: medium,
-  },
 });
 
 const TopBar = styled.div({
