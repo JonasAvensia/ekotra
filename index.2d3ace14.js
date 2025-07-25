@@ -27311,178 +27311,212 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _reactRouterDom = require("react-router-dom");
-var _homePage = require("../Pages/HomePage");
-var _homePageDefault = parcelHelpers.interopDefault(_homePage);
-var _priceListPage = require("../Pages/PriceListPage");
-var _priceListPageDefault = parcelHelpers.interopDefault(_priceListPage);
-var _productsListningPage = require("../Pages/ProductsListningPage");
-var _productsListningPageDefault = parcelHelpers.interopDefault(_productsListningPage);
-var _contactPage = require("../Pages/ContactPage");
-var _contactPageDefault = parcelHelpers.interopDefault(_contactPage);
-var _imageArchive = require("../Pages/ImageArchive");
-var _imageArchiveDefault = parcelHelpers.interopDefault(_imageArchive);
+var _react = require("react");
 var _scrollToTop = require("../Feature/Helper/ScrollToTop");
 var _scrollToTopDefault = parcelHelpers.interopDefault(_scrollToTop);
-var _sawedProducts = require("../Pages/Productpage/SawedProducts");
-var _sawedProductsDefault = parcelHelpers.interopDefault(_sawedProducts);
-var _specialProducts = require("../Pages/Productpage/SpecialProducts");
-var _specialProductsDefault = parcelHelpers.interopDefault(_specialProducts);
-var _limfog = require("../Pages/Productpage/Limfog");
-var _limfogDefault = parcelHelpers.interopDefault(_limfog);
-var _planedProducts = require("../Pages/Productpage/PlanedProducts");
-var _planedProductsDefault = parcelHelpers.interopDefault(_planedProducts);
-var _aboutUsPage = require("../Pages/AboutUsPage");
-var _aboutUsPageDefault = parcelHelpers.interopDefault(_aboutUsPage);
+const HomePage = /*#__PURE__*/ (0, _react.lazy)(_c = ()=>require("4bab7254ebb1205e"));
+_c1 = HomePage;
+const PriceListPage = /*#__PURE__*/ (0, _react.lazy)(_c2 = ()=>require("c0e930dcde5e4a22"));
+_c3 = PriceListPage;
+const ProductsListningPage = /*#__PURE__*/ (0, _react.lazy)(_c4 = ()=>require("593db34003e06ca4"));
+_c5 = ProductsListningPage;
+const ContactPage = /*#__PURE__*/ (0, _react.lazy)(_c6 = ()=>require("4d7e05d7f3d2fa37"));
+_c7 = ContactPage;
+const ImageArchive = /*#__PURE__*/ (0, _react.lazy)(_c8 = ()=>require("f2de4e3a65006636"));
+_c9 = ImageArchive;
+const SawedProducts = /*#__PURE__*/ (0, _react.lazy)(_c10 = ()=>require("32d1edd5c56011c5"));
+_c11 = SawedProducts;
+const SpecialProducts = /*#__PURE__*/ (0, _react.lazy)(_c12 = ()=>require("1958137298970de0"));
+_c13 = SpecialProducts;
+const Limfog = /*#__PURE__*/ (0, _react.lazy)(_c14 = ()=>require("5aadff89700aa2b2"));
+_c15 = Limfog;
+const PlanedProducts = /*#__PURE__*/ (0, _react.lazy)(_c16 = ()=>require("dd80271552ad2382"));
+_c17 = PlanedProducts;
+const AboutusPage = /*#__PURE__*/ (0, _react.lazy)(_c18 = ()=>require("f51fb7442bb8f587"));
+_c19 = AboutusPage;
 function Routing() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _scrollToTopDefault.default), {}, void 0, false, {
                 fileName: "src/Routing/Routing.tsx",
-                lineNumber: 16,
+                lineNumber: 19,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homePageDefault.default), {}, void 0, false, {
-                            fileName: "src/Routing/Routing.tsx",
-                            lineNumber: 18,
-                            columnNumber: 34
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/Routing/Routing.tsx",
-                        lineNumber: 18,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/prislista",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _priceListPageDefault.default), {}, void 0, false, {
-                            fileName: "src/Routing/Routing.tsx",
-                            lineNumber: 19,
-                            columnNumber: 43
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/Routing/Routing.tsx",
-                        lineNumber: 19,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/produkter",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _productsListningPageDefault.default), {}, void 0, false, {
-                            fileName: "src/Routing/Routing.tsx",
-                            lineNumber: 20,
-                            columnNumber: 43
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/Routing/Routing.tsx",
-                        lineNumber: 20,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/produkter/limfog",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _limfogDefault.default), {}, void 0, false, {
-                            fileName: "src/Routing/Routing.tsx",
-                            lineNumber: 21,
-                            columnNumber: 50
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/Routing/Routing.tsx",
-                        lineNumber: 21,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/produkter/sagade-produkter",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sawedProductsDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
+                fallback: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    children: "Loading..."
+                }, void 0, false, {
+                    fileName: "src/Routing/Routing.tsx",
+                    lineNumber: 20,
+                    columnNumber: 27
+                }, void 0),
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HomePage, {}, void 0, false, {
+                                fileName: "src/Routing/Routing.tsx",
+                                lineNumber: 22,
+                                columnNumber: 36
+                            }, void 0)
+                        }, void 0, false, {
                             fileName: "src/Routing/Routing.tsx",
                             lineNumber: 22,
-                            columnNumber: 60
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/Routing/Routing.tsx",
-                        lineNumber: 22,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/produkter/special-produkter",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _specialProductsDefault.default), {}, void 0, false, {
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/prislista",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(PriceListPage, {}, void 0, false, {
+                                fileName: "src/Routing/Routing.tsx",
+                                lineNumber: 23,
+                                columnNumber: 45
+                            }, void 0)
+                        }, void 0, false, {
                             fileName: "src/Routing/Routing.tsx",
                             lineNumber: 23,
-                            columnNumber: 61
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/Routing/Routing.tsx",
-                        lineNumber: 23,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/produkter/hyvlade-produkter",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _planedProductsDefault.default), {}, void 0, false, {
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/produkter",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ProductsListningPage, {}, void 0, false, {
+                                fileName: "src/Routing/Routing.tsx",
+                                lineNumber: 24,
+                                columnNumber: 45
+                            }, void 0)
+                        }, void 0, false, {
                             fileName: "src/Routing/Routing.tsx",
                             lineNumber: 24,
-                            columnNumber: 61
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/Routing/Routing.tsx",
-                        lineNumber: 24,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/galleri",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageArchiveDefault.default), {}, void 0, false, {
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/produkter/limfog",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Limfog, {}, void 0, false, {
+                                fileName: "src/Routing/Routing.tsx",
+                                lineNumber: 25,
+                                columnNumber: 52
+                            }, void 0)
+                        }, void 0, false, {
                             fileName: "src/Routing/Routing.tsx",
                             lineNumber: 25,
-                            columnNumber: 41
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/Routing/Routing.tsx",
-                        lineNumber: 25,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/om-oss",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutUsPageDefault.default), {}, void 0, false, {
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/produkter/sagade-produkter",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(SawedProducts, {}, void 0, false, {
+                                fileName: "src/Routing/Routing.tsx",
+                                lineNumber: 26,
+                                columnNumber: 62
+                            }, void 0)
+                        }, void 0, false, {
                             fileName: "src/Routing/Routing.tsx",
                             lineNumber: 26,
-                            columnNumber: 40
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/Routing/Routing.tsx",
-                        lineNumber: 26,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/kontakt",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactPageDefault.default), {}, void 0, false, {
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/produkter/special-produkter",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(SpecialProducts, {}, void 0, false, {
+                                fileName: "src/Routing/Routing.tsx",
+                                lineNumber: 27,
+                                columnNumber: 63
+                            }, void 0)
+                        }, void 0, false, {
                             fileName: "src/Routing/Routing.tsx",
                             lineNumber: 27,
-                            columnNumber: 41
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/Routing/Routing.tsx",
-                        lineNumber: 27,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/produkter/hyvlade-produkter",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(PlanedProducts, {}, void 0, false, {
+                                fileName: "src/Routing/Routing.tsx",
+                                lineNumber: 28,
+                                columnNumber: 63
+                            }, void 0)
+                        }, void 0, false, {
+                            fileName: "src/Routing/Routing.tsx",
+                            lineNumber: 28,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/galleri",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ImageArchive, {}, void 0, false, {
+                                fileName: "src/Routing/Routing.tsx",
+                                lineNumber: 29,
+                                columnNumber: 43
+                            }, void 0)
+                        }, void 0, false, {
+                            fileName: "src/Routing/Routing.tsx",
+                            lineNumber: 29,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/om-oss",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AboutusPage, {}, void 0, false, {
+                                fileName: "src/Routing/Routing.tsx",
+                                lineNumber: 30,
+                                columnNumber: 42
+                            }, void 0)
+                        }, void 0, false, {
+                            fileName: "src/Routing/Routing.tsx",
+                            lineNumber: 30,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/kontakt",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ContactPage, {}, void 0, false, {
+                                fileName: "src/Routing/Routing.tsx",
+                                lineNumber: 31,
+                                columnNumber: 43
+                            }, void 0)
+                        }, void 0, false, {
+                            fileName: "src/Routing/Routing.tsx",
+                            lineNumber: 31,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Routing/Routing.tsx",
+                    lineNumber: 21,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
                 fileName: "src/Routing/Routing.tsx",
-                lineNumber: 17,
+                lineNumber: 20,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 }
-_c = Routing;
+_c20 = Routing;
 exports.default = Routing;
-var _c;
-$RefreshReg$(_c, "Routing");
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10, _c11, _c12, _c13, _c14, _c15, _c16, _c17, _c18, _c19, _c20;
+$RefreshReg$(_c, "HomePage$lazy");
+$RefreshReg$(_c1, "HomePage");
+$RefreshReg$(_c2, "PriceListPage$lazy");
+$RefreshReg$(_c3, "PriceListPage");
+$RefreshReg$(_c4, "ProductsListningPage$lazy");
+$RefreshReg$(_c5, "ProductsListningPage");
+$RefreshReg$(_c6, "ContactPage$lazy");
+$RefreshReg$(_c7, "ContactPage");
+$RefreshReg$(_c8, "ImageArchive$lazy");
+$RefreshReg$(_c9, "ImageArchive");
+$RefreshReg$(_c10, "SawedProducts$lazy");
+$RefreshReg$(_c11, "SawedProducts");
+$RefreshReg$(_c12, "SpecialProducts$lazy");
+$RefreshReg$(_c13, "SpecialProducts");
+$RefreshReg$(_c14, "Limfog$lazy");
+$RefreshReg$(_c15, "Limfog");
+$RefreshReg$(_c16, "PlanedProducts$lazy");
+$RefreshReg$(_c17, "PlanedProducts");
+$RefreshReg$(_c18, "AboutusPage$lazy");
+$RefreshReg$(_c19, "AboutusPage");
+$RefreshReg$(_c20, "Routing");
 
   $parcel$ReactRefreshHelpers$2aec.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../Pages/HomePage":"gJB5o","../Pages/PriceListPage":"eIucm","../Pages/ProductsListningPage":"3Kqqo","../Pages/ContactPage":"bDqc9","../Pages/ImageArchive":"j1mrX","../Feature/Helper/ScrollToTop":"4Z7Gw","../Pages/Productpage/SawedProducts":"kTUTe","../Pages/Productpage/SpecialProducts":"8F5SM","../Pages/Productpage/Limfog":"l1iBY","../Pages/Productpage/PlanedProducts":"bDJ6V","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Pages/AboutUsPage":"3vtcQ"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../Feature/Helper/ScrollToTop":"4Z7Gw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","4bab7254ebb1205e":"2z9j9","c0e930dcde5e4a22":"kJc9s","593db34003e06ca4":"29qIj","4d7e05d7f3d2fa37":"b8bPV","f2de4e3a65006636":"epTmJ","32d1edd5c56011c5":"bwqqr","1958137298970de0":"loKs0","5aadff89700aa2b2":"2goLO","dd80271552ad2382":"j8zLA","f51fb7442bb8f587":"ilySR"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.24.1
  *
@@ -34566,647 +34600,369 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"gJB5o":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$1e64 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"4Z7Gw":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$11f3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$1e64.prelude(module);
+$parcel$ReactRefreshHelpers$11f3.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _cardLinks = require("../Feature/Components/CardLinks");
-var _cardLinksDefault = parcelHelpers.interopDefault(_cardLinks);
-var _hero = require("../Feature/Components/Hero");
-var _heroDefault = parcelHelpers.interopDefault(_hero);
-var _imageAndText = require("../Feature/Components/ImageAndText");
-var _imageAndTextDefault = parcelHelpers.interopDefault(_imageAndText);
-var _acornJpg = require("../Assets/acorn.jpg");
-var _acornJpgDefault = parcelHelpers.interopDefault(_acornJpg);
-var _textList = require("../Feature/Components/TextList");
-var _textListDefault = parcelHelpers.interopDefault(_textList);
-var _forrestJpg = require("../Assets/forrest.jpg");
-var _forrestJpgDefault = parcelHelpers.interopDefault(_forrestJpg);
-var _oakBoardsJpg = require("../Assets/oak-boards.jpg");
-var _oakBoardsJpgDefault = parcelHelpers.interopDefault(_oakBoardsJpg);
-var _shippingPng = require("../Assets/shipping.png");
-var _shippingPngDefault = parcelHelpers.interopDefault(_shippingPng);
-var _react = require("@glitz/react");
-var _h3 = require("../Shared/Generic/H3");
-var _h3Default = parcelHelpers.interopDefault(_h3);
-var _h2 = require("../Shared/Generic/H2");
-var _h2Default = parcelHelpers.interopDefault(_h2);
-var _value = require("../Shared/value");
-function HomePage() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {
-                src: (0, _acornJpgDefault.default),
-                alt: "Hero image oak",
-                title: "V\xe4lkommen till EKOTR\xc4 AB.",
-                description: "Specials\xe5gverk-Hyvleri mitt i Sm\xe5land sedan 1997"
-            }, void 0, false, {
-                fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 17,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Block), {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h2Default.default), {
-                    children: "Svenskt l\xf6vtr\xe4, snabba leveranser, specialdimensioner."
-                }, void 0, false, {
-                    fileName: "src/Pages/HomePage.tsx",
-                    lineNumber: 24,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 23,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardLinksDefault.default), {}, void 0, false, {
-                fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 26,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
-                src: (0, _oakBoardsJpgDefault.default),
-                title: "V\xe5r Vision",
-                textFirst: true,
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: [
-                            "Genom att varsamt och f\xf6r hand hantera virket fr\xe5n s\xe5gning till f\xe4rdig produkt kan vi s\xe4kerst\xe4lla en",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                children: " god kvalitet"
-                            }, void 0, false, {
-                                fileName: "src/Pages/HomePage.tsx",
-                                lineNumber: 30,
-                                columnNumber: 11
-                            }, this),
-                            " och ett ",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                children: " formstabilt virke"
-                            }, void 0, false, {
-                                fileName: "src/Pages/HomePage.tsx",
-                                lineNumber: 30,
-                                columnNumber: 50
-                            }, this),
-                            "."
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 28,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: [
-                            "Vi arbetar n\xe4stan uteslutande med ",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                children: "svenskt l\xf6vtr\xe4"
-                            }, void 0, false, {
-                                fileName: "src/Pages/HomePage.tsx",
-                                lineNumber: 33,
-                                columnNumber: 45
-                            }, this),
-                            " och s\xe4tter ursprung i fokus."
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 32,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: "Med leverans f\xf6ljer ett ursprungsdokument med v\xe4xtplats."
-                    }, void 0, false, {
-                        fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 35,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: "Udda l\xe4ngder, dimensioner och profiler tillh\xf6r v\xe5r specialitet."
-                    }, void 0, false, {
-                        fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 36,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: [
-                            "Vi har som m\xe5l att kunna leverera inom ",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                children: "tv\xe5 veckor"
-                            }, void 0, false, {
-                                fileName: "src/Pages/HomePage.tsx",
-                                lineNumber: 38,
-                                columnNumber: 50
-                            }, this),
-                            " fr\xe5n order, oavsett om det \xe4r lagervara eller m\xe5ste specialproduceras."
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 37,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 27,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
-                src: (0, _forrestJpgDefault.default),
-                title: "V\xe5ra M\xe5l",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: "Vi jobbar mot privata kunder, kommuner, l\xe4nsstyrelser och andra f\xf6retag."
-                    }, void 0, false, {
-                        fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 43,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: "Alltid med samma m\xe5l, att kunden ska f\xe5 r\xe4tt vara vid r\xe4tt tid."
-                    }, void 0, false, {
-                        fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 44,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: "Vi ombes\xf6rjer transport inom hela Sverige."
-                    }, void 0, false, {
-                        fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 45,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 42,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
-                src: (0, _oakBoardsJpgDefault.default),
-                title: "V\xe5rt uppdrag",
-                textFirst: true,
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: "Genom att kunna f\xf6r\xe4dla svensk l\xf6vtr\xe4r\xe5vara fr\xe5n stock till f\xe4rdiga produkter kan vi gentemot dig som kund garantera materialets ursprung."
-                    }, void 0, false, {
-                        fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 48,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: "Vi blir genom v\xe5r sm\xe5skalighet flexibla och kan alltid s\xe4tta dig och dina \xf6nskem\xe5l i centrum."
-                    }, void 0, false, {
-                        fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 52,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 47,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
-                src: (0, _shippingPngDefault.default),
-                title: "Frakt",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
-                        children: "Vi har ett avtal med DHL som levererar virket direkt till d\xf6rren \xf6ver hela Sverige."
-                    }, void 0, false, {
-                        fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 55,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).P, {
-                        children: "Fraktkostnaden till Stockholm ligger p\xe5 cirka 600-1200 kronor inklusive moms."
-                    }, void 0, false, {
-                        fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 56,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).P, {
-                        children: "Om m\xf6jligt rekommenderar vi att du h\xe4mtar virket sj\xe4lv. D\xe5 f\xe5r du en inblick i produktionsprocessen och kan f\xf6lja hur din panel tillverkas, fr\xe5n stock till f\xe4rdig panel."
-                    }, void 0, false, {
-                        fileName: "src/Pages/HomePage.tsx",
-                        lineNumber: 57,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 54,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _textListDefault.default), {}, void 0, false, {
-                fileName: "src/Pages/HomePage.tsx",
-                lineNumber: 62,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true);
-}
-_c = HomePage;
-exports.default = HomePage;
-const Text = (0, _react.styled).p();
-_c1 = Text;
-var _c, _c1;
-$RefreshReg$(_c, "HomePage");
-$RefreshReg$(_c1, "Text");
-
-  $parcel$ReactRefreshHelpers$1e64.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","../Feature/Components/CardLinks":"4IVZq","../Feature/Components/Hero":"8WNwH","../Feature/Components/ImageAndText":"8HWo8","../Assets/acorn.jpg":"dMYuz","../Feature/Components/TextList":"5S2tu","../Assets/forrest.jpg":"3nPrl","../Assets/oak-boards.jpg":"lVzFd","../Assets/shipping.png":"1jote","@glitz/react":"bAXm1","../Shared/Generic/H3":"iGEMB","../Shared/Generic/H2":"au95a","../Shared/value":"9VKej","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4IVZq":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$54ca = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$54ca.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("@glitz/react");
-var _core = require("@glitz/core");
-var _value = require("../../Shared/value");
+var _react = require("react");
 var _reactRouterDom = require("react-router-dom");
-var _woodDummyJpg = require("../../Assets/wood-dummy.jpg");
-var _woodDummyJpgDefault = parcelHelpers.interopDefault(_woodDummyJpg);
-var _h3 = require("../../Shared/Generic/H3");
-var _h3Default = parcelHelpers.interopDefault(_h3);
-var _button = require("./Button");
-var _buttonDefault = parcelHelpers.interopDefault(_button);
-var _lazyLoadImage = require("./LazyLoadImage");
-var _lazyLoadImageDefault = parcelHelpers.interopDefault(_lazyLoadImage);
-var _sawedProducts1Jpg = require("../../Assets/sawed-products-1.jpg");
-var _sawedProducts1JpgDefault = parcelHelpers.interopDefault(_sawedProducts1Jpg);
-var _horseBoxJpg = require("../../Assets/products/horse-box.jpg");
-var _horseBoxJpgDefault = parcelHelpers.interopDefault(_horseBoxJpg);
-var _limfogAlmJpg = require("../../Assets/products/limfog-alm.jpg");
-var _limfogAlmJpgDefault = parcelHelpers.interopDefault(_limfogAlmJpg);
-function CardLinks() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/produkter/sagade-produkter",
-                        "aria-label": "l\xe4s mer om s\xe5gade produkter",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
-                            src: (0, _sawedProducts1JpgDefault.default),
-                            alt: "S\xe5gade produkter image"
-                        }, void 0, false, {
-                            fileName: "src/Feature/Components/CardLinks.tsx",
-                            lineNumber: 18,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 17,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).Div, {
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
-                                        children: "S\xe5gade Produkter"
-                                    }, void 0, false, {
-                                        fileName: "src/Feature/Components/CardLinks.tsx",
-                                        lineNumber: 22,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                                        children: "Vi erbjuder s\xe5gat l\xf6vtr\xe4 av de flesta svenska tr\xe4slag och i de flesta dimensioner."
-                                    }, void 0, false, {
-                                        fileName: "src/Feature/Components/CardLinks.tsx",
-                                        lineNumber: 23,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 21,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
-                                    ariaLabel: "L\xe4s mer om s\xe5gade produkter",
-                                    children: "L\xe4s mer"
-                                }, void 0, false, {
-                                    fileName: "src/Feature/Components/CardLinks.tsx",
-                                    lineNumber: 26,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 25,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 20,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Feature/Components/CardLinks.tsx",
-                lineNumber: 16,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/produkter/hyvlade-produkter",
-                        "aria-label": "L\xe4s mer om hyvlade produkter",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
-                            src: (0, _woodDummyJpgDefault.default),
-                            alt: "image of hyvlade produkter"
-                        }, void 0, false, {
-                            fileName: "src/Feature/Components/CardLinks.tsx",
-                            lineNumber: 32,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 31,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).Div, {
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
-                                        children: "Hyvlade Produkter"
-                                    }, void 0, false, {
-                                        fileName: "src/Feature/Components/CardLinks.tsx",
-                                        lineNumber: 36,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                                        children: "Med v\xe5rt nya hyvleri kan vi nu f\xf6r\xe4dla r\xe5varor fr\xe5n stock till f\xe4rdiga produkter som golv och lister. Vi erbjuder \xe4ven paneler i olika l\xf6vtr\xe4slag och utseenden."
-                                    }, void 0, false, {
-                                        fileName: "src/Feature/Components/CardLinks.tsx",
-                                        lineNumber: 37,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 35,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
-                                    ariaLabel: "L\xe4s mer om hyvlade produkter",
-                                    children: "L\xe4s mer"
-                                }, void 0, false, {
-                                    fileName: "src/Feature/Components/CardLinks.tsx",
-                                    lineNumber: 43,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 42,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 34,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Feature/Components/CardLinks.tsx",
-                lineNumber: 30,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/produkter/special-produkter",
-                        "aria-label": "L\xe4s mer om special produkter",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
-                            src: (0, _horseBoxJpgDefault.default),
-                            alt: "Image of Special produkter"
-                        }, void 0, false, {
-                            fileName: "src/Feature/Components/CardLinks.tsx",
-                            lineNumber: 49,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 48,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).Div, {
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
-                                        children: "Special Produkter"
-                                    }, void 0, false, {
-                                        fileName: "src/Feature/Components/CardLinks.tsx",
-                                        lineNumber: 53,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                                        children: "Vi s\xe5gar virke upp till 7 meter l\xe5ngt och 400x400 mm stort samt tillverkar specialbest\xe4llda paneler och lister efter kundens \xf6nskem\xe5l."
-                                    }, void 0, false, {
-                                        fileName: "src/Feature/Components/CardLinks.tsx",
-                                        lineNumber: 54,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 52,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
-                                    ariaLabel: "L\xe4s mer",
-                                    "aria-label": "L\xe4s mer om special produkter",
-                                    children: "L\xe4s mer"
-                                }, void 0, false, {
-                                    fileName: "src/Feature/Components/CardLinks.tsx",
-                                    lineNumber: 60,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 59,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 51,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Feature/Components/CardLinks.tsx",
-                lineNumber: 47,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/produkter/limfog",
-                        "aria-label": "L\xe4s mer om limfog",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
-                            src: (0, _limfogAlmJpgDefault.default),
-                            alt: "dummy"
-                        }, void 0, false, {
-                            fileName: "src/Feature/Components/CardLinks.tsx",
-                            lineNumber: 68,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 67,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).Div, {
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
-                                        children: "Limfog"
-                                    }, void 0, false, {
-                                        fileName: "src/Feature/Components/CardLinks.tsx",
-                                        lineNumber: 72,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                                        children: "Vi erbjuder skr\xe4ddarsydda l\xf6sningar som hyllplan, bordsskivor och b\xe4nkskivor i exakta m\xe5tt, f\xe4rdigputsade och med m\xf6jlighet till ytbehandling."
-                                    }, void 0, false, {
-                                        fileName: "src/Feature/Components/CardLinks.tsx",
-                                        lineNumber: 73,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 71,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonContainer, {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
-                                    to: "/produkter/limfog",
-                                    ariaLabel: "L\xe4s mer om limfog",
-                                    children: "L\xe4s mer"
-                                }, void 0, false, {
-                                    fileName: "src/Feature/Components/CardLinks.tsx",
-                                    lineNumber: 79,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "src/Feature/Components/CardLinks.tsx",
-                                lineNumber: 78,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Feature/Components/CardLinks.tsx",
-                        lineNumber: 70,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Feature/Components/CardLinks.tsx",
-                lineNumber: 66,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/Feature/Components/CardLinks.tsx",
-        lineNumber: 15,
-        columnNumber: 5
-    }, this);
-}
-_c = CardLinks;
-exports.default = CardLinks;
-const Container = (0, _react.styled)((0, _value.Block), {
-    display: "grid",
-    gridTemplateColumns: "1fr",
-    gap: "20px",
-    ...(0, _core.media)({
-        minWidth: "1025px"
-    }, {
-        gridTemplateColumns: "1fr 1fr 1fr 1fr"
-    })
+var _s = $RefreshSig$();
+const ScrollToTop = ()=>{
+    _s();
+    const { pathname } = (0, _reactRouterDom.useLocation)();
+    (0, _react.useEffect)(()=>{
+        window.scrollTo(0, 0);
+    }, [
+        pathname
+    ]);
+    return null;
+};
+_s(ScrollToTop, "+8VPq4+XDMjo/kjL3WLkbwU2Amg=", false, function() {
+    return [
+        (0, _reactRouterDom.useLocation)
+    ];
 });
-_c1 = Container;
-const Column = (0, _react.styled).div({
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-between",
-    width: "100%",
-    backgroundColor: "#fff"
-});
-_c2 = Column;
-const StyledImage = (0, _react.styled)((0, _lazyLoadImageDefault.default), {
-    width: "100%",
-    height: "220px",
-    objectFit: "cover",
-    borderRadius: "8px"
-});
-_c3 = StyledImage;
-const TextContainer = (0, _react.styled).div({
-    display: "flex",
-    flexDirection: "column",
-    flex: {
-        grow: 1
-    },
-    justifyContent: "space-between",
-    padding: {
-        top: (0, _value.small)
-    }
-});
-_c4 = TextContainer;
-const Text = (0, _react.styled).span({
-    margin: {
-        top: (0, _value.small)
-    }
-});
-_c5 = Text;
-const ButtonContainer = (0, _react.styled).div({
-    width: "100%",
-    textAlign: "left",
-    margin: {
-        top: (0, _value.large)
-    }
-});
-_c6 = ButtonContainer;
-const StyledButton = (0, _react.styled)((0, _buttonDefault.default), {
-    width: "100%"
-});
-_c7 = StyledButton;
-var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7;
-$RefreshReg$(_c, "CardLinks");
-$RefreshReg$(_c1, "Container");
-$RefreshReg$(_c2, "Column");
-$RefreshReg$(_c3, "StyledImage");
-$RefreshReg$(_c4, "TextContainer");
-$RefreshReg$(_c5, "Text");
-$RefreshReg$(_c6, "ButtonContainer");
-$RefreshReg$(_c7, "StyledButton");
+_c = ScrollToTop;
+exports.default = ScrollToTop;
+var _c;
+$RefreshReg$(_c, "ScrollToTop");
 
-  $parcel$ReactRefreshHelpers$54ca.postlude(module);
+  $parcel$ReactRefreshHelpers$11f3.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","@glitz/core":"5ehrf","../../Shared/value":"9VKej","react-router-dom":"9xmpe","../../Assets/wood-dummy.jpg":"d6rHm","../../Shared/Generic/H3":"iGEMB","./LazyLoadImage":"6qRec","../../Assets/sawed-products-1.jpg":"7Omft","../../Assets/products/horse-box.jpg":"83gtD","../../Assets/products/limfog-alm.jpg":"jUiM9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Button":"at8Gv"}],"bAXm1":[function(require,module,exports) {
+},{"react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
+"use strict";
+var Refresh = require("7422ead32dcc1e6b");
+function debounce(func, delay) {
+    {
+        let timeout = undefined;
+        let lastTime = 0;
+        return function(args) {
+            // Call immediately if last call was more than the delay ago.
+            // Otherwise, set a timeout. This means the first call is fast
+            // (for the common case of a single update), and subsequent updates
+            // are batched.
+            let now = Date.now();
+            if (now - lastTime > delay) {
+                lastTime = now;
+                func.call(null, args);
+            } else {
+                clearTimeout(timeout);
+                timeout = setTimeout(function() {
+                    timeout = undefined;
+                    lastTime = Date.now();
+                    func.call(null, args);
+                }, delay);
+            }
+        };
+    }
+}
+var enqueueUpdate = debounce(function() {
+    Refresh.performReactRefresh();
+}, 30);
+// Everthing below is either adapted or copied from
+// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
+// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
+module.exports.prelude = function(module1) {
+    window.$RefreshReg$ = function(type, id) {
+        Refresh.register(type, module1.id + " " + id);
+    };
+    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
+};
+module.exports.postlude = function(module1) {
+    if (isReactRefreshBoundary(module1.exports)) {
+        registerExportsForReactRefresh(module1);
+        if (module1.hot) {
+            module1.hot.dispose(function(data) {
+                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
+                data.prevExports = module1.exports;
+            });
+            module1.hot.accept(function(getParents) {
+                var prevExports = module1.hot.data.prevExports;
+                var nextExports = module1.exports;
+                // Since we just executed the code for it, it's possible
+                // that the new exports make it ineligible for being a boundary.
+                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
+                // It can also become ineligible if its exports are incompatible
+                // with the previous exports.
+                // For example, if you add/remove/change exports, we'll want
+                // to re-execute the importing modules, and force those components
+                // to re-render. Similarly, if you convert a class component
+                // to a function, we want to invalidate the boundary.
+                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
+                if (isNoLongerABoundary || didInvalidate) {
+                    // We'll be conservative. The only case in which we won't do a full
+                    // reload is if all parent modules are also refresh boundaries.
+                    // In that case we'll add them to the current queue.
+                    var parents = getParents();
+                    if (parents.length === 0) {
+                        // Looks like we bubbled to the root. Can't recover from that.
+                        window.location.reload();
+                        return;
+                    }
+                    return parents;
+                }
+                enqueueUpdate();
+            });
+        }
+    }
+};
+function isReactRefreshBoundary(exports) {
+    if (Refresh.isLikelyComponentType(exports)) return true;
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    return false;
+    var hasExports = false;
+    var areAllExportsComponents = true;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        hasExports = true;
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
+        return false;
+        var exportValue = exports[key];
+        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
+    }
+    return hasExports && areAllExportsComponents;
+}
+function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
+    var prevSignature = getRefreshBoundarySignature(prevExports);
+    var nextSignature = getRefreshBoundarySignature(nextExports);
+    if (prevSignature.length !== nextSignature.length) return true;
+    for(var i = 0; i < nextSignature.length; i++){
+        if (prevSignature[i] !== nextSignature[i]) return true;
+    }
+    return false;
+}
+// When this signature changes, it's unsafe to stop at this refresh boundary.
+function getRefreshBoundarySignature(exports) {
+    var signature = [];
+    signature.push(Refresh.getFamilyByType(exports));
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return signature;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        signature.push(key);
+        signature.push(Refresh.getFamilyByType(exportValue));
+    }
+    return signature;
+}
+function registerExportsForReactRefresh(module1) {
+    var exports = module1.exports, id = module1.id;
+    Refresh.register(exports, id + " %exports%");
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        var typeID = id + " %exports% " + key;
+        Refresh.register(exportValue, typeID);
+    }
+}
+
+},{"7422ead32dcc1e6b":"786KC"}],"2z9j9":[function(require,module,exports) {
+module.exports = Promise.all([
+    require("5bfeca55fb9067e9")(require("34356588b6fe46d8").getBundleURL("6EXJA") + "HomePage.ea772fba.js" + "?" + Date.now()).catch((err)=>{
+        delete module.bundle.cache[module.id];
+        throw err;
+    }),
+    require("5bfeca55fb9067e9")(require("34356588b6fe46d8").getBundleURL("6EXJA") + "HomePage.b761452f.js" + "?" + Date.now()).catch((err)=>{
+        delete module.bundle.cache[module.id];
+        throw err;
+    })
+]).then(()=>module.bundle.root("gJB5o"));
+
+},{"5bfeca55fb9067e9":"61B45","34356588b6fe46d8":"lgJ39"}],"61B45":[function(require,module,exports) {
+"use strict";
+var cacheLoader = require("ca2a84f7fa4a3bb0");
+module.exports = cacheLoader(function(bundle) {
+    return new Promise(function(resolve, reject) {
+        // Don't insert the same script twice (e.g. if it was already in the HTML)
+        var existingScripts = document.getElementsByTagName("script");
+        if ([].concat(existingScripts).some(function isCurrentBundle(script) {
+            return script.src === bundle;
+        })) {
+            resolve();
+            return;
+        }
+        var preloadLink = document.createElement("link");
+        preloadLink.href = bundle;
+        preloadLink.rel = "preload";
+        preloadLink.as = "script";
+        document.head.appendChild(preloadLink);
+        var script = document.createElement("script");
+        script.async = true;
+        script.type = "text/javascript";
+        script.src = bundle;
+        script.onerror = function(e) {
+            var error = new TypeError("Failed to fetch dynamically imported module: ".concat(bundle, ". Error: ").concat(e.message));
+            script.onerror = script.onload = null;
+            script.remove();
+            reject(error);
+        };
+        script.onload = function() {
+            script.onerror = script.onload = null;
+            resolve();
+        };
+        document.getElementsByTagName("head")[0].appendChild(script);
+    });
+});
+
+},{"ca2a84f7fa4a3bb0":"j49pS"}],"j49pS":[function(require,module,exports) {
+"use strict";
+var cachedBundles = {};
+var cachedPreloads = {};
+var cachedPrefetches = {};
+function getCache(type) {
+    switch(type){
+        case "preload":
+            return cachedPreloads;
+        case "prefetch":
+            return cachedPrefetches;
+        default:
+            return cachedBundles;
+    }
+}
+module.exports = function(loader, type) {
+    return function(bundle) {
+        var cache = getCache(type);
+        if (cache[bundle]) return cache[bundle];
+        return cache[bundle] = loader.apply(null, arguments).catch(function(e) {
+            delete cache[bundle];
+            throw e;
+        });
+    };
+};
+
+},{}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"kJc9s":[function(require,module,exports) {
+module.exports = require("ee918d38c1f090af")(require("f9f7898b5da0a84a").getBundleURL("6EXJA") + "PriceListPage.ae6772f7.js" + "?" + Date.now()).catch((err)=>{
+    delete module.bundle.cache[module.id];
+    throw err;
+}).then(()=>module.bundle.root("eIucm"));
+
+},{"ee918d38c1f090af":"61B45","f9f7898b5da0a84a":"lgJ39"}],"29qIj":[function(require,module,exports) {
+module.exports = Promise.all([
+    require("2103bd8827cf8c34")(require("dc3385bbeb5f3618").getBundleURL("6EXJA") + "HomePage.ea772fba.js" + "?" + Date.now()).catch((err)=>{
+        delete module.bundle.cache[module.id];
+        throw err;
+    }),
+    require("2103bd8827cf8c34")(require("dc3385bbeb5f3618").getBundleURL("6EXJA") + "ProductsListningPage.ead8cea0.js" + "?" + Date.now()).catch((err)=>{
+        delete module.bundle.cache[module.id];
+        throw err;
+    })
+]).then(()=>module.bundle.root("3Kqqo"));
+
+},{"2103bd8827cf8c34":"61B45","dc3385bbeb5f3618":"lgJ39"}],"b8bPV":[function(require,module,exports) {
+module.exports = require("3aeef060b635db81")(require("cf9c6f76834c4395").getBundleURL("6EXJA") + "ContactPage.78d6052e.js" + "?" + Date.now()).catch((err)=>{
+    delete module.bundle.cache[module.id];
+    throw err;
+}).then(()=>module.bundle.root("bDqc9"));
+
+},{"3aeef060b635db81":"61B45","cf9c6f76834c4395":"lgJ39"}],"epTmJ":[function(require,module,exports) {
+module.exports = require("cf5a86b0fc7849c5")(require("7752572e8e6b6dce").getBundleURL("6EXJA") + "ImageArchive.248cf79c.js" + "?" + Date.now()).catch((err)=>{
+    delete module.bundle.cache[module.id];
+    throw err;
+}).then(()=>module.bundle.root("j1mrX"));
+
+},{"cf5a86b0fc7849c5":"61B45","7752572e8e6b6dce":"lgJ39"}],"bwqqr":[function(require,module,exports) {
+module.exports = Promise.all([
+    require("835e2f2382f7ae14")(require("6e1af099277e6dec").getBundleURL("6EXJA") + "SawedProducts.5574557b.js" + "?" + Date.now()).catch((err)=>{
+        delete module.bundle.cache[module.id];
+        throw err;
+    }),
+    require("835e2f2382f7ae14")(require("6e1af099277e6dec").getBundleURL("6EXJA") + "SawedProducts.eaacca9b.js" + "?" + Date.now()).catch((err)=>{
+        delete module.bundle.cache[module.id];
+        throw err;
+    })
+]).then(()=>module.bundle.root("kTUTe"));
+
+},{"835e2f2382f7ae14":"61B45","6e1af099277e6dec":"lgJ39"}],"loKs0":[function(require,module,exports) {
+module.exports = Promise.all([
+    require("e0445329a948cfe4")(require("c671875f26c1852").getBundleURL("6EXJA") + "SawedProducts.5574557b.js" + "?" + Date.now()).catch((err)=>{
+        delete module.bundle.cache[module.id];
+        throw err;
+    }),
+    require("e0445329a948cfe4")(require("c671875f26c1852").getBundleURL("6EXJA") + "SpecialProducts.a3315bd9.js" + "?" + Date.now()).catch((err)=>{
+        delete module.bundle.cache[module.id];
+        throw err;
+    })
+]).then(()=>module.bundle.root("8F5SM"));
+
+},{"e0445329a948cfe4":"61B45","c671875f26c1852":"lgJ39"}],"2goLO":[function(require,module,exports) {
+module.exports = require("9a4d095c7719d879")(require("57e986a8e268f665").getBundleURL("6EXJA") + "Limfog.b193395b.js" + "?" + Date.now()).catch((err)=>{
+    delete module.bundle.cache[module.id];
+    throw err;
+}).then(()=>module.bundle.root("l1iBY"));
+
+},{"9a4d095c7719d879":"61B45","57e986a8e268f665":"lgJ39"}],"j8zLA":[function(require,module,exports) {
+module.exports = Promise.all([
+    require("42c34be9806c7fc7")(require("ba0b0f4731d34a9d").getBundleURL("6EXJA") + "SawedProducts.5574557b.js" + "?" + Date.now()).catch((err)=>{
+        delete module.bundle.cache[module.id];
+        throw err;
+    }),
+    require("42c34be9806c7fc7")(require("ba0b0f4731d34a9d").getBundleURL("6EXJA") + "PlanedProducts.0b242f48.js" + "?" + Date.now()).catch((err)=>{
+        delete module.bundle.cache[module.id];
+        throw err;
+    })
+]).then(()=>module.bundle.root("bDJ6V"));
+
+},{"42c34be9806c7fc7":"61B45","ba0b0f4731d34a9d":"lgJ39"}],"ilySR":[function(require,module,exports) {
+module.exports = require("701dffce8028e1ff")(require("2cdfa1c5acb84052").getBundleURL("6EXJA") + "AboutUsPage.c91257b1.js" + "?" + Date.now()).catch((err)=>{
+    delete module.bundle.cache[module.id];
+    throw err;
+}).then(()=>module.bundle.root("3vtcQ"));
+
+},{"701dffce8028e1ff":"61B45","2cdfa1c5acb84052":"lgJ39"}],"irmnC":[function() {},{}],"bAXm1":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "GlitzProvider", ()=>GlitzProvider);
@@ -35852,7 +35608,233 @@ module.exports = require("2255125a8e8b1051");
     exports.typeOf = typeOf;
 })();
 
-},{}],"5ehrf":[function(require,module,exports) {
+},{}],"kcmoy":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$40ee = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$40ee.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("@glitz/react");
+var _core = require("@glitz/core");
+var _value = require("../../Shared/value");
+var _compact = require("./Compact");
+var _compactDefault = parcelHelpers.interopDefault(_compact);
+var _full = require("./Full");
+var _fullDefault = parcelHelpers.interopDefault(_full);
+const menuLinks = [
+    {
+        url: "/",
+        name: "Hem"
+    },
+    {
+        url: "/produkter",
+        name: "Produkter",
+        subMenu: [
+            {
+                url: "/produkter/sagade-produkter",
+                name: "S\xe5gade Produkter"
+            },
+            {
+                url: "/produkter/hyvlade-produkter",
+                name: "Hyvlade Produkter"
+            },
+            {
+                url: "/produkter/special-produkter",
+                name: "Specialprodukter"
+            },
+            {
+                url: "/produkter/limfog",
+                name: "Limfog"
+            }
+        ]
+    },
+    {
+        url: "/prislista",
+        name: "Prislista"
+    },
+    {
+        url: "/galleri",
+        name: "Galleri"
+    },
+    {
+        url: "/om-oss",
+        name: "Om oss"
+    },
+    {
+        url: "/kontakt",
+        name: "Kontakt"
+    }
+];
+function Header() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledHeader, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TopBar, {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TopBarWrapper, {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(A, {
+                            href: "mailto:info@eme.nu",
+                            "aria-label": "Send an email to info@eme.nu",
+                            children: "info@eme.nu"
+                        }, void 0, false, {
+                            fileName: "src/Feature/Header/Header.tsx",
+                            lineNumber: 65,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(A, {
+                            "aria-label": "Call 070-3278734",
+                            href: "tel:0046703278734",
+                            children: "070-3278734"
+                        }, void 0, false, {
+                            fileName: "src/Feature/Header/Header.tsx",
+                            lineNumber: 68,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Feature/Header/Header.tsx",
+                    lineNumber: 64,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "src/Feature/Header/Header.tsx",
+                lineNumber: 63,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fullDefault.default), {
+                menuLinks: menuLinks
+            }, void 0, false, {
+                fileName: "src/Feature/Header/Header.tsx",
+                lineNumber: 73,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _compactDefault.default), {
+                menuLinks: menuLinks
+            }, void 0, false, {
+                fileName: "src/Feature/Header/Header.tsx",
+                lineNumber: 74,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/Feature/Header/Header.tsx",
+        lineNumber: 62,
+        columnNumber: 5
+    }, this);
+}
+_c = Header;
+exports.default = Header;
+const StyledHeader = (0, _react.styled).header({
+    position: "sticky",
+    top: "0px",
+    zIndex: 10,
+    backgroundColor: "#fff",
+    border: {
+        bottom: {
+            style: "solid",
+            width: "2px",
+            color: "#004A55"
+        }
+    },
+    ...(0, _core.media)({
+        minWidth: "1025px"
+    }, {
+        margin: {
+            bottom: (0, _value.medium)
+        }
+    })
+});
+_c1 = StyledHeader;
+const TopBar = (0, _react.styled).div({
+    backgroundColor: (0, _value.DefaulBackgroundColor),
+    color: "#fff",
+    padding: {
+        y: (0, _value.small)
+    }
+});
+_c2 = TopBar;
+const TopBarWrapper = (0, _react.styled)((0, _value.AppearanceBlock), {
+    display: "flex",
+    gap: (0, _value.small),
+    justifyContent: "space-between",
+    padding: {
+        x: (0, _value.medium)
+    }
+});
+_c3 = TopBarWrapper;
+const A = (0, _react.styled).a();
+_c4 = A;
+var _c, _c1, _c2, _c3, _c4;
+$RefreshReg$(_c, "Header");
+$RefreshReg$(_c1, "StyledHeader");
+$RefreshReg$(_c2, "TopBar");
+$RefreshReg$(_c3, "TopBarWrapper");
+$RefreshReg$(_c4, "A");
+
+  $parcel$ReactRefreshHelpers$40ee.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","./Compact":"3pGbL","./Full":"8Zi0O","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@glitz/core":"5ehrf"}],"9VKej":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "thin", ()=>thin);
+parcelHelpers.export(exports, "thick", ()=>thick);
+parcelHelpers.export(exports, "tiny", ()=>tiny);
+parcelHelpers.export(exports, "small", ()=>small);
+parcelHelpers.export(exports, "medium", ()=>medium);
+parcelHelpers.export(exports, "large", ()=>large);
+parcelHelpers.export(exports, "huge", ()=>huge);
+parcelHelpers.export(exports, "gigantic", ()=>gigantic);
+parcelHelpers.export(exports, "humongous", ()=>humongous);
+parcelHelpers.export(exports, "moderate", ()=>moderate);
+parcelHelpers.export(exports, "Block", ()=>Block);
+parcelHelpers.export(exports, "AppearanceBlock", ()=>AppearanceBlock);
+parcelHelpers.export(exports, "Text", ()=>Text);
+parcelHelpers.export(exports, "DefaultGreen", ()=>DefaultGreen);
+parcelHelpers.export(exports, "DefaulBackgroundColor", ()=>DefaulBackgroundColor);
+var _react = require("@glitz/react");
+var _core = require("@glitz/core");
+const thin = "1px";
+const thick = "2px";
+const tiny = "4px";
+const small = "8px";
+const medium = "16px";
+const large = "24px";
+const huge = "32px";
+const gigantic = "40px";
+const humongous = "48px";
+const moderate = large; // This is default spacing, e.g. margin between `<p>`
+const Block = (0, _react.styled).div({
+    padding: {
+        top: huge,
+        x: medium
+    },
+    backgroundColor: "#fff"
+});
+const AppearanceBlock = (0, _react.styled).div({
+    width: "1366px",
+    maxWidth: "calc(100vw - 65px)",
+    margin: {
+        y: 0,
+        x: "auto"
+    },
+    ...(0, _core.media)({
+        maxWidth: "1025px"
+    }, {
+        maxWidth: "100vw",
+        width: "100%"
+    })
+});
+const Text = (0, _react.styled).p({});
+const DefaultGreen = "#A7CDCC";
+const DefaulBackgroundColor = "#004A55";
+
+},{"@glitz/react":"bAXm1","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5ehrf":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "GlitzClient", ()=>GlitzClient);
@@ -36685,4069 +36667,7 @@ function compose() {
     });
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9VKej":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "thin", ()=>thin);
-parcelHelpers.export(exports, "thick", ()=>thick);
-parcelHelpers.export(exports, "tiny", ()=>tiny);
-parcelHelpers.export(exports, "small", ()=>small);
-parcelHelpers.export(exports, "medium", ()=>medium);
-parcelHelpers.export(exports, "large", ()=>large);
-parcelHelpers.export(exports, "huge", ()=>huge);
-parcelHelpers.export(exports, "gigantic", ()=>gigantic);
-parcelHelpers.export(exports, "humongous", ()=>humongous);
-parcelHelpers.export(exports, "moderate", ()=>moderate);
-parcelHelpers.export(exports, "Block", ()=>Block);
-parcelHelpers.export(exports, "AppearanceBlock", ()=>AppearanceBlock);
-parcelHelpers.export(exports, "Text", ()=>Text);
-parcelHelpers.export(exports, "DefaultGreen", ()=>DefaultGreen);
-parcelHelpers.export(exports, "DefaulBackgroundColor", ()=>DefaulBackgroundColor);
-var _react = require("@glitz/react");
-var _core = require("@glitz/core");
-const thin = "1px";
-const thick = "2px";
-const tiny = "4px";
-const small = "8px";
-const medium = "16px";
-const large = "24px";
-const huge = "32px";
-const gigantic = "40px";
-const humongous = "48px";
-const moderate = large; // This is default spacing, e.g. margin between `<p>`
-const Block = (0, _react.styled).div({
-    padding: {
-        top: huge,
-        x: medium
-    },
-    backgroundColor: "#fff"
-});
-const AppearanceBlock = (0, _react.styled).div({
-    width: "1366px",
-    maxWidth: "calc(100vw - 65px)",
-    margin: {
-        y: 0,
-        x: "auto"
-    },
-    ...(0, _core.media)({
-        maxWidth: "1025px"
-    }, {
-        maxWidth: "100vw",
-        width: "100%"
-    })
-});
-const Text = (0, _react.styled).p({});
-const DefaultGreen = "#A7CDCC";
-const DefaulBackgroundColor = "#004A55";
-
-},{"@glitz/react":"bAXm1","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"d6rHm":[function(require,module,exports) {
-module.exports = require("bd506b22664eee19").getBundleURL("6EXJA") + "wood-dummy.7930ec0e.jpg" + "?" + Date.now();
-
-},{"bd506b22664eee19":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-}
-// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"iGEMB":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "headingReset", ()=>headingReset);
-parcelHelpers.export(exports, "h3Styled", ()=>h3Styled);
-var _react = require("@glitz/react");
-var _typography = require("../typography");
-var _value = require("../value");
-var _core = require("@glitz/core");
-const headingReset = (0, _react.styled)({
-    fontSize: "unset",
-    fontWeight: "unset",
-    marginBottom: 0
-});
-const h3Styled = (0, _react.styled)({
-    fontWeight: "700",
-    fontSize: (0, _typography.gamma),
-    margin: {
-        bottom: (0, _value.small)
-    },
-    ...(0, _core.media)({
-        maxWidth: "760px"
-    }, {
-        fontSize: (0, _typography.delta)
-    })
-});
-exports.default = h3Styled((0, _react.styled).H3);
-
-},{"@glitz/react":"bAXm1","../typography":"iZltJ","../value":"9VKej","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iZltJ":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "alternativeTextColor", ()=>alternativeTextColor);
-parcelHelpers.export(exports, "giga", ()=>giga);
-parcelHelpers.export(exports, "mega", ()=>mega);
-parcelHelpers.export(exports, "kilo", ()=>kilo);
-parcelHelpers.export(exports, "alpha", ()=>alpha);
-parcelHelpers.export(exports, "beta", ()=>beta);
-parcelHelpers.export(exports, "gamma", ()=>gamma);
-parcelHelpers.export(exports, "delta", ()=>delta);
-parcelHelpers.export(exports, "epsilon", ()=>epsilon);
-parcelHelpers.export(exports, "zeta", ()=>zeta);
-parcelHelpers.export(exports, "createTruncateDecorator", ()=>createTruncateDecorator);
-var _react = require("@glitz/react");
-const alternativeTextColor = "#b5b5b5";
-const giga = "72px";
-const mega = "54px";
-const kilo = "36px";
-const alpha = "32px";
-const beta = "24px";
-const gamma = "20px";
-const delta = "16px";
-const epsilon = "14px";
-const zeta = "12px";
-function createTruncateDecorator(overflow = "ellipsis") {
-    return (0, _react.styled)({
-        overflow: "hidden",
-        whiteSpace: "nowrap",
-        textOverflow: overflow
-    });
-}
-
-},{"@glitz/react":"bAXm1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6qRec":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$7b37 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$7b37.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _react1 = require("@glitz/react");
-var _s = $RefreshSig$();
-function LazyLoadImage({ src, alt }) {
-    _s();
-    const imgRef = (0, _react.useRef)(null);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ImageComponent, {
-        ref: imgRef,
-        src: src,
-        alt: alt,
-        loading: "lazy"
-    }, void 0, false, {
-        fileName: "src/Feature/Components/LazyLoadImage.tsx",
-        lineNumber: 12,
-        columnNumber: 10
-    }, this);
-}
-_s(LazyLoadImage, "4ePvNHuSuoDcJUA4FzxhhVtSEHM=");
-_c = LazyLoadImage;
-exports.default = _c1 = (0, _react1.styled)(LazyLoadImage);
-const ImageComponent = (0, _react1.styled).img({});
-_c2 = ImageComponent;
-var _c, _c1, _c2;
-$RefreshReg$(_c, "LazyLoadImage");
-$RefreshReg$(_c1, "%default%");
-$RefreshReg$(_c2, "ImageComponent");
-
-  $parcel$ReactRefreshHelpers$7b37.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@glitz/react":"bAXm1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
-"use strict";
-var Refresh = require("7422ead32dcc1e6b");
-function debounce(func, delay) {
-    {
-        let timeout = undefined;
-        let lastTime = 0;
-        return function(args) {
-            // Call immediately if last call was more than the delay ago.
-            // Otherwise, set a timeout. This means the first call is fast
-            // (for the common case of a single update), and subsequent updates
-            // are batched.
-            let now = Date.now();
-            if (now - lastTime > delay) {
-                lastTime = now;
-                func.call(null, args);
-            } else {
-                clearTimeout(timeout);
-                timeout = setTimeout(function() {
-                    timeout = undefined;
-                    lastTime = Date.now();
-                    func.call(null, args);
-                }, delay);
-            }
-        };
-    }
-}
-var enqueueUpdate = debounce(function() {
-    Refresh.performReactRefresh();
-}, 30);
-// Everthing below is either adapted or copied from
-// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
-// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
-module.exports.prelude = function(module1) {
-    window.$RefreshReg$ = function(type, id) {
-        Refresh.register(type, module1.id + " " + id);
-    };
-    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
-};
-module.exports.postlude = function(module1) {
-    if (isReactRefreshBoundary(module1.exports)) {
-        registerExportsForReactRefresh(module1);
-        if (module1.hot) {
-            module1.hot.dispose(function(data) {
-                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
-                data.prevExports = module1.exports;
-            });
-            module1.hot.accept(function(getParents) {
-                var prevExports = module1.hot.data.prevExports;
-                var nextExports = module1.exports;
-                // Since we just executed the code for it, it's possible
-                // that the new exports make it ineligible for being a boundary.
-                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
-                // It can also become ineligible if its exports are incompatible
-                // with the previous exports.
-                // For example, if you add/remove/change exports, we'll want
-                // to re-execute the importing modules, and force those components
-                // to re-render. Similarly, if you convert a class component
-                // to a function, we want to invalidate the boundary.
-                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
-                if (isNoLongerABoundary || didInvalidate) {
-                    // We'll be conservative. The only case in which we won't do a full
-                    // reload is if all parent modules are also refresh boundaries.
-                    // In that case we'll add them to the current queue.
-                    var parents = getParents();
-                    if (parents.length === 0) {
-                        // Looks like we bubbled to the root. Can't recover from that.
-                        window.location.reload();
-                        return;
-                    }
-                    return parents;
-                }
-                enqueueUpdate();
-            });
-        }
-    }
-};
-function isReactRefreshBoundary(exports) {
-    if (Refresh.isLikelyComponentType(exports)) return true;
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    return false;
-    var hasExports = false;
-    var areAllExportsComponents = true;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        hasExports = true;
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
-        return false;
-        var exportValue = exports[key];
-        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
-    }
-    return hasExports && areAllExportsComponents;
-}
-function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
-    var prevSignature = getRefreshBoundarySignature(prevExports);
-    var nextSignature = getRefreshBoundarySignature(nextExports);
-    if (prevSignature.length !== nextSignature.length) return true;
-    for(var i = 0; i < nextSignature.length; i++){
-        if (prevSignature[i] !== nextSignature[i]) return true;
-    }
-    return false;
-}
-// When this signature changes, it's unsafe to stop at this refresh boundary.
-function getRefreshBoundarySignature(exports) {
-    var signature = [];
-    signature.push(Refresh.getFamilyByType(exports));
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return signature;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        signature.push(key);
-        signature.push(Refresh.getFamilyByType(exportValue));
-    }
-    return signature;
-}
-function registerExportsForReactRefresh(module1) {
-    var exports = module1.exports, id = module1.id;
-    Refresh.register(exports, id + " %exports%");
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        var typeID = id + " %exports% " + key;
-        Refresh.register(exportValue, typeID);
-    }
-}
-
-},{"7422ead32dcc1e6b":"786KC"}],"7Omft":[function(require,module,exports) {
-module.exports = require("34366f8c3b03848b").getBundleURL("6EXJA") + "sawed-products-1.e900d10c.jpg" + "?" + Date.now();
-
-},{"34366f8c3b03848b":"lgJ39"}],"83gtD":[function(require,module,exports) {
-module.exports = require("527adde4683699d1").getBundleURL("6EXJA") + "horse-box.6b4108c3.jpg" + "?" + Date.now();
-
-},{"527adde4683699d1":"lgJ39"}],"jUiM9":[function(require,module,exports) {
-module.exports = require("e8d3c54cc0e11ce7").getBundleURL("6EXJA") + "limfog-alm.964d5e46.jpg" + "?" + Date.now();
-
-},{"e8d3c54cc0e11ce7":"lgJ39"}],"at8Gv":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$0aef = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$0aef.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "PlainButton", ()=>PlainButton);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("@glitz/react");
-var _value = require("../../Shared/value");
-var _typography = require("../../Shared/typography");
-var _reactRouterDom = require("react-router-dom");
-function Button(props) {
-    const { to, onClick, children } = props;
-    if (to) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-        to: to,
-        "aria-label": props.ariaLabel,
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
-            children: children
-        }, void 0, false, {
-            fileName: "src/Feature/Components/Button.tsx",
-            lineNumber: 19,
-            columnNumber: 9
-        }, this)
-    }, void 0, false, {
-        fileName: "src/Feature/Components/Button.tsx",
-        lineNumber: 18,
-        columnNumber: 7
-    }, this);
-    else return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
-        onClick: onClick,
-        "aria-label": props.ariaLabel,
-        children: children
-    }, void 0, false, {
-        fileName: "src/Feature/Components/Button.tsx",
-        lineNumber: 24,
-        columnNumber: 7
-    }, this);
-}
-_c = Button;
-exports.default = _c1 = (0, _react.styled)(Button);
-const StyledButton = (0, _react.styled).button({
-    cursor: "pointer",
-    backgroundColor: (0, _value.DefaulBackgroundColor),
-    color: "#fff",
-    fontWeight: "bold",
-    fontSize: (0, _typography.delta),
-    borderRadius: "4px",
-    padding: {
-        y: (0, _value.medium),
-        x: (0, _value.large)
-    },
-    border: {
-        xy: {
-            style: "none"
-        }
-    },
-    transition: {
-        property: "all",
-        duration: "0.3s",
-        timingFunction: "ease-in-out"
-    },
-    ":hover": {
-        backgroundColor: "#003740 "
-    }
-});
-_c2 = StyledButton;
-const PlainButton = (0, _react.styled)(Button, {
-    backgroundColor: "inherit",
-    color: "inherit",
-    borderRadius: "none",
-    textAlign: "start",
-    fontWeight: "normal",
-    padding: {
-        xy: 0
-    },
-    transition: {
-        property: "none"
-    },
-    ":hover": {
-        backgroundColor: "inherit "
-    }
-});
-_c3 = PlainButton;
-var _c, _c1, _c2, _c3;
-$RefreshReg$(_c, "Button");
-$RefreshReg$(_c1, "%default%");
-$RefreshReg$(_c2, "StyledButton");
-$RefreshReg$(_c3, "PlainButton");
-
-  $parcel$ReactRefreshHelpers$0aef.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","../../Shared/typography":"iZltJ","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8WNwH":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$bb69 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$bb69.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("@glitz/react");
-var _h1 = require("../../Shared/Generic/H1");
-var _h1Default = parcelHelpers.interopDefault(_h1);
-var _value = require("../../Shared/value");
-var _h3 = require("../../Shared/Generic/H3");
-var _h3Default = parcelHelpers.interopDefault(_h3);
-var _lazyLoadImage = require("./LazyLoadImage");
-var _lazyLoadImageDefault = parcelHelpers.interopDefault(_lazyLoadImage);
-var _button = require("./Button");
-var _buttonDefault = parcelHelpers.interopDefault(_button);
-var _core = require("@glitz/core");
-var _react1 = require("react");
-function Hero(props) {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeroContainer, {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextOverlay, {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h1Default.default), {
-                                children: props.title
-                            }, void 0, false, {
-                                fileName: "src/Feature/Components/Hero.tsx",
-                                lineNumber: 21,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledH3, {
-                                children: props.description
-                            }, void 0, false, {
-                                fileName: "src/Feature/Components/Hero.tsx",
-                                lineNumber: 22,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Feature/Components/Hero.tsx",
-                        lineNumber: 20,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
-                        ariaLabel: "kontakta oss",
-                        to: "/kontakt",
-                        children: "Kontakta oss"
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/Hero.tsx",
-                        lineNumber: 24,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Feature/Components/Hero.tsx",
-                lineNumber: 19,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ImageContainer, {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Image, {
-                    src: props.src,
-                    alt: props.alt
-                }, void 0, false, {
-                    fileName: "src/Feature/Components/Hero.tsx",
-                    lineNumber: 29,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "src/Feature/Components/Hero.tsx",
-                lineNumber: 28,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledBlock, {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h1Default.default), {
-                            children: props.title
-                        }, void 0, false, {
-                            fileName: "src/Feature/Components/Hero.tsx",
-                            lineNumber: 33,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledH3, {
-                            children: props.description
-                        }, void 0, false, {
-                            fileName: "src/Feature/Components/Hero.tsx",
-                            lineNumber: 34,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Feature/Components/Hero.tsx",
-                    lineNumber: 32,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "src/Feature/Components/Hero.tsx",
-                lineNumber: 31,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/Feature/Components/Hero.tsx",
-        lineNumber: 18,
-        columnNumber: 5
-    }, this);
-}
-_c = Hero;
-exports.default = /*#__PURE__*/ _c1 = (0, _react1.memo)(Hero);
-const HeroContainer = (0, _react.styled).div({
-    position: "relative",
-    overflow: "hidden"
-});
-_c2 = HeroContainer;
-const TextContainer = (0, _react.styled).div();
-_c3 = TextContainer;
-const StyledBlock = (0, _react.styled)((0, _value.Block), {
-    display: "none",
-    ...(0, _core.media)({
-        maxWidth: "1025px"
-    }, {
-        display: "block"
-    })
-});
-_c4 = StyledBlock;
-const TextOverlay = (0, _react.styled).div({
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "end",
-    flexWrap: "wrap",
-    padding: {
-        x: (0, _value.large),
-        bottom: (0, _value.huge)
-    },
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    zIndex: "1",
-    textAlign: "left",
-    color: "#fff",
-    width: "100%",
-    height: "100%",
-    backgroundImage: "linear-gradient(185.28deg,transparent,rgba(0,0,0,.05) 57.61%,rgba(0,0,0,.9) 99.95%,rgba(0,0,0,.5) 100%,rgba(0,0,0,.5) 0),linear-gradient(180.33deg,transparent,transparent 55.61%,rgba(0,0,0,.9) 99.95%,rgba(0,0,0,.5) 100%,rgba(0,0,0,.5) 0)",
-    ...(0, _core.media)({
-        maxWidth: "1025px"
-    }, {
-        display: "none"
-    })
-});
-_c5 = TextOverlay;
-const StyledButton = (0, _react.styled)((0, _buttonDefault.default), {
-    backgroundColor: "#fff",
-    color: "black",
-    ":hover": {
-        backgroundColor: "#f0f0f0 "
-    },
-    ...(0, _core.media)({
-        maxWidth: "1025px"
-    }, {
-        flexDirection: "column",
-        alignItems: "start",
-        justifyContent: "end",
-        margin: {
-            top: (0, _value.medium),
-            x: 0,
-            bottom: 0
-        }
-    })
-});
-_c6 = StyledButton;
-const StyledH3 = (0, _react.styled)((0, _h3Default.default), {
-    fontStyle: "italic"
-});
-_c7 = StyledH3;
-const ImageContainer = (0, _react.styled).div({
-    position: "relative",
-    width: "100%",
-    height: "500px",
-    overflow: "hidden",
-    ...(0, _core.media)({
-        maxWidth: "760px"
-    }, {
-        height: "300px"
-    })
-});
-_c8 = ImageContainer;
-const Image = (0, _react.styled)((0, _lazyLoadImageDefault.default), {
-    width: "100%",
-    height: "100%",
-    objectFit: "cover"
-});
-_c9 = Image;
-var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9;
-$RefreshReg$(_c, "Hero");
-$RefreshReg$(_c1, "%default%");
-$RefreshReg$(_c2, "HeroContainer");
-$RefreshReg$(_c3, "TextContainer");
-$RefreshReg$(_c4, "StyledBlock");
-$RefreshReg$(_c5, "TextOverlay");
-$RefreshReg$(_c6, "StyledButton");
-$RefreshReg$(_c7, "StyledH3");
-$RefreshReg$(_c8, "ImageContainer");
-$RefreshReg$(_c9, "Image");
-
-  $parcel$ReactRefreshHelpers$bb69.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/Generic/H1":"fmZc4","../../Shared/value":"9VKej","../../Shared/Generic/H3":"iGEMB","./LazyLoadImage":"6qRec","./Button":"at8Gv","@glitz/core":"5ehrf","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fmZc4":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "headingReset", ()=>headingReset);
-parcelHelpers.export(exports, "h1Styled", ()=>h1Styled);
-var _react = require("@glitz/react");
-var _typography = require("../typography");
-var _value = require("../value");
-var _core = require("@glitz/core");
-const headingReset = (0, _react.styled)({
-    fontSize: "unset",
-    fontWeight: "unset",
-    marginBottom: 0
-});
-const h1Styled = (0, _react.styled)({
-    fontWeight: "700",
-    fontSize: (0, _typography.alpha),
-    margin: {
-        bottom: (0, _value.moderate)
-    },
-    ...(0, _core.media)({
-        maxWidth: "760px"
-    }, {
-        fontSize: (0, _typography.beta)
-    })
-});
-exports.default = h1Styled((0, _react.styled).H1);
-
-},{"@glitz/react":"bAXm1","../typography":"iZltJ","../value":"9VKej","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8HWo8":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$bbae = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$bbae.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("@glitz/react");
-var _core = require("@glitz/core");
-var _h2 = require("../../Shared/Generic/H2");
-var _h2Default = parcelHelpers.interopDefault(_h2);
-var _value = require("../../Shared/value");
-var _lazyLoadImage = require("./LazyLoadImage");
-var _lazyLoadImageDefault = parcelHelpers.interopDefault(_lazyLoadImage);
-function ImageAndText({ title, src, children, textFirst }) {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ImageContainer, {
-                className: "image",
-                css: {
-                    height: "auto",
-                    ...!textFirst ? {
-                        ...(0, _core.media)({
-                            minWidth: "1025px"
-                        }, {
-                            order: 1
-                        })
-                    } : {
-                        ...(0, _core.media)({
-                            minWidth: "1025px"
-                        }, {
-                            order: 2
-                        })
-                    }
-                },
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Image, {
-                    src: src,
-                    alt: "oak image"
-                }, void 0, false, {
-                    fileName: "src/Feature/Components/ImageAndText.tsx",
-                    lineNumber: 41,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "src/Feature/Components/ImageAndText.tsx",
-                lineNumber: 17,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
-                className: "text",
-                css: {
-                    height: "auto",
-                    ...!textFirst ? {
-                        ...(0, _core.media)({
-                            minWidth: "1025px"
-                        }, {
-                            order: 2
-                        })
-                    } : {
-                        ...(0, _core.media)({
-                            minWidth: "1025px"
-                        }, {
-                            order: 1
-                        })
-                    }
-                },
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h2Default.default), {
-                        children: title
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/ImageAndText.tsx",
-                        lineNumber: 67,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextList, {
-                        children: children
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/ImageAndText.tsx",
-                        lineNumber: 68,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Feature/Components/ImageAndText.tsx",
-                lineNumber: 43,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/Feature/Components/ImageAndText.tsx",
-        lineNumber: 16,
-        columnNumber: 5
-    }, this);
-}
-_c = ImageAndText;
-exports.default = ImageAndText;
-const Container = (0, _react.styled)((0, _value.Block), {
-    display: "grid",
-    gridTemplateColumns: "1fr",
-    gap: "20px",
-    borderRadius: "10px",
-    ...(0, _core.media)({
-        minWidth: "1025px"
-    }, {
-        gridTemplateColumns: "1fr 1fr"
-    })
-});
-_c1 = Container;
-const TextContainer = (0, _react.styled).div({
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    padding: {
-        xy: (0, _value.large)
-    },
-    order: 2,
-    ...(0, _core.media)({
-        maxWidth: "1025px"
-    }, {
-        padding: {
-            xy: 0
-        }
-    })
-});
-_c2 = TextContainer;
-const ImageContainer = (0, _react.styled).div({
-    width: "100%",
-    height: "100%",
-    maxHeight: "500px",
-    borderRadius: "10px",
-    overflow: "hidden",
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-    order: 1
-});
-_c3 = ImageContainer;
-const Image = (0, _react.styled)((0, _lazyLoadImageDefault.default), {
-    width: "100%",
-    height: "100%",
-    objectFit: "cover"
-});
-_c4 = Image;
-const TextList = (0, _react.styled).div({
-    display: "flex",
-    flexDirection: "column",
-    gap: "10px"
-});
-_c5 = TextList;
-var _c, _c1, _c2, _c3, _c4, _c5;
-$RefreshReg$(_c, "ImageAndText");
-$RefreshReg$(_c1, "Container");
-$RefreshReg$(_c2, "TextContainer");
-$RefreshReg$(_c3, "ImageContainer");
-$RefreshReg$(_c4, "Image");
-$RefreshReg$(_c5, "TextList");
-
-  $parcel$ReactRefreshHelpers$bbae.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","@glitz/core":"5ehrf","../../Shared/Generic/H2":"au95a","../../Shared/value":"9VKej","./LazyLoadImage":"6qRec","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"au95a":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "headingReset", ()=>headingReset);
-parcelHelpers.export(exports, "h2Styled", ()=>h2Styled);
-var _react = require("@glitz/react");
-var _typography = require("../typography");
-var _value = require("../value");
-var _core = require("@glitz/core");
-const headingReset = (0, _react.styled)({
-    fontSize: "unset",
-    fontWeight: "unset",
-    marginBottom: 0
-});
-const h2Styled = (0, _react.styled)({
-    fontWeight: "700",
-    fontSize: (0, _typography.beta),
-    margin: {
-        bottom: (0, _value.medium)
-    },
-    ...(0, _core.media)({
-        maxWidth: "760px"
-    }, {
-        fontSize: (0, _typography.gamma)
-    })
-});
-exports.default = h2Styled((0, _react.styled).H2);
-
-},{"@glitz/react":"bAXm1","../typography":"iZltJ","../value":"9VKej","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dMYuz":[function(require,module,exports) {
-module.exports = require("884b80a8fcd90374").getBundleURL("6EXJA") + "acorn.a7677c51.jpg" + "?" + Date.now();
-
-},{"884b80a8fcd90374":"lgJ39"}],"5S2tu":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$9fc2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$9fc2.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("@glitz/react");
-var _value = require("../../Shared/value");
-var _h2 = require("../../Shared/Generic/H2");
-var _h2Default = parcelHelpers.interopDefault(_h2);
-var _core = require("@glitz/core");
-var _typography = require("../../Shared/typography");
-const TextList = ()=>{
-    const products = [
-        "Bastupanel i AL/ASP",
-        "Bastulave i olika dimensioner",
-        "Dekorpaneler i AL, Alm, Ask, Asp och Ek m.m",
-        "Utv\xe4ndiga arkitektpaneler",
-        "Alla typer av listverk",
-        "Ekstolp",
-        "Ektrall"
-    ];
-    const woods = [
-        "AL",
-        "ALM",
-        "ASK",
-        "ASP",
-        "BJ\xd6RK",
-        "EK",
-        "Samt mindre partier av udda tr\xe4slag som Lind, S\xe4lg och K\xf6rsb\xe4r.",
-        "\xc4ven Gran och Fur i mindre skala."
-    ];
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Block), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
-                    title: "Urval av produkter",
-                    items: products
-                }, void 0, false, {
-                    fileName: "src/Feature/Components/TextList.tsx",
-                    lineNumber: 32,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
-                    title: "Vi arbetar med f\xf6ljande tr\xe4slag",
-                    items: woods
-                }, void 0, false, {
-                    fileName: "src/Feature/Components/TextList.tsx",
-                    lineNumber: 33,
-                    columnNumber: 9
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/Feature/Components/TextList.tsx",
-            lineNumber: 31,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/Feature/Components/TextList.tsx",
-        lineNumber: 30,
-        columnNumber: 5
-    }, undefined);
-};
-_c = TextList;
-const Section = ({ title, items })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Wrapper, {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TitleWrapper, {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h2Default.default), {
-                    children: title
-                }, void 0, false, {
-                    fileName: "src/Feature/Components/TextList.tsx",
-                    lineNumber: 42,
-                    columnNumber: 7
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/Feature/Components/TextList.tsx",
-                lineNumber: 41,
-                columnNumber: 5
-            }, undefined),
-            items.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                    children: item
-                }, index, false, {
-                    fileName: "src/Feature/Components/TextList.tsx",
-                    lineNumber: 45,
-                    columnNumber: 7
-                }, undefined))
-        ]
-    }, void 0, true, {
-        fileName: "src/Feature/Components/TextList.tsx",
-        lineNumber: 40,
-        columnNumber: 3
-    }, undefined);
-_c1 = Section;
-exports.default = TextList;
-const Container = (0, _react.styled).div({
-    display: "grid",
-    gridTemplateColumns: "1fr",
-    gap: "20px",
-    ...(0, _core.media)({
-        minWidth: "1025px"
-    }, {
-        gridTemplateColumns: "1fr 1fr"
-    }),
-    padding: {
-        bottom: (0, _value.medium)
-    }
-});
-_c2 = Container;
-const Wrapper = (0, _react.styled).ul({
-    display: "flex",
-    flexDirection: "column"
-});
-_c3 = Wrapper;
-const TitleWrapper = (0, _react.styled).div({
-    marginBottom: (0, _value.large),
-    border: {
-        bottom: {
-            width: "1px",
-            style: "solid",
-            color: (0, _value.DefaultGreen)
-        }
-    }
-});
-_c4 = TitleWrapper;
-const Text = (0, _react.styled).li({
-    fontSize: (0, _typography.gamma),
-    fontWeight: "700",
-    margin: {
-        left: (0, _value.large),
-        bottom: (0, _value.small)
-    }
-});
-_c5 = Text;
-var _c, _c1, _c2, _c3, _c4, _c5;
-$RefreshReg$(_c, "TextList");
-$RefreshReg$(_c1, "Section");
-$RefreshReg$(_c2, "Container");
-$RefreshReg$(_c3, "Wrapper");
-$RefreshReg$(_c4, "TitleWrapper");
-$RefreshReg$(_c5, "Text");
-
-  $parcel$ReactRefreshHelpers$9fc2.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","../../Shared/Generic/H2":"au95a","@glitz/core":"5ehrf","../../Shared/typography":"iZltJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3nPrl":[function(require,module,exports) {
-module.exports = require("de74ee2dc28855fd").getBundleURL("6EXJA") + "forrest.c5725ba2.jpg" + "?" + Date.now();
-
-},{"de74ee2dc28855fd":"lgJ39"}],"lVzFd":[function(require,module,exports) {
-module.exports = require("1bd6c40f5d0e0afc").getBundleURL("6EXJA") + "oak-boards.33736e6b.jpg" + "?" + Date.now();
-
-},{"1bd6c40f5d0e0afc":"lgJ39"}],"1jote":[function(require,module,exports) {
-module.exports = require("35346fcdb97182af").getBundleURL("6EXJA") + "shipping.7cc68795.png" + "?" + Date.now();
-
-},{"35346fcdb97182af":"lgJ39"}],"eIucm":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$e9db = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$e9db.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _hero = require("../Feature/Components/Hero");
-var _heroDefault = parcelHelpers.interopDefault(_hero);
-var _priceList = require("../Feature/Components/PriceList");
-var _priceListDefault = parcelHelpers.interopDefault(_priceList);
-var _heroLumberJpg = require("../Assets/HeroLumber.jpg");
-var _heroLumberJpgDefault = parcelHelpers.interopDefault(_heroLumberJpg);
-var _imageAndText = require("../Feature/Components/ImageAndText");
-var _imageAndTextDefault = parcelHelpers.interopDefault(_imageAndText);
-var _h3 = require("../Shared/Generic/H3");
-var _h3Default = parcelHelpers.interopDefault(_h3);
-var _react = require("@glitz/react");
-var _shippingPng = require("../Assets/shipping.png");
-var _shippingPngDefault = parcelHelpers.interopDefault(_shippingPng);
-function PriceListPage() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {
-                src: (0, _heroLumberJpgDefault.default),
-                alt: "Hero image oak",
-                title: "Prislista",
-                description: "Kontakta oss om ni vill ha Pris p\xe5 s\xe5gat virke okant och kantat"
-            }, void 0, false, {
-                fileName: "src/Pages/PriceListPage.tsx",
-                lineNumber: 12,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _priceListDefault.default), {}, void 0, false, {
-                fileName: "src/Pages/PriceListPage.tsx",
-                lineNumber: 18,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
-                src: (0, _shippingPngDefault.default),
-                title: "Frakt",
-                textFirst: true,
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
-                        children: "Vi har ett avtal med DHL som levererar virket direkt till d\xf6rren \xf6ver hela Sverige."
-                    }, void 0, false, {
-                        fileName: "src/Pages/PriceListPage.tsx",
-                        lineNumber: 20,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).P, {
-                        children: "Fraktkostnaden till Stockholm ligger p\xe5 cirka 600-1200 kronor inklusive moms."
-                    }, void 0, false, {
-                        fileName: "src/Pages/PriceListPage.tsx",
-                        lineNumber: 21,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).P, {
-                        children: "Om m\xf6jligt rekommenderar vi att du h\xe4mtar virket sj\xe4lv. D\xe5 f\xe5r du en inblick i produktionsprocessen och kan f\xf6lja hur din panel tillverkas, fr\xe5n stock till f\xe4rdig panel."
-                    }, void 0, false, {
-                        fileName: "src/Pages/PriceListPage.tsx",
-                        lineNumber: 22,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Pages/PriceListPage.tsx",
-                lineNumber: 19,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true);
-}
-_c = PriceListPage;
-exports.default = PriceListPage;
-var _c;
-$RefreshReg$(_c, "PriceListPage");
-
-  $parcel$ReactRefreshHelpers$e9db.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","../Feature/Components/Hero":"8WNwH","../Feature/Components/PriceList":"4ayDn","../Assets/HeroLumber.jpg":"eDA9j","../Feature/Components/ImageAndText":"8HWo8","../Shared/Generic/H3":"iGEMB","@glitz/react":"bAXm1","../Assets/shipping.png":"1jote","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4ayDn":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$57cd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$57cd.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _priceFile = require("../../Lists/PriceFile");
-var _value = require("../../Shared/value");
-var _react1 = require("@glitz/react");
-var _core = require("@glitz/core");
-var _button = require("./Button");
-var _s = $RefreshSig$();
-function PriceList() {
-    _s();
-    const [list, setList] = (0, _react.useState)((0, _priceFile.list));
-    const [sortConfig, setSortConfig] = (0, _react.useState)({
-        key: "typ",
-        order: "asc"
-    });
-    const sortList = (key)=>{
-        let order = "asc";
-        if (sortConfig.key === key && sortConfig.order === "asc") order = "desc";
-        const sortedList = [
-            ...list
-        ].sort((a, b)=>{
-            let aValue = a[key];
-            let bValue = b[key];
-            // Convert price to number for comparison
-            if (key === "pris") {
-                aValue = parseFloat(aValue.replace(/[^0-9.-]+/g, ""));
-                bValue = parseFloat(bValue.replace(/[^0-9.-]+/g, ""));
-            }
-            if (aValue < bValue) return order === "asc" ? -1 : 1;
-            if (aValue > bValue) return order === "asc" ? 1 : -1;
-            return 0;
-        });
-        setList(sortedList);
-        setSortConfig({
-            key,
-            order
-        });
-    };
-    const getSortIndicator = (key)=>{
-        if (sortConfig.key === key) return sortConfig.order === "asc" ? "\u2191" : "\u2193";
-        return "";
-    };
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Wrapper, {
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RowHeader, {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                            ariaLabel: "Artikelnr",
-                            onClick: ()=>sortList("artikelnr"),
-                            css: {
-                                cursor: "pointer"
-                            },
-                            children: [
-                                "Artikelnr ",
-                                getSortIndicator("artikelnr")
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Feature/Components/PriceList.tsx",
-                            lineNumber: 48,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                            ariaLabel: "Typ",
-                            onClick: ()=>sortList("typ"),
-                            css: {
-                                cursor: "pointer"
-                            },
-                            children: [
-                                "Typ ",
-                                getSortIndicator("typ")
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Feature/Components/PriceList.tsx",
-                            lineNumber: 51,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                            ariaLabel: "Dimension",
-                            onClick: ()=>sortList("dimension"),
-                            css: {
-                                cursor: "pointer"
-                            },
-                            children: [
-                                "Dimension ",
-                                getSortIndicator("dimension")
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Feature/Components/PriceList.tsx",
-                            lineNumber: 54,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                            ariaLabel: "Tr\xe4slag",
-                            onClick: ()=>sortList("traslag"),
-                            css: {
-                                cursor: "pointer"
-                            },
-                            children: [
-                                "Tr\xe4slag ",
-                                getSortIndicator("traslag")
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Feature/Components/PriceList.tsx",
-                            lineNumber: 57,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                            ariaLabel: "Enhet",
-                            onClick: ()=>sortList("enhet"),
-                            css: {
-                                cursor: "pointer"
-                            },
-                            children: [
-                                "Enhet ",
-                                getSortIndicator("enhet")
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Feature/Components/PriceList.tsx",
-                            lineNumber: 60,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                            ariaLabel: "Pris inkl/moms",
-                            onClick: ()=>sortList("pris"),
-                            css: {
-                                cursor: "pointer"
-                            },
-                            children: [
-                                "Pris inkl/moms ",
-                                getSortIndicator("pris")
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Feature/Components/PriceList.tsx",
-                            lineNumber: 63,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                            ariaLabel: "Anm\xe4rkning",
-                            onClick: ()=>sortList("anmarkning"),
-                            css: {
-                                cursor: "pointer"
-                            },
-                            children: [
-                                "Anm\xe4rkning ",
-                                getSortIndicator("anmarkning")
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Feature/Components/PriceList.tsx",
-                            lineNumber: 66,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Feature/Components/PriceList.tsx",
-                    lineNumber: 47,
-                    columnNumber: 9
-                }, this),
-                list.map((row, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Row, {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                                children: row.artikelnr
-                            }, void 0, false, {
-                                fileName: "src/Feature/Components/PriceList.tsx",
-                                lineNumber: 72,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                                children: row.typ
-                            }, void 0, false, {
-                                fileName: "src/Feature/Components/PriceList.tsx",
-                                lineNumber: 73,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                                children: row.dimension
-                            }, void 0, false, {
-                                fileName: "src/Feature/Components/PriceList.tsx",
-                                lineNumber: 74,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                                children: row.traslag
-                            }, void 0, false, {
-                                fileName: "src/Feature/Components/PriceList.tsx",
-                                lineNumber: 75,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                                children: row.enhet
-                            }, void 0, false, {
-                                fileName: "src/Feature/Components/PriceList.tsx",
-                                lineNumber: 76,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                                children: row.pris
-                            }, void 0, false, {
-                                fileName: "src/Feature/Components/PriceList.tsx",
-                                lineNumber: 77,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                                children: row.anmarkning
-                            }, void 0, false, {
-                                fileName: "src/Feature/Components/PriceList.tsx",
-                                lineNumber: 78,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, index, true, {
-                        fileName: "src/Feature/Components/PriceList.tsx",
-                        lineNumber: 71,
-                        columnNumber: 11
-                    }, this))
-            ]
-        }, void 0, true, {
-            fileName: "src/Feature/Components/PriceList.tsx",
-            lineNumber: 46,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
-        fileName: "src/Feature/Components/PriceList.tsx",
-        lineNumber: 45,
-        columnNumber: 5
-    }, this);
-}
-_s(PriceList, "VscPItBIttnZWRH8oNmDWCnGbOs=");
-_c = PriceList;
-exports.default = PriceList;
-const Container = (0, _react1.styled)((0, _value.Block), {
-    display: "block",
-    width: "100%",
-    overflowX: "auto",
-    ...(0, _core.media)({
-        minWidth: "1025px"
-    }, {
-        overflowX: "unset"
-    })
-});
-_c1 = Container;
-const Wrapper = (0, _react1.styled).div({
-    display: "block",
-    minWidth: "1000px",
-    position: "relative"
-});
-_c2 = Wrapper;
-const Row = (0, _react1.styled).div({
-    width: "100%",
-    display: "grid",
-    gridTemplateColumns: "1fr 2fr 1fr 1fr 1fr 1fr 1fr",
-    border: {
-        bottom: {
-            width: "1px",
-            style: "solid",
-            color: (0, _value.DefaultGreen)
-        }
-    }
-});
-_c3 = Row;
-const RowHeader = (0, _react1.styled)(Row, {
-    fontWeight: "bold",
-    ...(0, _core.media)({
-        minWidth: "1025px"
-    }, {
-        position: "sticky"
-    }),
-    top: "137px",
-    backgroundColor: "#fff"
-});
-_c4 = RowHeader;
-const Cell = (0, _react1.styled).div({
-    padding: {
-        y: "10px"
-    }
-});
-_c5 = Cell;
-const ButtonCell = (0, _react1.styled)((0, _button.PlainButton), {
-    whiteSpace: "nowrap",
-    padding: {
-        y: "10px"
-    }
-});
-_c6 = ButtonCell;
-var _c, _c1, _c2, _c3, _c4, _c5, _c6;
-$RefreshReg$(_c, "PriceList");
-$RefreshReg$(_c1, "Container");
-$RefreshReg$(_c2, "Wrapper");
-$RefreshReg$(_c3, "Row");
-$RefreshReg$(_c4, "RowHeader");
-$RefreshReg$(_c5, "Cell");
-$RefreshReg$(_c6, "ButtonCell");
-
-  $parcel$ReactRefreshHelpers$57cd.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../Lists/PriceFile":"4fJTC","../../Shared/value":"9VKej","@glitz/react":"bAXm1","@glitz/core":"5ehrf","./Button":"at8Gv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4fJTC":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "ekstolp", ()=>ekstolp);
-parcelHelpers.export(exports, "list", ()=>list);
-const ekstolp = {
-    dimensionsWithCosts: [
-        {
-            dimension: "50*50 mm",
-            length: "1.7-1.9 m",
-            pricePerUnit: "38",
-            sharpeningCost: "6"
-        },
-        {
-            dimension: "63*63 mm",
-            length: "1.7-1.9 m",
-            pricePerUnit: "65",
-            sharpeningCost: "8"
-        },
-        {
-            dimension: "75*75 mm",
-            length: "1.7-1.9 m",
-            pricePerUnit: "95",
-            sharpeningCost: "12"
-        }
-    ],
-    woodProducts: [
-        {
-            type: "Svensk Ek",
-            dimension: "42*120/145 mm",
-            pricePerKvm: "560 kr",
-            unit: "kvm"
-        },
-        {
-            type: "Svensk EK",
-            dimension: "34*120/145 mm",
-            pricePerKvm: "410 kr",
-            unit: "kvm"
-        },
-        {
-            type: "Stolpe Svensk Ek",
-            dimension: "95*95 mm",
-            pricePerLpm: "90 kr",
-            unit: "lpm"
-        },
-        {
-            type: "Stolpe Svensk Ek",
-            dimension: "120*120 mm",
-            pricePerLpm: "195 kr",
-            unit: "lpm"
-        }
-    ],
-    dimensionsWithPricePerLpm: [
-        {
-            dimension: "100*100 mm",
-            pricePerLpm: "110"
-        },
-        {
-            dimension: "125*125 mm",
-            pricePerLpm: "129"
-        },
-        {
-            dimension: "150*150 mm",
-            pricePerLpm: "175"
-        },
-        {
-            dimension: "175*175 mm",
-            pricePerLpm: "220"
-        },
-        {
-            dimension: "200*200 mm",
-            pricePerLpm: "280"
-        }
-    ],
-    additionalProducts: [
-        {
-            description: "Ek 19*120",
-            lengths: "Fallande",
-            pricePerM2: "850 kr"
-        },
-        {
-            description: "Ask 19*110",
-            lengths: "Fallande",
-            pricePerM2: "750 kr"
-        },
-        {
-            description: "AL 22*135",
-            lengths: "Fallande",
-            pricePerM2: "750 kr"
-        }
-    ]
-};
-const list = [
-    {
-        artikelnr: "7501",
-        typ: "Bastupanel Softline",
-        dimension: "15*63",
-        traslag: "AL",
-        enhet: "Lpm",
-        pris: "25",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7502",
-        typ: "Bastupanel Softline",
-        dimension: "15*90",
-        traslag: "AL",
-        enhet: "Lpm",
-        pris: "39",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7503",
-        typ: "Bastupanel Liggande",
-        dimension: "16*83",
-        traslag: "AL",
-        enhet: "Lpm",
-        pris: "37,5",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7504",
-        typ: "Bastupanel Faspanel",
-        dimension: "15*63",
-        traslag: "AL",
-        enhet: "Lpm",
-        pris: "25",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7505",
-        typ: "Bastupanel Natur",
-        dimension: "15*95",
-        traslag: "AL",
-        enhet: "Lpm",
-        pris: "29",
-        anmarkning: "Sluts\xe5ld"
-    },
-    {
-        artikelnr: "7506",
-        typ: "Bastu Panel Exklusiv (Big Hill)",
-        dimension: "21*95",
-        traslag: "AL",
-        enhet: "Lpm",
-        pris: "62",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "8001",
-        typ: "Bastulav",
-        dimension: "22*63",
-        traslag: "AL",
-        enhet: "Lpm",
-        pris: "39",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "8002",
-        typ: "Bastulav",
-        dimension: "22*90",
-        traslag: "AL",
-        enhet: "Lpm",
-        pris: "65",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "8003",
-        typ: "Bastulav",
-        dimension: "22*45",
-        traslag: "AL",
-        enhet: "Lpm",
-        pris: "32",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "8004",
-        typ: "Bastulav",
-        dimension: "22*63",
-        traslag: "AL",
-        enhet: "Lpm",
-        pris: "39",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "8005",
-        typ: "Bastulav",
-        dimension: "22*120",
-        traslag: "AL",
-        enhet: "Lpm",
-        pris: "78",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7509",
-        typ: "Taklist Antik",
-        dimension: "22*65",
-        traslag: "AL",
-        enhet: "Lpm",
-        pris: "45",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7510",
-        typ: "Taklist Antik (se bildark)",
-        dimension: "22*65",
-        traslag: "Ek",
-        enhet: "Lpm",
-        pris: "55",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7511",
-        typ: "Taklist Antik",
-        dimension: "22*65",
-        traslag: "Bj\xf6rk",
-        enhet: "Lpm",
-        pris: "45",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7512",
-        typ: "Taklist Antik",
-        dimension: "22*65",
-        traslag: "Fur",
-        enhet: "Lpm",
-        pris: "32",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7513",
-        typ: "Taklist Funkis",
-        dimension: "38*63",
-        traslag: "AL",
-        enhet: "Lpm",
-        pris: "55",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7514",
-        typ: "Taklist Funkis",
-        dimension: "38*63",
-        traslag: "Ek",
-        enhet: "Lpm",
-        pris: "65",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7515",
-        typ: "Taklist Funkis",
-        dimension: "38*63",
-        traslag: "Bj\xf6rk",
-        enhet: "Lpm",
-        pris: "55",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7516",
-        typ: "Taklist Funkis",
-        dimension: "38*63",
-        traslag: "Fur",
-        enhet: "Lpm",
-        pris: "42",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7601",
-        typ: "Foder/Sl\xe4t",
-        dimension: "12*63",
-        traslag: "EK",
-        enhet: "Lpm",
-        pris: "37",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7602",
-        typ: "Golvlist/Sl\xe4t",
-        dimension: "12*63",
-        traslag: "EK",
-        enhet: "Lpm",
-        pris: "37",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7603",
-        typ: "Foder/Sl\xe4t",
-        dimension: "14*90",
-        traslag: "EK",
-        enhet: "Lpm",
-        pris: "65",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7604",
-        typ: "Golvlist/Sl\xe4t",
-        dimension: "14*90",
-        traslag: "Ek",
-        enhet: "Lpm",
-        pris: "65",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7605",
-        typ: "Planhyvlat",
-        dimension: "21*70",
-        traslag: "Ek",
-        enhet: "Lpm",
-        pris: "45",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7606",
-        typ: "Planhyvlat",
-        dimension: "21*90",
-        traslag: "Ek",
-        enhet: "Lpm",
-        pris: "70",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7607",
-        typ: "Planhyvlat",
-        dimension: "21*120",
-        traslag: "Ek",
-        enhet: "Lpm",
-        pris: "85",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7607",
-        typ: "Taklist",
-        dimension: "21*68",
-        traslag: "Ek",
-        enhet: "Lpm",
-        pris: "58",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7608",
-        typ: "Arkitekt panel (B-Sund)",
-        dimension: "16*90",
-        traslag: "Ek",
-        enhet: "Lpm",
-        pris: "56",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7609",
-        typ: "P\xe4rlspont Ek",
-        dimension: "15*70",
-        traslag: "Ek",
-        enhet: "Kvm",
-        pris: "750",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7630",
-        typ: "Sl\xe4tpanel",
-        dimension: "15*90",
-        traslag: "Ek",
-        enhet: "Lmp",
-        pris: "39",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7610",
-        typ: "Trall",
-        dimension: "22*95",
-        traslag: "Ek",
-        enhet: "Lpm",
-        pris: "37",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7611",
-        typ: "Trall",
-        dimension: "22*120",
-        traslag: "Ek",
-        enhet: "Lpm",
-        pris: "48",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7612",
-        typ: "Trall",
-        dimension: "28*120",
-        traslag: "Ek",
-        enhet: "Lpm",
-        pris: "62",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7613",
-        typ: "Trall",
-        dimension: "28*145",
-        traslag: "Ek",
-        enhet: "Lpm",
-        pris: "89",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7701",
-        typ: "Ekpanel Utv",
-        dimension: "22*120",
-        traslag: "Ek",
-        enhet: "Lpm",
-        pris: "56",
-        anmarkning: "Valfriprofil"
-    },
-    {
-        artikelnr: "7701",
-        typ: "Arkitektpanel Utv",
-        dimension: "21*120",
-        traslag: "Asp",
-        enhet: "lpm",
-        pris: "38",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7702",
-        typ: "Bastulav",
-        dimension: "22*70",
-        traslag: "Asp",
-        enhet: "lpm",
-        pris: "37",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7703",
-        typ: "Bastulav",
-        dimension: "22*45",
-        traslag: "Asp",
-        enhet: "lpm",
-        pris: "28",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7801",
-        typ: "Golvlist 1800-tal profil",
-        dimension: "21*145",
-        traslag: "EK",
-        enhet: "lpm",
-        pris: "145",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7802",
-        typ: "Golvlist 1800-tal",
-        dimension: "21*145",
-        traslag: "Ask",
-        enhet: "lpm",
-        pris: "110",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7803",
-        typ: "Golvlist 1800-tal",
-        dimension: "21*145",
-        traslag: "Fur",
-        enhet: "lpm",
-        pris: "65",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7804",
-        typ: "Foder 1800-tal",
-        dimension: "21*120",
-        traslag: "Ek",
-        enhet: "lpm",
-        pris: "110",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7805",
-        typ: "Foder 1800-tal",
-        dimension: "21*120",
-        traslag: "Ask",
-        enhet: "lpm",
-        pris: "105",
-        anmarkning: ""
-    },
-    {
-        artikelnr: "7806",
-        typ: "Foder 1800-tal",
-        dimension: "21*120",
-        traslag: "Fur",
-        enhet: "lpm",
-        pris: "65",
-        anmarkning: ""
-    }
-];
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eDA9j":[function(require,module,exports) {
-module.exports = require("f0268d37c93299d3").getBundleURL("6EXJA") + "HeroLumber.96783100.jpg" + "?" + Date.now();
-
-},{"f0268d37c93299d3":"lgJ39"}],"3Kqqo":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$fb48 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$fb48.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _heroLumberJpg = require("../Assets/HeroLumber.jpg");
-var _heroLumberJpgDefault = parcelHelpers.interopDefault(_heroLumberJpg);
-var _hero = require("../Feature/Components/Hero");
-var _heroDefault = parcelHelpers.interopDefault(_hero);
-var _textList = require("../Feature/Components/TextList");
-var _textListDefault = parcelHelpers.interopDefault(_textList);
-var _react = require("@glitz/react");
-var _cardLinks = require("../Feature/Components/CardLinks");
-var _cardLinksDefault = parcelHelpers.interopDefault(_cardLinks);
-function ProductListningPage() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {
-                src: (0, _heroLumberJpgDefault.default),
-                alt: "Hero image oak",
-                title: "Produkter",
-                description: "Kontakta oss om ni vill ha Pris p\xe5 s\xe5gat virke okant och kantat"
-            }, void 0, false, {
-                fileName: "src/Pages/ProductsListningPage.tsx",
-                lineNumber: 14,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _textListDefault.default), {}, void 0, false, {
-                fileName: "src/Pages/ProductsListningPage.tsx",
-                lineNumber: 20,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardLinksDefault.default), {}, void 0, false, {
-                fileName: "src/Pages/ProductsListningPage.tsx",
-                lineNumber: 21,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true);
-}
-_c = ProductListningPage;
-exports.default = ProductListningPage;
-const Text = (0, _react.styled).p({});
-var _c;
-$RefreshReg$(_c, "ProductListningPage");
-
-  $parcel$ReactRefreshHelpers$fb48.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","../Assets/HeroLumber.jpg":"eDA9j","../Feature/Components/Hero":"8WNwH","../Feature/Components/TextList":"5S2tu","@glitz/react":"bAXm1","../Feature/Components/CardLinks":"4IVZq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bDqc9":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$c636 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$c636.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _hero = require("../Feature/Components/Hero");
-var _heroDefault = parcelHelpers.interopDefault(_hero);
-var _signJpg = require("../Assets/sign.jpg");
-var _signJpgDefault = parcelHelpers.interopDefault(_signJpg);
-var _imageAndText = require("../Feature/Components/ImageAndText");
-var _imageAndTextDefault = parcelHelpers.interopDefault(_imageAndText);
-var _h4 = require("../Shared/Generic/H4");
-var _h4Default = parcelHelpers.interopDefault(_h4);
-var _react = require("@glitz/react");
-var _h3 = require("../Shared/Generic/H3");
-var _h3Default = parcelHelpers.interopDefault(_h3);
-function ContactPage() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {
-                src: (0, _signJpgDefault.default),
-                alt: "Hero image oak",
-                title: "Kontakta oss",
-                description: "Kontakta oss om ni vill ha Pris p\xe5 s\xe5gat virke okant och kantat"
-            }, void 0, false, {
-                fileName: "src/Pages/ContactPage.tsx",
-                lineNumber: 11,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
-                src: (0, _signJpgDefault.default),
-                title: "Ekotr\xe4",
-                textFirst: true,
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h4Default.default), {
-                        children: "\xc4pplaryd 3"
-                    }, void 0, false, {
-                        fileName: "src/Pages/ContactPage.tsx",
-                        lineNumber: 18,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h4Default.default), {
-                        children: "360 30 Lammhult"
-                    }, void 0, false, {
-                        fileName: "src/Pages/ContactPage.tsx",
-                        lineNumber: 19,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                        fileName: "src/Pages/ContactPage.tsx",
-                        lineNumber: 20,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h4Default.default), {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(A, {
-                            href: "tel:070-3278734",
-                            children: "070-3278734"
-                        }, void 0, false, {
-                            fileName: "src/Pages/ContactPage.tsx",
-                            lineNumber: 22,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/Pages/ContactPage.tsx",
-                        lineNumber: 21,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h4Default.default), {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(A, {
-                            href: "mailto:info@eme.nu",
-                            children: "info@eme.nu"
-                        }, void 0, false, {
-                            fileName: "src/Pages/ContactPage.tsx",
-                            lineNumber: 25,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/Pages/ContactPage.tsx",
-                        lineNumber: 24,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                        fileName: "src/Pages/ContactPage.tsx",
-                        lineNumber: 27,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
-                        children: "\xd6ppettider"
-                    }, void 0, false, {
-                        fileName: "src/Pages/ContactPage.tsx",
-                        lineNumber: 28,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h4Default.default), {
-                        children: "M\xe5ndag - fredag 07.00-18.00"
-                    }, void 0, false, {
-                        fileName: "src/Pages/ContactPage.tsx",
-                        lineNumber: 29,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h4Default.default), {
-                        children: "L\xf6rdag - s\xf6ndag 09.00-15.00"
-                    }, void 0, false, {
-                        fileName: "src/Pages/ContactPage.tsx",
-                        lineNumber: 30,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Pages/ContactPage.tsx",
-                lineNumber: 17,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true);
-}
-_c = ContactPage;
-const A = (0, _react.styled).a();
-_c1 = A;
-exports.default = ContactPage;
-var _c, _c1;
-$RefreshReg$(_c, "ContactPage");
-$RefreshReg$(_c1, "A");
-
-  $parcel$ReactRefreshHelpers$c636.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","../Feature/Components/Hero":"8WNwH","../Assets/sign.jpg":"51ZA3","../Feature/Components/ImageAndText":"8HWo8","../Shared/Generic/H4":"36gb2","@glitz/react":"bAXm1","../Shared/Generic/H3":"iGEMB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"51ZA3":[function(require,module,exports) {
-module.exports = require("4d1a907200adf9f5").getBundleURL("6EXJA") + "sign.d61ba07d.jpg" + "?" + Date.now();
-
-},{"4d1a907200adf9f5":"lgJ39"}],"36gb2":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "headingReset", ()=>headingReset);
-parcelHelpers.export(exports, "h4Styled", ()=>h4Styled);
-var _react = require("@glitz/react");
-var _typography = require("../typography");
-const headingReset = (0, _react.styled)({
-    fontSize: "unset",
-    fontWeight: "unset",
-    marginBottom: 0
-});
-const h4Styled = (0, _react.styled)({
-    fontWeight: "700",
-    fontSize: (0, _typography.delta)
-});
-exports.default = h4Styled((0, _react.styled).H4);
-
-},{"@glitz/react":"bAXm1","../typography":"iZltJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"j1mrX":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$1591 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$1591.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _hero = require("../Feature/Components/Hero");
-var _heroDefault = parcelHelpers.interopDefault(_hero);
-var _heroLumberJpg = require("../Assets/HeroLumber.jpg");
-var _heroLumberJpgDefault = parcelHelpers.interopDefault(_heroLumberJpg);
-var _products = require("../Lists/Products");
-var _productsDefault = parcelHelpers.interopDefault(_products);
-var _lits = require("../Feature/Components/Lits");
-var _litsDefault = parcelHelpers.interopDefault(_lits);
-var _s = $RefreshSig$();
-function ImageArchive() {
-    _s();
-    const { products } = (0, _productsDefault.default)();
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {
-                src: (0, _heroLumberJpgDefault.default),
-                alt: "Galleri image",
-                title: "Galleri",
-                description: ""
-            }, void 0, false, {
-                fileName: "src/Pages/ImageArchive.tsx",
-                lineNumber: 11,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _litsDefault.default), {
-                title: "V\xe5ra Projekt i Verkligheten",
-                description: "Uppt\xe4ck v\xe5ra kunders imponerande projekt med v\xe5ra material",
-                list: products
-            }, void 0, false, {
-                fileName: "src/Pages/ImageArchive.tsx",
-                lineNumber: 12,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true);
-}
-_s(ImageArchive, "HuZ0FSKU4jgfDhUXCEp7lTpjxbw=", false, function() {
-    return [
-        (0, _productsDefault.default)
-    ];
-});
-_c = ImageArchive;
-exports.default = ImageArchive;
-var _c;
-$RefreshReg$(_c, "ImageArchive");
-
-  $parcel$ReactRefreshHelpers$1591.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","../Feature/Components/Hero":"8WNwH","../Assets/HeroLumber.jpg":"eDA9j","../Lists/Products":"3XYD0","../Feature/Components/Lits":"kNxh3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3XYD0":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _alpanelJpg = require("../Assets/products/Alpanel.jpg"); // Importing the image
-var _alpanelJpgDefault = parcelHelpers.interopDefault(_alpanelJpg);
-var _bastuJpg = require("../Assets/products/Bastu.jpg");
-var _bastuJpgDefault = parcelHelpers.interopDefault(_bastuJpg);
-var _ekpanel1Jpg = require("../Assets/products/Ekpanel1.jpg");
-var _ekpanel1JpgDefault = parcelHelpers.interopDefault(_ekpanel1Jpg);
-var _altanekJpg = require("../Assets/products/Altanek.jpg");
-var _altanekJpgDefault = parcelHelpers.interopDefault(_altanekJpg);
-var _algolv2Jpg = require("../Assets/products/algolv2.jpg");
-var _algolv2JpgDefault = parcelHelpers.interopDefault(_algolv2Jpg);
-var _ekgolvJpg = require("../Assets/products/Ekgolv.jpg");
-var _ekgolvJpgDefault = parcelHelpers.interopDefault(_ekgolvJpg);
-var _algolvJpg = require("../Assets/products/Algolv.jpg");
-var _algolvJpgDefault = parcelHelpers.interopDefault(_algolvJpg);
-var _ekpanelparllangJpg = require("../Assets/products/Ekpanelparllang.jpg");
-var _ekpanelparllangJpgDefault = parcelHelpers.interopDefault(_ekpanelparllangJpg);
-var _extrembreddTrallJpg = require("../Assets/products/ExtrembreddTrall.jpg");
-var _extrembreddTrallJpgDefault = parcelHelpers.interopDefault(_extrembreddTrallJpg);
-var _smygJpg = require("../Assets/products/Smyg.jpg");
-var _smygJpgDefault = parcelHelpers.interopDefault(_smygJpg);
-var _vhus1Jpg = require("../Assets/products/VHus1.jpg");
-var _vhus1JpgDefault = parcelHelpers.interopDefault(_vhus1Jpg);
-var _fasPanelJpg = require("../Assets/products/fas-panel.jpg");
-var _fasPanelJpgDefault = parcelHelpers.interopDefault(_fasPanelJpg);
-var _taklistAlJpg = require("../Assets/products/TaklistAl.jpg");
-var _taklistAlJpgDefault = parcelHelpers.interopDefault(_taklistAlJpg);
-var _askfoderJpg = require("../Assets/products/Askfoder.jpg");
-var _askfoderJpgDefault = parcelHelpers.interopDefault(_askfoderJpg);
-var _taklistEkJpg = require("../Assets/products/TaklistEk.jpg");
-var _taklistEkJpgDefault = parcelHelpers.interopDefault(_taklistEkJpg);
-var _golvEkListJpg = require("../Assets/products/GolvEkList.jpg");
-var _golvEkListJpgDefault = parcelHelpers.interopDefault(_golvEkListJpg);
-const Floors = [
-    {
-        name: "Massivt Ek golv",
-        description: "Ek 19*205 (t\xe4ckande 195 m.m).",
-        price: "Se tabell f\xf6r pris per kvm inkl moms",
-        image: (0, _ekgolvJpgDefault.default)
-    },
-    {
-        name: "Algolv",
-        description: "Al 32*145. Alen passer inte i rum med h\xe5rt slitage men i tex sovrum ,detta pga att al \xe4r ett mjukt tr\xe4slag kan j\xe4mnf\xf6ras med fur",
-        price: "Se tabell f\xf6r pris per kvm inkl moms",
-        image: (0, _algolvJpgDefault.default)
-    }
-];
-const Strips = [
-    {
-        name: "Taklist Al 19*67",
-        description: "Vacker taklist som passar till Bastupanel i Al.",
-        price: "45 kr lpm inkl moms",
-        image: (0, _taklistAlJpgDefault.default)
-    },
-    {
-        name: "Askfoder 22*120",
-        description: "Ett 1800 tals foder med sitt ursprung i sk\xe5ne.",
-        price: "87 kr lpm inkl moms",
-        image: (0, _askfoderJpgDefault.default)
-    },
-    {
-        name: "Smyg och Foder i Ek",
-        description: "Smyg 16*195. Foder 12*62 ",
-        price: "Smyg: 186 kr lpm. Foder: 36kr lmp ink moms",
-        image: (0, _smygJpgDefault.default)
-    },
-    {
-        name: "Taklist Ek",
-        description: "Taklist 22*67",
-        price: "56 kr lpm inkl moms",
-        image: (0, _taklistEkJpgDefault.default)
-    },
-    {
-        name: "Golvlist 22*145 Ek",
-        description: "Ett vackert 1800tals foder h\xe4r i massiv Ek",
-        price: "148 kr lpm inkl moms",
-        image: (0, _golvEkListJpgDefault.default)
-    }
-];
-const Panels = [
-    {
-        name: "Bastupanel 15*70(63) Obehandlad",
-        description: "(svensk al i naturkvalitet) Varm och gemytlig med egenskaper som l\xe4mpar sig i bastumil\xf6.",
-        price: "enl \xf6k",
-        image: (0, _fasPanelJpgDefault.default)
-    },
-    {
-        name: "Fas Panel 15*70(63) Obehandlad",
-        description: "(svensk al i naturkvalitet) Vacker panel som l\xe4mpar sig f\xf6r b\xe5de Bastu och vanliga utrymme",
-        price: "enl \xf6k",
-        image: (0, _fasPanelJpgDefault.default)
-    },
-    {
-        name: "Alpanel 15*95",
-        description: "Kvistfri alpanel, kapad efter \xf6nskem\xe5l",
-        price: "39 kr/lpm inkl moms",
-        image: (0, _fasPanelJpgDefault.default)
-    }
-];
-const products = [
-    {
-        name: "Alpanel 15*90 (Bangsund)",
-        description: "Panel f\xf6r liggande montering i naturkvalitet.",
-        price: "29 kr/lpm inkl moms",
-        image: (0, _alpanelJpgDefault.default)
-    },
-    {
-        name: "Bastupanel softline 15*95",
-        description: "Den klassiska profilen. Naturkvalitet",
-        price: "29 kr/lpm inkl moms",
-        image: (0, _bastuJpgDefault.default)
-    },
-    {
-        name: "Ekpanel 15*90 (Bandsund liggande montering)",
-        description: "Panel som ger ett exklusivt intryck.",
-        price: "56 kr/lpm inkl moms",
-        image: (0, _ekpanel1JpgDefault.default)
-    },
-    {
-        name: "Ektrall 28*120 Rustik",
-        description: "Svensk ek med rustikt utseende.",
-        price: "42 kr/lpm inkl moms",
-        image: (0, _altanekJpgDefault.default)
-    },
-    {
-        name: "Massivt algolv 26*150",
-        description: "Trevlig f\xe4rg som ger en varm och ombonad k\xe4nsla.",
-        price: "795 kr/m2 inkl moms",
-        image: (0, _algolv2JpgDefault.default)
-    },
-    {
-        name: "Golvet med stort G Ek 21*205",
-        description: "Unika golv efter best\xe4llning",
-        price: "enl \xf6k",
-        image: (0, _ekgolvJpgDefault.default)
-    },
-    {
-        name: "P\xe4rlspont i ek 15*68",
-        description: "Fin panel med mycket djup.",
-        price: "46 kr/lpm inkl moms",
-        image: (0, _ekpanelparllangJpgDefault.default)
-    },
-    {
-        name: "Ektrall 28*195",
-        description: "En extrem tilja av massiv ek.",
-        price: "enl \xf6k",
-        image: (0, _extrembreddTrallJpgDefault.default)
-    },
-    {
-        name: "Smyg 16*205 och Foder 14*63",
-        description: "Fin inramning/salning av f\xf6nster.",
-        price: "smyg: 155 kr/lpm foder: 37 kr/lpm inkl moms",
-        image: (0, _smygJpgDefault.default)
-    },
-    {
-        name: "Utv\xe4ndig ekpanel 21*145",
-        description: "Panelen som ger utsidan det exklusiva intrycket.",
-        price: "64 kr/lpm inkl moms",
-        image: (0, _vhus1JpgDefault.default)
-    }
-];
-const useProductsList = ()=>{
-    return {
-        products,
-        Panels,
-        Strips,
-        Floors
-    };
-};
-exports.default = useProductsList;
-
-},{"../Assets/products/Alpanel.jpg":"2nDYT","../Assets/products/Bastu.jpg":"7dMUN","../Assets/products/Ekpanel1.jpg":"1FGrM","../Assets/products/Altanek.jpg":"ll5F9","../Assets/products/algolv2.jpg":"cv0Ax","../Assets/products/Ekgolv.jpg":"5KlDX","../Assets/products/Algolv.jpg":"8GK2L","../Assets/products/Ekpanelparllang.jpg":"jG2LN","../Assets/products/ExtrembreddTrall.jpg":"bcCCf","../Assets/products/Smyg.jpg":"b5qPC","../Assets/products/VHus1.jpg":"cOKB9","../Assets/products/fas-panel.jpg":"gf6U7","../Assets/products/TaklistAl.jpg":"9F8e3","../Assets/products/Askfoder.jpg":"hIyLw","../Assets/products/TaklistEk.jpg":"TBEkN","../Assets/products/GolvEkList.jpg":"7efz5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2nDYT":[function(require,module,exports) {
-module.exports = require("c33af2713ce01b16").getBundleURL("6EXJA") + "Alpanel.7e119411.jpg" + "?" + Date.now();
-
-},{"c33af2713ce01b16":"lgJ39"}],"7dMUN":[function(require,module,exports) {
-module.exports = require("50cb165755800bcf").getBundleURL("6EXJA") + "Bastu.0193208e.jpg" + "?" + Date.now();
-
-},{"50cb165755800bcf":"lgJ39"}],"1FGrM":[function(require,module,exports) {
-module.exports = require("558c659ea7ff6cbb").getBundleURL("6EXJA") + "Ekpanel1.5389ad71.jpg" + "?" + Date.now();
-
-},{"558c659ea7ff6cbb":"lgJ39"}],"ll5F9":[function(require,module,exports) {
-module.exports = require("a058df2ce985b319").getBundleURL("6EXJA") + "Altanek.2a4a77b7.jpg" + "?" + Date.now();
-
-},{"a058df2ce985b319":"lgJ39"}],"cv0Ax":[function(require,module,exports) {
-module.exports = require("26a7f4456f592cce").getBundleURL("6EXJA") + "algolv2.ce602fe6.jpg" + "?" + Date.now();
-
-},{"26a7f4456f592cce":"lgJ39"}],"5KlDX":[function(require,module,exports) {
-module.exports = require("a1676040a3556bd4").getBundleURL("6EXJA") + "Ekgolv.7df42050.jpg" + "?" + Date.now();
-
-},{"a1676040a3556bd4":"lgJ39"}],"8GK2L":[function(require,module,exports) {
-module.exports = require("7872ae4f8c2f403b").getBundleURL("6EXJA") + "Algolv.9bbb0776.jpg" + "?" + Date.now();
-
-},{"7872ae4f8c2f403b":"lgJ39"}],"jG2LN":[function(require,module,exports) {
-module.exports = require("7052c0d01faa83b3").getBundleURL("6EXJA") + "Ekpanelparllang.2386a05e.jpg" + "?" + Date.now();
-
-},{"7052c0d01faa83b3":"lgJ39"}],"bcCCf":[function(require,module,exports) {
-module.exports = require("ccba4182d221ad17").getBundleURL("6EXJA") + "ExtrembreddTrall.03ac065f.jpg" + "?" + Date.now();
-
-},{"ccba4182d221ad17":"lgJ39"}],"b5qPC":[function(require,module,exports) {
-module.exports = require("e65c9992697e55b9").getBundleURL("6EXJA") + "Smyg.8baec269.jpg" + "?" + Date.now();
-
-},{"e65c9992697e55b9":"lgJ39"}],"cOKB9":[function(require,module,exports) {
-module.exports = require("1c09acbd8277e729").getBundleURL("6EXJA") + "VHus1.1303cfba.jpg" + "?" + Date.now();
-
-},{"1c09acbd8277e729":"lgJ39"}],"gf6U7":[function(require,module,exports) {
-module.exports = require("13876020a959b28c").getBundleURL("6EXJA") + "fas-panel.b0ed544d.jpg" + "?" + Date.now();
-
-},{"13876020a959b28c":"lgJ39"}],"9F8e3":[function(require,module,exports) {
-module.exports = require("4610a9dfb864925").getBundleURL("6EXJA") + "TaklistAl.a3cc509c.jpg" + "?" + Date.now();
-
-},{"4610a9dfb864925":"lgJ39"}],"hIyLw":[function(require,module,exports) {
-module.exports = require("ea93e53f2a1b8daf").getBundleURL("6EXJA") + "Askfoder.abb044af.jpg" + "?" + Date.now();
-
-},{"ea93e53f2a1b8daf":"lgJ39"}],"TBEkN":[function(require,module,exports) {
-module.exports = require("ebb8ddb478c213ee").getBundleURL("6EXJA") + "TaklistEk.b1b23a36.jpg" + "?" + Date.now();
-
-},{"ebb8ddb478c213ee":"lgJ39"}],"7efz5":[function(require,module,exports) {
-module.exports = require("ce5a1adde58629af").getBundleURL("6EXJA") + "GolvEkList.4ae5ea24.jpg" + "?" + Date.now();
-
-},{"ce5a1adde58629af":"lgJ39"}],"kNxh3":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$877f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$877f.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("@glitz/react");
-var _h2 = require("../../Shared/Generic/H2");
-var _h2Default = parcelHelpers.interopDefault(_h2);
-var _value = require("../../Shared/value");
-var _core = require("@glitz/core");
-var _productCard = require("./ProductCard");
-var _productCardDefault = parcelHelpers.interopDefault(_productCard);
-function List(props) {
-    const { title, description, list } = props;
-    const numColumns = list.length > 3 ? 4 : list.length;
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ListContainer, {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h2Default.default), {
-                        children: title
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/Lits.tsx",
-                        lineNumber: 28,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: description
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/Lits.tsx",
-                        lineNumber: 29,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Feature/Components/Lits.tsx",
-                lineNumber: 27,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ListWrapper, {
-                css: {
-                    ...(0, _core.media)({
-                        minWidth: "1025px"
-                    }, {
-                        gridTemplateColumns: `repeat(${numColumns}, 1fr)`
-                    })
-                },
-                children: list.map((data)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Column, {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _productCardDefault.default), {
-                            item: data,
-                            numColumns: numColumns
-                        }, void 0, false, {
-                            fileName: "src/Feature/Components/Lits.tsx",
-                            lineNumber: 43,
-                            columnNumber: 13
-                        }, this)
-                    }, data.name, false, {
-                        fileName: "src/Feature/Components/Lits.tsx",
-                        lineNumber: 42,
-                        columnNumber: 11
-                    }, this))
-            }, void 0, false, {
-                fileName: "src/Feature/Components/Lits.tsx",
-                lineNumber: 31,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/Feature/Components/Lits.tsx",
-        lineNumber: 26,
-        columnNumber: 5
-    }, this);
-}
-_c = List;
-exports.default = List;
-const ListContainer = (0, _react.styled)((0, _value.Block));
-_c1 = ListContainer;
-const TextContainer = (0, _react.styled).div({
-    display: "flex",
-    flexDirection: "column",
-    gap: (0, _value.small),
-    width: "100%",
-    ...(0, _core.media)({
-        minWidth: "1025px"
-    }, {
-        width: "calc(50% - 20px)"
-    })
-});
-_c2 = TextContainer;
-const Text = (0, _react.styled).p({});
-_c3 = Text;
-const ListWrapper = (0, _react.styled).div({
-    display: "grid",
-    gridTemplateColumns: "1fr",
-    gap: (0, _value.large),
-    margin: {
-        top: (0, _value.large)
-    }
-});
-_c4 = ListWrapper;
-const Column = (0, _react.styled).div({
-    width: "100%",
-    backgroundColor: "#fff"
-});
-_c5 = Column;
-var _c, _c1, _c2, _c3, _c4, _c5;
-$RefreshReg$(_c, "List");
-$RefreshReg$(_c1, "ListContainer");
-$RefreshReg$(_c2, "TextContainer");
-$RefreshReg$(_c3, "Text");
-$RefreshReg$(_c4, "ListWrapper");
-$RefreshReg$(_c5, "Column");
-
-  $parcel$ReactRefreshHelpers$877f.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/Generic/H2":"au95a","../../Shared/value":"9VKej","@glitz/core":"5ehrf","./ProductCard":"iOO2a","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iOO2a":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$6f7e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$6f7e.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("@glitz/react");
-var _value = require("../../Shared/value");
-var _lazyLoadImage = require("./LazyLoadImage");
-var _lazyLoadImageDefault = parcelHelpers.interopDefault(_lazyLoadImage);
-var _h4 = require("../../Shared/Generic/H4");
-var _h4Default = parcelHelpers.interopDefault(_h4);
-var _core = require("@glitz/core");
-function ProductCard({ item, numColumns }) {
-    const height = numColumns === 1 ? "400px" : numColumns === 2 ? "400px" : numColumns === 3 ? "260px" : "224px";
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledLink, {
-                href: item.image,
-                target: "_blank",
-                rel: "noopener noreferrer",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
-                    src: item.image,
-                    alt: item.name,
-                    css: {
-                        height: "220px",
-                        ...(0, _core.media)({
-                            minWidth: "1025px"
-                        }, {
-                            height: height
-                        })
-                    }
-                }, void 0, false, {
-                    fileName: "src/Feature/Components/ProductCard.tsx",
-                    lineNumber: 19,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "src/Feature/Components/ProductCard.tsx",
-                lineNumber: 18,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(DescriptionContainer, {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h4Default.default), {
-                        children: item.name
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/ProductCard.tsx",
-                        lineNumber: 34,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: item.description
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/ProductCard.tsx",
-                        lineNumber: 35,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Price, {
-                        children: item.price
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/ProductCard.tsx",
-                        lineNumber: 36,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Feature/Components/ProductCard.tsx",
-                lineNumber: 33,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/Feature/Components/ProductCard.tsx",
-        lineNumber: 17,
-        columnNumber: 5
-    }, this);
-}
-_c = ProductCard;
-exports.default = ProductCard;
-const Container = (0, _react.styled).div({
-    display: "flex",
-    flexDirection: "column",
-    height: "100%",
-    padding: {
-        xy: (0, _value.small)
-    },
-    border: {
-        xy: {
-            style: "solid",
-            width: "1px",
-            color: "#E6E6E6"
-        }
-    },
-    borderRadius: "4px"
-});
-_c1 = Container;
-const StyledLink = (0, _react.styled).a({
-    textDecoration: "none"
-});
-_c2 = StyledLink;
-const StyledImage = (0, _react.styled)((0, _lazyLoadImageDefault.default), {
-    width: "100%",
-    objectFit: "cover",
-    borderRadius: "8px"
-});
-_c3 = StyledImage;
-const DescriptionContainer = (0, _react.styled).div({
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-between",
-    flex: {
-        grow: 1
-    }
-});
-_c4 = DescriptionContainer;
-const Text = (0, _react.styled).p({
-    margin: {
-        top: (0, _value.small),
-        bottom: (0, _value.large)
-    }
-});
-_c5 = Text;
-const Price = (0, _react.styled).p({
-    fontWeight: "bold"
-});
-_c6 = Price;
-var _c, _c1, _c2, _c3, _c4, _c5, _c6;
-$RefreshReg$(_c, "ProductCard");
-$RefreshReg$(_c1, "Container");
-$RefreshReg$(_c2, "StyledLink");
-$RefreshReg$(_c3, "StyledImage");
-$RefreshReg$(_c4, "DescriptionContainer");
-$RefreshReg$(_c5, "Text");
-$RefreshReg$(_c6, "Price");
-
-  $parcel$ReactRefreshHelpers$6f7e.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","./LazyLoadImage":"6qRec","../../Shared/Generic/H4":"36gb2","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4Z7Gw":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$11f3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$11f3.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _reactRouterDom = require("react-router-dom");
-var _s = $RefreshSig$();
-const ScrollToTop = ()=>{
-    _s();
-    const { pathname } = (0, _reactRouterDom.useLocation)();
-    (0, _react.useEffect)(()=>{
-        window.scrollTo(0, 0);
-    }, [
-        pathname
-    ]);
-    return null;
-};
-_s(ScrollToTop, "+8VPq4+XDMjo/kjL3WLkbwU2Amg=", false, function() {
-    return [
-        (0, _reactRouterDom.useLocation)
-    ];
-});
-_c = ScrollToTop;
-exports.default = ScrollToTop;
-var _c;
-$RefreshReg$(_c, "ScrollToTop");
-
-  $parcel$ReactRefreshHelpers$11f3.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kTUTe":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$42b5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$42b5.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _hero = require("../../Feature/Components/Hero");
-var _heroDefault = parcelHelpers.interopDefault(_hero);
-var _sawedProducts1Jpg = require("../../Assets/sawed-products-1.jpg");
-var _sawedProducts1JpgDefault = parcelHelpers.interopDefault(_sawedProducts1Jpg);
-var _sawedProducts2Jpg = require("../../Assets/sawed-products-2.jpg");
-var _sawedProducts2JpgDefault = parcelHelpers.interopDefault(_sawedProducts2Jpg);
-var _imageAndText = require("../../Feature/Components/ImageAndText");
-var _imageAndTextDefault = parcelHelpers.interopDefault(_imageAndText);
-var _value = require("../../Shared/value");
-var _smallList = require("../../Feature/Components/SmallList");
-var _smallListDefault = parcelHelpers.interopDefault(_smallList);
-function SawedProducts() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {
-                src: (0, _sawedProducts1JpgDefault.default),
-                alt: "Hero image s\xe5gade produkter.",
-                title: "S\xe5gade produkter.",
-                description: "Vi erbjuder s\xe5gat l\xf6vtr\xe4 av de flesta svenska tr\xe4slag och i de flesta dimensioner."
-            }, void 0, false, {
-                fileName: "src/Pages/Productpage/SawedProducts.tsx",
-                lineNumber: 11,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
-                src: (0, _sawedProducts2JpgDefault.default),
-                title: "Okantat M\xf6belvirke",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                        children: "Vi lagerf\xf6r okantat/kantat virke i ett flertal tr\xe4slag."
-                    }, void 0, false, {
-                        fileName: "src/Pages/Productpage/SawedProducts.tsx",
-                        lineNumber: 18,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                        children: "Dimensionerna skiljer sig mellan tr\xe4slagen, men standard \xe4r i m.m 19, 25, 32, 50, 75."
-                    }, void 0, false, {
-                        fileName: "src/Pages/Productpage/SawedProducts.tsx",
-                        lineNumber: 19,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                        children: "L\xe4ngd: 3 m som standard men Ek finns i l\xe4ngderna fr\xe5n 1.8-4,3 m."
-                    }, void 0, false, {
-                        fileName: "src/Pages/Productpage/SawedProducts.tsx",
-                        lineNumber: 20,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                        children: "Virket kan torkas ner till 7 % (m\xf6beltorrt)."
-                    }, void 0, false, {
-                        fileName: "src/Pages/Productpage/SawedProducts.tsx",
-                        lineNumber: 21,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Pages/Productpage/SawedProducts.tsx",
-                lineNumber: 17,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
-                src: (0, _sawedProducts2JpgDefault.default),
-                title: "\xc4mnestillverkning",
-                textFirst: true,
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                        children: "Vi kan leverera torkade, hyvlade och l\xe4ngdkapade \xe4mnen i svenskt l\xf6vtr\xe4."
-                    }, void 0, false, {
-                        fileName: "src/Pages/Productpage/SawedProducts.tsx",
-                        lineNumber: 24,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                        children: "S\xf6nderdelning i lamells\xe5g till exakta m\xe5tt helt efter \xf6nskem\xe5l."
-                    }, void 0, false, {
-                        fileName: "src/Pages/Productpage/SawedProducts.tsx",
-                        lineNumber: 25,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                        children: "\xc4ven strips f\xf6r vidaref\xf6r\xe4dling."
-                    }, void 0, false, {
-                        fileName: "src/Pages/Productpage/SawedProducts.tsx",
-                        lineNumber: 26,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Pages/Productpage/SawedProducts.tsx",
-                lineNumber: 23,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _smallListDefault.default), {}, void 0, false, {
-                fileName: "src/Pages/Productpage/SawedProducts.tsx",
-                lineNumber: 28,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true);
-}
-_c = SawedProducts;
-exports.default = SawedProducts;
-var _c;
-$RefreshReg$(_c, "SawedProducts");
-
-  $parcel$ReactRefreshHelpers$42b5.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","../../Feature/Components/Hero":"8WNwH","../../Assets/sawed-products-1.jpg":"7Omft","../../Assets/sawed-products-2.jpg":"6dERR","../../Feature/Components/ImageAndText":"8HWo8","../../Shared/value":"9VKej","../../Feature/Components/SmallList":"csIkc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6dERR":[function(require,module,exports) {
-module.exports = require("334becc8177d63e").getBundleURL("6EXJA") + "sawed-products-2.f8f9fbda.jpg" + "?" + Date.now();
-
-},{"334becc8177d63e":"lgJ39"}],"csIkc":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$d30b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$d30b.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _priceFile = require("../../Lists/PriceFile");
-var _value = require("../../Shared/value");
-var _react = require("@glitz/react");
-var _button = require("./Button");
-var _h2 = require("../../Shared/Generic/H2");
-var _h2Default = parcelHelpers.interopDefault(_h2);
-var _core = require("@glitz/core");
-function TextSection() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h2Default.default), {
-                children: "Ekstol"
-            }, void 0, false, {
-                fileName: "src/Feature/Components/SmallList.tsx",
-                lineNumber: 37,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                children: "Vi har m\xe4rkt att efterfr\xe5gan p\xe5 ek och ekstolp \xf6kar f\xf6r varje \xe5r. D\xe4rf\xf6r har vi \xf6kat andelen s\xe5gad ek f\xf6r att t\xe4cka den \xf6kade efterfr\xe5gan."
-            }, void 0, false, {
-                fileName: "src/Feature/Components/SmallList.tsx",
-                lineNumber: 38,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                children: "Vi saluf\xf6r ekstolp i all dimensioner. (priserna \xe4r exkl moms)"
-            }, void 0, false, {
-                fileName: "src/Feature/Components/SmallList.tsx",
-                lineNumber: 42,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/Feature/Components/SmallList.tsx",
-        lineNumber: 36,
-        columnNumber: 5
-    }, this);
-}
-_c = TextSection;
-function TypeTextSection() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextContainer, {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h2Default.default), {
-                children: "Samarbete f\xf6r Kompletterade Stall och Ekvirke"
-            }, void 0, false, {
-                fileName: "src/Feature/Components/SmallList.tsx",
-                lineNumber: 50,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                children: "Vi s\xf6ker en leverant\xf6r f\xf6r samarbete av kompletta stall inkl metallsektioner, skjutd\xf6rrar m.m"
-            }, void 0, false, {
-                fileName: "src/Feature/Components/SmallList.tsx",
-                lineNumber: 51,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                children: "Priserna \xe4r per kvm inkl moms exkl frakt."
-            }, void 0, false, {
-                fileName: "src/Feature/Components/SmallList.tsx",
-                lineNumber: 52,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/Feature/Components/SmallList.tsx",
-        lineNumber: 49,
-        columnNumber: 5
-    }, this);
-}
-_c1 = TypeTextSection;
-function CostList({ list }) {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(WrapperBlock, {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RowHeader, {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                        ariaLabel: "Artikelnr",
-                        children: "Dimension"
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 61,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                        ariaLabel: "Typ",
-                        children: "L\xe4ngd"
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 62,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                        ariaLabel: "Dimension",
-                        children: "Pris/st"
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 63,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                        ariaLabel: "Tr\xe4slag",
-                        children: "V\xe4ssningskostnad"
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 64,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Feature/Components/SmallList.tsx",
-                lineNumber: 60,
-                columnNumber: 7
-            }, this),
-            list.map((row, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Row, {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                            children: row.dimension
-                        }, void 0, false, {
-                            fileName: "src/Feature/Components/SmallList.tsx",
-                            lineNumber: 68,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                            children: row.length
-                        }, void 0, false, {
-                            fileName: "src/Feature/Components/SmallList.tsx",
-                            lineNumber: 69,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                            children: row.pricePerUnit
-                        }, void 0, false, {
-                            fileName: "src/Feature/Components/SmallList.tsx",
-                            lineNumber: 70,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                            children: row.sharpeningCost
-                        }, void 0, false, {
-                            fileName: "src/Feature/Components/SmallList.tsx",
-                            lineNumber: 71,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, index, true, {
-                    fileName: "src/Feature/Components/SmallList.tsx",
-                    lineNumber: 67,
-                    columnNumber: 9
-                }, this))
-        ]
-    }, void 0, true, {
-        fileName: "src/Feature/Components/SmallList.tsx",
-        lineNumber: 59,
-        columnNumber: 5
-    }, this);
-}
-_c2 = CostList;
-function PricePerLpmList({ list }) {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(WrapperBlock, {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RowHeaderTwo, {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                        ariaLabel: "Artikelnr",
-                        children: "Dimension"
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 82,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                        ariaLabel: "Typ",
-                        children: "Pris per lpm"
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 83,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Feature/Components/SmallList.tsx",
-                lineNumber: 81,
-                columnNumber: 7
-            }, this),
-            list.map((row, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RowTwo, {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                            children: row.dimension
-                        }, void 0, false, {
-                            fileName: "src/Feature/Components/SmallList.tsx",
-                            lineNumber: 87,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                            children: row.pricePerLpm
-                        }, void 0, false, {
-                            fileName: "src/Feature/Components/SmallList.tsx",
-                            lineNumber: 88,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, index, true, {
-                    fileName: "src/Feature/Components/SmallList.tsx",
-                    lineNumber: 86,
-                    columnNumber: 9
-                }, this))
-        ]
-    }, void 0, true, {
-        fileName: "src/Feature/Components/SmallList.tsx",
-        lineNumber: 80,
-        columnNumber: 5
-    }, this);
-}
-_c3 = PricePerLpmList;
-function TypeList({ list }) {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(WrapperBlock, {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RowHeaderTwo, {
-                css: {
-                    gridTemplateColumns: "1fr 1fr 1fr"
-                },
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                        ariaLabel: "Tr\xe4slag",
-                        children: "Tr\xe4slag"
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 99,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                        ariaLabel: "Dimension",
-                        children: "Dimension"
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 100,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                        ariaLabel: "Pris per/kvm",
-                        children: "Pris per/kvm"
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 101,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Feature/Components/SmallList.tsx",
-                lineNumber: 98,
-                columnNumber: 7
-            }, this),
-            list.map((row, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RowTwo, {
-                    css: {
-                        gridTemplateColumns: "1fr 1fr 1fr"
-                    },
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                            children: row.type
-                        }, void 0, false, {
-                            fileName: "src/Feature/Components/SmallList.tsx",
-                            lineNumber: 105,
-                            columnNumber: 11
-                        }, this),
-                        " ",
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                            children: row.dimension
-                        }, void 0, false, {
-                            fileName: "src/Feature/Components/SmallList.tsx",
-                            lineNumber: 106,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                            children: row.pricePerKvm || row.pricePerLpm
-                        }, void 0, false, {
-                            fileName: "src/Feature/Components/SmallList.tsx",
-                            lineNumber: 107,
-                            columnNumber: 11
-                        }, this),
-                        " "
-                    ]
-                }, index, true, {
-                    fileName: "src/Feature/Components/SmallList.tsx",
-                    lineNumber: 104,
-                    columnNumber: 9
-                }, this))
-        ]
-    }, void 0, true, {
-        fileName: "src/Feature/Components/SmallList.tsx",
-        lineNumber: 97,
-        columnNumber: 5
-    }, this);
-}
-_c4 = TypeList;
-function AdditionalProductsList({ list }) {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(WrapperBlock, {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RowHeaderTwo, {
-                css: {
-                    gridTemplateColumns: "1fr 1fr 1fr"
-                },
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                        ariaLabel: "Beskrivning",
-                        children: "Beskrivning"
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 118,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                        ariaLabel: "L\xe4ngder",
-                        children: "L\xe4ngder"
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 119,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ButtonCell, {
-                        ariaLabel: "Pris per/kvm",
-                        children: "Pris per/kvm"
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 120,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Feature/Components/SmallList.tsx",
-                lineNumber: 117,
-                columnNumber: 7
-            }, this),
-            list.map((row, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RowTwo, {
-                    css: {
-                        gridTemplateColumns: "1fr 1fr 1fr"
-                    },
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                            children: row.description
-                        }, void 0, false, {
-                            fileName: "src/Feature/Components/SmallList.tsx",
-                            lineNumber: 124,
-                            columnNumber: 11
-                        }, this),
-                        " ",
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                            children: row.lengths
-                        }, void 0, false, {
-                            fileName: "src/Feature/Components/SmallList.tsx",
-                            lineNumber: 125,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cell, {
-                            children: row.pricePerM2
-                        }, void 0, false, {
-                            fileName: "src/Feature/Components/SmallList.tsx",
-                            lineNumber: 126,
-                            columnNumber: 11
-                        }, this),
-                        " "
-                    ]
-                }, index, true, {
-                    fileName: "src/Feature/Components/SmallList.tsx",
-                    lineNumber: 123,
-                    columnNumber: 9
-                }, this))
-        ]
-    }, void 0, true, {
-        fileName: "src/Feature/Components/SmallList.tsx",
-        lineNumber: 116,
-        columnNumber: 5
-    }, this);
-}
-_c5 = AdditionalProductsList;
-function SmallList({ showType, showAdditionalProducts }) {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {
-        children: [
-            showType && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TypeTextSection, {}, void 0, false, {
-                        fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 143,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TypeList, {
-                        list: (0, _priceFile.ekstolp).woodProducts
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 144,
-                        columnNumber: 11
-                    }, this)
-                ]
-            }, void 0, true),
-            showAdditionalProducts && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AdditionalProductsList, {
-                list: (0, _priceFile.ekstolp).additionalProducts
-            }, void 0, false, {
-                fileName: "src/Feature/Components/SmallList.tsx",
-                lineNumber: 147,
-                columnNumber: 34
-            }, this),
-            !showType && !showAdditionalProducts && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TextSection, {}, void 0, false, {
-                        fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 150,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CostList, {
-                        list: (0, _priceFile.ekstolp).dimensionsWithCosts
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 151,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(PricePerLpmList, {
-                        list: (0, _priceFile.ekstolp).dimensionsWithPricePerLpm
-                    }, void 0, false, {
-                        fileName: "src/Feature/Components/SmallList.tsx",
-                        lineNumber: 152,
-                        columnNumber: 11
-                    }, this)
-                ]
-            }, void 0, true)
-        ]
-    }, void 0, true, {
-        fileName: "src/Feature/Components/SmallList.tsx",
-        lineNumber: 140,
-        columnNumber: 5
-    }, this);
-}
-_c6 = SmallList;
-exports.default = SmallList;
-const Container = (0, _react.styled)((0, _value.Block), {});
-_c7 = Container;
-const WrapperBlock = (0, _react.styled).div({
-    display: "block",
-    position: "relative",
-    margin: {
-        top: (0, _value.large)
-    }
-});
-_c8 = WrapperBlock;
-const TextContainer = (0, _react.styled).div({
-    display: "flex",
-    flexDirection: "column",
-    gap: (0, _value.small),
-    width: "100%",
-    ...(0, _core.media)({
-        minWidth: "1025px"
-    }, {
-        width: "calc(50% - 20px)"
-    })
-});
-_c9 = TextContainer;
-const Row = (0, _react.styled).div({
-    width: "100%",
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr 1fr 1fr",
-    border: {
-        bottom: {
-            width: "1px",
-            style: "solid",
-            color: (0, _value.DefaultGreen)
-        }
-    }
-});
-_c10 = Row;
-const RowTwo = (0, _react.styled).div({
-    width: "100%",
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr",
-    border: {
-        bottom: {
-            width: "1px",
-            style: "solid",
-            color: (0, _value.DefaultGreen)
-        }
-    }
-});
-_c11 = RowTwo;
-const RowHeader = (0, _react.styled)(Row, {
-    fontWeight: "bold",
-    backgroundColor: "#fff"
-});
-_c12 = RowHeader;
-const RowHeaderTwo = (0, _react.styled)(RowTwo, {
-    fontWeight: "bold",
-    backgroundColor: "#fff"
-});
-_c13 = RowHeaderTwo;
-const Cell = (0, _react.styled).div({
-    padding: {
-        y: "10px"
-    }
-});
-_c14 = Cell;
-const ButtonCell = (0, _react.styled)((0, _button.PlainButton), {
-    whiteSpace: "nowrap",
-    padding: {
-        y: "10px"
-    },
-    fontWeight: "bold"
-});
-_c15 = ButtonCell;
-var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10, _c11, _c12, _c13, _c14, _c15;
-$RefreshReg$(_c, "TextSection");
-$RefreshReg$(_c1, "TypeTextSection");
-$RefreshReg$(_c2, "CostList");
-$RefreshReg$(_c3, "PricePerLpmList");
-$RefreshReg$(_c4, "TypeList");
-$RefreshReg$(_c5, "AdditionalProductsList");
-$RefreshReg$(_c6, "SmallList");
-$RefreshReg$(_c7, "Container");
-$RefreshReg$(_c8, "WrapperBlock");
-$RefreshReg$(_c9, "TextContainer");
-$RefreshReg$(_c10, "Row");
-$RefreshReg$(_c11, "RowTwo");
-$RefreshReg$(_c12, "RowHeader");
-$RefreshReg$(_c13, "RowHeaderTwo");
-$RefreshReg$(_c14, "Cell");
-$RefreshReg$(_c15, "ButtonCell");
-
-  $parcel$ReactRefreshHelpers$d30b.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","../../Lists/PriceFile":"4fJTC","../../Shared/value":"9VKej","@glitz/react":"bAXm1","./Button":"at8Gv","../../Shared/Generic/H2":"au95a","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8F5SM":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$0a98 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$0a98.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _hero = require("../../Feature/Components/Hero");
-var _heroDefault = parcelHelpers.interopDefault(_hero);
-var _horseBoxJpg = require("../../Assets/products/horse-box.jpg");
-var _horseBoxJpgDefault = parcelHelpers.interopDefault(_horseBoxJpg);
-var _imageAndText = require("../../Feature/Components/ImageAndText");
-var _imageAndTextDefault = parcelHelpers.interopDefault(_imageAndText);
-var _value = require("../../Shared/value");
-var _smallList = require("../../Feature/Components/SmallList");
-var _smallListDefault = parcelHelpers.interopDefault(_smallList);
-function SpecialProducts() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {
-                src: (0, _horseBoxJpgDefault.default),
-                alt: "Hero image Limfog.",
-                title: "Specialprodukter",
-                description: "Vi kan erbjuda s\xe5gade varor i alla t\xe4nkbara och ot\xe4nkbara dimensioner och l\xe4ngder"
-            }, void 0, false, {
-                fileName: "src/Pages/Productpage/SpecialProducts.tsx",
-                lineNumber: 10,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
-                src: (0, _horseBoxJpgDefault.default),
-                title: "H\xe4stbox",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                        children: "Bilden visar ett stall som vi levererat till i Nybro."
-                    }, void 0, false, {
-                        fileName: "src/Pages/Productpage/SpecialProducts.tsx",
-                        lineNumber: 17,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                        children: "Vi hyvlar fram ek till boxar och pelare i stall"
-                    }, void 0, false, {
-                        fileName: "src/Pages/Productpage/SpecialProducts.tsx",
-                        lineNumber: 18,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                        children: "Eken \xe4r genom sitt h\xe5rda och r\xf6t t\xe5liga virke ett tr\xe4slag som l\xe4mpar sig mycket v\xe4l som stallinredning."
-                    }, void 0, false, {
-                        fileName: "src/Pages/Productpage/SpecialProducts.tsx",
-                        lineNumber: 19,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                        children: "Att det sedan ger stallet ett exklusivt intryck \xe4r en bonus."
-                    }, void 0, false, {
-                        fileName: "src/Pages/Productpage/SpecialProducts.tsx",
-                        lineNumber: 22,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Pages/Productpage/SpecialProducts.tsx",
-                lineNumber: 16,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _smallListDefault.default), {
-                showType: true
-            }, void 0, false, {
-                fileName: "src/Pages/Productpage/SpecialProducts.tsx",
-                lineNumber: 24,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true);
-}
-_c = SpecialProducts;
-exports.default = SpecialProducts;
-var _c;
-$RefreshReg$(_c, "SpecialProducts");
-
-  $parcel$ReactRefreshHelpers$0a98.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","../../Feature/Components/Hero":"8WNwH","../../Assets/products/horse-box.jpg":"83gtD","../../Feature/Components/ImageAndText":"8HWo8","../../Shared/value":"9VKej","../../Feature/Components/SmallList":"csIkc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"l1iBY":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$7278 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$7278.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _limfogAlmJpg = require("../../Assets/products/limfog-alm.jpg");
-var _limfogAlmJpgDefault = parcelHelpers.interopDefault(_limfogAlmJpg);
-var _hero = require("../../Feature/Components/Hero");
-var _heroDefault = parcelHelpers.interopDefault(_hero);
-var _imageAndText = require("../../Feature/Components/ImageAndText");
-var _imageAndTextDefault = parcelHelpers.interopDefault(_imageAndText);
-var _value = require("../../Shared/value");
-function Limfog() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {
-                src: (0, _limfogAlmJpgDefault.default),
-                alt: "Hero image Limfog.",
-                title: "Limfog",
-                description: "Vi erbjuder Limfog till av mycket h\xf6g kvalitet som tillverkas i Sverige av virke som vi sj\xe4lva levererar."
-            }, void 0, false, {
-                fileName: "src/Pages/Productpage/Limfog.tsx",
-                lineNumber: 9,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
-                src: (0, _limfogAlmJpgDefault.default),
-                title: "Limfog",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                        children: "Vi erbjuder Limfog till av mycket h\xf6g kvalitet som tillverkas i Sverige av virke som vi sj\xe4lva levererar."
-                    }, void 0, false, {
-                        fileName: "src/Pages/Productpage/Limfog.tsx",
-                        lineNumber: 16,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                        children: "Hyllplan, bordsskivor och b\xe4nkskivor eller vad du sj\xe4lv \xf6nskar."
-                    }, void 0, false, {
-                        fileName: "src/Pages/Productpage/Limfog.tsx",
-                        lineNumber: 19,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                        children: "Limfogen tillverkas i exakt de m\xe5tt du \xf6nskar och \xe4r f\xe4rdigputsade."
-                    }, void 0, false, {
-                        fileName: "src/Pages/Productpage/Limfog.tsx",
-                        lineNumber: 20,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                        children: "Kan \xe4ven levereras med ytbehandling"
-                    }, void 0, false, {
-                        fileName: "src/Pages/Productpage/Limfog.tsx",
-                        lineNumber: 21,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                        children: "Limfogen m\xe5ste best\xe4llas, leveranstid 1-2 veckor."
-                    }, void 0, false, {
-                        fileName: "src/Pages/Productpage/Limfog.tsx",
-                        lineNumber: 22,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _value.Text), {
-                        children: "Bildexempel p\xe5 b\xe4nkskiva i stavlimmad 40 m.m Alm"
-                    }, void 0, false, {
-                        fileName: "src/Pages/Productpage/Limfog.tsx",
-                        lineNumber: 23,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Pages/Productpage/Limfog.tsx",
-                lineNumber: 15,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true);
-}
-_c = Limfog;
-exports.default = Limfog;
-var _c;
-$RefreshReg$(_c, "Limfog");
-
-  $parcel$ReactRefreshHelpers$7278.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","../../Assets/products/limfog-alm.jpg":"jUiM9","../../Feature/Components/Hero":"8WNwH","../../Feature/Components/ImageAndText":"8HWo8","../../Shared/value":"9VKej","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bDJ6V":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$abb1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$abb1.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _hero = require("../../Feature/Components/Hero");
-var _heroDefault = parcelHelpers.interopDefault(_hero);
-var _lits = require("../../Feature/Components/Lits");
-var _litsDefault = parcelHelpers.interopDefault(_lits);
-var _products = require("../../Lists/Products");
-var _productsDefault = parcelHelpers.interopDefault(_products);
-var _treesJpg = require("../../Assets/trees.jpg");
-var _treesJpgDefault = parcelHelpers.interopDefault(_treesJpg);
-var _smallList = require("../../Feature/Components/SmallList");
-var _smallListDefault = parcelHelpers.interopDefault(_smallList);
-var _s = $RefreshSig$();
-function PlanedProducts() {
-    _s();
-    const { Panels, Strips, Floors } = (0, _productsDefault.default)();
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {
-                src: (0, _treesJpgDefault.default),
-                alt: "Hero image Hyvlade produkter.",
-                title: "Hyvlade Produkter",
-                description: "Golv och lister, samt paneler i olika l\xf6vtr\xe4slag."
-            }, void 0, false, {
-                fileName: "src/Pages/Productpage/PlanedProducts.tsx",
-                lineNumber: 11,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _litsDefault.default), {
-                title: "Golv",
-                description: "Golv \xe4r inte bara ett golv, det \xe4r en m\xf6bel. Riktiga massiva tr\xe4golv \xe4r unika, varje tilja \xe4r unik och finns inte att uppbringa n\xe5gon annanstans. \xc4ven k\xe4nslan av att s\xe4tta foten p\xe5 ett massivt golv \xe4r unik. Genom att ha n\xf6jet att delta i hela f\xf6r\xe4dlingsprocessen kan vi ursprungsgarantera ert golv. Golven \xe4r best\xe4llningsvara och leveranstid meddelas vid offerering",
-                list: Floors
-            }, void 0, false, {
-                fileName: "src/Pages/Productpage/PlanedProducts.tsx",
-                lineNumber: 17,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _smallListDefault.default), {
-                showAdditionalProducts: true
-            }, void 0, false, {
-                fileName: "src/Pages/Productpage/PlanedProducts.tsx",
-                lineNumber: 22,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _litsDefault.default), {
-                title: "Paneler",
-                description: "Vi specialtillverkar paneler enligt kundens \xf6nskem\xe5l. Vi rekommenderar bastupanel i al, vilket ger en varm och gemytlig k\xe4nsla och har liknande egenskaper som asp. Vi erbjuder \xe4ven hj\xe4lp med att f\xf6rverkliga kundens egna id\xe9er",
-                list: Panels
-            }, void 0, false, {
-                fileName: "src/Pages/Productpage/PlanedProducts.tsx",
-                lineNumber: 23,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _litsDefault.default), {
-                title: "Lister",
-                description: "Vi erbjuder lister och foder i alla m\xf6jliga former och dimensioner. Vi har standardlister men kan \xe4ven tillverka specialbest\xe4llda lister och foder. F\xf6r renovering av \xe4ldre hus kan vi reproducera gamla profiler om du skickar en bit av den gamla listen eller fodret till dem f\xf6r ett kostnadsf\xf6rslag",
-                list: Strips
-            }, void 0, false, {
-                fileName: "src/Pages/Productpage/PlanedProducts.tsx",
-                lineNumber: 28,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true);
-}
-_s(PlanedProducts, "1IF2aFp+VdY4MbD6At/pshWHFs8=", false, function() {
-    return [
-        (0, _productsDefault.default)
-    ];
-});
-_c = PlanedProducts;
-exports.default = PlanedProducts;
-var _c;
-$RefreshReg$(_c, "PlanedProducts");
-
-  $parcel$ReactRefreshHelpers$abb1.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","../../Feature/Components/Hero":"8WNwH","../../Feature/Components/Lits":"kNxh3","../../Lists/Products":"3XYD0","../../Assets/trees.jpg":"9CIyB","../../Feature/Components/SmallList":"csIkc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9CIyB":[function(require,module,exports) {
-module.exports = require("67ff0c6f163ab3d").getBundleURL("6EXJA") + "trees.338dee64.jpg" + "?" + Date.now();
-
-},{"67ff0c6f163ab3d":"lgJ39"}],"3vtcQ":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$94b7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$94b7.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _hero = require("../Feature/Components/Hero");
-var _heroDefault = parcelHelpers.interopDefault(_hero);
-var _imageAndText = require("../Feature/Components/ImageAndText");
-var _imageAndTextDefault = parcelHelpers.interopDefault(_imageAndText);
-var _forrestJpg = require("../Assets/forrest.jpg");
-var _forrestJpgDefault = parcelHelpers.interopDefault(_forrestJpg);
-var _oakBoardsJpg = require("../Assets/oak-boards.jpg");
-var _oakBoardsJpgDefault = parcelHelpers.interopDefault(_oakBoardsJpg);
-var _emilJpg = require("../Assets/emil.jpg");
-var _emilJpgDefault = parcelHelpers.interopDefault(_emilJpg);
-var _partyJpg = require("../Assets/party.jpg");
-var _partyJpgDefault = parcelHelpers.interopDefault(_partyJpg);
-var _react = require("@glitz/react");
-var _h3 = require("../Shared/Generic/H3");
-var _h3Default = parcelHelpers.interopDefault(_h3);
-function HomePage() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {
-                src: (0, _partyJpgDefault.default),
-                alt: "Hero image oak",
-                title: "Om oss",
-                description: "Specials\xe5gverk-Hyvleri mitt i Sm\xe5land sedan 1997"
-            }, void 0, false, {
-                fileName: "src/Pages/AboutUsPage.tsx",
-                lineNumber: 14,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
-                src: (0, _emilJpgDefault.default),
-                title: "Store Emil",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _h3Default.default), {
-                        children: "Jag fick en g\xe4dda i sikan\xe4tet"
-                    }, void 0, false, {
-                        fileName: "src/Pages/AboutUsPage.tsx",
-                        lineNumber: 22,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).P, {
-                        children: "Jag heter Emil...."
-                    }, void 0, false, {
-                        fileName: "src/Pages/AboutUsPage.tsx",
-                        lineNumber: 23,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).P, {}, void 0, false, {
-                        fileName: "src/Pages/AboutUsPage.tsx",
-                        lineNumber: 24,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Pages/AboutUsPage.tsx",
-                lineNumber: 21,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
-                src: (0, _oakBoardsJpgDefault.default),
-                title: "V\xe5r Vision",
-                textFirst: true,
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: [
-                            "Genom att varsamt och f\xf6r hand hantera virket fr\xe5n s\xe5gning till f\xe4rdig produkt kan vi s\xe4kerst\xe4lla en",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                children: " god kvalitet"
-                            }, void 0, false, {
-                                fileName: "src/Pages/AboutUsPage.tsx",
-                                lineNumber: 29,
-                                columnNumber: 11
-                            }, this),
-                            " och ett ",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                children: " formstabilt virke"
-                            }, void 0, false, {
-                                fileName: "src/Pages/AboutUsPage.tsx",
-                                lineNumber: 29,
-                                columnNumber: 50
-                            }, this),
-                            "."
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Pages/AboutUsPage.tsx",
-                        lineNumber: 27,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: [
-                            "Vi arbetar n\xe4stan uteslutande med ",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                children: "svenskt l\xf6vtr\xe4"
-                            }, void 0, false, {
-                                fileName: "src/Pages/AboutUsPage.tsx",
-                                lineNumber: 32,
-                                columnNumber: 45
-                            }, this),
-                            " och s\xe4tter ursprung i fokus."
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Pages/AboutUsPage.tsx",
-                        lineNumber: 31,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: "Med leverans f\xf6ljer ett ursprungsdokument med v\xe4xtplats."
-                    }, void 0, false, {
-                        fileName: "src/Pages/AboutUsPage.tsx",
-                        lineNumber: 34,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: "Udda l\xe4ngder, dimensioner och profiler tillh\xf6r v\xe5r specialitet."
-                    }, void 0, false, {
-                        fileName: "src/Pages/AboutUsPage.tsx",
-                        lineNumber: 35,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: [
-                            "Vi har som m\xe5l att kunna leverera inom ",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                children: "tv\xe5 veckor"
-                            }, void 0, false, {
-                                fileName: "src/Pages/AboutUsPage.tsx",
-                                lineNumber: 37,
-                                columnNumber: 50
-                            }, this),
-                            " fr\xe5n order, oavsett om det \xe4r lagervara eller m\xe5ste specialproduceras."
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Pages/AboutUsPage.tsx",
-                        lineNumber: 36,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Pages/AboutUsPage.tsx",
-                lineNumber: 26,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
-                src: (0, _forrestJpgDefault.default),
-                title: "V\xe5ra M\xe5l",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: "Vi jobbar mot privata kunder, kommuner, l\xe4nsstyrelser och andra f\xf6retag."
-                    }, void 0, false, {
-                        fileName: "src/Pages/AboutUsPage.tsx",
-                        lineNumber: 42,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: "Alltid med samma m\xe5l, att kunden ska f\xe5 r\xe4tt vara vid r\xe4tt tid."
-                    }, void 0, false, {
-                        fileName: "src/Pages/AboutUsPage.tsx",
-                        lineNumber: 43,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: "Vi ombes\xf6rjer transport inom hela Sverige."
-                    }, void 0, false, {
-                        fileName: "src/Pages/AboutUsPage.tsx",
-                        lineNumber: 44,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Pages/AboutUsPage.tsx",
-                lineNumber: 41,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageAndTextDefault.default), {
-                src: (0, _oakBoardsJpgDefault.default),
-                title: "V\xe5rt uppdrag",
-                textFirst: true,
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: "Genom att kunna f\xf6r\xe4dla svensk l\xf6vtr\xe4r\xe5vara fr\xe5n stock till f\xe4rdiga produkter kan vi gentemot dig som kund garantera materialets ursprung."
-                    }, void 0, false, {
-                        fileName: "src/Pages/AboutUsPage.tsx",
-                        lineNumber: 47,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Text, {
-                        children: "Vi blir genom v\xe5r sm\xe5skalighet flexibla och kan alltid s\xe4tta dig och dina \xf6nskem\xe5l i centrum."
-                    }, void 0, false, {
-                        fileName: "src/Pages/AboutUsPage.tsx",
-                        lineNumber: 51,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Pages/AboutUsPage.tsx",
-                lineNumber: 46,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true);
-}
-_c = HomePage;
-exports.default = HomePage;
-const Text = (0, _react.styled).p();
-_c1 = Text;
-var _c, _c1;
-$RefreshReg$(_c, "HomePage");
-$RefreshReg$(_c1, "Text");
-
-  $parcel$ReactRefreshHelpers$94b7.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","../Feature/Components/Hero":"8WNwH","../Feature/Components/ImageAndText":"8HWo8","../Assets/forrest.jpg":"3nPrl","../Assets/oak-boards.jpg":"lVzFd","@glitz/react":"bAXm1","../Shared/Generic/H3":"iGEMB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Assets/emil.jpg":"9tiao","../Assets/party.jpg":"fGGev"}],"9tiao":[function(require,module,exports) {
-module.exports = require("9f5d123af3ff011e").getBundleURL("6EXJA") + "emil.02b06526.jpg" + "?" + Date.now();
-
-},{"9f5d123af3ff011e":"lgJ39"}],"fGGev":[function(require,module,exports) {
-module.exports = require("e4c48e2de0f2a1e9").getBundleURL("6EXJA") + "party.6f7683c7.jpg" + "?" + Date.now();
-
-},{"e4c48e2de0f2a1e9":"lgJ39"}],"irmnC":[function() {},{}],"kcmoy":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$40ee = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$40ee.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("@glitz/react");
-var _core = require("@glitz/core");
-var _value = require("../../Shared/value");
-var _compact = require("./Compact");
-var _compactDefault = parcelHelpers.interopDefault(_compact);
-var _full = require("./Full");
-var _fullDefault = parcelHelpers.interopDefault(_full);
-const menuLinks = [
-    {
-        url: "/",
-        name: "Hem"
-    },
-    {
-        url: "/produkter",
-        name: "Produkter",
-        subMenu: [
-            {
-                url: "/produkter/sagade-produkter",
-                name: "S\xe5gade Produkter"
-            },
-            {
-                url: "/produkter/hyvlade-produkter",
-                name: "Hyvlade Produkter"
-            },
-            {
-                url: "/produkter/special-produkter",
-                name: "Specialprodukter"
-            },
-            {
-                url: "/produkter/limfog",
-                name: "Limfog"
-            }
-        ]
-    },
-    {
-        url: "/prislista",
-        name: "Prislista"
-    },
-    {
-        url: "/galleri",
-        name: "Galleri"
-    },
-    {
-        url: "/om-oss",
-        name: "Om oss"
-    },
-    {
-        url: "/kontakt",
-        name: "Kontakt"
-    }
-];
-function Header() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledHeader, {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TopBar, {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TopBarWrapper, {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(A, {
-                            href: "mailto:info@eme.nu",
-                            "aria-label": "Send an email to info@eme.nu",
-                            children: "info@eme.nu"
-                        }, void 0, false, {
-                            fileName: "src/Feature/Header/Header.tsx",
-                            lineNumber: 65,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(A, {
-                            "aria-label": "Call 070-3278734",
-                            href: "tel:0046703278734",
-                            children: "070-3278734"
-                        }, void 0, false, {
-                            fileName: "src/Feature/Header/Header.tsx",
-                            lineNumber: 68,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Feature/Header/Header.tsx",
-                    lineNumber: 64,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "src/Feature/Header/Header.tsx",
-                lineNumber: 63,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fullDefault.default), {
-                menuLinks: menuLinks
-            }, void 0, false, {
-                fileName: "src/Feature/Header/Header.tsx",
-                lineNumber: 73,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _compactDefault.default), {
-                menuLinks: menuLinks
-            }, void 0, false, {
-                fileName: "src/Feature/Header/Header.tsx",
-                lineNumber: 74,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/Feature/Header/Header.tsx",
-        lineNumber: 62,
-        columnNumber: 5
-    }, this);
-}
-_c = Header;
-exports.default = Header;
-const StyledHeader = (0, _react.styled).header({
-    position: "sticky",
-    top: "0px",
-    zIndex: 10,
-    backgroundColor: "#fff",
-    border: {
-        bottom: {
-            style: "solid",
-            width: "2px",
-            color: "#004A55"
-        }
-    },
-    ...(0, _core.media)({
-        minWidth: "1025px"
-    }, {
-        margin: {
-            bottom: (0, _value.medium)
-        }
-    })
-});
-_c1 = StyledHeader;
-const TopBar = (0, _react.styled).div({
-    backgroundColor: (0, _value.DefaulBackgroundColor),
-    color: "#fff",
-    padding: {
-        y: (0, _value.small)
-    }
-});
-_c2 = TopBar;
-const TopBarWrapper = (0, _react.styled)((0, _value.AppearanceBlock), {
-    display: "flex",
-    gap: (0, _value.small),
-    justifyContent: "space-between",
-    padding: {
-        x: (0, _value.medium)
-    }
-});
-_c3 = TopBarWrapper;
-const A = (0, _react.styled).a();
-_c4 = A;
-var _c, _c1, _c2, _c3, _c4;
-$RefreshReg$(_c, "Header");
-$RefreshReg$(_c1, "StyledHeader");
-$RefreshReg$(_c2, "TopBar");
-$RefreshReg$(_c3, "TopBarWrapper");
-$RefreshReg$(_c4, "A");
-
-  $parcel$ReactRefreshHelpers$40ee.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","./Compact":"3pGbL","./Full":"8Zi0O","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@glitz/core":"5ehrf"}],"3pGbL":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3pGbL":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$1985 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -40785,6 +36705,8 @@ function Compact({ menuLinks }) {
                 to: "/",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LogoContainer, {
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
+                        width: 105,
+                        height: 63,
                         src: (0, _logoPngDefault.default),
                         alt: "Logo",
                         className: "logo"
@@ -41171,7 +37093,138 @@ $RefreshReg$(_c14, "SubMenu");
 },{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","@glitz/core":"5ehrf","../../Assets/icons/menu.svg":"1MZpS","../Components/Button":"at8Gv","react-router-dom":"9xmpe","react":"21dqq","../../Assets/close.svg":"lONnP","../../Assets/icons/chevron.svg":"ftSMl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../Assets/logo.png":"dixc1"}],"1MZpS":[function(require,module,exports) {
 module.exports = require("f28a6342581d8bf8").getBundleURL("6EXJA") + "menu.ffa02e1f.svg" + "?" + Date.now();
 
-},{"f28a6342581d8bf8":"lgJ39"}],"lONnP":[function(require,module,exports) {
+},{"f28a6342581d8bf8":"lgJ39"}],"at8Gv":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0aef = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0aef.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "PlainButton", ()=>PlainButton);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("@glitz/react");
+var _value = require("../../Shared/value");
+var _typography = require("../../Shared/typography");
+var _reactRouterDom = require("react-router-dom");
+function Button(props) {
+    const { to, onClick, children } = props;
+    if (to) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+        to: to,
+        "aria-label": props.ariaLabel,
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
+            children: children
+        }, void 0, false, {
+            fileName: "src/Feature/Components/Button.tsx",
+            lineNumber: 19,
+            columnNumber: 9
+        }, this)
+    }, void 0, false, {
+        fileName: "src/Feature/Components/Button.tsx",
+        lineNumber: 18,
+        columnNumber: 7
+    }, this);
+    else return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledButton, {
+        onClick: onClick,
+        "aria-label": props.ariaLabel,
+        children: children
+    }, void 0, false, {
+        fileName: "src/Feature/Components/Button.tsx",
+        lineNumber: 24,
+        columnNumber: 7
+    }, this);
+}
+_c = Button;
+exports.default = _c1 = (0, _react.styled)(Button);
+const StyledButton = (0, _react.styled).button({
+    cursor: "pointer",
+    backgroundColor: (0, _value.DefaulBackgroundColor),
+    color: "#fff",
+    fontWeight: "bold",
+    fontSize: (0, _typography.delta),
+    borderRadius: "4px",
+    padding: {
+        y: (0, _value.medium),
+        x: (0, _value.large)
+    },
+    border: {
+        xy: {
+            style: "none"
+        }
+    },
+    transition: {
+        property: "all",
+        duration: "0.3s",
+        timingFunction: "ease-in-out"
+    },
+    ":hover": {
+        backgroundColor: "#003740 "
+    }
+});
+_c2 = StyledButton;
+const PlainButton = (0, _react.styled)(Button, {
+    backgroundColor: "inherit",
+    color: "inherit",
+    borderRadius: "none",
+    textAlign: "start",
+    fontWeight: "normal",
+    padding: {
+        xy: 0
+    },
+    transition: {
+        property: "none"
+    },
+    ":hover": {
+        backgroundColor: "inherit "
+    }
+});
+_c3 = PlainButton;
+var _c, _c1, _c2, _c3;
+$RefreshReg$(_c, "Button");
+$RefreshReg$(_c1, "%default%");
+$RefreshReg$(_c2, "StyledButton");
+$RefreshReg$(_c3, "PlainButton");
+
+  $parcel$ReactRefreshHelpers$0aef.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","../../Shared/typography":"iZltJ","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iZltJ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "alternativeTextColor", ()=>alternativeTextColor);
+parcelHelpers.export(exports, "giga", ()=>giga);
+parcelHelpers.export(exports, "mega", ()=>mega);
+parcelHelpers.export(exports, "kilo", ()=>kilo);
+parcelHelpers.export(exports, "alpha", ()=>alpha);
+parcelHelpers.export(exports, "beta", ()=>beta);
+parcelHelpers.export(exports, "gamma", ()=>gamma);
+parcelHelpers.export(exports, "delta", ()=>delta);
+parcelHelpers.export(exports, "epsilon", ()=>epsilon);
+parcelHelpers.export(exports, "zeta", ()=>zeta);
+parcelHelpers.export(exports, "createTruncateDecorator", ()=>createTruncateDecorator);
+var _react = require("@glitz/react");
+const alternativeTextColor = "#b5b5b5";
+const giga = "72px";
+const mega = "54px";
+const kilo = "36px";
+const alpha = "32px";
+const beta = "24px";
+const gamma = "20px";
+const delta = "16px";
+const epsilon = "14px";
+const zeta = "12px";
+function createTruncateDecorator(overflow = "ellipsis") {
+    return (0, _react.styled)({
+        overflow: "hidden",
+        whiteSpace: "nowrap",
+        textOverflow: overflow
+    });
+}
+
+},{"@glitz/react":"bAXm1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lONnP":[function(require,module,exports) {
 module.exports = require("a1f4f9141b146a00").getBundleURL("6EXJA") + "close.d037ba38.svg" + "?" + Date.now();
 
 },{"a1f4f9141b146a00":"lgJ39"}],"ftSMl":[function(require,module,exports) {
@@ -41213,6 +37266,8 @@ function Full({ menuLinks }) {
                 to: "/",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LogoContainer, {
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledImage, {
+                        width: 175,
+                        height: 106,
                         src: (0, _logoPngDefault.default),
                         alt: "Logo",
                         className: "logo"
@@ -41456,6 +37511,8 @@ function Footer() {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LogoContainer, {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledLogo, {
+                            width: 200,
+                            height: 121,
                             src: (0, _footerLogoPngDefault.default),
                             alt: "footer logo"
                         }, void 0, false, {
@@ -41730,7 +37787,78 @@ $RefreshReg$(_c10, "StyledLogo");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","../Components/LazyLoadImage":"6qRec","../../Shared/Generic/H3":"iGEMB","react-router-dom":"9xmpe","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../Assets/footer-logo.png":"etHEi"}],"etHEi":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","../Components/LazyLoadImage":"6qRec","../../Shared/Generic/H3":"iGEMB","react-router-dom":"9xmpe","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../Assets/footer-logo.png":"etHEi"}],"6qRec":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$7b37 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$7b37.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _react1 = require("@glitz/react");
+var _s = $RefreshSig$();
+function LazyLoadImage({ src, alt, ...restprops }) {
+    _s();
+    const imgRef = (0, _react.useRef)(null);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ImageComponent, {
+        ref: imgRef,
+        src: src,
+        alt: alt,
+        loading: "lazy",
+        ...restprops
+    }, void 0, false, {
+        fileName: "src/Feature/Components/LazyLoadImage.tsx",
+        lineNumber: 12,
+        columnNumber: 10
+    }, this);
+}
+_s(LazyLoadImage, "4ePvNHuSuoDcJUA4FzxhhVtSEHM=");
+_c = LazyLoadImage;
+exports.default = _c1 = (0, _react1.styled)(LazyLoadImage);
+const ImageComponent = (0, _react1.styled).img({});
+_c2 = ImageComponent;
+var _c, _c1, _c2;
+$RefreshReg$(_c, "LazyLoadImage");
+$RefreshReg$(_c1, "%default%");
+$RefreshReg$(_c2, "ImageComponent");
+
+  $parcel$ReactRefreshHelpers$7b37.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@glitz/react":"bAXm1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iGEMB":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "headingReset", ()=>headingReset);
+parcelHelpers.export(exports, "h3Styled", ()=>h3Styled);
+var _react = require("@glitz/react");
+var _typography = require("../typography");
+var _value = require("../value");
+var _core = require("@glitz/core");
+const headingReset = (0, _react.styled)({
+    fontSize: "unset",
+    fontWeight: "unset",
+    marginBottom: 0
+});
+const h3Styled = (0, _react.styled)({
+    fontWeight: "700",
+    fontSize: (0, _typography.gamma),
+    margin: {
+        bottom: (0, _value.small)
+    },
+    ...(0, _core.media)({
+        maxWidth: "760px"
+    }, {
+        fontSize: (0, _typography.delta)
+    })
+});
+exports.default = h3Styled((0, _react.styled).H3);
+
+},{"@glitz/react":"bAXm1","../typography":"iZltJ","../value":"9VKej","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"etHEi":[function(require,module,exports) {
 module.exports = require("fc417f45b6f9c36e").getBundleURL("6EXJA") + "footer-logo.e79aef7c.png" + "?" + Date.now();
 
 },{"fc417f45b6f9c36e":"lgJ39"}],"2TbV3":[function(require,module,exports) {
@@ -41883,6 +38011,34 @@ $RefreshReg$(_c5, "Text");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","../../Shared/Generic/H2":"au95a","./Button":"at8Gv","@glitz/core":"5ehrf","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["94b1M","1xC6H","4aBH6"], "4aBH6", "parcelRequire34be")
+},{"react/jsx-dev-runtime":"iTorj","@glitz/react":"bAXm1","../../Shared/value":"9VKej","../../Shared/Generic/H2":"au95a","./Button":"at8Gv","@glitz/core":"5ehrf","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"au95a":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "headingReset", ()=>headingReset);
+parcelHelpers.export(exports, "h2Styled", ()=>h2Styled);
+var _react = require("@glitz/react");
+var _typography = require("../typography");
+var _value = require("../value");
+var _core = require("@glitz/core");
+const headingReset = (0, _react.styled)({
+    fontSize: "unset",
+    fontWeight: "unset",
+    marginBottom: 0
+});
+const h2Styled = (0, _react.styled)({
+    fontWeight: "700",
+    fontSize: (0, _typography.beta),
+    margin: {
+        bottom: (0, _value.medium)
+    },
+    ...(0, _core.media)({
+        maxWidth: "760px"
+    }, {
+        fontSize: (0, _typography.gamma)
+    })
+});
+exports.default = h2Styled((0, _react.styled).H2);
+
+},{"@glitz/react":"bAXm1","../typography":"iZltJ","../value":"9VKej","@glitz/core":"5ehrf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["94b1M","1xC6H","4aBH6"], "4aBH6", "parcelRequire34be")
 
 //# sourceMappingURL=index.2d3ace14.js.map
