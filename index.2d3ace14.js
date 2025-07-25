@@ -36725,7 +36725,7 @@ function Compact({ menuLinks }) {
                 lineNumber: 23,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _button.PlainButton), {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CompactButton, {
                 ariaLabel: "Home",
                 onClick: ()=>setIsOpen(true),
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.styled).Img, {
@@ -36942,7 +36942,7 @@ const CompactContainer = (0, _react.styled).div({
     justifyContent: "space-between",
     alignItems: "center",
     padding: {
-        x: (0, _value.medium)
+        left: (0, _value.medium)
     },
     ...(0, _core.media)({
         minWidth: "1025px"
@@ -36964,6 +36964,12 @@ const StyledImage = (0, _react.styled).img({
     maxWidth: "105px"
 });
 _c3 = StyledImage;
+const CompactButton = (0, _react.styled)((0, _button.PlainButton), {
+    padding: {
+        xy: (0, _value.medium)
+    }
+});
+_c4 = CompactButton;
 const Overlay = (0, _react.styled).div({
     position: "fixed",
     right: "0px",
@@ -36973,7 +36979,7 @@ const Overlay = (0, _react.styled).div({
     backgroundColor: "black",
     opacity: "0.25"
 });
-_c4 = Overlay;
+_c5 = Overlay;
 const Flyout = (0, _react.styled).div({
     width: "26rem",
     backgroundColor: "#fff",
@@ -36990,7 +36996,7 @@ const Flyout = (0, _react.styled).div({
     },
     transform: "translateX(-100%)"
 });
-_c5 = Flyout;
+_c6 = Flyout;
 const FlyoutHeader = (0, _react.styled).div({
     display: "flex",
     justifyContent: "end",
@@ -37007,20 +37013,20 @@ const FlyoutHeader = (0, _react.styled).div({
         }
     }
 });
-_c6 = FlyoutHeader;
+_c7 = FlyoutHeader;
 const StyledCloseButton = (0, _react.styled)((0, _button.PlainButton), {
     margin: {
         top: "5px"
     }
 });
-_c7 = StyledCloseButton;
+_c8 = StyledCloseButton;
 const Navbar = (0, _react.styled).nav({});
-_c8 = Navbar;
+_c9 = Navbar;
 const Links = (0, _react.styled).ul({
     display: "flex",
     flexDirection: "column"
 });
-_c9 = Links;
+_c10 = Links;
 const Link = (0, _react.styled).li({
     display: "flex",
     justifyContent: "space-between",
@@ -37036,20 +37042,20 @@ const Link = (0, _react.styled).li({
         }
     }
 });
-_c10 = Link;
+_c11 = Link;
 const LinkText = (0, _react.styled).span({
     fontWeight: "bold"
 });
-_c11 = LinkText;
+_c12 = LinkText;
 const DropDownButton = (0, _react.styled)((0, _button.PlainButton), {
     width: "100%"
 });
-_c12 = DropDownButton;
+_c13 = DropDownButton;
 const SubMenuWrapper = (0, _react.styled).div({
     display: "flex",
     width: "100%"
 });
-_c13 = SubMenuWrapper;
+_c14 = SubMenuWrapper;
 const SubMenu = (0, _react.styled).div({
     width: "100%",
     display: "flex",
@@ -37067,23 +37073,24 @@ const SubMenu = (0, _react.styled).div({
         backgroundColor: "#f0f0f0"
     }
 });
-_c14 = SubMenu;
-var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10, _c11, _c12, _c13, _c14;
+_c15 = SubMenu;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10, _c11, _c12, _c13, _c14, _c15;
 $RefreshReg$(_c, "Compact");
 $RefreshReg$(_c1, "CompactContainer");
 $RefreshReg$(_c2, "LogoContainer");
 $RefreshReg$(_c3, "StyledImage");
-$RefreshReg$(_c4, "Overlay");
-$RefreshReg$(_c5, "Flyout");
-$RefreshReg$(_c6, "FlyoutHeader");
-$RefreshReg$(_c7, "StyledCloseButton");
-$RefreshReg$(_c8, "Navbar");
-$RefreshReg$(_c9, "Links");
-$RefreshReg$(_c10, "Link");
-$RefreshReg$(_c11, "LinkText");
-$RefreshReg$(_c12, "DropDownButton");
-$RefreshReg$(_c13, "SubMenuWrapper");
-$RefreshReg$(_c14, "SubMenu");
+$RefreshReg$(_c4, "CompactButton");
+$RefreshReg$(_c5, "Overlay");
+$RefreshReg$(_c6, "Flyout");
+$RefreshReg$(_c7, "FlyoutHeader");
+$RefreshReg$(_c8, "StyledCloseButton");
+$RefreshReg$(_c9, "Navbar");
+$RefreshReg$(_c10, "Links");
+$RefreshReg$(_c11, "Link");
+$RefreshReg$(_c12, "LinkText");
+$RefreshReg$(_c13, "DropDownButton");
+$RefreshReg$(_c14, "SubMenuWrapper");
+$RefreshReg$(_c15, "SubMenu");
 
   $parcel$ReactRefreshHelpers$1985.postlude(module);
 } finally {
